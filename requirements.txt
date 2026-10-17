@@ -1,0 +1,10 @@
+langchain
+langchain-community
+dashscope
+openai
+chromadb
+pymupdf
+pypdf
+matplotlib
+seaborn
+python-dotenv
