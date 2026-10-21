@@ -1,10 +1,10 @@
-langchain
-langchain-community
-dashscope
 openai
+python-dotenv
 chromadb
 pymupdf
-pypdf
+tiktoken
+langgraph
+pandas
+numpy
 matplotlib
-seaborn
-python-dotenv
+notebook
