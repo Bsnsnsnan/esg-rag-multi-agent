@@ -14,19 +14,21 @@ from retrieve import retrieve
 load_dotenv()
 client = OpenAI(api_key=os.getenv("DASHSCOPE_API_KEY"),
                 base_url="https://ws-4huke4bou69ngcli.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1")
-MODEL = "qwen-plus"   # cheap for testing; switch to "qwen-plus" for final runs
-
+MODEL = "qwen-plus"   
 PILLARS = {
     "Environmental": {
-        "standards": "GRI 302 Energy, GRI 303 Water, GRI 305 Emissions, GRI 306 Waste; TCFD Metrics & Targets",
+        "standards": "GRI 302 Energy, GRI 303 Water, GRI 305 Emissions, GRI 306 Waste; "
+                     "TCFD Strategy, Risk Management, Metrics & Targets",
         "queries": ["Scope 1, Scope 2 and Scope 3 greenhouse gas emissions",
                     "energy consumption and renewable energy share",
                     "water withdrawal and consumption",
                     "waste generated, recycling and circularity",
-                    "net-zero and climate targets"],
+                    "net-zero and climate targets",
+                    "emissions reduction goal versus baseline year and progress"],
     },
     "Social": {
-        "standards": "GRI 403 Occupational Health & Safety, GRI 404 Training, GRI 405 Diversity, GRI 414 Supplier Social Assessment",
+        "standards": "GRI 403 Occupational Health & Safety, GRI 404 Training, GRI 405 Diversity, "
+                     "GRI 414 Supplier Social Assessment; TCFD Strategy (social impacts of climate transition)",
         "queries": ["number of employees and workforce composition",
                     "diversity, equity and inclusion, women in leadership",
                     "occupational health and safety injury rates",
@@ -34,7 +36,8 @@ PILLARS = {
                     "human rights and supply chain labour standards"],
     },
     "Governance": {
-        "standards": "GRI 2 General Disclosures (governance), GRI 205 Anti-corruption; TCFD Governance & Risk Management",
+        "standards": "GRI 2 General Disclosures (governance), GRI 205 Anti-corruption; "
+                     "TCFD Governance & Risk Management",
         "queries": ["board composition and independence",
                     "board oversight of sustainability and climate risk",
                     "anti-corruption, anti-bribery and code of conduct",
@@ -49,14 +52,18 @@ Follow these standards: {standards}.
 
 Rules:
 - Include quantitative data where available, always with units and reporting year.
+- Check that figures are consistent (parts must not exceed totals, scope labels such as
+  market-based vs location-based must be consistent) and state the reporting year for every figure.
 - After every factual claim, cite the chunk ID EXACTLY as it appears in the context
   (copy the full ID inside the square brackets; do not shorten it).
 - Every sentence that states a fact must have a citation. If you cannot cite it, do not write it.
   Do not use general knowledge about the company.
 - Attribute statements to the right organisation (e.g. an auditor's policy is not the company's policy).
-- If information for a sub-topic is missing, list it under a final "### Disclosure gaps" subheading.
+- If information for a sub-topic is missing, list it under a final "### Not covered in source material"
+  subheading (this means it was not found in the retrieved context, not that the company never discloses it).
 - Do not write a title. Start directly with the first ### subheading. Use only ### for subheadings.
 - Formal language suitable for stakeholders. 400-700 words."""
+
 
 def gather_context(company, queries, k=4):
     """Run several searches and merge the results, dropping duplicate chunks."""
@@ -69,10 +76,10 @@ def gather_context(company, queries, k=4):
     return chunks
 
 
-def generate_section(company, pillar, previous_draft=None, feedback=None):
+def generate_section(company, pillar, previous_draft=None, feedback=None, extra_queries=None):
     """Write one pillar section. previous_draft/feedback are for the Milestone 2 revise loop."""
     cfg = PILLARS[pillar]
-    chunks = gather_context(company, cfg["queries"])
+    chunks = gather_context(company, cfg["queries"] + (extra_queries or []))
     context = "\n\n".join(f"[{c['id']}]\n{c['text'].replace(chr(0), '')}" for c in chunks)
 
     user_msg = f"Provided Context:\n{context}"

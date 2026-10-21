@@ -1,0 +1,1577 @@
+{
+  "company": "Amazon",
+  "config": {
+    "generator_model": "qwen-plus",
+    "assessor_model": "qwen-plus",
+    "max_iterations": 3,
+    "threshold": 4.0,
+    "require_no_inconsistencies": true,
+    "extra_queries_from_feedback": 3
+  },
+  "finished": true,
+  "converged": false,
+  "num_rounds": 3,
+  "score_progression": [
+    3.11,
+    2.89,
+    2.61
+  ],
+  "section_score_progression": {
+    "Environmental": [
+      3.5,
+      3.5,
+      3.5
+    ],
+    "Social": [
+      3.5,
+      3.0,
+      2.33
+    ],
+    "Governance": [
+      2.33,
+      2.17,
+      2.0
+    ]
+  },
+  "rounds": [
+    {
+      "iteration": 1,
+      "timestamp": "2026-10-21T01:26:10",
+      "assess_seconds": 112.2,
+      "overall_score": 3.11,
+      "sections": {
+        "Environmental": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.5,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 3,
+            "Quantifiability": 4,
+            "Forward-Looking": 4,
+            "Transparency": 3,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [
+            "Scope 2 emissions reported as 3.74 MMTCO₂e in GRI 302 and GRI 305, but total footprint is 80.85 MMTCO₂e with Scopes 1+2+3 summing to 15.37 + 3.74 + 61.74 = 80.85 MMTCO₂e — arithmetic is internally consistent.",
+            "Waste diversion is stated as '84%... 82% through recycling/composting and 2% via incineration with energy recovery' — 82% + 2% = 84%, so sub-components sum to total.",
+            "Water withdrawal is reported as '9.4 billion liters' in GRI 303, and replenishment projects 'returned 9.4 billion liters' — presented as equivalent but not clarified as same metric (withdrawal vs. replenishment); however, this is not an arithmetic inconsistency but a conceptual conflation requiring clarification."
+          ],
+          "missing_elements": [
+            "Location-based vs market-based Scope 2 emissions (GRI 302-2)",
+            "Scope 3 emissions disaggregated by all 15 categories or formal exclusion rationale (GRI 305-2)",
+            "Water withdrawal by source (surface, groundwater, municipal) (GRI 303-3)",
+            "Baseline year for water-positive and zero-waste-to-landfill targets",
+            "TCFD-aligned climate scenario analysis (TCFD Metrics & Targets)"
+          ],
+          "improvement_suggestions": [
+            "Disclose both location-based and market-based Scope 2 emissions per GRI 302-2",
+            "Report Scope 3 emissions by all 15 GHG Protocol categories or provide a GRI-compliant exclusion rationale",
+            "Specify baseline years for all long-term targets (e.g., water positive by 2030 vs 2021 baseline)",
+            "Integrate TCFD scenario analysis description — including assumptions, scenarios tested, and strategic implications — under the TCFD Metrics & Targets heading",
+            "Explain root causes of remaining water and waste gaps (e.g., regional infrastructure, data limitations) and outline mitigation steps"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "GRI 302, 303, 305, and 306 are addressed with some data, but critical GRI sub-topics are missing: no location-based/market-based Scope 2 distinction (GRI 302-2), no Scope 3 Category breakdown beyond 3.1/3.3/3.4 (GRI 305-2 requires all 15 categories or justification for exclusions), no water withdrawal by source (GRI 303-3), no waste composition beyond cardboard/wood (GRI 306-2), and no TCFD scenario analysis (TCFD Metrics & Targets).",
+                "missing_elements": [
+                  "location-based vs market-based Scope 2 emissions",
+                  "Scope 3 emissions by all 15 categories (e.g., Category 11 use of sold products)",
+                  "water withdrawal by source (surface, groundwater, municipal)",
+                  "waste composition by material type (e.g., plastics, metals, e-waste)",
+                  "TCFD-aligned climate scenario analysis (e.g., 1.5°C, 2°C)"
+                ],
+                "improvement_suggestions": [
+                  "Disclose both location-based and market-based Scope 2 emissions per GRI 302-2",
+                  "Report Scope 3 emissions disaggregated by all 15 GHG Protocol categories or explicitly justify omissions per GRI 305-2",
+                  "Break down water withdrawal by source (e.g., surface water, groundwater, municipal supply) per GRI 303-3"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Most claims include concrete figures (e.g., 41,670 MW capacity, 9.4 billion liters water withdrawal, 84% waste diversion), but some lack essential context: '75% progress toward water positive' lacks baseline year or absolute target volume; 'carbon-free energy production' is conflated with procurement (not generation); and '20% improvement in WUE from 2024' omits the 2024 value. [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [
+                  "Baseline year and absolute target volume for water-positive goal",
+                  "2024 WUE value to contextualize 20% improvement",
+                  "Distinction between carbon-free energy *procured* (e.g., PPAs) vs *generated on-site*",
+                  "Absolute value of 'zero-waste-to-landfill' target (e.g., metric tons)"
+                ],
+                "improvement_suggestions": [
+                  "State the baseline year and absolute target volume (e.g., 'X billion liters replenished annually by 2030') for water positivity",
+                  "Report the 2024 WUE value alongside the 20% improvement claim",
+                  "Clarify whether '131,000 GWh carbon-free energy production' refers to contracted renewable energy (market-based) or actual physical generation"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 4,
+                "justification": "Most metrics include units and timeframes (e.g., '9.4 billion liters in 2025', '0.12 L/kWh in 2025'), and several have year-on-year comparisons (e.g., '34% increase from 2024', '20% improvement from 2024'). However, no baseline year is provided for the 2030 water-positive or zero-waste targets, and carbon intensity lacks a stated baseline year despite being tracked 'annually'.",
+                "missing_elements": [
+                  "Baseline year for water-positive target (e.g., 'vs 2020 baseline')",
+                  "Baseline year for zero-waste-to-landfill target",
+                  "Baseline year for carbon intensity metric (gCO₂e/$Revenue)"
+                ],
+                "improvement_suggestions": [
+                  "Specify the baseline year for all long-term targets (e.g., 'water positive by 2030 relative to 2021 baseline')",
+                  "State the baseline year and value for carbon intensity (e.g., '112.8 gCO₂e/$Revenue in 2025 vs 135.2 gCO₂e/$Revenue in 2020')"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 4,
+                "justification": "Quantified targets with deadlines are present: 'net-zero by 2040', 'water positive by 2030', 'zero-waste-to-landfill by 2030'. However, only the Climate Pledge includes an explicit baseline year (2019, implied by '2040 net-zero' and standard practice), while water-positive and zero-waste targets lack stated baselines — violating the rubric’s requirement for 'at least one quantified target with a baseline year and a deadline'. The 2040 net-zero target meets this, but narrowly.",
+                "missing_elements": [
+                  "Baseline year for water-positive target",
+                  "Baseline year for zero-waste-to-landfill target",
+                  "Quantified interim target for net-zero (e.g., 2030 milestone)"
+                ],
+                "improvement_suggestions": [
+                  "Add baseline year to water-positive and zero-waste targets (e.g., 'water positive by 2030 vs 2021 baseline')",
+                  "Publish at least one interim target for net-zero (e.g., '50% reduction by 2030 vs 2019 baseline')"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "The section acknowledges rising Scope 2 (+34%) and total footprint (+16%), attributing them to growth drivers — a partial admission of challenge. However, it omits discussion of why water positivity progress is only 75% (no root causes), offers no explanation for the gap to zero-waste (16% still landfilled), and fails to address the 'Not covered' gaps as substantive limitations — instead relegating them to a passive footnote without contextualizing their materiality or mitigation plans.",
+                "missing_elements": [
+                  "Explanation for 25% shortfall to water-positive target",
+                  "Reasons for 16% landfill/incineration waste",
+                  "Discussion of materiality and mitigation for omitted TCFD scenario analysis",
+                  "Acknowledgement of data assurance limitations for water/waste"
+                ],
+                "improvement_suggestions": [
+                  "Explain key barriers to achieving water positivity (e.g., regulatory constraints in specific regions, infrastructure gaps)",
+                  "Disclose reasons for residual landfill waste (e.g., contamination rates, local recycling infrastructure limits)",
+                  "Explicitly state whether water and waste data are assured, and if not, explain why and outline assurance roadmap"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "The section is broadly organized by GRI/TCFD codes (e.g., '### GRI 302 Energy'), and standards are cited in headings. However, GRI 302 requires disclosure of both location-based and market-based Scope 2 emissions (GRI 302-2), which is omitted; GRI 305-2 mandates Scope 3 category-level reporting or justification; and TCFD Metrics & Targets requires disclosure of scenario analysis — none of which are structurally addressed despite the heading. The 'Not covered' footnote is insufficient for compliance alignment.",
+                "missing_elements": [
+                  "GRI 302-2 location-based/market-based Scope 2 disclosure",
+                  "GRI 305-2 Scope 3 category-level breakdown or formal exclusion rationale",
+                  "TCFD Metrics & Targets disclosure of scenario analysis methodology and outcomes"
+                ],
+                "improvement_suggestions": [
+                  "Embed GRI 302-2 disclosure directly under GRI 302 heading, not in footnotes",
+                  "Provide either full Scope 3 category reporting or a GRI-compliant exclusion rationale (e.g., 'Category 11 excluded due to data unavailability across >95% of product portfolio')",
+                  "Integrate TCFD scenario analysis description (assumptions, scenarios tested, implications) under the TCFD Metrics & Targets subheading"
+                ]
+              }
+            ],
+            "inconsistencies": [
+              "Scope 2 emissions reported as 3.74 MMTCO₂e in GRI 302 and GRI 305, but total footprint is 80.85 MMTCO₂e with Scopes 1+2+3 summing to 15.37 + 3.74 + 61.74 = 80.85 MMTCO₂e — arithmetic is internally consistent.",
+              "Waste diversion is stated as '84%... 82% through recycling/composting and 2% via incineration with energy recovery' — 82% + 2% = 84%, so sub-components sum to total.",
+              "Water withdrawal is reported as '9.4 billion liters' in GRI 303, and replenishment projects 'returned 9.4 billion liters' — presented as equivalent but not clarified as same metric (withdrawal vs. replenishment); however, this is not an arithmetic inconsistency but a conceptual conflation requiring clarification."
+            ],
+            "overall_score": 3.5,
+            "missing_elements": [
+              "Location-based vs market-based Scope 2 emissions (GRI 302-2)",
+              "Scope 3 emissions disaggregated by all 15 categories or formal exclusion rationale (GRI 305-2)",
+              "Water withdrawal by source (surface, groundwater, municipal) (GRI 303-3)",
+              "Baseline year for water-positive and zero-waste-to-landfill targets",
+              "TCFD-aligned climate scenario analysis (TCFD Metrics & Targets)"
+            ],
+            "improvement_suggestions": [
+              "Disclose both location-based and market-based Scope 2 emissions per GRI 302-2",
+              "Report Scope 3 emissions by all 15 GHG Protocol categories or provide a GRI-compliant exclusion rationale",
+              "Specify baseline years for all long-term targets (e.g., water positive by 2030 vs 2021 baseline)",
+              "Integrate TCFD scenario analysis description — including assumptions, scenarios tested, and strategic implications — under the TCFD Metrics & Targets heading",
+              "Explain root causes of remaining water and waste gaps (e.g., regional infrastructure, data limitations) and outline mitigation steps"
+            ]
+          },
+          "draft": "### GRI 302 Energy  \nAmazon reported 131,000 gigawatt-hours (GWh) of annual carbon-free energy production in 2025 [2025-amazon-sustainability-report_chunk_22]. Carbon-free energy includes electricity from wind, solar, nuclear, hydroelectric, and geothermal sources, as well as site energy contracts and green tariffs that add new renewable projects to the grid [2025-amazon-sustainability-report_chunk_14]. As of January 2026, Amazon’s renewable energy portfolio comprised 375 utility-scale projects globally—264 solar, 109 wind, and two nuclear—across 30 U.S. states and 15 European countries, with a total expected capacity of 41,670 MW [2025-amazon-sustainability-report_chunk_114][2025-amazon-sustainability-report_chunk_22]. In 2025, emissions from purchased electricity (Scope 2) totaled 3.74 million metric tons of CO₂e (MMTCO₂e), representing a 34% increase from 2024 and 5% of Amazon’s total carbon footprint [2025-amazon-sustainability-report_chunk_112][2025-amazon-sustainability-report_chunk_19]. This growth was driven by increased electricity use in data centers, electrification of the delivery network, and building electrification [2025-amazon-sustainability-report_chunk_19].\n\n### GRI 303 Water  \nAmazon achieved 75% progress toward its goal of becoming water positive across global direct data center operations by 2030 [2025-amazon-sustainability-report_chunk_33]. In 2025, Amazon’s leased, owned, and shared data centers withdrew 9.4 billion liters of water [2025-amazon-sustainability-report_chunk_33]. The company’s global Water Use Effectiveness (WUE) improved to 0.12 liters per kilowatt-hour (L/kWh) —a 20% improvement from 2024 and 52% since 2021—driven by innovations including Direct Evaporative Cooling (used <10% of the year), In-Row Heat Exchangers (IRHX), and smart-metering technology that reduced global cooling water use by 938 million liters [2025-amazon-sustainability-report_chunk_33][2025-amazon-sustainability-report_chunk_35]. In India—where Amazon achieved 120% water positivity in 2025—on-site sewage treatment plants at 28 buildings provided an estimated 298 million liters of recycled water annually for non-potable uses, and rainwater harvesting pits collected ~178 million liters [2025-amazon-sustainability-report_chunk_37]. Amazon also invested in 45 global water replenishment projects, which returned 9.4 billion liters to communities by end-2025 and are contracted to deliver over 18 billion liters annually once fully operational [2025-amazon-sustainability-report_chunk_33][2025-amazon-sustainability-report_chunk_37].\n\n### GRI 305 Emissions  \nAmazon’s total carbon footprint (Scopes 1, 2, and 3) was 80.85 MMTCO₂e in 2025, up 16% from 69.55 MMTCO₂e in 2024 [2025-amazon-sustainability-report_chunk_5][2025-amazon-sustainability-report_chunk_112]. Scope 1 emissions were 15.37 MMTCO₂e; Scope 2, 3.74 MMTCO₂e; and Scope 3, 61.74 MMTCO₂e [2025-amazon-sustainability-report_chunk_112]. Environmental Attribute Certificates (EACs) delivered a net reduction of 199.4 thousand metric tons of CO₂e (KMT CO₂e) across Scopes 1, 3.1, 3.3, and 3.4—including 41.2 KMT CO₂e reduction in Scope 1 via Sustainable Aviation Fuel (SAF) and Renewable Diesel certificates [2025-amazon-sustainability-report_chunk_15][2025-amazon-sustainability-report_chunk_113]. Carbon intensity—measured as grams CO₂e per dollar of revenue—was 112.8 gCO₂e/$Revenue in 2025 [2025-amazon-sustainability-report_chunk_5][2025-amazon-sustainability-report_chunk_112]. Amazon’s Climate Pledge commits to net-zero carbon emissions by 2040, supported by decarbonization, neutralization, and collective action [2025-amazon-sustainability-report_chunk_10][2025-amazon-sustainability-report_chunk_112].\n\n### GRI 306 Waste  \nIn 2025, Amazon diverted 84% of its operational waste from landfill and incineration without energy recovery—82% through recycling or composting and 2% via incineration with energy recovery [2025-amazon-sustainability-report_chunk_47]. Waste per shipped unit decreased by 5% compared to 2024 [2025-amazon-sustainability-report_chunk_47][2025-amazon-sustainability-report_chunk_41]. Cardboard and wood constituted 64% of Amazon’s operational waste footprint, with nearly 100% recycled [2025-amazon-sustainability-report_chunk_47]. Across data centers, Amazon avoided over one million hard drive purchases since 2023 and prevented 225,000 metric tons of CO₂e through hardware reuse and resale since 2020 [2025-amazon-sustainability-report_chunk_45][2025-amazon-sustainability-report_chunk_41]. For Devices, 89 supplier sites achieved a verified 99% waste diversion rate in 2025, including 6% via thermal processing with energy recovery [2025-amazon-sustainability-report_chunk_45].\n\n### TCFD Strategy, Risk Management, Metrics & Targets  \nAmazon’s climate strategy is anchored in The Climate Pledge and structured around five pillars: supply chain decarbonization, direct operations decarbonization, emissions reduction from purchased electricity, carbon neutralization, and collective action [2025-amazon-sustainability-report_chunk_10]. Risk management integrates AI-driven supplier risk identification and Higg Facility Environmental Module (Higg FEM) assessments to prioritize audits and verify performance on carbon, waste, and water [2025-amazon-sustainability-report_chunk_13][2025-amazon-sustainability-report_chunk_10]. Key metrics include carbon intensity (gCO₂e/$Revenue), WUE (L/kWh), and waste diversion rate (%), all tracked annually against 2040 net-zero, 2030 water-positive, and 2030 zero-waste-to-landfill targets [2025-amazon-sustainability-report_chunk_5][2025-amazon-sustainability-report_chunk_33][2025-amazon-sustainability-report_chunk_45].\n\n### Not covered in source material  \nNo information was found regarding: (1) location-based vs market-based Scope 2 emissions breakdown; (2) Scope 3 Category 11 (use of sold products) beyond device-related emissions; (3) detailed waste composition beyond cardboard/wood; (4) water withdrawal by source (e.g., surface, groundwater); (5) TCFD-aligned scenario analysis or physical climate risk assessment methodology; (6) assurance scope for water or waste data.",
+          "sources": [
+            "2025-amazon-sustainability-report_chunk_123",
+            "2025-amazon-sustainability-report_chunk_113",
+            "2025-amazon-sustainability-report_chunk_122",
+            "2025-amazon-sustainability-report_chunk_112",
+            "2025-amazon-sustainability-report_chunk_114",
+            "2025-amazon-sustainability-report_chunk_19",
+            "2025-amazon-sustainability-report_chunk_33",
+            "2025-amazon-sustainability-report_chunk_34",
+            "2025-amazon-sustainability-report_chunk_35",
+            "2025-amazon-sustainability-report_chunk_37",
+            "2025-amazon-sustainability-report_chunk_39",
+            "2025-amazon-sustainability-report_chunk_47",
+            "2025-amazon-sustainability-report_chunk_45",
+            "2025-amazon-sustainability-report_chunk_41",
+            "2025-amazon-sustainability-report_chunk_10",
+            "2025-amazon-sustainability-report_chunk_5",
+            "2025-amazon-sustainability-report_chunk_25",
+            "2025-amazon-sustainability-report_chunk_22",
+            "2025-amazon-sustainability-report_chunk_30",
+            "2025-amazon-sustainability-report_chunk_13"
+          ]
+        },
+        "Social": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.5,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 4,
+            "Quantifiability": 4,
+            "Forward-Looking": 3,
+            "Transparency": 3,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "GRI 405-2 and 405-3 representation data (gender, race/ethnicity, disability, LGBTQ+ by level and region)",
+            "Supplier audit findings and non-compliance rates (GRI 414-3, 414-4)",
+            "TCFD-mandated just transition risk assessment (workforce displacement, reskilling gaps, community impacts)",
+            "Baseline years for all multi-year trends (e.g., 'six years' must be anchored to 2019–2025)",
+            "Definition and denominator for 'engaged' and 'inspections' metrics"
+          ],
+          "improvement_suggestions": [
+            "Disclose gender and racial/ethnic representation across job levels and regions using GRI 405-2/405-3 structure",
+            "Report supplier social audit findings by tier, region, and severity—including non-compliance rates and remediation timelines",
+            "Conduct and publish a TCFD-aligned social impact assessment of Amazon’s net-zero pathway, including workforce transition planning and community equity safeguards",
+            "Anchor all multi-year trends to explicit start/end years (e.g., '2019–2025') and disclose methodology for all key metrics (e.g., RIR calculation, pay equity regression model)",
+            "Define operational terms ('engaged', 'inspection') and report metrics as rates with appropriate denominators (e.g., per 100,000 hours worked)"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "Main GRI topics (403, 404, 405, 414) and TCFD Strategy are named and partially addressed, but critical sub-topics are missing: no representation data (GRI 405-2, 405-3), no supplier audit findings or non-compliance rates (GRI 414-3, 414-4), and no TCFD-mandated analysis of social risks from climate transition (e.g., workforce displacement, reskilling gaps).",
+                "missing_elements": [
+                  "Gender, racial/ethnic, disability, and LGBTQ+ representation across job levels and regions (GRI 405-2, 405-3)",
+                  "Supplier audit findings disaggregated by tier, region, or severity (GRI 414-3, 414-4)",
+                  "TCFD-aligned assessment of just transition risks: workforce transitions, reskilling needs, or community displacement due to climate policy shifts"
+                ],
+                "improvement_suggestions": [
+                  "Disclose gender and racial/ethnic representation at leadership, management, and operational levels globally and by major region",
+                  "Report number and percentage of suppliers assessed, non-compliant suppliers, and remediation status by tier (Tier 1–3) and geography",
+                  "Conduct and disclose a TCFD-aligned social impact assessment of Amazon’s decarbonization pathways, including projected workforce transitions and community-level equity implications"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 4,
+                "justification": "Most claims include concrete numbers (e.g., 14% RIR reduction, $2.5B invested, 599,000 U.S. upskilling participants), but some lack essential context: '10.4 million safety inspections' has no denominator (e.g., per employee or per facility), and '647,000 employees engaged with Together at Amazon' lacks definition of 'engaged' (e.g., attended event, joined chapter, completed activity).",
+                "missing_elements": [
+                  "Denominator for 10.4 million safety inspections (e.g., inspections per 100,000 hours worked or per facility)",
+                  "Definition and measurement method for 'engaged with Together at Amazon Community'",
+                  "Number of ELG chapters by country/region, not just total count"
+                ],
+                "improvement_suggestions": [
+                  "Report safety inspections as a rate (e.g., per 200,000 hours worked) and disclose total hours worked in 2025",
+                  "Define 'engaged' operationally and disclose participation metrics (e.g., unique users, event attendance, chapter membership)",
+                  "Break down Employee-Led Groups by country, region, and demographic focus area"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 4,
+                "justification": "Most metrics include units and timeframes (e.g., '14% year-over-year', '2025', 'since 2019'), and several have baselines (e.g., 'over six years', 'since 2019'). However, the six-year RIR/LTIR improvements lack explicit baseline years (e.g., 2019–2025), and pay equity ratios omit sample size, confidence intervals, or methodology transparency.",
+                "missing_elements": [
+                  "Explicit baseline year for all multi-year trends (e.g., '2019–2025' not just 'over six years')",
+                  "Sample size and statistical methodology for pay equity analysis (e.g., n, regression controls, confidence intervals)",
+                  "Timeframe for 'more than $2.5 billion since 2019' — is it cumulative through 2025?"
+                ],
+                "improvement_suggestions": [
+                  "State baseline and end years for all multi-year trends (e.g., 'RIR improved 43% from 2019 to 2025')",
+                  "Disclose sample size, analytical methodology, and confidence level for all pay equity calculations",
+                  "Clarify whether '$2.5 billion since 2019' is cumulative through 2025 and specify annual breakdowns"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 3,
+                "justification": "Contains one quantified target ('Amazon aims to integrate human rights due diligence into its decarbonization efforts') but lacks a baseline year, deadline, or measurable indicator; all other statements are historical or aspirational without timelines. No targets for RIR/LTIR, diversity representation, training reach, or supplier compliance are stated.",
+                "missing_elements": [
+                  "Quantified, time-bound target for RIR or LTIR (e.g., 'reduce global RIR to X by 2030, from 2025 baseline')",
+                  "Target for increasing underrepresented group representation at leadership levels",
+                  "Deadline and baseline for integrating human rights due diligence into decarbonization"
+                ],
+                "improvement_suggestions": [
+                  "Set and disclose a science-aligned occupational health & safety target (e.g., 'achieve <2.0 RIR globally by 2030, from 2025 baseline')",
+                  "Publish representation targets by gender, race/ethnicity, and disability for senior leadership and board by 2030",
+                  "Define and disclose a measurable target for human rights due diligence integration (e.g., '100% of Tier 1 suppliers assessed for climate-transition social risks by 2027, baseline 2025')"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "Acknowledges limitations in the final 'Not covered' section, listing omissions explicitly—but this is passive disclosure, not active reporting of challenges, negative trends, or missed goals. No mention of rising incident rates in any segment, training completion gaps, pay equity variances by level or region, or supplier non-compliance rates.",
+                "missing_elements": [
+                  "Disclosure of any business unit, region, or facility where RIR or LTIR increased in 2025",
+                  "Reporting of unmet prior-year targets (e.g., if 2024 RIR target was missed)",
+                  "Supplier non-compliance rate or number of high-risk findings unresolved after workshops"
+                ],
+                "improvement_suggestions": [
+                  "Disclose RIR/LTIR performance by major operating segment (e.g., North America Consumer, AWS, International) and flag any deteriorating units",
+                  "Report progress against prior-year targets, including missed goals and root-cause analysis",
+                  "Publish aggregate supplier non-compliance rate and % of high-risk findings unresolved after 90 days"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "Section headers map to GRI/TCFD topics (e.g., 'Occupational Health & Safety' → GRI 403), and standards are cited in footnotes, but GRI disclosures are not explicitly tagged to specific GRI indicators (e.g., 'RIR' is not labeled as GRI 403-1), and TCFD Strategy content lacks required TCFD-mandated elements (e.g., scenario analysis of social impacts).",
+                "missing_elements": [
+                  "Explicit mapping of each metric to GRI indicator code (e.g., 'Global RIR = GRI 403-1')",
+                  "TCFD-aligned scenario analysis of social risks from climate transition (e.g., policy-driven labor market shifts)",
+                  "GRI 414-2 disclosure of supplier assessment methodology and scope (e.g., % of spend covered)"
+                ],
+                "improvement_suggestions": [
+                  "Tag every reported metric with its corresponding GRI indicator code (e.g., 'RIR (GRI 403-1)')",
+                  "Conduct and disclose a TCFD-aligned qualitative and quantitative scenario analysis of how climate policies may affect Amazon’s workforce and supplier communities",
+                  "Report % of procurement spend covered by supplier social assessments and methodology for selecting suppliers for audit"
+                ]
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 3.5,
+            "missing_elements": [
+              "GRI 405-2 and 405-3 representation data (gender, race/ethnicity, disability, LGBTQ+ by level and region)",
+              "Supplier audit findings and non-compliance rates (GRI 414-3, 414-4)",
+              "TCFD-mandated just transition risk assessment (workforce displacement, reskilling gaps, community impacts)",
+              "Baseline years for all multi-year trends (e.g., 'six years' must be anchored to 2019–2025)",
+              "Definition and denominator for 'engaged' and 'inspections' metrics"
+            ],
+            "improvement_suggestions": [
+              "Disclose gender and racial/ethnic representation across job levels and regions using GRI 405-2/405-3 structure",
+              "Report supplier social audit findings by tier, region, and severity—including non-compliance rates and remediation timelines",
+              "Conduct and publish a TCFD-aligned social impact assessment of Amazon’s net-zero pathway, including workforce transition planning and community equity safeguards",
+              "Anchor all multi-year trends to explicit start/end years (e.g., '2019–2025') and disclose methodology for all key metrics (e.g., RIR calculation, pay equity regression model)",
+              "Define operational terms ('engaged', 'inspection') and report metrics as rates with appropriate denominators (e.g., per 100,000 hours worked)"
+            ]
+          },
+          "draft": "### Occupational Health & Safety  \nAmazon’s global operations safety performance showed consistent improvement in 2025. The company reported a 14% year-over-year reduction in its Global Recordable Incident Rate (RIR), defined as any work-related injury requiring more than basic first-aid treatment, and a 14% year-over-year reduction in its Global Lost Time Incident Rate (LTIR), defined as any work-related injury requiring time away from work [2025-amazon-sustainability-report_chunk_76]. Over the prior six years, RIR improved by 43% and LTIR by 70% globally [2025-amazon-sustainability-report_chunk_76][2025-amazon-sustainability-report_chunk_78]. In the U.S., under the General Warehousing and Storage industry classification, RIR improved 16% year over year and 39% over six years; LTIR was flat year over year but improved 79% over six years [2025-amazon-sustainability-report_chunk_76]. Under the Courier and Express Delivery Services classification, RIR improved 19% year over year and 59% over six years, while LTIR improved 28% year over year and 81% over six years [2025-amazon-sustainability-report_chunk_76]. Amazon employed more than 11,000 safety professionals worldwide in 2025 and conducted 10.4 million global safety inspections—a 33% increase from 2024—to validate engineering controls and inform iterative improvements [2025-amazon-sustainability-report_chunk_77][2025-amazon-sustainability-report_chunk_76].\n\n### Training  \nAmazon invested more than $2.5 billion in safety efforts since 2019, including training programs grounded in prevention-through-design principles [2025-amazon-sustainability-report_chunk_78]. In 2025, the company developed 52 new e-learning resources and updated 90 existing modules for employees on human rights topics, including forced labor risk identification, available in seven languages [2025-amazon-sustainability-report_chunk_63]. It also piloted a three-day immersive training program for employees in human rights–related roles [2025-amazon-sustainability-report_chunk_63]. For upskilling, Amazon launched the Automation Engineer Apprenticeship program—registered with the U.S. Department of Labor—and expanded its Mechatronics and Robotics Apprenticeship, through which graduates earned on average $10,000 more annually than typical entry-level fulfillment-center wages in 2025 [2025-amazon-sustainability-report_chunk_70]. Since announcing its Upskilling Pledge in 2019, 599,000 U.S. employees participated in upskilling programs by 2025 [2025-amazon-sustainability-report_chunk_69].\n\n### Diversity  \nAmazon’s 2025 pay equity review found women globally earned 100.0% of what men earned in comparable jobs, and women in the U.S. earned 99.9 cents for every dollar earned by men in comparable roles [2025-amazon-sustainability-report_chunk_71][2025-amazon-sustainability-report_chunk_70]. Racial and ethnic minorities in the U.S. earned 99.0 cents for every dollar white employees earned in comparable jobs [2025-amazon-sustainability-report_chunk_71][2025-amazon-sustainability-report_chunk_70]. The company reported that 647,000 corporate and operations employees engaged with the Together at Amazon Community in 2025, which includes 2,300 chapters of Employee-Led Groups (ELGs) across multiple countries and regions [2025-amazon-sustainability-report_chunk_75].\n\n### Supplier Social Assessment  \nAmazon’s Supply Chain Standards—available in 23 languages—apply to all suppliers of goods and services, including subcontractors and recruitment agents, and require adherence to applicable laws and human rights standards [2025-amazon-sustainability-report_chunk_84][2025-amazon-sustainability-report_chunk_83]. In 2025, Amazon deployed online training to 1,600 suppliers on these standards and provided access to 90 third-party online trainings on 12 human rights topics, including fair wages and nondiscrimination [2025-amazon-sustainability-report_chunk_84]. It hosted 29 in-person human rights workshops across 13 countries, engaging 650 participants from 480 suppliers; 60% of suppliers attending workshops between 2023 and 2025 reduced high-risk audit findings [2025-amazon-sustainability-report_chunk_84]. Amazon requires suppliers to maintain effective worker grievance mechanisms and collaborates with them to develop such systems [2025-amazon-sustainability-report_chunk_66].\n\n### Supporting a Just Climate Transition  \nAmazon aims to integrate human rights due diligence into its decarbonization efforts to identify how its green economy transition affects communities across its value chain [2025-amazon-sustainability-report_chunk_66]. In 2025, it focused on carbon-free energy procurement, climate finance, and community-based carbon neutralization projects to align its net-zero commitment with human rights principles [2025-amazon-sustainability-report_chunk_66][2025-amazon-sustainability-report_chunk_2025-amazon-sustainability-report_chunk_67].\n\n### Not covered in source material  \nGRI 405 Diversity metrics beyond pay equity (e.g., representation by gender, race/ethnicity, disability, or LGBTQ+ status across levels); supplier social audit findings disaggregated by tier or region; TCFD-aligned analysis of workforce transitions, reskilling needs, or community displacement risks arising from climate policy shifts.",
+          "sources": [
+            "2025-amazon-sustainability-report_chunk_67",
+            "2025-amazon-sustainability-report_chunk_75",
+            "2025-amazon-sustainability-report_chunk_71",
+            "2025-amazon-sustainability-report_chunk_87",
+            "2025-amazon-sustainability-report_chunk_103",
+            "2025-amazon-sustainability-report_chunk_102",
+            "2025-amazon-sustainability-report_chunk_106",
+            "2025-amazon-sustainability-report_chunk_76",
+            "2025-amazon-sustainability-report_chunk_78",
+            "2025-amazon-sustainability-report_chunk_77",
+            "2025-amazon-sustainability-report_chunk_84",
+            "2025-amazon-sustainability-report_chunk_70",
+            "2025-amazon-sustainability-report_chunk_64",
+            "2025-amazon-sustainability-report_chunk_69",
+            "2025-amazon-sustainability-report_chunk_63",
+            "2025-amazon-sustainability-report_chunk_66",
+            "2025-amazon-sustainability-report_chunk_83"
+          ]
+        },
+        "Governance": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 2.33,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 3,
+            "Quantifiability": 2,
+            "Forward-Looking": 1,
+            "Transparency": 2,
+            "Compliance Alignment": 3
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "GRI 205-1 (corruption incidents and outcomes)",
+            "GRI 2-11 (board diversity composition)",
+            "TCFD Governance A1 (board's role in climate risk oversight process)",
+            "Quantified forward-looking target with baseline and deadline",
+            "Ethics Line performance metrics (volume, resolution rate, timeliness)"
+          ],
+          "improvement_suggestions": [
+            "Disclose GRI 205-1 data: number of substantiated corruption allegations, investigations opened/closed, and disciplinary actions in 2025",
+            "Report board diversity using GRI 2-11 categories (gender, ethnicity, tenure) with 2025 values",
+            "Add a TCFD-aligned target for board climate risk oversight maturity with 2025 baseline and 2026/2027 deadline",
+            "Publish Ethics Line metrics: total reports, substantiation rate, and median resolution time for 2025 with 2024 comparison",
+            "Explicitly label all governance disclosures with corresponding GRI/TCFD codes (e.g., '[GRI 205-1]', '[TCFD Governance A1]')"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "The section addresses core GRI 2 (governance structure, board oversight) and GRI 205 (anti-corruption program, reporting channels) elements, but omits required disclosures for TCFD Governance (e.g., board’s role in climate risk oversight *process*, not just mandate), GRI 205-1 (corruption incidents, investigations, outcomes), and GRI 2-11 (board diversity composition).",
+                "missing_elements": [
+                  "GRI 205-1: Number of corruption-related incidents, investigations, and outcomes",
+                  "GRI 2-11: Board diversity metrics (gender, ethnicity, tenure)",
+                  "TCFD Governance: Description of board’s process for assessing climate-related risks and opportunities",
+                  "GRI 205-3: Effectiveness assessment of anti-corruption program"
+                ],
+                "improvement_suggestions": [
+                  "Disclose number of substantiated corruption allegations and disciplinary actions taken in 2025",
+                  "Report board diversity composition using GRI 2-11 categories (e.g., % women, % underrepresented ethnicities, average tenure)",
+                  "Describe how the Nominating and Corporate Governance Committee evaluates climate risk—e.g., frequency of dedicated climate risk reviews, use of scenario analysis"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Some concrete details are provided (e.g., 65 countries, 165 languages for Ethics Line; six Board meetings; four committee meetings), but key governance claims lack supporting data—e.g., 'regular updates' to committees, 'dedicated Human Rights Officer', 'risk-based due diligence'—with no quantification or operational definition.",
+                "missing_elements": [
+                  "Number of ethics reports received via Ethics Line in 2025",
+                  "Frequency of 'regular updates' from Chief Sustainability Officer to Nominating Committee (e.g., quarterly?)",
+                  "Definition of 'risk-based approach' for third-party due diligence (e.g., thresholds, categories assessed)"
+                ],
+                "improvement_suggestions": [
+                  "Disclose total Ethics Line reports received, substantiated cases, and average resolution time in 2025",
+                  "Specify cadence and format of sustainability updates to the Nominating and Corporate Governance Committee",
+                  "Define criteria used to classify third parties as 'high-risk' for due diligence"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 2,
+                "justification": "A few metrics are present (65 countries, 165 languages, six Board meetings), but none include baselines, timeframes for comparison, or year-on-year change—e.g., meeting counts are single-year absolutes with no prior-year reference or trend context.",
+                "missing_elements": [
+                  "Year-on-year comparison for Board/committee meeting frequency (e.g., 2024 vs. 2025)",
+                  "Baseline and current value for Ethics Line report volume or resolution rate",
+                  "Timeframe for 'periodic' Code of Conduct refreshers (e.g., biennial? annual?)"
+                ],
+                "improvement_suggestions": [
+                  "Report Board and committee meeting frequencies for both 2024 and 2025 to enable trend analysis",
+                  "Disclose Ethics Line report volume and substantiation rate for 2025 with 2024 baseline",
+                  "State the mandated interval for Code of Conduct refresher training"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 1,
+                "justification": "No quantified targets, deadlines, or baselines are stated anywhere in the section—only structural descriptions and process assertions. Mentions of '2025' refer to historical activity, not future commitments.",
+                "missing_elements": [
+                  "Quantified target with baseline year and deadline (e.g., 'increase board gender diversity to 40% by 2027, from 2025 baseline of 32%')",
+                  "Target for Ethics Line case resolution time (e.g., '90% resolved within 30 days by 2026')",
+                  "Climate governance target (e.g., 'integrate TCFD-aligned scenario analysis into Board risk review by Q2 2026')"
+                ],
+                "improvement_suggestions": [
+                  "Add at least one GRI 205-2–aligned target (e.g., reduction in substantiated ethics violations) with 2025 baseline and 2027 deadline",
+                  "Include a TCFD Governance target for board-level climate risk assessment maturity (e.g., 'annual climate risk deep-dive adopted across all committees by end-2026')"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 2,
+                "justification": "The 'Not covered in source material' footnote acknowledges missing data, but this is passive disclosure—not an active acknowledgment of challenges, negative trends, or missed targets. No discussion of program gaps, investigation delays, or governance shortcomings appears in the narrative text.",
+                "missing_elements": [
+                  "Acknowledgement of any ethics investigation backlog or unresolved cases",
+                  "Disclosure of limitations in human rights due diligence coverage (e.g., tier-2+ suppliers)",
+                  "Admission of gaps in political contribution transparency beyond oversight scope"
+                ],
+                "improvement_suggestions": [
+                  "State whether any ethics investigations exceeded 90-day resolution targets in 2025 and why",
+                  "Acknowledge scope limitations in human rights risk assessments (e.g., 'tier-2 supplier assessments cover <50% of high-risk categories')",
+                  "Disclose whether political contribution data is withheld due to jurisdictional restrictions or reporting lags"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 3,
+                "justification": "The section broadly maps content to GRI 2, GRI 205, and TCFD Governance, but lacks explicit standard references in-text (e.g., no 'GRI 205-1' or 'TCFD Governance A1' labels), and does not follow GRI’s required 'Disclosure' numbering or TCFD’s recommended sub-structure (e.g., 'Board Oversight', 'Management Oversight', 'Risk Management').",
+                "missing_elements": [
+                  "Explicit citation of GRI 205-1, GRI 2-11, or TCFD Governance A1/A2 in relevant paragraphs",
+                  "Separate, labeled subsections for 'Board Oversight' and 'Management Oversight' per TCFD",
+                  "GRI-style disclosure numbering (e.g., 'Disclosure 205-1') adjacent to corresponding content"
+                ],
+                "improvement_suggestions": [
+                  "Add GRI/TCFD code identifiers inline (e.g., '...oversight of sustainability [GRI 2-8; TCFD Governance A1]')",
+                  "Reorganize 'Climate-Related Governance' into two distinct subsections: 'Board Oversight of Climate Risk' and 'Management Oversight of Climate Risk'",
+                  "Apply GRI disclosure numbers to each claim (e.g., 'Board diversity composition [GRI 2-11]')"
+                ]
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 2.33,
+            "missing_elements": [
+              "GRI 205-1 (corruption incidents and outcomes)",
+              "GRI 2-11 (board diversity composition)",
+              "TCFD Governance A1 (board's role in climate risk oversight process)",
+              "Quantified forward-looking target with baseline and deadline",
+              "Ethics Line performance metrics (volume, resolution rate, timeliness)"
+            ],
+            "improvement_suggestions": [
+              "Disclose GRI 205-1 data: number of substantiated corruption allegations, investigations opened/closed, and disciplinary actions in 2025",
+              "Report board diversity using GRI 2-11 categories (gender, ethnicity, tenure) with 2025 values",
+              "Add a TCFD-aligned target for board climate risk oversight maturity with 2025 baseline and 2026/2027 deadline",
+              "Publish Ethics Line metrics: total reports, substantiation rate, and median resolution time for 2025 with 2024 comparison",
+              "Explicitly label all governance disclosures with corresponding GRI/TCFD codes (e.g., '[GRI 205-1]', '[TCFD Governance A1]')"
+            ]
+          },
+          "draft": "### Board Oversight and Committee Structure  \nAmazon’s Board of Directors maintains formal oversight of enterprise-wide risks through four standing committees, each with defined governance mandates. The Nominating and Corporate Governance Committee oversees risks related to sustainability, environmental and social responsibility, supply chain practices, and responsible AI development and governance [2025-amazon-sustainability-report_chunk_102]. The Leadership Development and Compensation Committee oversees human capital management risks—including workplace health and safety, discrimination, harassment, diversity, and culture—as well as executive compensation and succession planning [2025-amazon-sustainability-report_chunk_102]. The Audit Committee oversees financial reporting integrity, business continuity, operational risks, legal and regulatory compliance, tax matters, political contributions and lobbying expenses, and the performance of internal audit and independent auditors [2025-amazon-sustainability-report_chunk_102]. The Security Committee oversees data protection, cybersecurity, physical security, and incident response, reporting annually to the Board and receiving regular updates from the Chief Security Officer [2025-amazon-sustainability-report_chunk_102]. In 2025, the full Board held six in-person meetings and engaged in regularly scheduled teleconference discussions on governance topics [2025-amazon-sustainability-report_chunk_101]. Committee meeting frequencies in 2025 were: Nominating and Corporate Governance (four meetings), Leadership Development and Compensation (five meetings), Audit (six meetings), and Security (two meetings) [2025-amazon-sustainability-report_chunk_102].\n\n### Climate-Related and Human Rights Governance  \nClimate-related governance is embedded within the Nominating and Corporate Governance Committee’s mandate, which includes oversight of sustainability and environmental risk management across operations and the supply chain [2025-amazon-sustainability-report_chunk_103]. The Chief Sustainability Officer provides regular updates to this committee and oversees Amazon’s companywide carbon system of record, which tracks business-level emissions to support decarbonization progress [2025-amazon-sustainability-report_chunk_104]. Human rights governance is coordinated through dual oversight: the Nominating and Corporate Governance Committee monitors policies on corporate social responsibility and ethical business practices, while the Leadership Development and Compensation Committee oversees internal human capital policies, including nondiscrimination, workplace safety, and culture [2025-amazon-sustainability-report_chunk_104]. Amazon employs a dedicated Human Rights Officer who reports directly to the Chief Sustainability Officer and facilitates regular risk management updates to senior leadership [2025-amazon-sustainability-report_chunk_104].\n\n### Anti-Corruption and Ethics Infrastructure  \nAmazon’s anti-corruption program is led by the Vice President for Business Conduct and Ethics, who reports to the Senior Vice President, Chief Global Affairs & Legal Officer [2025-amazon-sustainability-report_chunk_106]. The program includes a formal review process for allegations—investigated by the Business Conduct and Ethics team and reported to the Audit Committee—with disciplinary consequences up to termination [2025-amazon-sustainability-report_chunk_106]. Employees are required to disclose and seek approval for gifts or entertainment involving government officials, and mechanisms exist for conflict-of-interest disclosure and remediation [2025-amazon-sustainability-report_chunk_107]. Third-party due diligence follows a risk-based approach prior to engagement [2025-amazon-sustainability-report_chunk_107]. All employees receive Code of Conduct training during onboarding and periodic refreshers; leadership and the Board receive specialized training on anti-corruption and competition law [2025-amazon-sustainability-report_chunk_107]. Amazon participates in the OECD’s Anti-Corruption Leaders Hub to advance digitized compliance and partner vetting initiatives [2025-amazon-sustainability-report_chunk_107].\n\n### Ethics Reporting and Accountability Mechanisms  \nAmazon operates a confidential, third-party-managed Ethics Line available in 65 countries and 165 languages, enabling anonymous reporting of Code violations and ethical concerns [2025-amazon-sustainability-report_chunk_106]. Additional secure channels include Human Resources, the Legal Department, and any manager [2025-amazon-sustainability-report_chunk_106]. The Business Conduct and Ethics team records, investigates, and tracks remediation of reported issues, with findings escalated to the Audit Committee [2025-amazon-sustainability-report_chunk_106]. Senior leadership receives regular updates on harassment and discrimination allegations involving director-level personnel; the Leadership Development and Compensation Committee receives detailed quarterly updates for vice-president-level and above cases or those subject to external investigation [2025-amazon-sustainability-report_chunk_106].\n\n### Not covered in source material  \nQuantitative metrics on board diversity composition (e.g., gender, ethnicity, tenure), specific TCFD-aligned climate risk assessment methodologies, scope 1/2/3 emissions breakdowns tied to governance decisions, whistleblower case resolution rates, or detailed political contribution disclosures (beyond mention of oversight scope) are not provided in the retrieved context.",
+          "sources": [
+            "2025-amazon-sustainability-report_chunk_102",
+            "2025-amazon-sustainability-report_chunk_103",
+            "2025-amazon-sustainability-report_chunk_101",
+            "2025-amazon-sustainability-report_chunk_107",
+            "2025-amazon-sustainability-report_chunk_104",
+            "2025-amazon-sustainability-report_chunk_106",
+            "2025-amazon-sustainability-report_chunk_87",
+            "2025-amazon-sustainability-report_chunk_67",
+            "2025-amazon-sustainability-report_chunk_70",
+            "2025-amazon-sustainability-report_chunk_5",
+            "2025-amazon-sustainability-report_chunk_75",
+            "2025-amazon-sustainability-report_chunk_82",
+            "2025-amazon-sustainability-report_chunk_81"
+          ]
+        }
+      }
+    },
+    {
+      "iteration": 2,
+      "timestamp": "2026-10-21T01:30:42",
+      "assess_seconds": 122.5,
+      "overall_score": 2.89,
+      "sections": {
+        "Environmental": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.5,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 3,
+            "Quantifiability": 4,
+            "Forward-Looking": 3,
+            "Transparency": 4,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [
+            "Scope 2 emissions are reported as 3.74 MMTCO₂e in 2025 and said to be '5% of Amazon’s total carbon footprint'; however, total footprint is reported as 80.85 MMTCO₂e — 3.74 / 80.85 = 4.6%, not 5% (rounding discrepancy of 0.4 percentage points exceeds acceptable tolerance for a 5% claim);",
+            "WUE improvement is stated as '20% improvement from 0.15 L/kWh in 2024' but 0.12 L/kWh is 20% lower than 0.15 L/kWh — correct mathematically, yet the phrasing 'improved to 0.12... a 20% improvement from 0.15' is linguistically inconsistent (improvement in efficiency is correctly expressed as reduction in L/kWh, but '20% improvement' should refer to the metric's directional intent — this is a minor semantic inconsistency, not arithmetic) — no arithmetic error found.",
+            "No internal arithmetic contradictions beyond the 4.6% vs 5% rounding issue; all other figures internally consistent."
+          ],
+          "missing_elements": [
+            "GRI 302-2: location-based and market-based Scope 2 emissions separately",
+            "GRI 303-2: water positivity target with baseline year and absolute volume",
+            "GRI 305-2: full Scope 3 category breakdown or GRI-compliant exclusion rationale",
+            "TCFD Metrics & Targets: scenario analysis description and physical climate risk methodology",
+            "Assurance status for water and waste data"
+          ],
+          "improvement_suggestions": [
+            "Disclose location-based and market-based Scope 2 emissions separately per GRI 302-2",
+            "Specify baseline year and absolute replenishment volume for the 2030 water positivity target per GRI 303-2",
+            "Provide full 15-category Scope 3 emissions inventory or a GRI 305-2–compliant exclusion rationale",
+            "Describe TCFD-aligned scenario analysis (assumptions, scenarios, strategic implications) and physical climate risk assessment methodology",
+            "State assurance level and scope for water and waste metrics per GRI 102-32"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "Main GRI/TCFD sub-topics are addressed (energy, water, emissions, waste, TCFD pillars), but critical omissions exist: no location/market-based Scope 2 breakdown (GRI 302-2), incomplete Scope 3 category coverage (only 3 of 15 GHG Protocol categories reported, no GRI-compliant rationale), no water withdrawal by source (GRI 303-3), no waste composition beyond cardboard/wood (GRI 306-2), and no TCFD scenario analysis or physical risk methodology (TCFD Metrics & Targets).",
+                "missing_elements": [
+                  "GRI 302-2: location-based and market-based Scope 2 emissions separately",
+                  "GRI 303-3: water withdrawal by source (surface, groundwater, municipal)",
+                  "GRI 305-2: full 15-category Scope 3 breakdown or GRI-compliant exclusion rationale",
+                  "GRI 306-2: waste composition by material type beyond cardboard and wood",
+                  "TCFD Metrics & Targets: scenario analysis (e.g., 1.5°C alignment) and physical climate risk assessment methodology"
+                ],
+                "improvement_suggestions": [
+                  "Disclose location-based and market-based Scope 2 emissions separately per GRI 302-2",
+                  "Report water withdrawal disaggregated by source per GRI 303-3",
+                  "Provide full 15-category Scope 3 emissions inventory or a GRI 305-2–compliant explanation for exclusions",
+                  "Publish waste composition data by material type (e.g., plastics, metals, organics) per GRI 306-2",
+                  "Describe TCFD-aligned scenario analysis assumptions, scenarios tested, and strategic implications"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Most claims include concrete figures (e.g., 131,000 GWh, 9.4 billion liters, 84% diversion), and many are contextualized (e.g., '75% progress toward 2030 goal', '20% improvement from 0.15 L/kWh'). However, the critical ambiguity around whether '131,000 GWh' refers to physical generation or contracted attributes—and the lack of clarification on data assurance—undermines specificity for two core metrics. [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [
+                  "Clarification of whether 131,000 GWh carbon-free energy refers to physical generation or renewable energy attribute contracts",
+                  "Assurance status (e.g., limited assurance, reasonable assurance) for water and waste data"
+                ],
+                "improvement_suggestions": [
+                  "Explicitly state whether the 131,000 GWh represents physical generation, contractual procurement, or a hybrid, per GRI 302-1 and GHG Protocol definitions",
+                  "Disclose assurance level and scope for water and waste metrics per GRI 102-32 and GRI 102-33"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 4,
+                "justification": "Most metrics include units and timeframes (e.g., '9.4 billion liters in 2025', '0.12 L/kWh in 2025'), and several have year-on-year comparisons (e.g., WUE 20% improvement from 2024, Scope 2 +34% from 2024). However, the water positivity target lacks a baseline year and absolute volume, and the 20% WUE improvement is not anchored to an explicitly labeled 2024 value in the same statement — though 0.15 L/kWh is cited elsewhere, it is not syntactically linked as the 2024 figure in the YoY claim.",
+                "missing_elements": [
+                  "Baseline year and absolute volume target (e.g., liters/year) for water positivity goal",
+                  "Explicit labeling of 2024 WUE value (0.15 L/kWh) as the comparative baseline within the YoY statement"
+                ],
+                "improvement_suggestions": [
+                  "State the baseline year and absolute replenishment volume (e.g., 'X billion liters annually by 2030, from Y billion liters in 2025') for the water positivity target",
+                  "Revise the WUE YoY statement to directly reference '0.15 L/kWh in 2024' as the baseline for the 20% improvement"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 3,
+                "justification": "Targets are named (2030 water positive, 2030 zero-waste-to-landfill, 2040 net-zero), and some progress metrics are given (e.g., '75% progress toward 2030'), but only the water positivity and zero-waste targets have deadlines; none include a quantified baseline year *and* a quantified absolute target value (e.g., 'reduce Scope 2 emissions to Z MMTCO₂e by 2030, from A MMTCO₂e in 2025'). The 2030 water-positive target lacks both a baseline year and absolute volume.",
+                "missing_elements": [
+                  "Quantified baseline year and absolute value for water positivity target (e.g., 'replenish 12.5 billion liters annually by 2030, from 5.0 billion liters in 2025')",
+                  "Quantified baseline year and absolute value for zero-waste-to-landfill target (e.g., 'achieve 100% diversion by 2030, from 84% in 2025')",
+                  "Quantified baseline year and absolute value for net-zero target (e.g., 'reach net-zero Scopes 1–3 by 2040, from 80.85 MMTCO₂e in 2025')"
+                ],
+                "improvement_suggestions": [
+                  "Specify baseline year and absolute volume for the 2030 water positivity target per GRI 303-2",
+                  "Define the zero-waste-to-landfill target with a baseline year and absolute % or tonnage target per GRI 306-2",
+                  "Disclose net-zero target with a 2025 baseline and interim milestones per TCFD Metrics & Targets"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 4,
+                "justification": "The section explicitly acknowledges key gaps (e.g., missing location/market-based Scope 2 split, incomplete Scope 3 coverage, unexplained residual landfill disposal, undefined water positivity baseline), and notes root causes where available (e.g., 'regulatory constraints, infrastructure limitations' for water gap). However, it does not disclose negative trends beyond the Scope 2 increase — e.g., no discussion of why Scope 3 grew 16% or challenges in supplier engagement — nor does it report missed targets or setbacks.",
+                "missing_elements": [
+                  "Explanation for 16% increase in total carbon footprint (e.g., growth drivers beyond stated ones, or mitigation shortfalls)",
+                  "Discussion of challenges in achieving Scope 3 reductions (e.g., supplier data gaps, low response rates to CDP, verification barriers)",
+                  "Disclosure of any missed interim targets or revised timelines"
+                ],
+                "improvement_suggestions": [
+                  "Explain drivers behind the 16% rise in total carbon footprint beyond 'data centers and electrification' — e.g., scope expansion, methodological changes, or unmitigated growth",
+                  "Describe specific challenges hindering Scope 3 emissions reduction (e.g., lack of Tier 2–3 supplier data, inconsistent reporting standards across regions)",
+                  "Disclose whether any prior interim targets were missed, and if so, reasons and corrective actions"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "The section is structured by GRI/TCFD standard headings (GRI 302, 303, etc.) and cites relevant codes, satisfying basic structural alignment. However, it fails to fully comply with GRI’s requirement to disclose *how* boundaries are set (e.g., GRI 302-1 requires description of energy sources and boundary for carbon-free energy; GRI 305-2 requires rationale for Scope 3 exclusions), and omits TCFD’s explicit requirement for scenario analysis disclosure (TCFD Metrics & Targets, p. 22).",
+                "missing_elements": [
+                  "GRI 302-1: description of boundary and methodology for 'carbon-free energy production' (e.g., inclusion/exclusion of EACs, double-counting safeguards)",
+                  "GRI 305-2: formal rationale for omitting 12 Scope 3 categories, per GRI 305-2 requirement",
+                  "TCFD Metrics & Targets: disclosure of scenario analysis parameters, outputs, and strategic implications"
+                ],
+                "improvement_suggestions": [
+                  "Clarify boundary and methodology for carbon-free energy reporting per GRI 302-1, including treatment of EACs and double-counting prevention",
+                  "Provide a GRI 305-2–compliant exclusion rationale for unreported Scope 3 categories, including data availability, materiality assessment, and future plans",
+                  "Publish TCFD-mandated scenario analysis summary — including scenarios tested, key assumptions, and how results inform strategy"
+                ]
+              }
+            ],
+            "inconsistencies": [
+              "Scope 2 emissions are reported as 3.74 MMTCO₂e in 2025 and said to be '5% of Amazon’s total carbon footprint'; however, total footprint is reported as 80.85 MMTCO₂e — 3.74 / 80.85 = 4.6%, not 5% (rounding discrepancy of 0.4 percentage points exceeds acceptable tolerance for a 5% claim);",
+              "WUE improvement is stated as '20% improvement from 0.15 L/kWh in 2024' but 0.12 L/kWh is 20% lower than 0.15 L/kWh — correct mathematically, yet the phrasing 'improved to 0.12... a 20% improvement from 0.15' is linguistically inconsistent (improvement in efficiency is correctly expressed as reduction in L/kWh, but '20% improvement' should refer to the metric's directional intent — this is a minor semantic inconsistency, not arithmetic) — no arithmetic error found.",
+              "No internal arithmetic contradictions beyond the 4.6% vs 5% rounding issue; all other figures internally consistent."
+            ],
+            "overall_score": 3.5,
+            "missing_elements": [
+              "GRI 302-2: location-based and market-based Scope 2 emissions separately",
+              "GRI 303-2: water positivity target with baseline year and absolute volume",
+              "GRI 305-2: full Scope 3 category breakdown or GRI-compliant exclusion rationale",
+              "TCFD Metrics & Targets: scenario analysis description and physical climate risk methodology",
+              "Assurance status for water and waste data"
+            ],
+            "improvement_suggestions": [
+              "Disclose location-based and market-based Scope 2 emissions separately per GRI 302-2",
+              "Specify baseline year and absolute replenishment volume for the 2030 water positivity target per GRI 303-2",
+              "Provide full 15-category Scope 3 emissions inventory or a GRI 305-2–compliant exclusion rationale",
+              "Describe TCFD-aligned scenario analysis (assumptions, scenarios, strategic implications) and physical climate risk assessment methodology",
+              "State assurance level and scope for water and waste metrics per GRI 102-32"
+            ]
+          },
+          "draft": "### GRI 302 Energy  \nAmazon reported 131,000 gigawatt-hours (GWh) of annual carbon-free energy production in 2025 [2025-amazon-sustainability-report_chunk_22]. Carbon-free energy includes electricity generated from wind, solar, nuclear, hydroelectric, and geothermal sources, as well as site energy contracts and green tariffs that add new renewable projects to the grid [2025-amazon-sustainability-report_chunk_14]. As of January 2026, Amazon’s renewable energy portfolio comprised 375 utility-scale projects globally—264 solar, 109 wind, and two nuclear—with a total expected capacity of 41,670 MW across 30 U.S. states and 15 European countries [2025-amazon-sustainability-report_chunk_114][2025-amazon-sustainability-report_chunk_22]. Emissions from purchased electricity (Scope 2) totaled 3.74 million metric tons of CO₂e (MMTCO₂e) in 2025, representing a 34% increase from 2024 and 5% of Amazon’s total carbon footprint [2025-amazon-sustainability-report_chunk_112][2025-amazon-sustainability-report_chunk_19]. This growth was driven by electricity use in data centers, electrification of the delivery network, and building electrification [2025-amazon-sustainability-report_chunk_19]. **The context does not disclose location-based or market-based Scope 2 emissions separately, nor does it specify whether the 131,000 GWh refers to physical generation or contracted renewable energy attributes** [2025-amazon-sustainability-report_chunk_22].\n\n### GRI 303 Water  \nAmazon aims to be water positive—returning more water to communities than it uses—across global direct data center operations by 2030 [2025-amazon-sustainability-report_chunk_33]. The target baseline year is not specified in the context; the absolute volume target (e.g., liters replenished annually) is also not disclosed [2025-amazon-sustainability-report_chunk_33]. In 2025, Amazon’s leased, owned, and shared data centers withdrew 9.4 billion liters of water [2025-amazon-sustainability-report_chunk_33]. The company achieved 75% progress toward its 2030 data center water positive goal, up from 53% in 2024 [2025-amazon-sustainability-report_chunk_33]. Global Water Use Effectiveness (WUE) improved to 0.12 liters per kilowatt-hour (L/kWh) in 2025—a 20% improvement from 0.15 L/kWh in 2024 and a 52% improvement from 0.25 L/kWh in 2021 [2025-amazon-sustainability-report_chunk_33][2025-amazon-sustainability-report_chunk_35]. In India, Amazon achieved 120% water positivity in 2025—two years ahead of its 2027 goal—through on-site sewage treatment plants (28 buildings, yielding ~298 million liters/year), rainwater harvesting (~178 million liters infiltrated in 2025), and expanded replenishment investments [2025-amazon-sustainability-report_chunk_37]. Amazon invested in 45 global water replenishment projects, returning 9.4 billion liters to communities by end-2025 and contracting for over 18 billion liters of annual replenishment volume in future years [2025-amazon-sustainability-report_chunk_33][2025-amazon-sustainability-report_chunk_37]. **The context does not specify water withdrawal by source (e.g., surface water, groundwater, municipal supply) or identify root causes for the remaining gap to full water positivity (e.g., regulatory constraints, infrastructure limitations)** [2025-amazon-sustainability-report_chunk_33][2025-amazon-sustainability-report_chunk_34].\n\n### GRI 305 Emissions  \nAmazon’s total carbon footprint (Scopes 1, 2, and 3) was 80.85 million metric tons of CO₂e (MMTCO₂e) in 2025, up 16% from 69.55 MMTCO₂e in 2024 [2025-amazon-sustainability-report_chunk_5][2025-amazon-sustainability-report_chunk_112]. Scope 1 emissions were 15.37 MMTCO₂e; Scope 2, 3.74 MMTCO₂e; and Scope 3, 61.74 MMTCO₂e [2025-amazon-sustainability-report_chunk_112]. Environmental Attribute Certificates (EACs) delivered a net reduction of 199.4 thousand metric tons of CO₂e (KMT CO₂e) across Scopes 1, 3.1, 3.3, and 3.4—including 41.2 KMT CO₂e reduction in Scope 1 via Sustainable Aviation Fuel (SAF) and Renewable Diesel certificates [2025-amazon-sustainability-report_chunk_15][2025-amazon-sustainability-report_chunk_113]. Carbon intensity—measured as grams CO₂e per dollar of revenue—was 112.8 gCO₂e/$Revenue in 2025 [2025-amazon-sustainability-report_chunk_5][2025-amazon-sustainability-report_chunk_112]. **The context discloses only partial Scope 3 category breakdowns: Scopes 3.1 (purchased goods and services), 3.3 (fuel- and energy-related activities), and 3.4 (downstream transportation and distribution) are quantified, but emissions for the remaining 12 GHG Protocol Scope 3 categories (e.g., Category 1 — upstream transportation, Category 11 — use of sold products beyond devices, Category 15 — investments) are not provided, nor is a GRI-compliant rationale for exclusions** [2025-amazon-sustainability-report_chunk_112][2025-amazon-sustainability-report_chunk_113].\n\n### GRI 306 Waste  \nIn 2025, Amazon diverted 84% of its operational waste from landfill and incineration without energy recovery—82% through recycling or composting and 2% via incineration with energy recovery [2025-amazon-sustainability-report_chunk_47]. Waste per shipped unit decreased by 5% compared to 2024 [2025-amazon-sustainability-report_chunk_47][2025-amazon-sustainability-report_chunk_41]. Cardboard and wood constituted 64% of Amazon’s operational waste footprint, with nearly 100% recycled [2025-amazon-sustainability-report_chunk_47]. Across data centers, Amazon avoided over one million hard drive purchases since 2023 and prevented 225,000 metric tons of CO₂e through hardware reuse and resale since 2020 [2025-amazon-sustainability-report_chunk_45][2025-amazon-sustainability-report_chunk_41]. For Devices, 89 supplier sites achieved a verified 99% waste diversion rate in 2025, including 6% via thermal processing with energy recovery [2025-amazon-sustainability-report_chunk_45]. **The context does not disclose waste composition beyond cardboard and wood, nor does it explain reasons for residual landfill disposal (e.g., contamination, local infrastructure limits), nor state whether waste data are assured** [2025-amazon-sustainability-report_chunk_47][2025-amazon-sustainability-report_chunk_45].\n\n### TCFD Strategy, Risk Management, Metrics & Targets  \nAmazon’s climate strategy is anchored in The Climate Pledge and structured around five pillars: supply chain decarbonization, direct operations decarbonization, emissions reduction from purchased electricity, carbon neutralization, and collective action [2025-amazon-sustainability-report_chunk_10]. Risk management integrates AI-driven supplier risk identification and Higg Facility Environmental Module (Higg FEM) assessments to prioritize audits and verify performance on carbon, waste, and water [2025-amazon-sustainability-report_chunk_13][2025-amazon-sustainability-report_chunk_10]. Key metrics include carbon intensity (gCO₂e/$Revenue), WUE (L/kWh), and waste diversion rate (%), all tracked annually against 2040 net-zero, 2030 water-positive, and 2030 zero-waste-to-landfill targets [2025-amazon-sustainability-report_chunk_5][2025-amazon-sustainability-report_chunk_33][2025-amazon-sustainability-report_chunk_45]. **The context does not describe any TCFD-aligned scenario analysis—including assumptions, scenarios tested (e.g., 1.5°C, 2°C), or strategic implications—or disclose physical climate risk assessment methodology** [2025-amazon-sustainability-report_chunk_10].\n\n### Not covered in source material  \nNo information was found regarding: (1) location-based vs market-based Scope 2 emissions breakdown (GRI 302-2); (2) Scope 3 emissions disaggregated by all 15 GHG Protocol categories or a GRI-compliant justification for omissions (GRI 305-2); (3) water withdrawal by source (e.g., surface, groundwater, municipal supply) (GRI 303-3); (4) detailed waste composition beyond cardboard/wood (GRI 306-2); (5) TCFD-aligned scenario analysis or physical climate risk assessment methodology (TCFD Metrics & Targets); (6) assurance status for water or waste data; (7) root causes of remaining water positivity gap (e.g., regional regulatory barriers, infrastructure deficits); (8) reasons for residual landfill waste (e.g., contamination rates, local recycling infrastructure limits); (9) baseline year or absolute volume target for water positivity (e.g., “X billion liters replenished annually by 2030”); (10) 2024 WUE value presented alongside the 20% YoY improvement claim (though 0.15 L/kWh is cited in [2025-amazon-sustainability-report_chunk_35], it is not explicitly tied to 2024 in the same sentence as the % change in [2025-amazon-sustainability-report_chunk_33]); (11) clarification of whether “131,000 GWh carbon-free energy production” refers to physical generation or contracted renewable energy attributes.",
+          "sources": [
+            "2025-amazon-sustainability-report_chunk_123",
+            "2025-amazon-sustainability-report_chunk_113",
+            "2025-amazon-sustainability-report_chunk_122",
+            "2025-amazon-sustainability-report_chunk_112",
+            "2025-amazon-sustainability-report_chunk_114",
+            "2025-amazon-sustainability-report_chunk_19",
+            "2025-amazon-sustainability-report_chunk_33",
+            "2025-amazon-sustainability-report_chunk_34",
+            "2025-amazon-sustainability-report_chunk_35",
+            "2025-amazon-sustainability-report_chunk_37",
+            "2025-amazon-sustainability-report_chunk_39",
+            "2025-amazon-sustainability-report_chunk_47",
+            "2025-amazon-sustainability-report_chunk_45",
+            "2025-amazon-sustainability-report_chunk_41",
+            "2025-amazon-sustainability-report_chunk_10",
+            "2025-amazon-sustainability-report_chunk_5",
+            "2025-amazon-sustainability-report_chunk_25",
+            "2025-amazon-sustainability-report_chunk_22",
+            "2025-amazon-sustainability-report_chunk_30",
+            "2025-amazon-sustainability-report_chunk_13",
+            "2025-amazon-sustainability-report_chunk_124"
+          ]
+        },
+        "Social": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.0,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 4,
+            "Quantifiability": 3,
+            "Forward-Looking": 1,
+            "Transparency": 3,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "Absolute RIR and LTIR values for all reported years",
+            "GRI 405-2 and 405-3 representation data by job level and region",
+            "TCFD-aligned social impact assessment of decarbonization pathways",
+            "Quantified, time-bound targets with baselines for safety, diversity, and supplier human rights",
+            "Root-cause analysis of flat U.S. LTIR and residual pay gaps"
+          ],
+          "improvement_suggestions": [
+            "Report absolute RIR and LTIR values for 2019, 2024, and 2025 — normalized to 100,000 hours worked — to enable verification of % claims",
+            "Disclose gender and racial/ethnic representation by job level (e.g., senior leadership, operations) and major region (e.g., North America, EMEA, APAC)",
+            "Publish a TCFD Strategy-aligned social risk assessment of Amazon’s net-zero pathway, including workforce transition projections and equity safeguards",
+            "Set and disclose at least one science-aligned, time-bound target per GRI topic (e.g., RIR ≤ 2.0 by 2030, baseline 2025; 40% women in senior leadership by 2030, baseline 2025)",
+            "Explain the cause of flat U.S. LTIR YoY and residual pay gaps, including remediation plans and accountability owners"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "Main GRI topics (403, 404, 405, 414) and TCFD Strategy are named and partially addressed, but critical sub-topics explicitly listed as 'Not covered' — including GRI 405-2/405-3, 414-3/414-4, and TCFD-aligned social impact assessment — are entirely absent from the narrative content.",
+                "missing_elements": [
+                  "GRI 405-2: Gender representation by job level and region",
+                  "GRI 405-3: Racial/ethnic representation by job level and region",
+                  "GRI 414-3: % of suppliers assessed",
+                  "GRI 414-4: Supplier non-compliance rate and remediation status by tier/geography",
+                  "TCFD Strategy: Social impact assessment of decarbonization pathways"
+                ],
+                "improvement_suggestions": [
+                  "Disclose gender and racial/ethnic representation data disaggregated by job level (e.g., senior leadership, operations) and major region",
+                  "Report % of suppliers assessed, non-compliant suppliers, and remediation rates by tier (Tier 1–3) and geography",
+                  "Publish a TCFD-aligned social risk assessment of Amazon’s net-zero pathway, including workforce transition and community disruption analysis"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 4,
+                "justification": "Numerous concrete figures are provided (e.g., 11,000 safety professionals, 10.4M inspections, $2.5B invested, 599,000 upskilling participants, 3,081 supplier audits), but key metrics lack essential context: RIR/LTIR values are omitted (only % changes given), and no absolute incident rates per 100,000 hours worked are reported.",
+                "missing_elements": [
+                  "Absolute RIR and LTIR values (e.g., 4.2 vs. 3.6) for any year",
+                  "RIR/LTIR per 100,000 hours worked",
+                  "Number of employees trained in human rights topics",
+                  "Number of suppliers with high-severity findings"
+                ],
+                "improvement_suggestions": [
+                  "Report absolute RIR and LTIR values for 2025 and baseline years (e.g., 2019, 2024)",
+                  "Disclose RIR and LTIR normalized to 100,000 hours worked",
+                  "State total number of employees who completed human rights e-learning modules in 2025"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 3,
+                "justification": "Many metrics include units and timeframes (e.g., '10.4 million inspections in 2025', '599,000 U.S. employees by 2025'), but baselines are inconsistently applied: % improvements are given without stating the absolute baseline values, and no year-on-year comparisons are shown for pay equity or supplier audit outcomes.",
+                "missing_elements": [
+                  "Baseline RIR/LTIR values (e.g., 2019 RIR = X)",
+                  "2024 RIR/LTIR values to anchor the '14% YoY' claim",
+                  "2024 pay equity ratios to enable YoY comparison",
+                  "2024 supplier audit count and non-compliance rate"
+                ],
+                "improvement_suggestions": [
+                  "Publish absolute RIR and LTIR values for 2019, 2024, and 2025 to substantiate all % change claims",
+                  "Report pay equity ratios for 2024 and 2025 side-by-side with statistical confidence intervals",
+                  "Disclose supplier non-compliance rate for 2024 and 2025 with numerator/denominator"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 1,
+                "justification": "No quantified target with a baseline year and deadline is stated anywhere in the section; all forward references are vague ('aims to integrate', 'focused on') and lack metrics, timelines, or accountability mechanisms.",
+                "missing_elements": [
+                  "Science-aligned RIR/LTIR target (e.g., 'RIR ≤ 2.0 by 2030, baseline 2025')",
+                  "Representation target (e.g., '30% women in senior leadership by 2030, baseline 2025')",
+                  "Supplier human rights due diligence target (e.g., '100% Tier 1 suppliers assessed for climate-transition social risks by 2027')"
+                ],
+                "improvement_suggestions": [
+                  "Set and disclose a time-bound, science-aligned occupational health & safety target with baseline year and absolute metric",
+                  "Publish measurable, time-bound representation targets by gender, race/ethnicity, and disability for leadership roles",
+                  "Establish a quantified target for integrating human rights due diligence into climate transition planning (e.g., % of high-impact suppliers assessed for social transition risks by 2026)"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "The section explicitly acknowledges several gaps (e.g., 'methodology not disclosed', 'no baseline year stated', 'no representation data by job level'), but it does not report negative trends, missed targets, root-cause analysis of persistent issues (e.g., flat U.S. LTIR YoY), or challenges in implementation.",
+                "missing_elements": [
+                  "Explanation for flat U.S. LTIR YoY despite RIR improvement",
+                  "Root-cause analysis of 1.0-cent U.S. gender pay gap and 1.0-cent racial/ethnic pay gap",
+                  "Reasons for absence of operating-segment RIR/LTIR reporting (e.g., AWS vs. Operations)",
+                  "Status of prior-year diversity or safety targets (e.g., '2024 RIR target missed due to...')"
+                ],
+                "improvement_suggestions": [
+                  "Explain why U.S. LTIR was flat YoY while RIR improved, including contributing factors and corrective actions",
+                  "Disclose root causes of residual pay gaps and planned interventions",
+                  "Report whether 2024 occupational health & safety or diversity targets were met, and if not, provide root-cause analysis"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "The section is explicitly organized by GRI/TCFD topic headings (e.g., 'Occupational Health & Safety' maps to GRI 403), and standards are cited in the rubric preamble; however, GRI disclosures are not labeled with specific GRI codes (e.g., 'GRI 403-1' or 'GRI 405-2') within the narrative, and TCFD Strategy is discussed without referencing TCFD Recommendation i. (Governance), ii. (Strategy), or iii. (Risk Management).",
+                "missing_elements": [
+                  "GRI code labels embedded in text (e.g., 'GRI 403-1: Occupational health and safety management system')",
+                  "TCFD-aligned sub-structure (e.g., 'TCFD Strategy: Social implications of transition')",
+                  "Cross-references to GRI 405-2/405-3/414-3/414-4 where those disclosures would appear"
+                ],
+                "improvement_suggestions": [
+                  "Label each substantive disclosure with its corresponding GRI code (e.g., 'RIR and LTIR trends (GRI 403-4)')",
+                  "Structure the 'Supporting a Just Climate Transition' subsection using TCFD Strategy pillars and cite TCFD Recommendation ii.",
+                  "Add explicit cross-references to missing GRI disclosures (e.g., 'GRI 405-2 data not available; see 'Not covered' section')"
+                ]
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 3.0,
+            "missing_elements": [
+              "Absolute RIR and LTIR values for all reported years",
+              "GRI 405-2 and 405-3 representation data by job level and region",
+              "TCFD-aligned social impact assessment of decarbonization pathways",
+              "Quantified, time-bound targets with baselines for safety, diversity, and supplier human rights",
+              "Root-cause analysis of flat U.S. LTIR and residual pay gaps"
+            ],
+            "improvement_suggestions": [
+              "Report absolute RIR and LTIR values for 2019, 2024, and 2025 — normalized to 100,000 hours worked — to enable verification of % claims",
+              "Disclose gender and racial/ethnic representation by job level (e.g., senior leadership, operations) and major region (e.g., North America, EMEA, APAC)",
+              "Publish a TCFD Strategy-aligned social risk assessment of Amazon’s net-zero pathway, including workforce transition projections and equity safeguards",
+              "Set and disclose at least one science-aligned, time-bound target per GRI topic (e.g., RIR ≤ 2.0 by 2030, baseline 2025; 40% women in senior leadership by 2030, baseline 2025)",
+              "Explain the cause of flat U.S. LTIR YoY and residual pay gaps, including remediation plans and accountability owners"
+            ]
+          },
+          "draft": "### Occupational Health & Safety  \nAmazon’s 2025 Global Recordable Incident Rate (RIR) — defined as any work-related injury requiring more than basic first-aid treatment — improved 14% year over year; its Global Lost Time Incident Rate (LTIR) — defined as any work-related injury requiring time away from work — also improved 14% year over year [2025-amazon-sustainability-report_chunk_76]. Over the six-year period 2019–2025, RIR improved by 43% and LTIR by 70% globally [2025-amazon-sustainability-report_chunk_76][2025-amazon-sustainability-report_chunk_78]. In the U.S., under the General Warehousing and Storage industry classification, RIR improved 16% year over year (2024–2025) and 39% since 2019; LTIR was flat year over year but improved 79% since 2019 [2025-amazon-sustainability-report_chunk_76]. Under the Courier and Express Delivery Services classification, RIR improved 19% year over year and 59% since 2019; LTIR improved 28% year over year and 81% since 2019 [2025-amazon-sustainability-report_chunk_76]. Amazon employed more than 11,000 safety professionals worldwide in 2025 and conducted 10.4 million global safety inspections — a 33% increase from 2024 — to validate engineering controls and inform iterative improvements [2025-amazon-sustainability-report_chunk_77][2025-amazon-sustainability-report_chunk_76]. The methodology for RIR and LTIR is not disclosed in the source material, nor are incident rates reported per 100,000 hours worked or by operating segment (e.g., AWS, International, Consumer). No baseline year, deadline, or science-aligned target (e.g., “<2.0 RIR by 2030”) is stated [2025-amazon-sustainability-report_chunk_76].\n\n### Training  \nAmazon invested more than $2.5 billion in safety efforts since 2019, including training programs grounded in prevention-through-design principles [2025-amazon-sustainability-report_chunk_78]. In 2025, it developed 52 new e-learning resources and updated 90 existing modules on human rights topics — such as responsible recruitment and fair wages — available in seven languages for employees [2025-amazon-sustainability-report_chunk_63]. It also piloted a three-day immersive training program for employees in human rights–related roles [2025-amazon-sustainability-report_chunk_63]. For upskilling, Amazon launched the Automation Engineer Apprenticeship program — registered with the U.S. Department of Labor — and expanded its Mechatronics and Robotics Apprenticeship; graduates earned on average $10,000 more annually than typical entry-level fulfillment-center wages in 2025 [2025-amazon-sustainability-report_chunk_70]. Since announcing its Upskilling Pledge in 2019, 599,000 U.S. employees participated in upskilling programs by 2025 [2025-amazon-sustainability-report_chunk_69]. The source does not disclose training completion rates, participation gaps by demographic group, or aggregate reach of human rights training across employee populations. No forward-looking target for training coverage or effectiveness is stated.\n\n### Diversity  \nAmazon’s 2025 pay equity review found women globally earned 100.0% of what men earned in comparable jobs, and women in the U.S. earned 99.9 cents for every dollar earned by men in comparable roles [2025-amazon-sustainability-report_chunk_71][2025-amazon-sustainability-report_chunk_70]. Racial and ethnic minorities in the U.S. earned 99.0 cents for every dollar white employees earned in comparable jobs [2025-amazon-sustainability-report_chunk_71][2025-amazon-sustainability-report_chunk_70]. The company reported that 647,000 corporate and operations employees engaged with the Together at Amazon Community in 2025, which includes 2,300 chapters of Employee-Led Groups (ELGs) across multiple countries and regions [2025-amazon-sustainability-report_chunk_75]. However, no gender or racial/ethnic representation data is provided by job level (e.g., leadership, management, operational), geography (e.g., North America, EMEA, APAC), or disability/LGBTQ+ status — nor are targets for representation published. The source contains no disclosure of representation gaps, root-cause analysis of pay variances by level or region, or progress against prior-year diversity goals.\n\n### Supplier Social Assessment  \nAmazon’s Supply Chain Standards — available in 23 languages — apply to all suppliers of goods and services, including subcontractors and recruitment agents, and require adherence to applicable laws and human rights standards [2025-amazon-sustainability-report_chunk_84][2025-amazon-sustainability-report_chunk_83]. In 2025, Amazon conducted 3,081 supplier audits across its logistics, warehousing, and construction supply chain, including 1,579 audits focused on third-party labor, service, and not-for-resale goods providers [2025-amazon-sustainability-report_chunk_88][2025-amazon-sustainability-report_chunk_85]. Audit findings are categorized as high-, medium-, or low-severity; high-severity findings require corrective action plans and follow-up audits [2025-amazon-sustainability-report_chunk_88]. However, the source does not disclose the total number or percentage of suppliers assessed, the number or rate of non-compliant suppliers, the proportion of high-risk findings unresolved after 90 days, or audit results disaggregated by tier (Tier 1–3) or geography. No supplier non-compliance rate or remediation timeline metric is reported.\n\n### Supporting a Just Climate Transition  \nAmazon states it aims to integrate human rights due diligence into its decarbonization efforts “so we can better identify how our shift to a green economy might affect the communities in our value chain” [2025-amazon-sustainability-report_chunk_66]. In 2025, it focused on carbon-free energy procurement, climate finance, and community-based carbon neutralization projects to align its net-zero commitment with human rights principles [2025-amazon-sustainability-report_chunk_66][2025-amazon-sustainability-report_chunk_67]. However, the source contains no TCFD-aligned social impact assessment of Amazon’s net-zero pathway — including no analysis of projected workforce transitions, reskilling needs, community displacement risks, or equity safeguards for affected workers or regions. No baseline, target year, or measurable indicator is provided for human rights integration into climate strategy.\n\n### Not covered in source material  \nGRI 405-2 and 405-3: Gender and racial/ethnic representation by job level (e.g., senior leadership, management, operational staff) and major region (e.g., North America, Europe, Asia-Pacific); disability and LGBTQ+ representation metrics.  \nGRI 414-3 and 414-4: Number and percentage of suppliers assessed, non-compliant suppliers, and remediation status — disaggregated by tier (Tier 1–3), geography, and severity level; supplier non-compliance rate; % of high-risk findings unresolved after 90 days.  \nTCFD Strategy (social impacts of climate transition): TCFD-aligned social risk assessment of Amazon’s decarbonization pathways, including projected workforce transitions, reskilling gaps, community displacement or economic disruption risks, and equity-focused mitigation measures.  \nForward-looking targets: Science-aligned occupational health & safety target (e.g., RIR/LTIR reduction goal with baseline and deadline); representation targets by gender, race/ethnicity, and disability for senior leadership and board by 2030; measurable target for human rights due diligence integration (e.g., % of Tier 1 suppliers assessed for climate-transition social risks).  \nTransparency on challenges: RIR/LTIR performance by operating segment; progress against prior-year targets, including missed goals and root-cause analysis; methodology for RIR/LTIR calculation (e.g., denominator, OSHA alignment); definition of “engaged” or “inspection” in context of safety metrics.",
+          "sources": [
+            "2025-amazon-sustainability-report_chunk_67",
+            "2025-amazon-sustainability-report_chunk_75",
+            "2025-amazon-sustainability-report_chunk_71",
+            "2025-amazon-sustainability-report_chunk_87",
+            "2025-amazon-sustainability-report_chunk_103",
+            "2025-amazon-sustainability-report_chunk_102",
+            "2025-amazon-sustainability-report_chunk_106",
+            "2025-amazon-sustainability-report_chunk_76",
+            "2025-amazon-sustainability-report_chunk_78",
+            "2025-amazon-sustainability-report_chunk_77",
+            "2025-amazon-sustainability-report_chunk_84",
+            "2025-amazon-sustainability-report_chunk_70",
+            "2025-amazon-sustainability-report_chunk_64",
+            "2025-amazon-sustainability-report_chunk_69",
+            "2025-amazon-sustainability-report_chunk_63",
+            "2025-amazon-sustainability-report_chunk_66",
+            "2025-amazon-sustainability-report_chunk_83",
+            "2025-amazon-sustainability-report_chunk_124",
+            "2025-amazon-sustainability-report_chunk_85",
+            "2025-amazon-sustainability-report_chunk_88",
+            "2025-amazon-sustainability-report_chunk_86",
+            "2025-amazon-sustainability-report_chunk_89",
+            "2025-amazon-sustainability-report_chunk_65"
+          ]
+        },
+        "Governance": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 2.17,
+          "criterion_scores": {
+            "Coverage": 2,
+            "Specificity": 2,
+            "Quantifiability": 2,
+            "Forward-Looking": 1,
+            "Transparency": 3,
+            "Compliance Alignment": 3
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "GRI 2-11 quantitative board diversity metrics (e.g., % women, % underrepresented ethnicities, average tenure)",
+            "GRI 205-1: number of substantiated corruption allegations, investigations opened/closed, disciplinary actions, and resolution timelines in 2025 — all with 2024 baseline",
+            "GRI 205-2: forward-looking anti-corruption target with baseline year and deadline",
+            "TCFD Governance A1: documented frequency, format, and methodology of climate risk updates to the Nominating and Corporate Governance Committee, plus evidence of full Board or cross-committee review"
+          ],
+          "improvement_suggestions": [
+            "Disclose % women and % underrepresented ethnicities on the Board, with 2024 comparison, per GRI 2-11",
+            "Report total Ethics Line reports in 2025, substantiated corruption cases, investigations closed, and disciplinary actions taken — all with 2024 baseline, per GRI 205-1",
+            "State a GRI 205-2 target (e.g., 'reduce substantiated ethics violations by X% by 2027, from 2025 baseline')",
+            "Specify frequency, format, and analytical method (e.g., scenario analysis) of climate risk updates to the Nominating and Corporate Governance Committee, and confirm whether climate risk is reviewed by other committees or the full Board, per TCFD Governance A1"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 2,
+                "justification": "Major GRI/TCFD sub-topics are missing: GRI 2-11 (quantitative board diversity), GRI 205-1 (quantitative ethics metrics), GRI 205-2 (anti-corruption targets), and TCFD Governance A1 requirements for board-level climate risk integration beyond committee mandate. The section acknowledges gaps but fails to disclose the required data.",
+                "missing_elements": [
+                  "GRI 2-11 quantitative board diversity metrics (e.g., % women, % underrepresented ethnicities, average tenure)",
+                  "GRI 205-1: number of substantiated corruption allegations, investigations opened/closed, disciplinary actions, resolution timelines (with 2024 baseline)",
+                  "GRI 205-2: forward-looking anti-corruption target with baseline and deadline",
+                  "TCFD Governance A1: evidence of full Board or cross-committee climate risk reviews, methodology, or time-bound maturity target"
+                ],
+                "improvement_suggestions": [
+                  "Disclose % women and % underrepresented ethnicities on the Board, with 2024 comparison, per GRI 2-11",
+                  "Report total Ethics Line reports in 2025, substantiated corruption cases, investigations closed, and disciplinary actions taken — all with 2024 baseline, per GRI 205-1",
+                  "State a GRI 205-2 target (e.g., 'reduce substantiated ethics violations by X% by 2027, from 2025 baseline')",
+                  "Specify frequency, format, and analytical method (e.g., scenario analysis) of climate risk updates to the Nominating and Corporate Governance Committee, and confirm whether climate risk is reviewed by other committees or the full Board, per TCFD Governance A1"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 2,
+                "justification": "Claims are largely descriptive and structural (e.g., 'four meetings', '65 countries') but lack contextualized, outcome-oriented data; no figures for ethics outcomes, diversity composition, or climate risk assessment depth. Meeting counts are provided but without comparative context or significance.",
+                "missing_elements": [
+                  "Number of substantiated corruption allegations in 2025",
+                  "Board diversity percentages (women, underrepresented ethnicities)",
+                  "Frequency (e.g., quarterly) and format (e.g., scenario-based report) of climate risk updates to the Nominating and Corporate Governance Committee",
+                  "Scope or coverage rate of third-party due diligence (e.g., % of high-risk suppliers assessed)"
+                ],
+                "improvement_suggestions": [
+                  "Report the absolute number of substantiated corruption allegations in 2025, with 2024 baseline",
+                  "Disclose % women and % underrepresented ethnicities on the Board, with 2024 comparison",
+                  "Specify how often climate risk updates occur (e.g., 'quarterly written reports incorporating TCFD-aligned scenario analysis')",
+                  "Define 'risk-based' for third-party due diligence and disclose % of Tier 1 and Tier 2 suppliers assessed in 2025"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 2,
+                "justification": "A few numbers appear (e.g., 'six Board meetings', '65 countries', '165 languages'), but none are presented with baselines, year-on-year comparisons, or performance context; no emissions, ethics, or governance KPIs include prior-year values or trends.",
+                "missing_elements": [
+                  "2024–2025 comparison for Board and committee meeting frequencies",
+                  "2024 baseline for Ethics Line reports and substantiated allegations",
+                  "2024 baseline for board diversity metrics",
+                  "Year-on-year trend for ethics investigation resolution time or closure rate"
+                ],
+                "improvement_suggestions": [
+                  "Provide 2024 and 2025 Board and committee meeting counts side-by-side",
+                  "Report Ethics Line volume and substantiation rate for both 2024 and 2025",
+                  "Publish board diversity composition for 2024 and 2025 to enable trend analysis",
+                  "Disclose median ethics case resolution time for 2024 and 2025"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 1,
+                "justification": "No quantified, time-bound targets with baselines are stated anywhere in the section; references to 'The Climate Pledge' are external and not translated into internal governance targets (e.g., board-level climate risk review cadence or anti-corruption reduction goals).",
+                "missing_elements": [
+                  "GRI 205-2 target (e.g., 'reduce substantiated ethics violations by X% by 2027, from 2025 baseline')",
+                  "TCFD Governance A1 target for board-level climate risk assessment maturity (e.g., 'annual climate risk deep-dive adopted across all committees by end-2026')",
+                  "Target for board diversity improvement (e.g., 'achieve 40% women directors by 2028, from 2025 baseline')"
+                ],
+                "improvement_suggestions": [
+                  "State a GRI 205-2 target with baseline year, deadline, and metric",
+                  "Set a TCFD Governance A1 target for board-level climate risk integration (e.g., 'full Board climate risk review implemented annually starting 2026')",
+                  "Adopt and disclose a board diversity target aligned with GRI 2-11, including baseline and deadline"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "The section explicitly acknowledges multiple data gaps (e.g., missing board diversity metrics, undefined 'risk-based' due diligence, absent ethics investigation statistics), satisfying minimal transparency; however, it does not disclose negative trends, missed targets, or operational challenges (e.g., ethics investigation delays, jurisdictional reporting limitations, or climate risk assessment shortcomings).",
+                "missing_elements": [
+                  "Evidence of ethics investigation delays (e.g., % cases exceeding 90-day resolution target)",
+                  "Jurisdictional limitations affecting political contribution or supplier human rights reporting",
+                  "Missed prior-year targets or deteriorating trends (e.g., rising substantiated harassment cases, declining ethics training completion rates)"
+                ],
+                "improvement_suggestions": [
+                  "Disclose % of ethics investigations exceeding 90-day resolution target in 2025, with root-cause explanation",
+                  "Identify jurisdictions where political contribution or supplier human rights data cannot be reported and explain why",
+                  "Report any missed 2024 targets (e.g., board diversity goal, ethics training completion rate) and remediation plan"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 3,
+                "justification": "The section organizes content loosely by theme (e.g., 'Board Oversight', 'Anti-Corruption') and cites GRI/TCFD codes, but lacks formal standard-aligned subheadings (e.g., 'GRI 2-11: Board Diversity Composition' as a heading); citations are embedded but not used to structure disclosures, and some required GRI 205-2 and TCFD A1 elements are omitted entirely.",
+                "missing_elements": [
+                  "Explicit subheadings matching GRI/TCFD code identifiers (e.g., 'GRI 2-11: Board Diversity Composition')",
+                  "Dedicated subsection for GRI 205-2 (anti-corruption targets)",
+                  "Dedicated subsection for TCFD Governance A1 (board climate risk oversight evidence beyond mandate statement)"
+                ],
+                "improvement_suggestions": [
+                  "Use GRI/TCFD code identifiers as formal subheadings (e.g., 'GRI 2-11: Board Diversity Composition')",
+                  "Add a dedicated subsection titled 'GRI 205-2: Anti-Corruption Targets' containing time-bound, quantified commitments",
+                  "Add a dedicated subsection titled 'TCFD Governance A1: Board Climate Risk Oversight Evidence' with documented review frequency, format, and cross-committee integration"
+                ]
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 2.17,
+            "missing_elements": [
+              "GRI 2-11 quantitative board diversity metrics (e.g., % women, % underrepresented ethnicities, average tenure)",
+              "GRI 205-1: number of substantiated corruption allegations, investigations opened/closed, disciplinary actions, and resolution timelines in 2025 — all with 2024 baseline",
+              "GRI 205-2: forward-looking anti-corruption target with baseline year and deadline",
+              "TCFD Governance A1: documented frequency, format, and methodology of climate risk updates to the Nominating and Corporate Governance Committee, plus evidence of full Board or cross-committee review"
+            ],
+            "improvement_suggestions": [
+              "Disclose % women and % underrepresented ethnicities on the Board, with 2024 comparison, per GRI 2-11",
+              "Report total Ethics Line reports in 2025, substantiated corruption cases, investigations closed, and disciplinary actions taken — all with 2024 baseline, per GRI 205-1",
+              "State a GRI 205-2 target (e.g., 'reduce substantiated ethics violations by X% by 2027, from 2025 baseline')",
+              "Specify frequency, format, and analytical method (e.g., scenario analysis) of climate risk updates to the Nominating and Corporate Governance Committee, and confirm whether climate risk is reviewed by other committees or the full Board, per TCFD Governance A1"
+            ]
+          },
+          "draft": "### Board Oversight and Committee Structure  \nAmazon’s Board of Directors maintains formal oversight of enterprise-wide risks through four standing committees, each with defined governance mandates aligned with GRI 2-8 (governance structure) and TCFD Governance A1 (board oversight of climate-related risks) [2025-amazon-sustainability-report_chunk_102]. The Nominating and Corporate Governance Committee oversees risks related to sustainability, environmental and social responsibility, supply chain practices, and responsible AI development and governance [2025-amazon-sustainability-report_chunk_102][GRI 2-8; TCFD Governance A1]. The Leadership Development and Compensation Committee oversees human capital management risks—including workplace health and safety, discrimination, harassment, diversity, and culture—as well as executive compensation and succession planning [2025-amazon-sustainability-report_chunk_102][GRI 2-8]. The Audit Committee oversees financial reporting integrity, business continuity, operational risks, legal and regulatory compliance, tax matters, political contributions and lobbying expenses, and the performance of internal audit and independent auditors [2025-amazon-sustainability-report_chunk_102][GRI 2-8]. The Security Committee oversees data protection, cybersecurity, physical security, and incident response, reporting annually to the Board and receiving regular updates from the Chief Security Officer [2025-amazon-sustainability-report_chunk_102][GRI 2-8]. In 2025, the full Board held six in-person meetings and engaged in regularly scheduled teleconference discussions on governance topics [2025-amazon-sustainability-report_chunk_101][GRI 2-8]. Committee meeting frequencies in 2025 were: Nominating and Corporate Governance (four meetings), Leadership Development and Compensation (five meetings), Audit (six meetings), and Security (two meetings) [2025-amazon-sustainability-report_chunk_102][GRI 2-8]. No comparative data for 2024 committee or Board meeting frequencies is provided in the source material.\n\n### Board Diversity Composition  \nThe source material states that the Board’s composition is evaluated for “diversity of experiences, backgrounds, and perspectives” and that recruitment considers “skills in the context of identifying and evaluating new director candidates,” but it does not disclose quantitative board diversity metrics—including percentage of women directors, representation of underrepresented ethnicities, or average director tenure—as required by GRI 2-11 [2025-amazon-sustainability-report_chunk_102][GRI 2-11]. No numerical or categorical breakdown of director demographics is included in the retrieved context.\n\n### Board Oversight of Climate Risk  \nThe Nominating and Corporate Governance Committee is explicitly responsible for overseeing climate-related risks as part of its mandate for sustainability and environmental risk management [2025-amazon-sustainability-report_chunk_103][TCFD Governance A1]. The Chief Sustainability Officer provides “regular updates” to this committee on sustainability performance, including climate-related matters [2025-amazon-sustainability-report_chunk_104][TCFD Governance A1]. However, the source material does not specify the frequency (e.g., quarterly, biannual), format (e.g., written reports, presentations), or analytical methodology (e.g., scenario analysis, physical risk mapping) used in these updates [2025-amazon-sustainability-report_chunk_104]. Nor does it disclose whether dedicated climate risk reviews occur at the full Board level or across other committees beyond the Nominating and Corporate Governance Committee. No TCFD-aligned target for board-level climate risk assessment maturity—such as adoption of annual climate risk deep-dives across all committees—is stated in the context [TCFD Governance A1].\n\n### Management Oversight of Climate Risk  \nAmazon’s Sustainability team coordinates operational decarbonization efforts and maintains a “companywide carbon system of record” that provides business-level emissions information to track progress [2025-amazon-sustainability-report_chunk_104][TCFD Risk Management A2]. The Sustainability team reports to senior leadership quarterly on environmental and sustainability practices, and senior leadership holds quarterly business reviews with business units to track progress against The Climate Pledge commitments [2025-amazon-sustainability-report_chunk_104][TCFD Risk Management A2]. No further detail on management-level climate risk identification, prioritization, or integration into strategic planning is provided.\n\n### Anti-Corruption and Ethics Infrastructure  \nAmazon’s anti-corruption program is led by the Vice President for Business Conduct and Ethics, who reports to the Senior Vice President, Chief Global Affairs & Legal Officer [2025-amazon-sustainability-report_chunk_106][GRI 205-1]. The program includes a formal review process for allegations—investigated by the Business Conduct and Ethics team and reported to the Audit Committee—with disciplinary consequences up to termination [2025-amazon-sustainability-report_chunk_106][GRI 205-1]. Employees are required to disclose and seek approval for gifts or entertainment involving government officials, and mechanisms exist for conflict-of-interest disclosure and remediation [2025-amazon-sustainability-report_chunk_107][GRI 205-1]. Third-party due diligence follows a “risk-based approach,” but the source material does not define criteria for classifying third parties as high-risk, nor does it quantify the scope or coverage of due diligence activities [2025-amazon-sustainability-report_chunk_107][GRI 205-1]. All employees receive Code of Conduct training during onboarding and periodic refreshers; leadership and the Board receive specialized training on anti-corruption and competition law [2025-amazon-sustainability-report_chunk_107][GRI 205-1]. The source material does not state the mandated interval for refresher training [GRI 205-1].\n\n### Ethics Reporting and Accountability Mechanisms  \nAmazon operates a confidential, third-party-managed Ethics Line available in 65 countries and 165 languages, enabling anonymous reporting of Code violations and ethical concerns [2025-amazon-sustainability-report_chunk_106][GRI 205-1]. Additional secure channels include Human Resources, the Legal Department, and any manager [2025-amazon-sustainability-report_chunk_106][GRI 205-1]. The Business Conduct and Ethics team records, investigates, and tracks remediation of reported issues, with findings escalated to the Audit Committee [2025-amazon-sustainability-report_chunk_106][GRI 205-1]. Senior leadership receives regular updates on harassment and discrimination allegations involving director-level personnel; the Leadership Development and Compensation Committee receives detailed quarterly updates for vice-president-level and above cases or those subject to external investigation [2025-amazon-sustainability-report_chunk_106][GRI 205-1]. However, the source material does not disclose the total number of Ethics Line reports received in 2025, the number of substantiated corruption allegations, the number of investigations opened or closed, disciplinary actions taken, average or median resolution time, or any instances where investigations exceeded 90-day resolution targets [GRI 205-1]. No 2024 baseline or trend comparison is provided [GRI 205-1].\n\n### Not covered in source material  \n- GRI 205-1: Number of substantiated corruption allegations, investigations opened/closed, disciplinary actions taken, and resolution timelines in 2025 (with 2024 baseline) [2025-amazon-sustainability-report_chunk_106][2025-amazon-sustainability-report_chunk_107].  \n- GRI 2-11: Quantitative board diversity composition (e.g., % women, % underrepresented ethnicities, average director tenure) [2025-amazon-sustainability-report_chunk_102].  \n- TCFD Governance A1: Specific frequency, format, or methodology of climate risk reviews by the Nominating and Corporate Governance Committee; evidence of cross-committee climate risk integration; or a time-bound target for board-level climate risk assessment maturity (e.g., “annual climate risk deep-dive adopted across all committees by end-2026”) [2025-amazon-sustainability-report_chunk_103][2025-amazon-sustainability-report_chunk_104].  \n- GRI 205-2: Forward-looking anti-corruption target (e.g., reduction in substantiated ethics violations) with 2025 baseline and deadline [2025-amazon-sustainability-report_chunk_106][2025-amazon-sustainability-report_chunk_107].  \n- Transparency disclosures regarding ethics investigation delays, tier-2 supplier human rights assessment coverage rates, or jurisdictional limitations on political contribution reporting [2025-amazon-sustainability-report_chunk_102][2025-amazon-sustainability-report_chunk_106][2025-amazon-sustainability-report_chunk_107].  \n- Definition of “risk-based” in third-party due diligence, mandated Code of Conduct refresher training interval, or 2024–2025 comparative data for Board or committee meeting frequencies [2025-amazon-sustainability-report_chunk_102][2025-amazon-sustainability-report_chunk_107].",
+          "sources": [
+            "2025-amazon-sustainability-report_chunk_102",
+            "2025-amazon-sustainability-report_chunk_103",
+            "2025-amazon-sustainability-report_chunk_101",
+            "2025-amazon-sustainability-report_chunk_107",
+            "2025-amazon-sustainability-report_chunk_104",
+            "2025-amazon-sustainability-report_chunk_106",
+            "2025-amazon-sustainability-report_chunk_87",
+            "2025-amazon-sustainability-report_chunk_67",
+            "2025-amazon-sustainability-report_chunk_70",
+            "2025-amazon-sustainability-report_chunk_5",
+            "2025-amazon-sustainability-report_chunk_75",
+            "2025-amazon-sustainability-report_chunk_82",
+            "2025-amazon-sustainability-report_chunk_81",
+            "2025-amazon-sustainability-report_chunk_124",
+            "2025-amazon-sustainability-report_chunk_55"
+          ]
+        }
+      }
+    },
+    {
+      "iteration": 3,
+      "timestamp": "2026-10-21T01:34:52",
+      "assess_seconds": 133.0,
+      "overall_score": 2.61,
+      "sections": {
+        "Environmental": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.5,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 3,
+            "Quantifiability": 4,
+            "Forward-Looking": 3,
+            "Transparency": 4,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [
+            "Scope 2 emissions reported as 3.74 MMTCO₂e (2025), and total footprint as 80.85 MMTCO₂e — but 15.37 (Scope 1) + 3.74 (Scope 2) + 61.74 (Scope 3) = 80.85 MMTCO₂e: arithmetic is internally consistent.",
+            "No arithmetic errors found; all cited sums (e.g., Scope 1+2+3) reconcile correctly.",
+            "No scope-label inconsistency: all Scope 2 references consistently use 'purchased electricity'; no conflation with Scope 1 or 3."
+          ],
+          "missing_elements": [
+            "GRI 302-2 (location-based vs market-based Scope 2 emissions)",
+            "GRI 303-3 (water withdrawal by source)",
+            "GRI 305-2 (full Scope 3 category breakdown or GRI-compliant exclusion rationale)",
+            "Baseline year and absolute volume target for 2030 water positivity (GRI 303-2)",
+            "2025 baseline and absolute target for 2030 zero-waste-to-landfill (GRI 306-2)",
+            "TCFD-aligned scenario analysis methodology (TCFD Metrics & Targets)",
+            "In-text citation of specific GRI/TCFD indicator codes within narrative subsections",
+            "Separate, labeled TCFD Strategy / Risk Management / Metrics & Targets subsections"
+          ],
+          "improvement_suggestions": [
+            "Disclose location-based and market-based Scope 2 emissions separately per GRI 302-2",
+            "Report water withdrawal volumes by source (surface, groundwater, municipal) per GRI 303-3",
+            "Provide full Scope 3 emissions breakdown across all 15 GHG Protocol categories or publish a GRI 305-2–compliant rationale for any exclusions",
+            "State the baseline year and absolute annual replenishment volume (liters) for the 2030 water positivity target per GRI 303-2",
+            "Report the 2025 waste-to-landfill rate as the baseline and define the absolute 2030 target per GRI 306-2",
+            "Describe TCFD-aligned scenario analysis including scenarios tested (e.g., 1.5°C), key assumptions, and strategic implications",
+            "Add in-text references to the exact GRI indicator numbers (e.g., 'GRI 302-1') and TCFD elements where each disclosure appears",
+            "Split the TCFD section into three distinct, clearly labeled subsections: 'TCFD Strategy', 'TCFD Risk Management', and 'TCFD Metrics & Targets'"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "Major GRI/TCFD sub-topics are addressed (e.g., energy procurement, water withdrawal, Scopes 1–3 emissions, waste diversion), but critical required disclosures are missing: location-based/market-based Scope 2 split (GRI 302-2), full Scope 3 category breakdown or GRI-compliant rationale (GRI 305-2), water withdrawal by source (GRI 303-3), waste composition beyond two materials (GRI 306-2), and TCFD scenario analysis (TCFD Metrics & Targets).",
+                "missing_elements": [
+                  "GRI 302-2 (location-based vs market-based Scope 2 emissions)",
+                  "GRI 303-3 (water withdrawal by source)",
+                  "GRI 305-2 (Scope 3 emissions by all 15 GHG Protocol categories or GRI-compliant exclusion rationale)",
+                  "GRI 306-2 (waste composition disaggregated by material type)",
+                  "TCFD Metrics & Targets (scenario analysis methodology and assumptions)"
+                ],
+                "improvement_suggestions": [
+                  "Disclose location-based and market-based Scope 2 emissions separately per GRI 302-2",
+                  "Report water withdrawal volumes by source (surface, groundwater, municipal) per GRI 303-3",
+                  "Provide full Scope 3 emissions breakdown across all 15 GHG Protocol categories or publish a GRI 305-2–compliant rationale for any exclusions",
+                  "Disclose operational waste composition by material type (e.g., plastics, metals, e-waste, organics) beyond cardboard and wood per GRI 306-2",
+                  "Describe TCFD-aligned scenario analysis including scenarios tested (e.g., 1.5°C), key assumptions, and strategic implications"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Most claims are supported by concrete figures (e.g., 131,000 GWh, 9.4 billion liters, 84% diversion), and context is often provided (e.g., '75% progress toward 2030 goal', '20% reduction from 0.15 L/kWh in 2024'). However, the critical ambiguity around whether '131,000 GWh' refers to physical generation, contractual procurement, or hybrid undermines specificity for that metric — and no clarification is given despite explicit acknowledgment of the gap. [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [
+                  "Clarification of whether '131,000 GWh carbon-free energy production' represents physical generation, contractual procurement (e.g., PPAs, EACs), or a hybrid mix"
+                ],
+                "improvement_suggestions": [
+                  "Explicitly define the boundary and methodology for the 131,000 GWh figure — specifying whether it reflects physical generation, contracted renewable energy attributes, or both — per GRI 302-1"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 4,
+                "justification": "Most metrics include units and timeframes (e.g., '9.4 billion liters in 2025', '0.12 L/kWh in 2025'), and several have year-on-year comparisons (e.g., WUE 2025 vs 2024 vs 2021, emissions 2025 vs 2024). However, key targets lack baselines: water positivity has no disclosed baseline year or absolute volume target; zero-waste-to-landfill lacks a 2025 baseline or absolute % target; and the 2040 net-zero target omits an interim 2025 baseline or milestone.",
+                "missing_elements": [
+                  "Baseline year and absolute volume target for 2030 water positivity goal (GRI 303-2)",
+                  "2025 baseline and absolute % or tonnage target for 2030 zero-waste-to-landfill goal (GRI 306-2)",
+                  "2025 baseline and interim milestone(s) for 2040 net-zero target (TCFD Metrics & Targets)"
+                ],
+                "improvement_suggestions": [
+                  "Disclose the baseline year and absolute annual replenishment volume (liters) for the 2030 water positivity target per GRI 303-2",
+                  "Report the 2025 baseline % or tonnage for the 2030 zero-waste-to-landfill target and define the absolute target per GRI 306-2",
+                  "Publish the 2025 baseline emissions level and at least one interim milestone (e.g., 2030 target) for the 2040 net-zero commitment per TCFD Metrics & Targets"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 3,
+                "justification": "Targets are named (2030 water positive, 2030 zero-waste-to-landfill, 2040 net-zero), and some have partial timelines (e.g., India’s 2027 water positivity achieved in 2025), but none are fully quantified with both a baseline year and a deadline *and* progress against that baseline — the water positivity target lacks a baseline year, the zero-waste target lacks a baseline value, and net-zero lacks an interim milestone or 2025 baseline.",
+                "missing_elements": [
+                  "Baseline year for 2030 water positivity target",
+                  "2025 baseline value for 2030 zero-waste-to-landfill target",
+                  "2025 baseline and at least one interim milestone for 2040 net-zero target"
+                ],
+                "improvement_suggestions": [
+                  "State the baseline year (e.g., 2020 or 2021) and absolute replenishment volume for the 2030 water positivity target",
+                  "Report the 2025 waste-to-landfill rate as the baseline for the 2030 zero-waste goal",
+                  "Disclose the 2025 absolute emissions level and a defined 2030 interim target for the 2040 net-zero commitment"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 4,
+                "justification": "The section explicitly acknowledges multiple data gaps and methodological limitations (e.g., missing location/market-based Scope 2 split, incomplete Scope 3 coverage, undefined water positivity baseline, unexplained residual landfill disposal), and notes root causes are omitted (e.g., 'regional regulatory barriers, infrastructure deficits'). It does not hide negative trends — e.g., total carbon footprint increased 16% — but stops short of analyzing *why* (e.g., drivers beyond 'data center growth') or disclosing missed targets beyond India’s early achievement.",
+                "missing_elements": [
+                  "Analysis of drivers behind 16% increase in total carbon footprint beyond stated factors (e.g., growth in high-emission categories, policy shifts, data limitations)",
+                  "Disclosure of any missed targets (beyond India’s overachievement) or downward revisions"
+                ],
+                "improvement_suggestions": [
+                  "Explain primary drivers of the 16% YoY increase in total carbon footprint — disaggregating contribution from Scopes 1, 2, and 3 and identifying specific operational or structural causes",
+                  "Disclose whether any 2025 targets were missed (e.g., for WUE, diversion rate, or regional water goals) and provide root-cause analysis if so"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "The section is explicitly organized by GRI/TCFD standard headings (GRI 302, 303, etc.) and cites relevant codes in the 'Not covered' summary. However, it fails to reference standards *within* each subsection (e.g., no 'GRI 302-1' or 'TCFD Metrics & Targets' label in the narrative), and conflates TCFD's 'Metrics & Targets' with 'Strategy' and 'Risk Management' without separating them as required — the TCFD section bundles all three into one heading instead of distinct, labeled subsections.",
+                "missing_elements": [
+                  "In-text citation of specific GRI indicators (e.g., 'GRI 302-1') within each subsection",
+                  "Separate, labeled subsections for TCFD Strategy, Risk Management, and Metrics & Targets — not a single combined heading"
+                ],
+                "improvement_suggestions": [
+                  "Add in-text references to the exact GRI indicator numbers (e.g., 'per GRI 302-1') where each disclosure appears",
+                  "Split the TCFD section into three distinct, clearly labeled subsections: 'TCFD Strategy', 'TCFD Risk Management', and 'TCFD Metrics & Targets'"
+                ]
+              }
+            ],
+            "inconsistencies": [
+              "Scope 2 emissions reported as 3.74 MMTCO₂e (2025), and total footprint as 80.85 MMTCO₂e — but 15.37 (Scope 1) + 3.74 (Scope 2) + 61.74 (Scope 3) = 80.85 MMTCO₂e: arithmetic is internally consistent.",
+              "No arithmetic errors found; all cited sums (e.g., Scope 1+2+3) reconcile correctly.",
+              "No scope-label inconsistency: all Scope 2 references consistently use 'purchased electricity'; no conflation with Scope 1 or 3."
+            ],
+            "overall_score": 3.5,
+            "missing_elements": [
+              "GRI 302-2 (location-based vs market-based Scope 2 emissions)",
+              "GRI 303-3 (water withdrawal by source)",
+              "GRI 305-2 (full Scope 3 category breakdown or GRI-compliant exclusion rationale)",
+              "Baseline year and absolute volume target for 2030 water positivity (GRI 303-2)",
+              "2025 baseline and absolute target for 2030 zero-waste-to-landfill (GRI 306-2)",
+              "TCFD-aligned scenario analysis methodology (TCFD Metrics & Targets)",
+              "In-text citation of specific GRI/TCFD indicator codes within narrative subsections",
+              "Separate, labeled TCFD Strategy / Risk Management / Metrics & Targets subsections"
+            ],
+            "improvement_suggestions": [
+              "Disclose location-based and market-based Scope 2 emissions separately per GRI 302-2",
+              "Report water withdrawal volumes by source (surface, groundwater, municipal) per GRI 303-3",
+              "Provide full Scope 3 emissions breakdown across all 15 GHG Protocol categories or publish a GRI 305-2–compliant rationale for any exclusions",
+              "State the baseline year and absolute annual replenishment volume (liters) for the 2030 water positivity target per GRI 303-2",
+              "Report the 2025 waste-to-landfill rate as the baseline and define the absolute 2030 target per GRI 306-2",
+              "Describe TCFD-aligned scenario analysis including scenarios tested (e.g., 1.5°C), key assumptions, and strategic implications",
+              "Add in-text references to the exact GRI indicator numbers (e.g., 'GRI 302-1') and TCFD elements where each disclosure appears",
+              "Split the TCFD section into three distinct, clearly labeled subsections: 'TCFD Strategy', 'TCFD Risk Management', and 'TCFD Metrics & Targets'"
+            ]
+          },
+          "draft": "### GRI 302 Energy  \nAmazon reported 131,000 gigawatt-hours (GWh) of annual carbon-free energy production in 2025 [2025-amazon-sustainability-report_chunk_22]. Carbon-free energy includes electricity generated from wind, solar, nuclear, hydroelectric, and geothermal sources, as well as site energy contracts and green tariffs that add new renewable projects to the grid [2025-amazon-sustainability-report_chunk_14]. As of January 2026, Amazon’s renewable energy portfolio comprised 375 utility-scale projects globally—264 solar, 109 wind, and two nuclear—with a total expected capacity of 41,670 MW across 30 U.S. states and 15 European countries [2025-amazon-sustainability-report_chunk_114][2025-amazon-sustainability-report_chunk_22]. Emissions from purchased electricity (Scope 2) totaled 3.74 million metric tons of CO₂e (MMTCO₂e) in 2025, representing 4.6% of Amazon’s total carbon footprint of 80.85 MMTCO₂e [2025-amazon-sustainability-report_chunk_112]. This growth was driven by electricity use in data centers, electrification of the delivery network, and building electrification [2025-amazon-sustainability-report_chunk_19]. **The context does not disclose location-based or market-based Scope 2 emissions separately, nor does it specify whether the 131,000 GWh refers to physical generation, contractual procurement of renewable energy attributes, or a hybrid** [2025-amazon-sustainability-report_chunk_22].\n\n### GRI 303 Water  \nAmazon aims to be water positive—returning more water to communities than it uses—across global direct data center operations by 2030 [2025-amazon-sustainability-report_chunk_33]. The baseline year for this target is not disclosed in the context, nor is an absolute volume target (e.g., liters replenished annually) specified [2025-amazon-sustainability-report_chunk_33]. In 2025, Amazon’s leased, owned, and shared data centers withdrew 9.4 billion liters of water [2025-amazon-sustainability-report_chunk_33]. The company achieved 75% progress toward its 2030 data center water positive goal, up from 53% in 2024 [2025-amazon-sustainability-report_chunk_33]. Global Water Use Effectiveness (WUE) improved to 0.12 liters per kilowatt-hour (L/kWh) in 2025—a 20% reduction from 0.15 L/kWh in 2024 and a 52% reduction from 0.25 L/kWh in 2021 [2025-amazon-sustainability-report_chunk_33][2025-amazon-sustainability-report_chunk_35]. In India, Amazon achieved 120% water positivity in 2025—two years ahead of its 2027 goal—through on-site sewage treatment plants (28 buildings, yielding ~298 million liters/year), rainwater harvesting (~178 million liters infiltrated in 2025), and expanded replenishment investments [2025-amazon-sustainability-report_chunk_37]. Amazon invested in 45 global water replenishment projects, returning 9.4 billion liters to communities by end-2025 and contracting for over 18 billion liters of annual replenishment volume in future years [2025-amazon-sustainability-report_chunk_33][2025-amazon-sustainability-report_chunk_37]. **The context does not specify water withdrawal by source (e.g., surface water, groundwater, municipal supply) or identify root causes for the remaining gap to full water positivity** [2025-amazon-sustainability-report_chunk_33][2025-amazon-sustainability-report_chunk_34].\n\n### GRI 305 Emissions  \nAmazon’s total carbon footprint (Scopes 1, 2, and 3) was 80.85 million metric tons of CO₂e (MMTCO₂e) in 2025, up 16% from 69.55 MMTCO₂e in 2024 [2025-amazon-sustainability-report_chunk_5][2025-amazon-sustainability-report_chunk_112]. Scope 1 emissions were 15.37 MMTCO₂e; Scope 2, 3.74 MMTCO₂e; and Scope 3, 61.74 MMTCO₂e [2025-amazon-sustainability-report_chunk_112]. Environmental Attribute Certificates (EACs) delivered a net reduction of 199.4 thousand metric tons of CO₂e (KMT CO₂e) across Scopes 1, 3.1, 3.3, and 3.4—including 41.2 KMT CO₂e reduction in Scope 1 via Sustainable Aviation Fuel (SAF) and Renewable Diesel certificates [2025-amazon-sustainability-report_chunk_15][2025-amazon-sustainability-report_chunk_113]. Carbon intensity—measured as grams CO₂e per dollar of revenue—was 112.8 gCO₂e/$Revenue in 2025 [2025-amazon-sustainability-report_chunk_5][2025-amazon-sustainability-report_chunk_112]. **The context discloses only partial Scope 3 category breakdowns: Scopes 3.1 (purchased goods and services), 3.3 (fuel- and energy-related activities), and 3.4 (downstream transportation and distribution) are quantified, but emissions for the remaining 12 GHG Protocol Scope 3 categories (e.g., Category 1 — upstream transportation, Category 11 — use of sold products beyond devices, Category 15 — investments) are not provided, nor is a GRI-compliant rationale for exclusions** [2025-amazon-sustainability-report_chunk_112][2025-amazon-sustainability-report_chunk_113].\n\n### GRI 306 Waste  \nIn 2025, Amazon diverted 84% of its operational waste from landfill and incineration without energy recovery—82% through recycling or composting and 2% via incineration with energy recovery [2025-amazon-sustainability-report_chunk_47]. Waste per shipped unit decreased by 5% compared to 2024 [2025-amazon-sustainability-report_chunk_47][2025-amazon-sustainability-report_chunk_41]. Cardboard and wood constituted 64% of Amazon’s operational waste footprint, with nearly 100% recycled [2025-amazon-sustainability-report_chunk_47]. Across data centers, Amazon avoided over one million hard drive purchases since 2023 and prevented 225,000 metric tons of CO₂e through hardware reuse and resale since 2020 [2025-amazon-sustainability-report_chunk_45][2025-amazon-sustainability-report_chunk_41]. For Devices, 89 supplier sites achieved a verified 99% waste diversion rate in 2025, including 6% via thermal processing with energy recovery [2025-amazon-sustainability-report_chunk_45]. **The context does not disclose waste composition beyond cardboard and wood, nor does it explain reasons for residual landfill disposal (e.g., contamination, local infrastructure limits), nor state whether waste data are assured** [2025-amazon-sustainability-report_chunk_47][2025-amazon-sustainability-report_chunk_45].\n\n### TCFD Strategy, Risk Management, Metrics & Targets  \nAmazon’s climate strategy is anchored in The Climate Pledge and structured around five pillars: supply chain decarbonization, direct operations decarbonization, emissions reduction from purchased electricity, carbon neutralization, and collective action [2025-amazon-sustainability-report_chunk_10]. Risk management integrates AI-driven supplier risk identification and Higg Facility Environmental Module (Higg FEM) assessments to prioritize audits and verify performance on carbon, waste, and water [2025-amazon-sustainability-report_chunk_13][2025-amazon-sustainability-report_chunk_10]. Key metrics include carbon intensity (gCO₂e/$Revenue), WUE (L/kWh), and waste diversion rate (%), all tracked annually against 2040 net-zero, 2030 water-positive, and 2030 zero-waste-to-landfill targets [2025-amazon-sustainability-report_chunk_5][2025-amazon-sustainability-report_chunk_33][2025-amazon-sustainability-report_chunk_45]. **The context does not describe any TCFD-aligned scenario analysis—including assumptions, scenarios tested (e.g., 1.5°C, 2°C), or strategic implications—or disclose physical climate risk assessment methodology** [2025-amazon-sustainability-report_chunk_10].\n\n### Not covered in source material  \nNo information was found regarding: (1) location-based vs market-based Scope 2 emissions breakdown (GRI 302-2); (2) Scope 3 emissions disaggregated by all 15 GHG Protocol categories or a GRI-compliant justification for omissions (GRI 305-2); (3) water withdrawal by source (e.g., surface, groundwater, municipal supply) (GRI 303-3); (4) detailed waste composition beyond cardboard/wood (GRI 306-2); (5) TCFD-aligned scenario analysis or physical climate risk assessment methodology (TCFD Metrics & Targets); (6) assurance status for water or waste data (GRI 102-32, GRI 102-33); (7) baseline year or absolute volume target for the 2030 water positivity goal (GRI 303-2); (8) baseline year and absolute % or tonnage target for the zero-waste-to-landfill goal (GRI 306-2); (9) interim milestones or 2025 baseline for the 2040 net-zero target (TCFD Metrics & Targets); (10) clarification of whether “131,000 GWh carbon-free energy production” refers to physical generation, contractual procurement, or a hybrid (GRI 302-1); (11) root causes of remaining water positivity gap (e.g., regional regulatory barriers, infrastructure deficits); (12) reasons for residual landfill waste (e.g., contamination rates, local recycling infrastructure limits).",
+          "sources": [
+            "2025-amazon-sustainability-report_chunk_123",
+            "2025-amazon-sustainability-report_chunk_113",
+            "2025-amazon-sustainability-report_chunk_122",
+            "2025-amazon-sustainability-report_chunk_112",
+            "2025-amazon-sustainability-report_chunk_114",
+            "2025-amazon-sustainability-report_chunk_19",
+            "2025-amazon-sustainability-report_chunk_33",
+            "2025-amazon-sustainability-report_chunk_34",
+            "2025-amazon-sustainability-report_chunk_35",
+            "2025-amazon-sustainability-report_chunk_37",
+            "2025-amazon-sustainability-report_chunk_39",
+            "2025-amazon-sustainability-report_chunk_47",
+            "2025-amazon-sustainability-report_chunk_45",
+            "2025-amazon-sustainability-report_chunk_41",
+            "2025-amazon-sustainability-report_chunk_10",
+            "2025-amazon-sustainability-report_chunk_5",
+            "2025-amazon-sustainability-report_chunk_25",
+            "2025-amazon-sustainability-report_chunk_22",
+            "2025-amazon-sustainability-report_chunk_30",
+            "2025-amazon-sustainability-report_chunk_13",
+            "2025-amazon-sustainability-report_chunk_124",
+            "2025-amazon-sustainability-report_chunk_7",
+            "2025-amazon-sustainability-report_chunk_87",
+            "2025-amazon-sustainability-report_chunk_119",
+            "2025-amazon-sustainability-report_chunk_125"
+          ]
+        },
+        "Social": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 2.33,
+          "criterion_scores": {
+            "Coverage": 2,
+            "Specificity": 3,
+            "Quantifiability": 2,
+            "Forward-Looking": 1,
+            "Transparency": 3,
+            "Compliance Alignment": 3
+          },
+          "inconsistencies": [
+            "Claims 'U.S. LTIR was flat year over year' while simultaneously stating 'LTIR improved 28% year over year' under Courier and Express Delivery Services classification — these are mutually exclusive for the same geography unless clearly scoped; no reconciliation is provided",
+            "States 'RIR improved 14% year over year' globally and '16% year over year' in U.S. General Warehousing — mathematically incompatible if U.S. General Warehousing is a subset of global, yet no weighting or aggregation methodology is disclosed"
+          ],
+          "missing_elements": [
+            "GRI 403-2 absolute RIR and LTIR values for 2019, 2024, and 2025, normalized per 100,000 hours worked",
+            "GRI 403-3 science-aligned, time-bound occupational health & safety target with 2025 baseline and 2030 deadline",
+            "TCFD Strategy–aligned social impact assessment of Amazon’s net-zero pathway, including workforce transition risks and equity safeguards",
+            "GRI 405-2 gender and racial/ethnic representation by job level (e.g., senior leadership, management)",
+            "GRI 414-3 percentage of total suppliers assessed in 2025 and non-compliance rate by tier"
+          ],
+          "improvement_suggestions": [
+            "Disclose absolute RIR and LTIR for 2019, 2024, and 2025 normalized per 100,000 hours worked and confirm OSHA alignment",
+            "Publish a GRI 403-3–compliant safety target (e.g., 'RIR ≤ 2.5 by 2030, baseline 2025')",
+            "Conduct and disclose a TCFD Strategy–aligned social risk assessment of decarbonization, covering workforce transitions, reskilling needs, and community equity safeguards",
+            "Report gender and racial/ethnic representation across leadership, management, and operational tiers, disaggregated by major region",
+            "Disclose the percentage of Amazon’s total supplier population assessed in 2025 and the non-compliance rate by tier (Tier 1–3) and geography"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 2,
+                "justification": "Major GRI sub-topics are missing: GRI 403-2 (absolute incident rates), GRI 403-3 (safety targets), GRI 404-1/404-2 (training metrics/targets), GRI 405-2/405-3 (representation by level/region/identity), GRI 414-3/414-4 (supplier assessment coverage/remediation), and TCFD Strategy social impact assessment. Only surface-level alignment is claimed; no disclosure of required granular disclosures.",
+                "missing_elements": [
+                  "GRI 403-2 absolute RIR/LTIR values with denominator",
+                  "GRI 403-3 science-aligned safety target",
+                  "GRI 404-1 training completion rates and demographic participation gaps",
+                  "GRI 405-2 gender/racial representation by job level",
+                  "GRI 414-3 supplier assessment coverage rate",
+                  "TCFD Strategy social risk assessment of decarbonization"
+                ],
+                "improvement_suggestions": [
+                  "Disclose absolute RIR and LTIR for 2019, 2024, and 2025 normalized per 100,000 hours worked",
+                  "Publish a time-bound, science-aligned occupational health & safety target with 2025 baseline",
+                  "Report training completion rates and disaggregate human rights training reach by gender, race/ethnicity, and disability",
+                  "Disclose gender and racial/ethnic representation across leadership, management, and operational tiers",
+                  "Disclose percentage of total suppliers assessed in 2025 and non-compliance rate by tier and geography",
+                  "Conduct and disclose a TCFD-aligned social impact assessment of net-zero transition, including workforce transition risks and equity safeguards"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Some figures are provided (e.g., $2.5B investment, 599,000 U.S. upskilling participants, 3,081 supplier audits), but many claims lack essential context: no denominators for rates, no definitions of RIR/LTIR, no scope of 'safety inspections' (e.g., per facility or per employee), and no breakdown of '11,000 safety professionals' (e.g., FTE vs. contractor, role types). Arithmetic consistency is unverifiable due to missing baselines.",
+                "missing_elements": [
+                  "Denominator for RIR/LTIR (e.g., hours worked)",
+                  "Definition of 'safety inspection' and its unit of count",
+                  "FTE vs. headcount distinction for 11,000 safety professionals",
+                  "Geographic or functional breakdown of 52 new e-learning resources",
+                  "Scope of '10.4 million safety inspections' (e.g., per site, per shift, per employee)"
+                ],
+                "improvement_suggestions": [
+                  "State the denominator used for all incident rate calculations (e.g., 'per 100,000 hours worked') and confirm OSHA alignment",
+                  "Define 'safety inspection' and specify whether counts represent unique events or repeated checks",
+                  "Clarify whether '11,000 safety professionals' refers to FTEs, contractors, or blended headcount",
+                  "Disclose the total number of employees trained on human rights topics in 2025",
+                  "Report the number of supplier audit findings by severity level and resolution status"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 2,
+                "justification": "Metrics lack consistent units, timeframes, and baselines: RIR/LTIR improvements are reported as percentages without absolute values or denominators; '10.4 million inspections' has no per-capita or per-facility context; '599,000 participants' lacks total eligible population or participation rate; no year-on-year comparisons for pay equity beyond point-in-time ratios. Baselines for multi-year trends (e.g., 2019–2025) are not quantified.",
+                "missing_elements": [
+                  "Absolute RIR/LTIR values for 2019, 2024, 2025",
+                  "Baseline year and value for all YoY % improvements",
+                  "Total employee population denominator for upskilling participation rate",
+                  "Timeframe for '10.4 million safety inspections' (e.g., calendar year 2025 only)",
+                  "Pay equity data with year-on-year delta (e.g., 2024 vs. 2025)"
+                ],
+                "improvement_suggestions": [
+                  "Publish absolute RIR and LTIR for 2019, 2024, and 2025 with explicit denominator and timeframe",
+                  "Report all YoY % changes alongside absolute baseline and current-year values",
+                  "Disclose total corporate and operations employees eligible for upskilling programs to calculate participation rate",
+                  "Specify that '10.4 million safety inspections' occurred in calendar year 2025",
+                  "Report pay equity ratios for 2024 and 2025 side-by-side with delta analysis"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 1,
+                "justification": "No quantified, time-bound targets are present for any GRI or TCFD sub-topic: no safety target with baseline and deadline, no training coverage or effectiveness target, no diversity representation or pay gap closure target, no supplier remediation timeline, and no measurable indicator for human rights integration into climate transition. All forward-looking language is aspirational ('aims to', 'focused on') without metrics.",
+                "missing_elements": [
+                  "Science-aligned safety target (e.g., 'RIR ≤ X by 2030, baseline 2025')",
+                  "Training target (e.g., '100% of frontline supervisors trained on psychosocial hazards by 2026')",
+                  "Diversity target (e.g., '30% women in senior leadership by 2027')",
+                  "Supplier target (e.g., '95% of Tier 1 suppliers assessed annually by 2026')",
+                  "TCFD-aligned target for social due diligence in climate transition (e.g., 'assess social transition risks for 100% of high-impact decarbonization initiatives by 2026')"
+                ],
+                "improvement_suggestions": [
+                  "Set and disclose a GRI 403-3–aligned occupational health & safety target with baseline year, numeric threshold, and deadline",
+                  "Establish and publish a GRI 404-2 target for human rights training coverage (e.g., 'all procurement staff certified by 2026')",
+                  "Adopt and report GRI 405-2/405-3–aligned representation targets by gender, race/ethnicity, and job level with deadlines",
+                  "Define and disclose a GRI 414-4 target for supplier non-compliance resolution timelines (e.g., '100% high-severity findings resolved within 90 days by 2027')",
+                  "Commit to a TCFD Strategy–aligned metric for integrating human rights into climate planning (e.g., 'social impact assessments completed for all major decarbonization investments by 2026')"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "The section acknowledges several data gaps (e.g., missing RIR/LTIR denominators, no supplier non-compliance rates, no TCFD social risk assessment) and notes the flat U.S. LTIR YoY — but provides no root-cause analysis, no explanation of residual pay gaps, no reporting on whether prior-year targets were met, and no discussion of negative trends beyond surface observation.",
+                "missing_elements": [
+                  "Root-cause analysis of flat U.S. LTIR YoY",
+                  "Explanation of why women globally earn 100.0% but U.S. women earn 99.9% and minorities earn 99.0%",
+                  "Disclosure of whether 2024 safety or diversity targets were achieved",
+                  "Discussion of challenges in supplier audit remediation (e.g., recurring violations, tier-3 visibility barriers)",
+                  "Acknowledgement of limitations in pay equity methodology (e.g., controls for tenure, location, function)"
+                ],
+                "improvement_suggestions": [
+                  "Provide root-cause analysis for flat U.S. LTIR YoY, including contributing factors (e.g., incident type distribution, reporting behavior, case mix)",
+                  "Explain drivers of residual pay gaps — particularly the 1.0% U.S. gender gap and 1.0% racial/ethnic gap — and outline specific interventions",
+                  "Disclose achievement status of all 2024 occupational health & safety and diversity targets",
+                  "Describe systemic challenges in supplier social assessment (e.g., subcontractor opacity, language barriers, enforcement limitations in high-risk geographies)",
+                  "Clarify methodological assumptions and limitations in pay equity analysis (e.g., comparators used, adjustments for geography/function)"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 3,
+                "justification": "The section is loosely organized by GRI topic headings (e.g., 'Occupational Health & Safety', 'Diversity'), but fails to explicitly reference GRI/TCFD codes in-text, does not separate mandatory disclosures from narrative, omits required GRI 'Reporting Practices' elements (e.g., materiality reassessment, stakeholder engagement for social topics), and conflates TCFD Strategy with generic climate activity rather than social impact assessment.",
+                "missing_elements": [
+                  "In-text citation of GRI 403-1, 403-2, 403-3, etc., at point of disclosure",
+                  "Explicit statement of materiality process for social topics per GRI 102-16",
+                  "Stakeholder engagement summary for social issues per GRI 102-40",
+                  "Separation of 'Management Approach' from 'Disclosure' per GRI 102-47",
+                  "TCFD Strategy sub-disclosure explicitly labeled as 'Social impacts of climate-related risks and opportunities'"
+                ],
+                "improvement_suggestions": [
+                  "Add GRI code references inline where each disclosure appears (e.g., 'RIR improvement [GRI 403-1]')",
+                  "Include a dedicated subsection describing how social topics were identified as material, including stakeholder input methods and criteria",
+                  "Report on stakeholder engagement specifically for social issues (e.g., '2025 worker voice surveys covered 12 countries; key concerns included safety culture and promotion equity')",
+                  "Structure each subsection per GRI's 'Management Approach' → 'Disclosure' sequence",
+                  "Label the climate transition section explicitly as 'TCFD Strategy: Social impacts of climate-related risks and opportunities' and align content to TCFD's recommended disclosures"
+                ]
+              }
+            ],
+            "inconsistencies": [
+              "Claims 'U.S. LTIR was flat year over year' while simultaneously stating 'LTIR improved 28% year over year' under Courier and Express Delivery Services classification — these are mutually exclusive for the same geography unless clearly scoped; no reconciliation is provided",
+              "States 'RIR improved 14% year over year' globally and '16% year over year' in U.S. General Warehousing — mathematically incompatible if U.S. General Warehousing is a subset of global, yet no weighting or aggregation methodology is disclosed"
+            ],
+            "overall_score": 2.33,
+            "missing_elements": [
+              "GRI 403-2 absolute RIR and LTIR values for 2019, 2024, and 2025, normalized per 100,000 hours worked",
+              "GRI 403-3 science-aligned, time-bound occupational health & safety target with 2025 baseline and 2030 deadline",
+              "TCFD Strategy–aligned social impact assessment of Amazon’s net-zero pathway, including workforce transition risks and equity safeguards",
+              "GRI 405-2 gender and racial/ethnic representation by job level (e.g., senior leadership, management)",
+              "GRI 414-3 percentage of total suppliers assessed in 2025 and non-compliance rate by tier"
+            ],
+            "improvement_suggestions": [
+              "Disclose absolute RIR and LTIR for 2019, 2024, and 2025 normalized per 100,000 hours worked and confirm OSHA alignment",
+              "Publish a GRI 403-3–compliant safety target (e.g., 'RIR ≤ 2.5 by 2030, baseline 2025')",
+              "Conduct and disclose a TCFD Strategy–aligned social risk assessment of decarbonization, covering workforce transitions, reskilling needs, and community equity safeguards",
+              "Report gender and racial/ethnic representation across leadership, management, and operational tiers, disaggregated by major region",
+              "Disclose the percentage of Amazon’s total supplier population assessed in 2025 and the non-compliance rate by tier (Tier 1–3) and geography"
+            ]
+          },
+          "draft": "### Occupational Health & Safety  \nAmazon’s 2025 Global Recordable Incident Rate (RIR) improved 14% year over year; its Global Lost Time Incident Rate (LTIR) also improved 14% year over year [2025-amazon-sustainability-report_chunk_76]. Over the six-year period 2019–2025, RIR improved by 43% and LTIR by 70% globally [2025-amazon-sustainability-report_chunk_76][2025-amazon-sustainability-report_chunk_78]. In the U.S., under the General Warehousing and Storage industry classification, RIR improved 16% year over year (2024–2025) and 39% since 2019; LTIR was flat year over year but improved 79% since 2019 [2025-amazon-sustainability-report_chunk_76]. Under the Courier and Express Delivery Services classification, RIR improved 19% year over year and 59% since 2019; LTIR improved 28% year over year and 81% since 2019 [2025-amazon-sustainability-report_chunk_76]. Amazon employed more than 11,000 safety professionals worldwide in 2025 and conducted 10.4 million global safety inspections — a 33% increase from 2024 — to validate engineering controls and inform iterative improvements [2025-amazon-sustainability-report_chunk_77][2025-amazon-sustainability-report_chunk_76]. The source does not disclose absolute RIR or LTIR values for 2019, 2024, or 2025, nor does it specify the denominator (e.g., hours worked), normalization basis (e.g., per 100,000 hours), or OSHA alignment of definitions [2025-amazon-sustainability-report_chunk_76]. No science-aligned, time-bound target (e.g., “RIR ≤ 2.0 by 2030”) is stated, and no explanation is provided for why U.S. LTIR was flat year over year despite concurrent RIR improvement [2025-amazon-sustainability-report_chunk_76].\n\n### Training  \nAmazon invested more than $2.5 billion in safety efforts since 2019, including training programs grounded in prevention-through-design principles [2025-amazon-sustainability-report_chunk_78]. In 2025, it developed 52 new e-learning resources and updated 90 existing modules on human rights topics — such as responsible recruitment and fair wages — available in seven languages for employees [2025-amazon-sustainability-report_chunk_63]. It also piloted a three-day immersive training program for employees in human rights–related roles [2025-amazon-sustainability-report_chunk_63]. For upskilling, Amazon launched the Automation Engineer Apprenticeship program — registered with the U.S. Department of Labor — and expanded its Mechatronics and Robotics Apprenticeship; graduates earned on average $10,000 more annually than typical entry-level fulfillment-center wages in 2025 [2025-amazon-sustainability-report_chunk_70]. Since announcing its Upskilling Pledge in 2019, 599,000 U.S. employees participated in upskilling programs by 2025 [2025-amazon-sustainability-report_chunk_69]. The source does not disclose training completion rates, participation gaps by demographic group, aggregate reach of human rights training across employee populations, or forward-looking targets for training coverage or effectiveness [2025-amazon-sustainability-report_chunk_63][2025-amazon-sustainability-report_chunk_69].\n\n### Diversity  \nAmazon’s 2025 pay equity review found women globally earned 100.0% of what men earned in comparable jobs, and women in the U.S. earned 99.9 cents for every dollar earned by men in comparable roles [2025-amazon-sustainability-report_chunk_71][2025-amazon-sustainability-report_chunk_70]. Racial and ethnic minorities in the U.S. earned 99.0 cents for every dollar white employees earned in comparable jobs [2025-amazon-sustainability-report_chunk_71][2025-amazon-sustainability-report_chunk_70]. The company reported that 647,000 corporate and operations employees engaged with the Together at Amazon Community in 2025, which includes 2,300 chapters of Employee-Led Groups (ELGs) across multiple countries and regions [2025-amazon-sustainability-report_chunk_75]. However, no gender or racial/ethnic representation data is provided by job level (e.g., leadership, management, operational), geography (e.g., North America, EMEA, APAC), or disability/LGBTQ+ status — nor are targets for representation published [2025-amazon-sustainability-report_chunk_75]. The source contains no disclosure of representation gaps, root-cause analysis of pay variances by level or region, progress against prior-year diversity goals, or accountability mechanisms for closing residual pay gaps [2025-amazon-sustainability-report_chunk_71][2025-amazon-sustainability-report_chunk_70].\n\n### Supplier Social Assessment  \nAmazon’s Supply Chain Standards — available in 23 languages — apply to all suppliers of goods and services, including subcontractors and recruitment agents, and require adherence to applicable laws and human rights standards [2025-amazon-sustainability-report_chunk_84][2025-amazon-sustainability-report_chunk_83]. In 2025, Amazon conducted 3,081 supplier audits across its logistics, warehousing, and construction supply chain, including 1,579 audits focused on third-party labor, service, and not-for-resale goods providers [2025-amazon-sustainability-report_chunk_88][2025-amazon-sustainability-report_chunk_85]. Audit findings are categorized as high-, medium-, or low-severity; high-severity findings require corrective action plans and follow-up audits [2025-amazon-sustainability-report_chunk_88]. However, the source does not disclose the total number or percentage of suppliers assessed, the number or rate of non-compliant suppliers, the proportion of high-risk findings unresolved after 90 days, or audit results disaggregated by tier (Tier 1–3) or geography [2025-amazon-sustainability-report_chunk_88][2025-amazon-sustainability-report_chunk_85]. No supplier non-compliance rate or remediation timeline metric is reported [2025-amazon-sustainability-report_chunk_88].\n\n### Supporting a Just Climate Transition  \nAmazon states it aims to integrate human rights due diligence into its decarbonization efforts “so we can better identify how our shift to a green economy might affect the communities in our value chain” [2025-amazon-sustainability-report_chunk_66]. In 2025, it focused on carbon-free energy procurement, climate finance, and community-based carbon neutralization projects to align its net-zero commitment with human rights principles [2025-amazon-sustainability-report_chunk_66][2025-amazon-sustainability-report_chunk_67]. However, the source contains no TCFD-aligned social impact assessment of Amazon’s net-zero pathway — including no analysis of projected workforce transitions, reskilling needs, community displacement risks, or equity safeguards for affected workers or regions [2025-amazon-sustainability-report_chunk_66]. No baseline, target year, or measurable indicator is provided for human rights integration into climate strategy [2025-amazon-sustainability-report_chunk_66].\n\n### Not covered in source material  \nGRI 403-2: Absolute RIR and LTIR values for 2019, 2024, and 2025, normalized to 100,000 hours worked or other standard denominator.  \nGRI 403-3: Science-aligned, time-bound occupational health & safety target (e.g., “RIR ≤ 2.0 by 2030”, with 2025 baseline).  \nGRI 404-1: Training completion rates, participation gaps by gender/race/ethnicity/disability, or aggregate reach of human rights training across employee populations.  \nGRI 404-2: Forward-looking target for training coverage or effectiveness (e.g., “100% of procurement staff trained on human rights by 2026”).  \nGRI 405-2 and 405-3: Gender and racial/ethnic representation by job level (e.g., senior leadership, management, operational staff) and major region (e.g., North America, Europe, Asia-Pacific); disability and LGBTQ+ representation metrics.  \nGRI 414-3 and 414-4: Number and percentage of suppliers assessed, non-compliant suppliers, and remediation status — disaggregated by tier (Tier 1–3), geography, and severity level; supplier non-compliance rate; % of high-risk findings unresolved after 90 days.  \nTCFD Strategy (social impacts of climate transition): TCFD-aligned social risk assessment of Amazon’s decarbonization pathways, including projected workforce transitions, reskilling gaps, community displacement or economic disruption risks, and equity-focused mitigation measures.  \nForward-looking targets: Measurable, time-bound representation targets by gender, race/ethnicity, and disability for leadership roles; quantified target for integrating human rights due diligence into climate transition planning (e.g., % of Tier 1 suppliers assessed for social transition risks by 2026).  \nTransparency on challenges: Root-cause analysis of flat U.S. LTIR YoY; explanation of residual pay gaps and planned interventions; reporting on whether 2024 occupational health & safety or diversity targets were met.",
+          "sources": [
+            "2025-amazon-sustainability-report_chunk_67",
+            "2025-amazon-sustainability-report_chunk_75",
+            "2025-amazon-sustainability-report_chunk_71",
+            "2025-amazon-sustainability-report_chunk_87",
+            "2025-amazon-sustainability-report_chunk_103",
+            "2025-amazon-sustainability-report_chunk_102",
+            "2025-amazon-sustainability-report_chunk_106",
+            "2025-amazon-sustainability-report_chunk_76",
+            "2025-amazon-sustainability-report_chunk_78",
+            "2025-amazon-sustainability-report_chunk_77",
+            "2025-amazon-sustainability-report_chunk_84",
+            "2025-amazon-sustainability-report_chunk_70",
+            "2025-amazon-sustainability-report_chunk_64",
+            "2025-amazon-sustainability-report_chunk_69",
+            "2025-amazon-sustainability-report_chunk_63",
+            "2025-amazon-sustainability-report_chunk_66",
+            "2025-amazon-sustainability-report_chunk_83",
+            "2025-amazon-sustainability-report_chunk_79",
+            "2025-amazon-sustainability-report_chunk_122",
+            "2025-amazon-sustainability-report_chunk_124",
+            "2025-amazon-sustainability-report_chunk_91",
+            "2025-amazon-sustainability-report_chunk_85",
+            "2025-amazon-sustainability-report_chunk_29",
+            "2025-amazon-sustainability-report_chunk_13",
+            "2025-amazon-sustainability-report_chunk_19"
+          ]
+        },
+        "Governance": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 2.0,
+          "criterion_scores": {
+            "Coverage": 2,
+            "Specificity": 1,
+            "Quantifiability": 1,
+            "Forward-Looking": 1,
+            "Transparency": 4,
+            "Compliance Alignment": 3
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "GRI 2-11: % women and % underrepresented ethnicities on Board for 2024 and 2025",
+            "GRI 205-1: Total Ethics Line reports and substantiated corruption cases for 2024 and 2025",
+            "TCFD Governance A1: Frequency and analytical methodology of climate risk updates to Board/committees",
+            "GRI 205-2: Quantified, time-bound anti-corruption target with baseline year"
+          ],
+          "improvement_suggestions": [
+            "Disclose % women and % underrepresented ethnicities on the Board for both 2024 and 2025 per GRI 2-11",
+            "Report total Ethics Line reports received, substantiated corruption allegations, and investigations closed in 2024 and 2025 per GRI 205-1",
+            "Specify frequency (e.g., quarterly), format (e.g., scenario-based presentation), and committee scope (e.g., full Board review cycle) for climate risk oversight per TCFD Governance A1",
+            "Publish a GRI 205-2–compliant target: e.g., 'reduce substantiated corruption cases by 20% by 2027 from 2025 baseline'"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 2,
+                "justification": "Major GRI/TCFD sub-topics are missing: GRI 2-11 quantitative diversity metrics, TCFD Governance A1 methodological and structural details on climate risk oversight, and GRI 205-1/205-2 core performance data and targets. The section explicitly states these are 'not covered in source material', confirming critical omissions.",
+                "missing_elements": [
+                  "GRI 2-11: % women and % underrepresented ethnicities on Board for 2024 and 2025",
+                  "TCFD Governance A1: Frequency and analytical methodology of climate risk updates to Board/committees",
+                  "GRI 205-1: Total Ethics Line reports and substantiated corruption cases for 2024 and 2025",
+                  "GRI 205-2: Quantified, time-bound anti-corruption target with baseline year"
+                ],
+                "improvement_suggestions": [
+                  "Disclose % women and % underrepresented ethnicities on the Board for both 2024 and 2025 per GRI 2-11",
+                  "Specify frequency (e.g., quarterly), format (e.g., scenario-based presentation), and committee scope (e.g., full Board review cycle) for climate risk oversight per TCFD Governance A1",
+                  "Report total Ethics Line reports received, substantiated corruption allegations, and investigations closed in 2024 and 2025 per GRI 205-1"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 1,
+                "justification": "No concrete data or numbers are presented anywhere in the section — only descriptions of policies, structures, and acknowledgments of missing data. All claims are qualitative and unsupported by figures.",
+                "missing_elements": [
+                  "Numerical count of Ethics Line reports in 2024 and 2025",
+                  "Number of substantiated corruption allegations in 2024 and 2025",
+                  "Percentage of women directors on Amazon’s Board in 2024 and 2025",
+                  "Average director tenure in years"
+                ],
+                "improvement_suggestions": [
+                  "Report the absolute number of Ethics Line reports received in 2024 and 2025",
+                  "Disclose the percentage of women and underrepresented ethnicities on the Board for 2024 and 2025",
+                  "State the average director tenure (in years) for the Board in 2024 and 2025"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 1,
+                "justification": "Zero metrics are presented with units, timeframes, or baselines; every metric required by the cited standards is explicitly stated as absent. No year-on-year comparisons, no units (e.g., 'reports', '%', 'days'), no time-bound references for any disclosed figure.",
+                "missing_elements": [
+                  "Ethics Line reports: absolute count with year label (e.g., '2,147 reports in 2025')",
+                  "Board diversity: % women with year label (e.g., '42% in 2025 vs. 38% in 2024')",
+                  "Resolution time: median days to close investigations with 2024/2025 comparison"
+                ],
+                "improvement_suggestions": [
+                  "Publish absolute counts of Ethics Line reports received in 2024 and 2025, with clear year labels",
+                  "Report board diversity metrics (% women, % underrepresented ethnicities) for both 2024 and 2025 to enable year-on-year comparison",
+                  "Disclose median investigation resolution time (in days) for 2024 and 2025"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 1,
+                "justification": "No quantified target with baseline year and deadline is included anywhere; the section explicitly states that 'no forward-looking, quantified, time-bound anti-corruption target [...] appears in the context' and that 'no time-bound target for board-level climate risk integration' is disclosed.",
+                "missing_elements": [
+                  "Quantified anti-corruption target (e.g., 'reduce substantiated violations by X% by YYYY from YYYY baseline')",
+                  "Board climate risk integration target (e.g., 'full Board climate risk review implemented annually starting 2026')"
+                ],
+                "improvement_suggestions": [
+                  "Publish a GRI 205-2–compliant target: e.g., 'reduce substantiated corruption cases by 20% by 2027 from 2025 baseline'",
+                  "Set and disclose a TCFD Governance A1–aligned target: e.g., 'annual full Board climate risk review adopted by December 2026'"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 4,
+                "justification": "The section consistently and explicitly acknowledges missing data across all subsections — e.g., 'no quantitative data [...] is disclosed', 'does not specify', 'no [...] is disclosed' — and cites exact gaps against GRI/TCFD requirements. However, it does not discuss root causes, systemic challenges, or negative trends (e.g., rising report volumes, investigation delays, or diversity stagnation).",
+                "missing_elements": [
+                  "Explanation of why board diversity data is not disclosed (e.g., governance policy gap, data collection delay)",
+                  "Context for Ethics Line resolution delays (e.g., complexity of cross-border investigations, resourcing constraints)",
+                  "Trend analysis: e.g., whether substantiated ethics cases increased or decreased from prior years"
+                ],
+                "improvement_suggestions": [
+                  "Explain operational or governance reasons preventing disclosure of board diversity metrics",
+                  "Describe challenges affecting Ethics Line investigation timelines (e.g., jurisdictional legal barriers, case complexity)",
+                  "Acknowledge if any ethics or governance KPIs deteriorated year-on-year, even without full data"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 3,
+                "justification": "The section is partially organized by GRI/TCFD codes (e.g., 'GRI 2-11', 'TCFD Governance A1'), but lacks required structural elements: no summary table mapping disclosures to standards, no statement of reporting boundary or materiality assessment for governance, and no cross-references to related disclosures (e.g., Audit Committee oversight of ethics links to GRI 205-1).",
+                "missing_elements": [
+                  "Summary table listing each GRI/TCFD requirement, disclosure status ('reported'/'not reported'), and page/reference",
+                  "Statement of materiality determination process for governance topics",
+                  "Cross-reference from GRI 205-1 to Audit Committee charter or meeting minutes showing escalation path"
+                ],
+                "improvement_suggestions": [
+                  "Add a compliance mapping table showing all GRI 2, GRI 205, and TCFD Governance requirements and their disclosure status",
+                  "Include a brief description of how governance topics were assessed for materiality",
+                  "Link GRI 205-1 disclosures to specific Audit Committee oversight activities (e.g., 'per Audit Committee Charter §3.2, ethics investigations are escalated quarterly')"
+                ]
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 2.0,
+            "missing_elements": [
+              "GRI 2-11: % women and % underrepresented ethnicities on Board for 2024 and 2025",
+              "GRI 205-1: Total Ethics Line reports and substantiated corruption cases for 2024 and 2025",
+              "TCFD Governance A1: Frequency and analytical methodology of climate risk updates to Board/committees",
+              "GRI 205-2: Quantified, time-bound anti-corruption target with baseline year"
+            ],
+            "improvement_suggestions": [
+              "Disclose % women and % underrepresented ethnicities on the Board for both 2024 and 2025 per GRI 2-11",
+              "Report total Ethics Line reports received, substantiated corruption allegations, and investigations closed in 2024 and 2025 per GRI 205-1",
+              "Specify frequency (e.g., quarterly), format (e.g., scenario-based presentation), and committee scope (e.g., full Board review cycle) for climate risk oversight per TCFD Governance A1",
+              "Publish a GRI 205-2–compliant target: e.g., 'reduce substantiated corruption cases by 20% by 2027 from 2025 baseline'"
+            ]
+          },
+          "draft": "### GRI 2-11: Board Diversity Composition  \nThe source material states that the Board’s composition is evaluated for “diversity of experiences, backgrounds, and perspectives” and that recruitment considers “skills in the context of identifying and evaluating new director candidates” [2025-amazon-sustainability-report_chunk_102]. However, no quantitative data on board diversity—including percentage of women directors, representation of underrepresented ethnicities, average director tenure, or comparative figures for 2024—is disclosed in the provided context [2025-amazon-sustainability-report_chunk_102]. Therefore, metrics required by GRI 2-11 (e.g., “proportion of individuals appointed to the highest governance body who are women and members of under-represented groups”) cannot be reported [GRI 2-11].\n\n### TCFD Governance A1: Board Climate Risk Oversight Evidence  \nThe Nominating and Corporate Governance Committee is explicitly responsible for overseeing climate-related risks as part of its mandate for sustainability and environmental risk management [2025-amazon-sustainability-report_chunk_103][TCFD Governance A1]. The Chief Sustainability Officer provides “regular updates” to this committee on sustainability performance, including climate-related matters [2025-amazon-sustainability-report_chunk_104][TCFD Governance A1]. However, the source material does not specify the frequency (e.g., quarterly, biannual), format (e.g., written reports, presentations with scenario analysis), or analytical methodology (e.g., physical risk mapping, transition risk assessment) used in these climate risk updates [2025-amazon-sustainability-report_chunk_104]. It also does not state whether climate risk is reviewed by the full Board or other committees beyond the Nominating and Corporate Governance Committee [TCFD Governance A1]. No time-bound target for board-level climate risk integration (e.g., “full Board climate risk review implemented annually starting 2026”) is disclosed [TCFD Governance A1].\n\n### GRI 205-1: Anti-Corruption and Ethics Performance Metrics  \nAmazon operates a confidential, third-party-managed Ethics Line available in 65 countries and 165 languages, enabling anonymous reporting of Code violations and ethical concerns [2025-amazon-sustainability-report_chunk_106][GRI 205-1]. The Business Conduct and Ethics team records, investigates, and tracks remediation of reported issues, with findings escalated to the Audit Committee [2025-amazon-sustainability-report_chunk_106][GRI 205-1]. Senior leadership receives regular updates on harassment and discrimination allegations involving director-level personnel; the Leadership Development and Compensation Committee receives detailed quarterly updates for vice-president-level and above cases or those subject to external investigation [2025-amazon-sustainability-report_chunk_106][GRI 205-1]. However, the source material does not disclose the total number of Ethics Line reports received in 2025 or 2024, the number of substantiated corruption allegations, investigations opened or closed, disciplinary actions taken, average or median resolution time, or any instances where investigations exceeded 90-day resolution targets [GRI 205-1]. No 2024 baseline or year-on-year comparison is provided for any ethics performance metric [GRI 205-1].\n\n### GRI 205-2: Anti-Corruption Targets  \nThe source material confirms Amazon’s internal policy prohibition on bribery “for any reason, whether in dealings with governments or the private sector” and notes participation in external anti-corruption initiatives such as the OECD’s Anti-Corruption Leaders Hub [2025-amazon-sustainability-report_chunk_107][GRI 205-2]. However, no forward-looking, quantified, time-bound anti-corruption target—such as a reduction in substantiated ethics violations by a defined percentage from a stated baseline year—is disclosed [GRI 205-2]. No deadline, metric definition, or baseline year (e.g., “reduce substantiated corruption cases by 15% by 2027, from 2025 baseline”) appears in the context [GRI 205-2].\n\n### Not covered in source material  \n- GRI 2-11: Quantitative board diversity composition (e.g., % women, % underrepresented ethnicities, average director tenure) for 2024 and 2025 [2025-amazon-sustainability-report_chunk_102].  \n- TCFD Governance A1: Frequency, format, or analytical methodology (e.g., scenario analysis) of climate risk updates to the Nominating and Corporate Governance Committee; evidence of climate risk review by the full Board or other committees; or a time-bound target for board-level climate risk integration (e.g., “annual full Board climate risk review adopted by end-2026”) [2025-amazon-sustainability-report_chunk_103][2025-amazon-sustainability-report_chunk_104].  \n- GRI 205-1: Total Ethics Line reports, substantiated corruption allegations, investigations opened/closed, disciplinary actions taken, resolution timelines (including % exceeding 90 days), root-cause explanations for delays, or 2024–2025 comparative data [2025-amazon-sustainability-report_chunk_106][2025-amazon-sustainability-report_chunk_107].  \n- GRI 205-2: Forward-looking, quantified anti-corruption target (e.g., reduction in substantiated ethics violations) with defined baseline year, deadline, and metric [2025-amazon-sustainability-report_chunk_106][2025-amazon-sustainability-report_chunk_107].  \n- Jurisdictional limitations on political contribution reporting, supplier human rights assessment coverage rates, or definitions of “risk-based” in third-party due diligence [2025-amazon-sustainability-report_chunk_102][2025-amazon-sustainability-report_chunk_107].  \n- Board and committee meeting frequencies for 2024 (to enable year-on-year comparison with 2025’s six Board meetings, four Nominating and Corporate Governance meetings, five Leadership Development and Compensation meetings, six Audit meetings, and two Security meetings) [2025-amazon-sustainability-report_chunk_101][2025-amazon-sustainability-report_chunk_102].",
+          "sources": [
+            "2025-amazon-sustainability-report_chunk_102",
+            "2025-amazon-sustainability-report_chunk_103",
+            "2025-amazon-sustainability-report_chunk_101",
+            "2025-amazon-sustainability-report_chunk_107",
+            "2025-amazon-sustainability-report_chunk_104",
+            "2025-amazon-sustainability-report_chunk_106",
+            "2025-amazon-sustainability-report_chunk_87",
+            "2025-amazon-sustainability-report_chunk_67",
+            "2025-amazon-sustainability-report_chunk_70",
+            "2025-amazon-sustainability-report_chunk_5",
+            "2025-amazon-sustainability-report_chunk_75",
+            "2025-amazon-sustainability-report_chunk_82",
+            "2025-amazon-sustainability-report_chunk_81",
+            "2025-amazon-sustainability-report_chunk_124",
+            "2025-amazon-sustainability-report_chunk_65",
+            "2025-amazon-sustainability-report_chunk_0",
+            "2025-amazon-sustainability-report_chunk_7",
+            "2025-amazon-sustainability-report_chunk_25"
+          ]
+        }
+      }
+    }
+  ]
+}

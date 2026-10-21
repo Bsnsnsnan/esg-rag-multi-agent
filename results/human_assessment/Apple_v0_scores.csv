@@ -1,0 +1,22 @@
+﻿pillar,criterion,human,agent_v1,agent_v2,diff_v1,diff_v2,notes
+Environmental,Coverage,3,3,4,0,1,
+Environmental,Specificity,4,5,3,1,-1,"v2: inconsistencies found (Scope 2 label, 15.3 Mt mislabelled as corporate, waste diversion arithmetic) -> capped at 3 in code. Agent did not catch 29.03 Mt > 15.3 Mt total."
+Environmental,Quantifiability,3,4,4,1,1,
+Environmental,Forward-Looking,2,3,5,1,3,"Agent correct, human missed it: draft does state Apple 2030 target (75% cut vs 2015 baseline)."
+Environmental,Transparency,4,5,5,1,1,Agent still generous; draft does note diversion rate fell 74% -> 70%.
+Environmental,Compliance Alignment,4,4,4,0,0,
+Social,Coverage,2,2,2,0,0,
+Social,Specificity,2,2,2,0,0,
+Social,Quantifiability,2,1,1,-1,-1,
+Social,Forward-Looking,1,1,1,0,0,
+Social,Transparency,5,4,3,-1,-2,Human 5 was for candour about missing data; stricter v2 rule caps gap-listing at 3.
+Social,Compliance Alignment,3,3,3,0,0,
+Governance,Coverage,2,2,3,0,1,
+Governance,Specificity,3,3,3,0,0,
+Governance,Quantifiability,2,2,3,0,1,
+Governance,Forward-Looking,1,2,1,1,0,
+Governance,Transparency,4,4,5,0,1,Agent v2 more generous than v1 and human.
+Governance,Compliance Alignment,2,3,3,1,1,
+Environmental,OVERALL (mean),3.33,4.0,4.17,0.67,0.84,
+Social,OVERALL (mean),2.5,2.17,2.0,-0.33,-0.5,
+Governance,OVERALL (mean),2.33,2.67,3.0,0.34,0.67,

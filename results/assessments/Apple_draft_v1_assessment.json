@@ -1,0 +1,310 @@
+{
+  "company": "Apple",
+  "source_draft": "results/drafts/Apple_draft_v1.md",
+  "model": "qwen-plus",
+  "sections": {
+    "Environmental": {
+      "criterion_scores": [
+        {
+          "criterion": "Coverage",
+          "score": 4,
+          "justification": "All five GRI sub-topics (302–306) and TCFD pillars are addressed, but GRI 303 lacks disclosure of water discharge quality or treatment methods, and GRI 305 omits location-based Scope 2 emissions — a required GRI 305-2 disclosure. TCFD Risk Management lacks description of board-level oversight, a core TCFD requirement.",
+          "missing_elements": [
+            "GRI 303: water discharge quality/treatment method",
+            "GRI 305: location-based Scope 2 emissions",
+            "TCFD Risk Management: board-level climate oversight mechanisms"
+          ],
+          "improvement_suggestions": [
+            "Disclose location-based Scope 2 emissions for FY2024 per GRI 305-2",
+            "Specify water discharge compliance status (e.g., regulatory limits met/not met) and treatment processes",
+            "Explicitly name board committee(s) responsible for climate risk oversight per TCFD"
+          ]
+        },
+        {
+          "criterion": "Specificity",
+          "score": 4,
+          "justification": "Most claims include precise figures with units and years, but internal inconsistencies cap specificity at 4: e.g., '3,777,000 MWh' ≠ '2,515 million kWh + 206 million kWh + 339,047,649 kWh' (sums to ~3,060,000 MWh), and '666,800 metric tons CO₂e' gross emissions contradicts zero Scope 2 (market-based) electricity emissions yet includes non-electricity Scope 2 (3,300 tCO₂e) — implying incomplete accounting scope.",
+          "missing_elements": [
+            "Arithmetic reconciliation of total corporate electricity use vs. component sums (data centers + retail + colocation)",
+            "Clarification that 'Scope 2 (market-based) emissions from purchased electricity were zero' applies only to electricity — not steam/heating/cooling, which are misclassified as Scope 2 instead of Scope 1 if combusted on-site"
+          ],
+          "improvement_suggestions": [
+            "Reconcile total corporate electricity use (3,777,000 MWh) with cited sub-components using consistent units (convert all to MWh)",
+            "Correct classification: steam/heating/cooling emissions from purchased fuels must be Scope 1 if combusted on-site, not Scope 2 — revise per GHG Protocol"
+          ]
+        },
+        {
+          "criterion": "Quantifiability",
+          "score": 5,
+          "justification": "Metrics consistently include units (MWh, gallons, metric tons CO₂e, tonnes), timeframes (fiscal year 2024), and baselines (e.g., 'versus 2015 baseline', 'FY2019 onward', 'since April 2020'). Year-on-year comparisons are explicit for emissions reduction (60% vs. 2015) and multi-year trends (100% renewable since FY2019).",
+          "missing_elements": [],
+          "improvement_suggestions": []
+        },
+        {
+          "criterion": "Forward-Looking",
+          "score": 5,
+          "justification": "Includes quantified, time-bound target: 'carbon neutrality across its entire value chain by 2030, with a 75% reduction in gross emissions versus the 2015 baseline', plus progress disclosure ('over 60% reduced in FY2024') — satisfying baseline, deadline, and current performance.",
+          "missing_elements": [],
+          "improvement_suggestions": []
+        },
+        {
+          "criterion": "Transparency",
+          "score": 3,
+          "justification": "Acknowledges key gaps in the 'Not covered in source material' section (e.g., missing location-based Scope 2, incomplete Scope 3 breakdown, no basin-level water risk), but does not disclose negative trends, missed targets, or operational challenges (e.g., why C&D recycling is only 22 tonnes vs. 5,200 landfilled, or whether landfill diversion rate declined from prior year).",
+          "missing_elements": [
+            "Year-over-year trend for landfill diversion rate (e.g., FY2023 rate)",
+            "Explanation of low C&D recycling rate (22t recycled vs. 5,200t landfilled)",
+            "Disclosure of any FY2024 carbon credit retirement shortfalls or quality concerns"
+          ],
+          "improvement_suggestions": [
+            "Report landfill diversion rate for FY2023 to show trend",
+            "Explain barriers to C&D waste recycling (e.g., regulatory, technical, market)",
+            "Disclose vintage, type, and verification standard of the 666,800 tCO₂e carbon credits retired in FY2024"
+          ]
+        },
+        {
+          "criterion": "Compliance Alignment",
+          "score": 4,
+          "justification": "Section is explicitly organized by GRI/TCFD headings with correct standard numbers cited, but fails full alignment: GRI 305 disclosures mix corporate (Scope 1+2) and value-chain (Scope 3, product use) emissions without clear boundary labeling, and TCFD 'Metrics & Targets' conflates avoided emissions (not a GRI/TCFD metric) with absolute targets — violating GRI 305-10 and TCFD Metrics requirements.",
+          "missing_elements": [
+            "Clear delineation between 'corporate operations' and 'value chain' boundaries in GRI 305 reporting",
+            "Separate reporting of avoided emissions (non-GRI) vs. actual emissions metrics per GRI 305-10",
+            "TCFD Metrics table mapping each disclosed metric to a specific TCFD category (e.g., 'gross emissions' → 'emissions metrics')"
+          ],
+          "improvement_suggestions": [
+            "Add boundary labels (e.g., 'Corporate Operations Only' or 'Value Chain Inclusive') before each GRI 305 emission figure",
+            "Remove 'avoided emissions' from GRI 305 summary and relegate to supplementary narrative",
+            "Include a TCFD-aligned metrics table with columns: Metric Name, Category (Strategy/Risk/Metrics), Baseline, Target, FY2024 Value"
+          ]
+        }
+      ],
+      "overall_score": 4.17,
+      "missing_elements": [
+        "GRI 305: location-based Scope 2 emissions for FY2024",
+        "GRI 303: water discharge quality/treatment compliance status",
+        "TCFD Risk Management: board-level climate oversight mechanisms",
+        "GRI 305-10: clear boundary labeling for all emissions figures",
+        "Year-over-year trend data for landfill diversion rate"
+      ],
+      "improvement_suggestions": [
+        "Disclose location-based Scope 2 emissions for FY2024 per GRI 305-2",
+        "Add boundary labels (e.g., 'Corporate Operations Only') to every GRI 305 emission figure",
+        "Report landfill diversion rate for FY2023 to demonstrate trend",
+        "Specify board committee(s) responsible for climate risk oversight per TCFD",
+        "Reconcile total corporate electricity use (3,777,000 MWh) with sub-components using consistent units and correct classification of steam/heating/cooling emissions"
+      ]
+    },
+    "Social": {
+      "criterion_scores": [
+        {
+          "criterion": "Coverage",
+          "score": 2,
+          "justification": "Major GRI sub-topics are missing: GRI 403 lacks incident data and psychosocial risks; GRI 405 has zero disclosures; GRI 414 omits audit results, non-compliance rates, and worker voice mechanisms; TCFD social risk assessment is absent. Only policy statements and program names are provided for most standards.",
+          "missing_elements": [
+            "GRI 403: TRIR/LTIR, injury/illness statistics, near-miss systems",
+            "GRI 405: all diversity metrics (gender, ethnicity, leadership representation, pay equity)",
+            "GRI 414: supplier audit findings, non-compliance rates, grievance mechanisms",
+            "TCFD: social risk assessment of climate transition, just transition plans"
+          ],
+          "improvement_suggestions": [
+            "Disclose 2023 TRIR and LTIR with numerator/denominator and scope (e.g., Apple employees only vs. including contractors)",
+            "Publish gender and ethnicity representation across job levels and regions, with baseline year and year-on-year change",
+            "Report % of Tier 1 suppliers assessed for social criteria in 2024 and % with verified remediation within 90 days"
+          ]
+        },
+        {
+          "criterion": "Specificity",
+          "score": 2,
+          "justification": "Only one concrete number appears ('nearly 300 supplier facilities'), but it lacks context (e.g., total supplier count, % coverage, geographic distribution beyond 'China and Taiwan'). All other claims are policy-level or descriptive (e.g., 'deep engagement', 'higher standards') without supporting data.",
+          "missing_elements": [
+            "Number of Apple employees trained on EHS in 2024",
+            "Total hours of Clean Energy Academy training delivered",
+            "Number of suppliers using Clean Energy Portal",
+            "ISO 14001 scope: employee count covered by Cork certification"
+          ],
+          "improvement_suggestions": [
+            "State total number of Tier 1 suppliers (e.g., 190 as per 2023 report) to contextualize 'nearly 300 facilities'",
+            "Disclose number of Apple employees who completed EHS training in 2024 and language breakdown",
+            "Report number of unique users of the Clean Energy Portal in 2024"
+          ]
+        },
+        {
+          "criterion": "Quantifiability",
+          "score": 1,
+          "justification": "No metrics include baselines, timeframes, or year-on-year comparisons. 'Nearly 300' is a single-point figure without prior year comparison or target. All other content is qualitative and unquantified.",
+          "missing_elements": [
+            "Baseline year for any metric",
+            "Year-on-year change for any disclosed number",
+            "Target vs. actual for any KPI"
+          ],
+          "improvement_suggestions": [
+            "Add 2023 facility count for Clean Energy Academies to enable YoY comparison",
+            "Report TRIR for 2023 and 2024 with consistent calculation methodology and scope definition"
+          ]
+        },
+        {
+          "criterion": "Forward-Looking",
+          "score": 1,
+          "justification": "No quantified targets with baseline years and deadlines appear anywhere in the section. References to '100% renewable electricity' are supplier-facing goals but lack Apple’s own commitment timeline, baseline, or progress tracking for social dimensions.",
+          "missing_elements": [
+            "Quantified target with baseline year and deadline for any social KPI (e.g., 'reduce TRIR to ≤0.8 by 2027, from 1.2 in 2023')",
+            "Diversity representation target with deadline",
+            "Supplier social audit remediation SLA (e.g., '95% of critical findings resolved within 60 days by 2025')"
+          ],
+          "improvement_suggestions": [
+            "State a time-bound, measurable target for reducing occupational injuries (e.g., 'achieve TRIR ≤0.75 by 2026, baseline 1.15 in 2023')",
+            "Publish a 2030 gender representation target for senior leadership with 2024 baseline"
+          ]
+        },
+        {
+          "criterion": "Transparency",
+          "score": 2,
+          "justification": "The 'Not covered in source material' subsection acknowledges gaps, but this is presented as a passive inventory—not an admission of challenges, negative trends, or missed targets. No discussion of root causes (e.g., audit limitations, data collection barriers), deteriorating metrics, or accountability for failures.",
+          "missing_elements": [
+            "Explanation of why diversity data is not disclosed (e.g., system limitations, privacy constraints)",
+            "Disclosure of a missed target or worsening trend (e.g., 'TRIR increased 12% YoY due to new manufacturing ramp-up')",
+            "Description of a systemic challenge (e.g., 'limited worker voice in Tier 2+ suppliers impedes grievance verification')"
+          ],
+          "improvement_suggestions": [
+            "Explain why gender pay ratio is not published (e.g., 'data aggregation across 43 countries remains inconsistent due to local privacy laws')",
+            "Disclose if any supplier received a 'critical' social non-conformance in 2024 and describe remediation barriers"
+          ]
+        },
+        {
+          "criterion": "Compliance Alignment",
+          "score": 3,
+          "justification": "The section is organized by GRI/TCFD headings and references standards correctly, satisfying basic structural alignment. However, GRI requires disclosure of 'material aspects' and 'boundary'—neither is defined here—and TCFD mandates reporting on 'climate-related risks and opportunities' with social implications, which is omitted.",
+          "missing_elements": [
+            "Definition of report boundary (e.g., 'covers Apple employees and Tier 1 suppliers only')",
+            "Materiality assessment summary for social topics",
+            "TCFD-aligned governance description for social climate risks"
+          ],
+          "improvement_suggestions": [
+            "Explicitly state the operational and supply chain boundary for each GRI standard (e.g., 'GRI 414 covers Tier 1 suppliers assessed in 2024')",
+            "Include a sentence linking TCFD governance to social transition risks (e.g., 'Apple’s Environmental Compliance team oversees social climate risk assessments quarterly')"
+          ]
+        }
+      ],
+      "overall_score": 1.83,
+      "missing_elements": [
+        "GRI 405 diversity metrics (all required elements)",
+        "GRI 403 occupational injury/illness rates with baseline and scope",
+        "Quantified forward-looking target with deadline and baseline for any social KPI",
+        "Discussion of a specific social challenge, failure, or negative trend",
+        "Clear definition of reporting boundary for each standard"
+      ],
+      "improvement_suggestions": [
+        "Publish 2023 and 2024 TRIR/LTIR with full methodology and scope definition",
+        "Disclose gender representation across management levels with 2024 baseline and 2030 target",
+        "State at least one social KPI target with baseline year, deadline, and current progress (e.g., '95% of Tier 1 suppliers to complete social self-assessment by Q2 2025, 82% achieved in 2024')",
+        "Explain why supplier audit findings or worker voice data are not disclosed (e.g., 'grievance channel utilization data not yet standardized across regions')",
+        "Define reporting boundary explicitly for each GRI standard (e.g., 'GRI 414 applies to 190 Tier 1 suppliers, representing 98% of direct spend')"
+      ]
+    },
+    "Governance": {
+      "criterion_scores": [
+        {
+          "criterion": "Coverage",
+          "score": 2,
+          "justification": "Major GRI/TCFD sub-topics are missing: no disclosure of board-level ESG oversight (GRI 2-10, TCFD Governance), executive compensation linkages (GRI 205-3, TCFD Governance), anti-corruption training/incident data (GRI 205-1, 205-2), or human rights due diligence beyond supplier code (GRI 206). The section mentions climate advocacy and partnerships but omits required governance disclosures on risk oversight structure and accountability.",
+          "missing_elements": [
+            "Board committee mandate for ESG/climate risk",
+            "Executive compensation tied to ESG targets",
+            "Anti-corruption training coverage rate or incident statistics",
+            "Human rights due diligence process description",
+            "TCFD-aligned governance role of Board/Committee"
+          ],
+          "improvement_suggestions": [
+            "Explicitly state which Board committee (e.g., Audit or Nominating & Governance) has formal responsibility for ESG/climate risk oversight, including meeting frequency and key responsibilities",
+            "Disclose whether and how ESG metrics (e.g., carbon reduction, supplier ethics compliance) are embedded in executive incentive plans"
+          ]
+        },
+        {
+          "criterion": "Specificity",
+          "score": 3,
+          "justification": "Some concrete figures are provided (e.g., $1.1B green bond proceeds, 8,407,304 metric tons CO₂e avoided), but many governance claims remain vague: 'integrates ESG responsibilities into core management accountability' lacks operational detail; 'formal advocacy principles' are unnamed and unquoted; 'tiered assurance architecture' is undefined. No data on board composition, training participation, or policy enforcement outcomes.",
+          "missing_elements": [
+            "Name or text of Climate Advocacy Principles",
+            "Number of board meetings dedicated to ESG/climate topics",
+            "Supplier Code of Conduct enforcement outcomes (e.g., % non-conformances resolved)",
+            "Definition of 'tiered assurance architecture'"
+          ],
+          "improvement_suggestions": [
+            "Quote or summarize the Climate Advocacy Principles verbatim or by objective",
+            "Report number of Board or Committee meetings in FY2024 where ESG/climate risk was a formal agenda item"
+          ]
+        },
+        {
+          "criterion": "Quantifiability",
+          "score": 2,
+          "justification": "Metrics lack consistent baselines and timeframes: $1.1B green bond allocation covers 2019–2024 but no annual breakdown or comparison to prior periods; 8.4M tCO₂e is for FY2024 only with no baseline year or prior-year value for trend analysis. No units or timeframes provided for 'over ten multi-stakeholder initiatives' or 'cross-sectoral partnerships'.",
+          "missing_elements": [
+            "Baseline year for F-GHG abatement metric",
+            "FY2023 F-GHG abatement figure for YoY comparison",
+            "Annual green bond allocation amounts per fiscal year",
+            "Definition of 'fiscal year' used (e.g., Sept–Aug vs Oct–Sep)"
+          ],
+          "improvement_suggestions": [
+            "State baseline year (e.g., 'vs. 2020 baseline') and prior-year value for all emissions-related metrics",
+            "Break down $1.1B green bond allocation by fiscal year and project category"
+          ]
+        },
+        {
+          "criterion": "Forward-Looking",
+          "score": 2,
+          "justification": "No quantified, time-bound targets with baselines are presented in this section. Mentions of 'science-based targets' and 'rapid decarbonization' are aspirational but lack specific metrics, deadlines, or baselines. The green bond period (2019–2024) is historical, not forward-looking.",
+          "missing_elements": [
+            "Quantified target for board ESG oversight (e.g., '100% of Board members trained on climate risk by 2025')",
+            "Target for anti-corruption training coverage (e.g., '95% of suppliers trained by 2026')",
+            "TCFD-aligned climate risk target (e.g., 'integrate scenario analysis into strategic planning by 2025')"
+          ],
+          "improvement_suggestions": [
+            "Add at least one governance-specific target (e.g., 'Establish ESG oversight charter for Nominating & Governance Committee by Q1 2025') with baseline, deadline, and current status",
+            "Publish timeline for integrating TCFD scenario analysis into capital allocation decisions"
+          ]
+        },
+        {
+          "criterion": "Transparency",
+          "score": 3,
+          "justification": "The 'Not covered in source material' subsection explicitly lists seven uncovered areas, acknowledging gaps—but these are framed as omissions in the *source material*, not as Apple’s own reporting limitations or unresolved challenges. No discussion of failed initiatives, missed targets, negative trends (e.g., rising corruption incidents), or systemic barriers (e.g., supplier resistance to ethics training).",
+          "missing_elements": [
+            "Explanation of why board ESG oversight details are omitted (e.g., 'under review for 2025 disclosure')",
+            "Disclosure of any unmet anti-corruption KPIs or audit findings",
+            "Context for lack of whistleblower data (e.g., 'no reports received in FY2024' or 'system under implementation')"
+          ],
+          "improvement_suggestions": [
+            "Replace passive 'not disclosed' language with active accountability (e.g., 'Apple does not yet require annual anti-corruption training for all Tier 2 suppliers due to verification constraints; rollout begins FY2025')",
+            "Report number of ethics hotline cases received/resolved in FY2024, even if zero"
+          ]
+        },
+        {
+          "criterion": "Compliance Alignment",
+          "score": 3,
+          "justification": "The section references GRI 2, GRI 205, and TCFD Governance/Risk Management standards but does not structure content by standard or map disclosures to specific GRI 205-1/205-2/205-3 or TCFD Governance elements. Headings are thematic ('Climate Governance'), not standard-aligned. No GRI 'Disclosure Index' or TCFD 'Governance' sub-element labels are used.",
+          "missing_elements": [
+            "Explicit mapping to GRI 205-1 (anti-corruption policy), GRI 205-2 (training), GRI 205-3 (incidents)",
+            "TCFD Governance sub-element labels (e.g., 'Board oversight', 'Management's role')",
+            "GRI Disclosure Index cross-references"
+          ],
+          "improvement_suggestions": [
+            "Reorganize subsections using GRI/TCFD sub-element headings (e.g., 'GRI 205-1: Anti-Corruption Policy' with direct quote)",
+            "Add a table linking each paragraph to GRI 205 or TCFD Governance codes and page numbers"
+          ]
+        }
+      ],
+      "overall_score": 2.5,
+      "missing_elements": [
+        "Board committee mandate and meeting frequency for ESG/climate risk",
+        "Executive compensation linkage to ESG targets",
+        "Anti-corruption training coverage rate and incident statistics",
+        "Baseline year and prior-year value for F-GHG abatement metric",
+        "Quantified, time-bound governance target with baseline and deadline"
+      ],
+      "improvement_suggestions": [
+        "Disclose the specific Board committee responsible for ESG/climate risk oversight—including its charter, meeting frequency, and 2024 agenda items",
+        "Publish at least one governance-specific, quantified target (e.g., '100% of senior executives complete ESG risk training by December 2025') with baseline, deadline, and progress update",
+        "Provide baseline year and FY2023 value for the 8.4 million tCO₂e F-GHG abatement metric to enable trend analysis"
+      ]
+    }
+  }
+}

@@ -1,0 +1,824 @@
+{
+  "company": "Shell",
+  "industry": "Energy",
+  "sasb_industry": "Oil & Gas – Exploration & Production (EM-EP)",
+  "top3_final": [
+    "Governance: GRI 205-3: political contributions and lobbying expenditures (value and recipients) for 2025",
+    "Social: GRI 403-10: Work-related illness by diagnosis",
+    "Environmental: GRI 303-3: Water discharge quality data (e.g., pollutant concentrations)"
+  ],
+  "initial_gaps": [
+    {
+      "pillar": "Environmental",
+      "text": "GRI 303-3: Water discharge quality data (e.g., pollutant concentrations)",
+      "topics": [
+        "Water & effluents"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "GRI 305-2: Total Scope 3 emissions for Category 1 (purchased goods/services)",
+      "topics": [
+        "GHG emissions & air quality"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "GRI 305-5: Total Scope 3 emissions for Category 3 (fuel- and energy-related activities)",
+      "topics": [
+        "GHG emissions & air quality",
+        "Energy"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "GRI 305-6: Total Scope 3 emissions for Category 9 (downstream transportation and distribution)",
+      "topics": [
+        "GHG emissions & air quality"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "TCFD Risk Management: Quantified assessment of physical vs transition risks",
+      "topics": [
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "GRI 303-3: Quantitative data on pollutant concentrations or compliance status of water discharges",
+      "topics": [
+        "Water & effluents"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "GRI 305-2 / 305-5 / 305-6: Total Scope 3 emissions by category (1, 3, 9, 11)",
+      "topics": [
+        "GHG emissions & air quality"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "TCFD Risk Management: Categorisation and quantification of physical vs transition risks",
+      "topics": [
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 403 work-related illnesses and mental health support programmes",
+      "topics": [
+        "Occupational health & safety"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 404 training participation rates and topic breakdown",
+      "topics": [
+        "Training & development"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 405 disability and LGBT+ representation",
+      "topics": [
+        "Diversity, equity & inclusion"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 414 number of suppliers assessed/audited and findings by risk category",
+      "topics": [
+        "Supplier social assessment"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "TCFD Strategy analysis of workforce transitions, community impacts of portfolio changes, or just transition commitments",
+      "topics": [
+        "Employment & labour practices",
+        "Local communities & inclusion",
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Methodology used to determine 'no severe human rights incidents' (e.g., audit coverage, grievance mechanism data)",
+      "topics": [
+        "Human rights & labour standards"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Denominator and verification approach for 98% anti-bribery training compliance",
+      "topics": [
+        "Training & development",
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Definition of 'senior leadership positions' beyond 'compensation grade'",
+      "topics": [
+        "Remuneration & incentives"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Baseline year for 40% women-in-senior-leadership target (e.g., 'from 2020 baseline' or '2025 baseline')",
+      "topics": [
+        "Diversity, equity & inclusion"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Three-year trend data for TRCF and LTIF (not just 2024–2025)",
+      "topics": [
+        "Occupational health & safety"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Working hours denominator for FPI-F calculation (to verify 2.1 per 100M)",
+      "topics": [
+        "Occupational health & safety",
+        "Employment & labour practices"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Root cause analysis for increase in FPI-F, TRCF, and LTIF",
+      "topics": [
+        "Occupational health & safety"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Explanation for zero severe human rights incidents in 2025 versus three in 2024 (e.g., improved controls, narrower scope, or reporting change)",
+      "topics": [
+        "Human rights & labour standards"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Explicit acknowledgment of limitations in supplier human rights monitoring (e.g., upstream tier 2+ coverage gaps)",
+      "topics": [
+        "Human rights & labour standards",
+        "Supplier social assessment"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "In-text citation of GRI disclosures (e.g., 'GRI 403-2' for FPI-F metric)",
+      "topics": [
+        "Occupational health & safety"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Reference to GRI Reporting Principles (e.g., completeness, stakeholder inclusiveness) applied to this section",
+      "topics": [
+        "Other"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Explicit linkage of TCFD Strategy content to TCFD Recommendation i. (governance), ii. (strategy), or iii. (risk management)",
+      "topics": [
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Disclosure of political contributions or lobbying expenditures (GRI 205-3)",
+      "topics": [
+        "Anti-corruption & business ethics",
+        "Public policy & lobbying"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Third-party assurance scope or findings for anti-corruption programme (GRI 205-1)",
+      "topics": [
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Baseline year and value for Board gender balance target",
+      "topics": [
+        "Diversity, equity & inclusion",
+        "Board structure & oversight"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Actual number of Board members from minority ethnic backgrounds as of December 31, 2025",
+      "topics": [
+        "Diversity, equity & inclusion",
+        "Board structure & oversight"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Explicit GRI/TCFD code references in section headers or captions",
+      "topics": [
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Disclosure of political contributions or lobbying expenditures (GRI 205-3, TCFD Governance)",
+      "topics": [
+        "Anti-corruption & business ethics",
+        "Public policy & lobbying",
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Third-party assurance scope or findings for anti-corruption programme (GRI 205-1, GRI 2-12)",
+      "topics": [
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Board-level oversight of climate-related opportunities (TCFD Governance)",
+      "topics": [
+        "Board structure & oversight",
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Remuneration-linked ESG performance metrics for non-Executive Directors (GRI 2-10)",
+      "topics": [
+        "Board structure & oversight",
+        "Remuneration & incentives"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Definition of 'at-risk roles' for anti-bribery training (GRI 205-2)",
+      "topics": [
+        "Training & development",
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Breakdown of Shell Global Helpline reports by category (e.g., ethics, safety, corruption) and resolution status (GRI 205-2)",
+      "topics": [
+        "Occupational health & safety",
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Number or percentage of Board members with sustainability or climate expertise (GRI 2-8)",
+      "topics": [
+        "Board structure & oversight"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Baseline year for Board gender balance target (e.g., 'target established in 2024 against 2023 baseline')",
+      "topics": [
+        "Diversity, equity & inclusion",
+        "Board structure & oversight"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Absolute numbers for all Board composition metrics (e.g., '5 women, 7 men' instead of only '42%')",
+      "topics": [
+        "Diversity, equity & inclusion",
+        "Board structure & oversight"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Year-on-year change for Helpline report volume (e.g., '1,983 reports in 2025 vs. 1,842 in 2024')",
+      "topics": [
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Deadline and baseline year for minority ethnic representation target",
+      "topics": [
+        "Diversity, equity & inclusion"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Quantified target with deadline for Helpline case resolution rate or median investigation timeline",
+      "topics": [
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Time-bound target for Board climate/sustainability expertise coverage (GRI 2-8)",
+      "topics": [
+        "Board structure & oversight"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Disclosure of any substantiated ethics breaches in 2025 or trend analysis of Helpline reports",
+      "topics": [
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Explicit statement on current gap in minority ethnic representation (e.g., 'zero members as of 2025')",
+      "topics": [
+        "Diversity, equity & inclusion"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Limitation note on verification method for contractor anti-bribery training completion",
+      "topics": [
+        "Training & development",
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Explicit citation of GRI 205-1, GRI 205-2, GRI 205-3, and TCFD Governance recommendations in relevant subsections",
+      "topics": [
+        "Anti-corruption & business ethics",
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "GRI 2-12 disclosure of external assurance provider, scope, and level of assurance for governance-related disclosures",
+      "topics": [
+        "Reporting practice (baselines, targets, definitions, GRI refs)"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Labelled alignment table or index mapping each paragraph to GRI/TCFD codes",
+      "topics": [
+        "Climate risk & strategy (TCFD)"
+      ]
+    }
+  ],
+  "remaining_gaps_final": [
+    {
+      "pillar": "Environmental",
+      "text": "GRI 303-3: Water discharge quality data (e.g., pollutant concentrations)",
+      "topics": [
+        "Water & effluents"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "GRI 305-2: Total Scope 3 emissions for Category 1 (purchased goods/services)",
+      "topics": [
+        "GHG emissions & air quality"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "GRI 305-5: Total Scope 3 emissions for Category 3 (fuel- and energy-related activities)",
+      "topics": [
+        "GHG emissions & air quality",
+        "Energy"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "GRI 305-6: Total Scope 3 emissions for Category 9 (downstream transportation and distribution)",
+      "topics": [
+        "GHG emissions & air quality"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "TCFD Risk Management: Quantified assessment of physical vs transition risks",
+      "topics": [
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "GRI 303-3: Quantitative data on pollutant concentrations or compliance status of water discharges",
+      "topics": [
+        "Water & effluents"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "GRI 305-2 / 305-5 / 305-6: Total Scope 3 emissions by category (1, 3, 9, 11)",
+      "topics": [
+        "GHG emissions & air quality"
+      ]
+    },
+    {
+      "pillar": "Environmental",
+      "text": "TCFD Risk Management: Categorisation and quantification of physical vs transition risks",
+      "topics": [
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 403-10: Work-related illness by diagnosis",
+      "topics": [
+        "Occupational health & safety"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 404-3: Training completion rates for non-ethics mandatory courses",
+      "topics": [
+        "Training & development",
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 405-2: Disability employment rate",
+      "topics": [
+        "Diversity, equity & inclusion"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 414-3: Number of suppliers assessed/audited/non-compliant",
+      "topics": [
+        "Supplier social assessment"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "TCFD Strategy: Just transition plan addressing workforce reskilling and community impacts of divestments",
+      "topics": [
+        "Training & development",
+        "Employment & labour practices",
+        "Local communities & inclusion",
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 403: work-related illness by diagnosis (e.g., hearing loss, respiratory disease)",
+      "topics": [
+        "Occupational health & safety"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 403: mental health programme participation rates",
+      "topics": [
+        "Occupational health & safety"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 404: training completion rates for non-ethics mandatory courses (e.g., health & safety, technical upskilling)",
+      "topics": [
+        "Occupational health & safety",
+        "Training & development",
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 405: disability inclusion metrics",
+      "topics": [
+        "Diversity, equity & inclusion"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 405: LGBT+ representation data",
+      "topics": [
+        "Diversity, equity & inclusion"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "GRI 414: number of suppliers assessed/audited/non-compliant",
+      "topics": [
+        "Supplier social assessment"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "TCFD Strategy: analysis of social impacts of climate transition (e.g., workforce reskilling, just transition commitments, divestment impacts)",
+      "topics": [
+        "Training & development",
+        "Employment & labour practices",
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Average training days per employee (calculated from 253,000 days and 85,000 employees)",
+      "topics": [
+        "Training & development"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Diagnosis breakdown of the 117 recordable work-related ill health cases",
+      "topics": [
+        "Occupational health & safety"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Number of staff in scope for anti-bribery training (to contextualise 98% completion)",
+      "topics": [
+        "Training & development",
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Baseline year for '40% women in senior leadership by 2030' target (e.g., 'from 35% in 2025')",
+      "topics": [
+        "Diversity, equity & inclusion"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Baseline year and value for UK ethnic minority senior management target (e.g., '16% in 2025, up from X% in Y')",
+      "topics": [
+        "Diversity, equity & inclusion"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Baseline for FPI count (stated as 'unchanged from revised 2024 figure of 8', but no original 2024 figure or revision rationale provided)",
+      "topics": [
+        "Occupational health & safety"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Explanation for decline in severe human rights incidents (e.g., root causes, verification method limitations)",
+      "topics": [
+        "Human rights & labour standards"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Discussion of persistent challenges in mental health support scalability or contractor safety culture gaps",
+      "topics": [
+        "Occupational health & safety"
+      ]
+    },
+    {
+      "pillar": "Social",
+      "text": "Acknowledgement of absence of third-party verification for supplier human rights assessments",
+      "topics": [
+        "Human rights & labour standards"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "GRI 205-3: political contributions and lobbying expenditures (value and recipients) for 2025",
+      "topics": [
+        "Anti-corruption & business ethics",
+        "Public policy & lobbying"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "GRI 205-1: external assurance status, assurer name, and scope for anti-corruption programme",
+      "topics": [
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "GRI 2-12: external assurance of governance disclosures",
+      "topics": [
+        "Reporting practice (baselines, targets, definitions, GRI refs)"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Explicit deadline year for the 40% gender Board representation target",
+      "topics": [
+        "Diversity, equity & inclusion",
+        "Board structure & oversight"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Actual count/percentage of Board members from minority ethnic backgrounds in 2025",
+      "topics": [
+        "Diversity, equity & inclusion",
+        "Board structure & oversight"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Quantified, time-bound target for a climate-related opportunity with baseline and deadline",
+      "topics": [
+        "Reporting practice (baselines, targets, definitions, GRI refs)"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "GRI 205-3: monetary value and recipients of political contributions or lobbying expenditures in 2025",
+      "topics": [
+        "Anti-corruption & business ethics",
+        "Public policy & lobbying"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "TCFD Governance recommendation on cyber-risk and data privacy oversight",
+      "topics": [
+        "Customer privacy & data security",
+        "Board structure & oversight",
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Actual number or percentage of Board members from minority ethnic backgrounds in 2025",
+      "topics": [
+        "Diversity, equity & inclusion",
+        "Board structure & oversight"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Quantitative description of Sustainability Committee’s mandate (e.g., frequency of meetings, decision authority, scope of 'emerging trends excluding carbon')",
+      "topics": [
+        "GHG emissions & air quality",
+        "Board structure & oversight"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Quantitative description of Carbon Reporting Committee’s mandate (e.g., verification frequency, methodology approval authority)",
+      "topics": [
+        "GHG emissions & air quality",
+        "Board structure & oversight"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "2025 actual achievement against the 40% gender representation target (e.g., '42% achieved in 2025, exceeding 40% target')",
+      "topics": [
+        "Diversity, equity & inclusion"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Baseline and metric for Helpline report resolution timeline (e.g., '% resolved within 90 days in 2025', with 2024 comparison)",
+      "topics": [
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Explicit deadline year for the 40% gender representation target",
+      "topics": [
+        "Diversity, equity & inclusion"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Baseline year and deadline year for the 'at least one Board member from a minority ethnic background' commitment",
+      "topics": [
+        "Diversity, equity & inclusion",
+        "Board structure & oversight"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Quantified, time-bound target for climate-related opportunity development (e.g., revenue from low-carbon fuels by 2030)",
+      "topics": [
+        "GHG emissions & air quality",
+        "Energy"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Acknowledgement of any missed governance target or declining trend (e.g., reduction in Helpline report resolution rate, failure to meet prior diversity milestone)",
+      "topics": [
+        "Diversity, equity & inclusion",
+        "Anti-corruption & business ethics"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Discussion of challenges impeding minority ethnic representation progress",
+      "topics": [
+        "Diversity, equity & inclusion"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "In-text citation of GRI/TCFD codes for each substantive disclosure (e.g., 'Board independence (GRI 2-11)' or 'Anti-bribery training (GRI 205-2)')",
+      "topics": [
+        "Training & development",
+        "Board structure & oversight",
+        "Anti-corruption & business ethics",
+        "Climate risk & strategy (TCFD)"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "text": "Explicit mapping of each committee’s responsibilities to TCFD Governance recommendations (e.g., 'ARC oversight of climate risk aligns with TCFD Governance A1.2)",
+      "topics": [
+        "Board structure & oversight",
+        "Climate risk & strategy (TCFD)"
+      ]
+    }
+  ],
+  "sasb_crosscheck": [
+    {
+      "sasb_topic": "Greenhouse gas emissions",
+      "mapped_topics": "GHG emissions & air quality",
+      "addressed_in_report": true,
+      "flagged_as_gap": true,
+      "status": "addressed, gaps flagged"
+    },
+    {
+      "sasb_topic": "Air quality",
+      "mapped_topics": "GHG emissions & air quality",
+      "addressed_in_report": true,
+      "flagged_as_gap": true,
+      "status": "addressed, gaps flagged"
+    },
+    {
+      "sasb_topic": "Water & wastewater management",
+      "mapped_topics": "Water & effluents",
+      "addressed_in_report": true,
+      "flagged_as_gap": true,
+      "status": "addressed, gaps flagged"
+    },
+    {
+      "sasb_topic": "Biodiversity impacts",
+      "mapped_topics": "Biodiversity & land use",
+      "addressed_in_report": false,
+      "flagged_as_gap": false,
+      "status": "blind spot"
+    },
+    {
+      "sasb_topic": "Security, human rights & rights of indigenous peoples",
+      "mapped_topics": "Human rights & labour standards",
+      "addressed_in_report": true,
+      "flagged_as_gap": true,
+      "status": "addressed, gaps flagged"
+    },
+    {
+      "sasb_topic": "Community relations",
+      "mapped_topics": "Local communities & inclusion",
+      "addressed_in_report": false,
+      "flagged_as_gap": true,
+      "status": "flagged as gap"
+    },
+    {
+      "sasb_topic": "Workforce health & safety",
+      "mapped_topics": "Occupational health & safety",
+      "addressed_in_report": true,
+      "flagged_as_gap": true,
+      "status": "addressed, gaps flagged"
+    },
+    {
+      "sasb_topic": "Reserves valuation & capital expenditures",
+      "mapped_topics": "Climate risk & strategy (TCFD)",
+      "addressed_in_report": true,
+      "flagged_as_gap": true,
+      "status": "addressed, gaps flagged"
+    },
+    {
+      "sasb_topic": "Business ethics & transparency",
+      "mapped_topics": "Anti-corruption & business ethics",
+      "addressed_in_report": true,
+      "flagged_as_gap": true,
+      "status": "addressed, gaps flagged"
+    },
+    {
+      "sasb_topic": "Management of the legal & regulatory environment",
+      "mapped_topics": "Public policy & lobbying",
+      "addressed_in_report": true,
+      "flagged_as_gap": true,
+      "status": "addressed, gaps flagged"
+    },
+    {
+      "sasb_topic": "Critical incident risk management",
+      "mapped_topics": "Occupational health & safety",
+      "addressed_in_report": true,
+      "flagged_as_gap": true,
+      "status": "addressed, gaps flagged"
+    }
+  ]
+}

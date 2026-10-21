@@ -1,0 +1,1521 @@
+{
+  "company": "Unilever",
+  "config": {
+    "generator_model": "qwen-plus",
+    "assessor_model": "qwen-plus",
+    "max_iterations": 3,
+    "threshold": 4.0,
+    "require_no_inconsistencies": true,
+    "extra_queries_from_feedback": 3
+  },
+  "finished": true,
+  "converged": false,
+  "num_rounds": 3,
+  "score_progression": [
+    3.5,
+    3.33,
+    2.89
+  ],
+  "section_score_progression": {
+    "Environmental": [
+      4.33,
+      4.5,
+      4.17
+    ],
+    "Social": [
+      3.17,
+      3.0,
+      2.67
+    ],
+    "Governance": [
+      3.0,
+      2.5,
+      1.83
+    ]
+  },
+  "rounds": [
+    {
+      "iteration": 1,
+      "timestamp": "2026-10-21T01:50:24",
+      "assess_seconds": 110.9,
+      "overall_score": 3.5,
+      "sections": {
+        "Environmental": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 4.33,
+          "criterion_scores": {
+            "Coverage": 4,
+            "Specificity": 3,
+            "Quantifiability": 5,
+            "Forward-Looking": 5,
+            "Transparency": 4,
+            "Compliance Alignment": 5
+          },
+          "inconsistencies": [
+            "Scope 1&2 market-based emissions reported as 0.54 MtCO₂e in 2025 (0.47 MtCO₂e in 2024) — a 15% increase — while simultaneously claiming '77% reduction against the 2015 baseline'; this arithmetic is internally consistent only if 2015 baseline was ~2.35 MtCO₂e (0.54 / 0.23), but the 2024 figure (0.47) would then represent an 80% reduction — yet no 2015 baseline value is disclosed to verify consistency or explain the 2024→2025 increase.",
+            "Renewable electricity sourcing is stated as '88% in 2025' (via RECs 63%, purchased renewable electricity 85%, PPAs 13%) — but 63% + 85% + 13% = 161%, exceeding 100%; these percentages cannot be additive shares of the same total and contradict the '88%' headline figure.",
+            "Purchased renewable electricity is cited as 85% of electricity supply, yet total renewable electricity share is 88% — implying other sources (RECs, PPAs) contribute minimally, making the 63% and 13% figures arithmetically incompatible with the 88% total unless double-counting or overlapping categories are acknowledged (not stated)."
+          ],
+          "missing_elements": [
+            "2015 baseline value for Scope 1&2 emissions (required to verify '77% reduction' claim and reconcile 2024–2025 increase)",
+            "Clarification of whether REC, PPA, and purchased electricity percentages are mutually exclusive or overlapping (to resolve 161% sum vs. 88% total)",
+            "Wastewater discharge data (volume and quality) per GRI 303-3",
+            "Waste composition breakdown per GRI 306-2",
+            "Explanation for year-on-year increase in absolute Scope 1&2 emissions"
+          ],
+          "improvement_suggestions": [
+            "Disclose the absolute 2015 baseline value for Scope 1&2 emissions and clarify whether the 2024–2025 increase reflects boundary changes (e.g., deconsolidation of Ice Cream), methodological updates, or operational growth — per GRI 305-2 and TCFD Metrics & Targets",
+            "Reconcile and restate renewable electricity sourcing percentages to ensure mutual exclusivity and sum ≤100%, or explicitly define methodology (e.g., 'RECs cover 63% of grid-mix volume, PPAs cover 13% of physical consumption') — per GRI 302-2 and GHG Protocol Scope 2 Guidance",
+            "Report annual wastewater discharge volume (m³) and at least two key effluent quality parameters (e.g., BOD, COD) for high-risk sites — per GRI 303-3",
+            "Disclose waste generated disaggregated by material type (e.g., plastics, paper, organics, metals) — per GRI 306-2",
+            "Explain the driver of the 15% year-on-year increase in absolute Scope 1&2 emissions (0.47 → 0.54 MtCO₂e), including whether attributable to scope, methodology, or operational factors — per TCFD Metrics & Targets and GRI 305-2"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 4,
+                "justification": "All five required GRI/TCFD sub-topics (302, 303, 305, 306, TCFD Strategy/Risk/Metrics&Targets) are addressed, but GRI 303 lacks wastewater discharge data (a mandatory GRI 303-3 disclosure), and GRI 306 omits waste composition breakdown (e.g., organic, plastic, paper) required under GRI 306-2 and 306-3.",
+                "missing_elements": [
+                  "Wastewater discharge volumes and quality parameters (BOD, COD) per GRI 303-3",
+                  "Waste composition by material type per GRI 306-2",
+                  "Quantitative data on circular economy initiatives beyond packaging recyclability"
+                ],
+                "improvement_suggestions": [
+                  "Disclose annual wastewater discharge volume (m³) and key effluent quality indicators (e.g., BOD, COD, TSS) for all major sites per GRI 303-3",
+                  "Report waste generated disaggregated by material type (e.g., plastics, paper, organics, metals) per GRI 306-2",
+                  "Add metrics on reuse/refill infrastructure deployment (e.g., number of refill stations, units refilled) to address GRI 306-4 and circular economy alignment"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "All claims are supported by precise figures with units, years, and contextual qualifiers (e.g., '2024 measured including Ice Cream', '88% of electricity sourced from renewables', '47 thousand MWh self-generated non-fuel renewable energy'); no vague or unsupported assertions appear. [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 5,
+                "justification": "Every metric includes units (MWh, m³, MtCO₂e, tonnes), timeframes (2025 vs. 2024), and baselines (e.g., '77% reduction against the 2015 baseline', 'vs. 2021 baseline'); year-on-year comparisons are consistently provided.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 5,
+                "justification": "Includes multiple quantified targets with explicit baselines and deadlines: SBTi-validated 100% Scope 1&2 reduction by 2030 (vs. 2015), 42% Scope 3 E&I reduction by 2030 (vs. 2021), net zero by 2039, and water stewardship programmes in 100 locations by 2030 — all with current progress disclosed (e.g., 29 active in 2025).",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Transparency",
+                "score": 4,
+                "justification": "Acknowledges absence of formal global water withdrawal targets and explains reliance on local risk-based targets; discloses methodological limitations (e.g., '13-country representative sample' for Scope 3 Category 11); however, no discussion of negative trends, missed interim targets, or systemic challenges (e.g., why Scope 1&2 emissions *increased* from 0.47 to 0.54 MtCO₂e despite a 77% reduction vs. 2015 baseline — implying possible boundary or calculation changes not explained).",
+                "missing_elements": [
+                  "Explanation for increase in absolute Scope 1&2 emissions (0.47 → 0.54 MtCO₂e) year-on-year despite claimed 77% reduction vs. 2015",
+                  "Discussion of challenges hindering water target setting or waste diversion progress",
+                  "Disclosure of any missed interim targets or downward revisions"
+                ],
+                "improvement_suggestions": [
+                  "Explain the cause of the 15% year-on-year increase in absolute Scope 1&2 emissions (0.47 → 0.54 MtCO₂e), including whether due to scope changes, data corrections, or operational factors",
+                  "Disclose whether any interim climate or water targets were missed or revised, and why",
+                  "Describe key barriers to scaling water stewardship programmes beyond 29 sites (e.g., regulatory constraints, supplier engagement gaps)"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 5,
+                "justification": "Section is fully structured by GRI/TCFD standard headings (GRI 302, 303, 305, 306, then TCFD Strategy/Risk/Metrics&Targets); each subsection explicitly names its standard; TCFD elements are correctly mapped to Strategy, Risk Management, and Metrics & Targets; all citations reference source chunks consistently.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              }
+            ],
+            "inconsistencies": [
+              "Scope 1&2 market-based emissions reported as 0.54 MtCO₂e in 2025 (0.47 MtCO₂e in 2024) — a 15% increase — while simultaneously claiming '77% reduction against the 2015 baseline'; this arithmetic is internally consistent only if 2015 baseline was ~2.35 MtCO₂e (0.54 / 0.23), but the 2024 figure (0.47) would then represent an 80% reduction — yet no 2015 baseline value is disclosed to verify consistency or explain the 2024→2025 increase.",
+              "Renewable electricity sourcing is stated as '88% in 2025' (via RECs 63%, purchased renewable electricity 85%, PPAs 13%) — but 63% + 85% + 13% = 161%, exceeding 100%; these percentages cannot be additive shares of the same total and contradict the '88%' headline figure.",
+              "Purchased renewable electricity is cited as 85% of electricity supply, yet total renewable electricity share is 88% — implying other sources (RECs, PPAs) contribute minimally, making the 63% and 13% figures arithmetically incompatible with the 88% total unless double-counting or overlapping categories are acknowledged (not stated)."
+            ],
+            "overall_score": 4.33,
+            "missing_elements": [
+              "2015 baseline value for Scope 1&2 emissions (required to verify '77% reduction' claim and reconcile 2024–2025 increase)",
+              "Clarification of whether REC, PPA, and purchased electricity percentages are mutually exclusive or overlapping (to resolve 161% sum vs. 88% total)",
+              "Wastewater discharge data (volume and quality) per GRI 303-3",
+              "Waste composition breakdown per GRI 306-2",
+              "Explanation for year-on-year increase in absolute Scope 1&2 emissions"
+            ],
+            "improvement_suggestions": [
+              "Disclose the absolute 2015 baseline value for Scope 1&2 emissions and clarify whether the 2024–2025 increase reflects boundary changes (e.g., deconsolidation of Ice Cream), methodological updates, or operational growth — per GRI 305-2 and TCFD Metrics & Targets",
+              "Reconcile and restate renewable electricity sourcing percentages to ensure mutual exclusivity and sum ≤100%, or explicitly define methodology (e.g., 'RECs cover 63% of grid-mix volume, PPAs cover 13% of physical consumption') — per GRI 302-2 and GHG Protocol Scope 2 Guidance",
+              "Report annual wastewater discharge volume (m³) and at least two key effluent quality parameters (e.g., BOD, COD) for high-risk sites — per GRI 303-3",
+              "Disclose waste generated disaggregated by material type (e.g., plastics, paper, organics, metals) — per GRI 306-2",
+              "Explain the driver of the 15% year-on-year increase in absolute Scope 1&2 emissions (0.47 → 0.54 MtCO₂e), including whether attributable to scope, methodology, or operational factors — per TCFD Metrics & Targets and GRI 305-2"
+            ]
+          },
+          "draft": "### GRI 302 Energy  \nUnilever’s total energy consumption in 2025 was 5,224 thousand MWh, a decrease from 6,482 thousand MWh in 2024 (2024 measured including Ice Cream) [unilever-sustainability-statement_chunk_63]. Renewable energy accounted for 62% of total energy consumption in 2025 (59% in 2024), with fossil sources comprising 38% (41% in 2024) [unilever-sustainability-statement_chunk_63]. Purchased or acquired electricity, heat, steam and cooling from renewable sources totalled 1,674 thousand MWh in 2025, while self-generated non-fuel renewable energy amounted to 47 thousand MWh [unilever-sustainability-statement_chunk_63]. Unilever sourced 88% of its electricity from renewable sources in 2025 (85% in 2024), primarily through unbundled RECs (63%), purchased renewable electricity (85%), and off-site Power Purchase Agreements (13%) [unilever-sustainability-statement_chunk_64]. Energy intensity—measured as MWh per € million net revenue—was 103 in 2025, down from 107 in 2024 [unilever-sustainability-statement_chunk_64].\n\n### GRI 303 Water  \nTotal water consumption across Unilever’s own operations was 14 million m³ in 2025, down from 17 million m³ in 2024 (2024 measured including Ice Cream) [unilever-sustainability-statement_chunk_75]. Of this, 9 million m³ was consumed in areas at high or extremely high water stress (ESRS definition), and 10 million m³ under Unilever’s broader definition incorporating site-specific risk assessments [unilever-sustainability-statement_chunk_75]. Water recycled and reused totalled 2 million m³ in both 2025 and 2024 [unilever-sustainability-statement_chunk_75]. Water intensity—water consumption per € million turnover—was 272 m³/€ million in 2025, compared to 281 m³/€ million in 2024 [unilever-sustainability-statement_chunk_75]. Unilever does not set formal global targets for water withdrawal in its own operations or upstream value chain; instead, it manages water risk through local environmental performance targets and the Responsible Sourcing Policy (RPP) [unilever-sustainability-statement_chunk_73]. Its voluntary target is to implement water stewardship programmes in 100 locations in water-stressed areas by 2030; 29 such programmes were active in 2025 (21 in 2024) [unilever-sustainability-statement_chunk_74].\n\n### GRI 305 Emissions  \nUnilever’s total Scope 1 and 2 GHG emissions (market-based) were 0.54 MtCO₂e in 2025 (0.47 MtCO₂e in 2024), representing a 77% reduction against the 2015 baseline [unilever-sustainability-statement_chunk_60][unilever-sustainability-statement_chunk_49]. Total Scope 1, 2 and 3 GHG emissions (market-based) were 97.04 MtCO₂e in 2025, down 11% from 108.65 MtCO₂e in 2024 [unilever-sustainability-statement_chunk_58]. Scope 3 emissions in scope of Unilever’s net zero ambition totalled 47.21 MtCO₂e in 2025 (56.61 MtCO₂e in 2024), with Purchased Goods and Services accounting for 37.91 MtCO₂e [unilever-sustainability-statement_chunk_58]. The company reported an overall 5% decrease in total Scope 1, 2 and 3 emissions in 2025 versus 2024 (including Ice Cream) [unilever-sustainability-statement_chunk_60]. Unilever’s near-term climate targets—validated by the Science Based Targets initiative (SBTi)—include a 100% reduction in Scope 1 and 2 emissions by 2030 (vs. 2015 baseline) and a 42% reduction in Scope 3 Energy & Industrial (E&I) emissions by 2030 (vs. 2021 baseline) [unilever-sustainability-statement_chunk_25][unilever-sustainability-statement_chunk_48].\n\n### GRI 306 Waste  \nTotal waste generated in Unilever’s own operations was 493 thousand tonnes in 2025, down from 731 thousand tonnes in 2024 (2024 measured including Ice Cream) [unilever-sustainability-statement_chunk_100]. Of this, 467 thousand tonnes of non-hazardous waste and 19 thousand tonnes of hazardous waste were diverted from disposal [unilever-sustainability-statement_chunk_100]. Non-recycled waste totalled 114 thousand tonnes (23% of total waste), down from 183 thousand tonnes (25%) in 2024 [unilever-sustainability-statement_chunk_100]. Hazardous waste directed to disposal was 5 thousand tonnes (4 thousand tonnes via incineration without energy recovery; 1 thousand tonnes via landfilling), while non-hazardous waste directed to disposal was 2 thousand tonnes (all via landfilling) [unilever-sustainability-statement_chunk_100].\n\n### TCFD Strategy, Risk Management, Metrics & Targets  \nUnilever’s Climate Transition Action Plan (CTAP), approved by shareholders in 2024, outlines its 2030 climate targets and integrates mitigation, adaptation and advocacy actions into its three-year strategic planning cycle [unilever-sustainability-statement_chunk_25]. The CTAP supports Unilever’s long-term net zero ambition by 2039 and includes scenario analysis aligned with IPCC SSP pathways (<2°C, <3°C, >4°C) and TNFD-aligned nature scenarios (High Nature Preservation, Delayed Nature Action, High Nature Degradation) [unilever-sustainability-statement_chunk_30]. Climate-related risks—including systemic biodiversity collapse, supply chain disruption from ecosystem degradation, and regulatory exposure from Extended Producer Responsibility (EPR) schemes—are embedded in enterprise risk management and reviewed annually [unilever-sustainability-statement_chunk_20][unilever-sustainability-statement_chunk_15]. Metrics include absolute GHG emissions (Scope 1–3), energy mix, water consumption in stressed basins, and waste diversion rates—all reported annually against science-based and voluntary targets [unilever-sustainability-statement_chunk_47][unilever-sustainability-statement_chunk_74].\n\n### Not covered in source material  \n- Detailed breakdown of water consumption by facility type (manufacturing vs. logistics vs. office) beyond aggregate figures.  \n- Quantitative data on wastewater discharge volumes or quality parameters (e.g., BOD, COD).  \n- Scope 3 Category 11 (Consumer Use of Sold Products) emissions disaggregated by product category or geography beyond the 13-country representative sample methodology.  \n- Specific metrics or progress on circular economy initiatives beyond packaging recyclability (e.g., reuse systems, refill infrastructure uptake).  \n- GHG removals or carbon sequestration activities within Unilever’s operational boundary (e.g., on-site afforestation, soil carbon projects).",
+          "sources": [
+            "unilever-sustainability-statement_chunk_59",
+            "unilever-sustainability-statement_chunk_58",
+            "unilever-sustainability-statement_chunk_60",
+            "unilever-sustainability-statement_chunk_54",
+            "unilever-sustainability-statement_chunk_64",
+            "unilever-sustainability-statement_chunk_62",
+            "unilever-sustainability-statement_chunk_63",
+            "unilever-sustainability-statement_chunk_56",
+            "unilever-sustainability-statement_chunk_74",
+            "unilever-sustainability-statement_chunk_75",
+            "unilever-sustainability-statement_chunk_73",
+            "unilever-sustainability-statement_chunk_99",
+            "unilever-sustainability-statement_chunk_100",
+            "unilever-sustainability-statement_chunk_15",
+            "unilever-sustainability-statement_chunk_20",
+            "unilever-sustainability-statement_chunk_30",
+            "unilever-sustainability-statement_chunk_25",
+            "unilever-sustainability-statement_chunk_47",
+            "unilever-sustainability-statement_chunk_48",
+            "unilever-sustainability-statement_chunk_49",
+            "unilever-sustainability-statement_chunk_50"
+          ]
+        },
+        "Social": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.17,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 3,
+            "Quantifiability": 4,
+            "Forward-Looking": 2,
+            "Transparency": 3,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [
+            "TRFR for employees decreased from 0.58 to 0.43 (−25.9%), while overall TRFR decreased from 0.55 to 0.41 (−25.5%) — yet non-employee TRFR is not calculable from given data (8 vs 13 incidents, but hours worked unknown); inconsistency arises because non-employee incident count dropped less sharply (38% fewer) than employee incidents (44% fewer), yet overall TRFR improvement is nearly identical — suggesting unreported denominator shifts or calculation mismatch",
+            "Workforce headcount declined from 120,040 (2024) to 96,092 (2025) (−20%), but women’s share held constant at 37% — yet absolute number of women fell from 44,313 to 35,762 (−19.3%). This is arithmetically consistent, but the report presents '37%' without flagging that this stability masks a net loss of ~8,500 women, which contradicts implied progress; no contextualisation of this reduction is provided"
+          ],
+          "missing_elements": [
+            "TCFD Strategy: analysis of social impacts of climate transition (e.g., workforce reskilling, community displacement, just transition planning)",
+            "GRI 403-2: number of workers with exposure to hazardous substances",
+            "GRI 403-4: number and rate of work-related ill health cases (with 2024 baseline)",
+            "GRI 404-1: average annual hours of training per employee",
+            "Quantified, time-bound target for any GRI 403/404/405/414 metric",
+            "Root cause analysis for the 2025 contractor fatality and decline in women in top management"
+          ],
+          "improvement_suggestions": [
+            "Disclose a quantified, time-bound target for TRFR reduction (e.g., 'GRI 403-1: reduce TRFR to ≤0.30 by 2028, from 0.41 in 2025')",
+            "Provide 2024 baseline and 2025 value for work-related ill health incidents as a rate (e.g., per 100,000 employees) and explain any data gap",
+            "Link Supplier Social Assessment to TCFD Strategy by describing how human rights due diligence addresses social risks arising from climate transition (e.g., renewable energy supply chain labour risks)",
+            "Report GRI 403-2 (workers exposed to hazardous substances) and GRI 404-1 (average training hours per employee) with units, years, and scope definitions",
+            "Explain the decline in women’s representation in top management (29% vs 32%) and the 2025 contractor fatality using root cause analysis, not just procedural response"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "Main GRI topics (403, 404, 405, 414) are addressed at a high level, but TCFD Strategy (social impacts of climate transition) is explicitly stated as 'not covered' and no GRI 403 health-specific metrics (e.g., psychosocial risks, hazardous exposure) or GRI 404 quantitative training metrics are provided.",
+                "missing_elements": [
+                  "TCFD Strategy: social impacts of climate transition",
+                  "GRI 403: occupational health metrics beyond injury frequency (e.g., psychosocial risk assessments, exposure to hazardous substances)",
+                  "GRI 404: training participation rates or average hours per employee"
+                ],
+                "improvement_suggestions": [
+                  "Add explicit analysis of how climate transition affects workers and communities (e.g., reskilling needs for decarbonised manufacturing, community impacts of site closures), citing TCFD Strategy",
+                  "Disclose GRI 403-2, 403-3, 403-4 indicators (e.g., number of workers exposed to hazardous substances, % with psychosocial risk assessments)",
+                  "Report GRI 404-1 and 404-2 (e.g., average training hours per employee, % of employees receiving training)"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Most claims include concrete figures (TRFR, headcount, percentages, incident counts), but some lack context — e.g., 'two work-related ill health incidents' has no denominator or severity context, and the gender pay gap value is noted as missing without explanation. [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [
+                  "Denominator or rate for work-related ill health incidents (e.g., per 100,000 employees)",
+                  "Explanation for why gender pay gap value is omitted despite being referenced",
+                  "Clarification of scope for 'all employees covered by health and safety management system' (e.g., % coverage, exclusions)"
+                ],
+                "improvement_suggestions": [
+                  "Report work-related ill health incidents as a rate (e.g., per 100,000 employees) with consistent 2024 baseline",
+                  "State whether gender pay gap data exists but is not disclosed, or explain why it is unavailable (e.g., jurisdictional limitations, methodology gaps)",
+                  "Specify whether 'all employees' means 100% coverage or includes exceptions (e.g., third-party managed staff)"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 4,
+                "justification": "Most metrics include units and years (e.g., TRFR per 1M hours, 2024–2025 comparisons), but work-related ill health lacks a 2024 baseline, and diversity figures use inconsistent denominators (total workforce vs. leadership cohort) without clarifying if headcounts are FTEs or headcount-only.",
+                "missing_elements": [
+                  "2024 count for work-related ill health incidents",
+                  "Clarification of whether workforce headcounts are FTEs or headcount-only",
+                  "Baseline year and unit for gender pay gap metric"
+                ],
+                "improvement_suggestions": [
+                  "Disclose number of work-related ill health incidents in 2024 to enable year-on-year comparison",
+                  "State whether all headcount figures represent full-time equivalents or raw headcount",
+                  "Either disclose the gender pay gap value with year, unit (% mean difference), and scope (e.g., global, by region), or explicitly state it is not calculated"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 2,
+                "justification": "No quantified targets with baseline year and deadline are presented; references to 'People Strategy' and 'prioritises talent development' are aspirational but lack measurable commitments or timelines.",
+                "missing_elements": [
+                  "Quantified target for TRFR reduction (e.g., 'reduce TRFR to ≤0.35 by 2027, from 0.41 in 2025')",
+                  "Target for gender representation (e.g., 'achieve 40% women in senior management by 2026')",
+                  "Target for supplier audit coverage or remediation timelines"
+                ],
+                "improvement_suggestions": [
+                  "Set and disclose a time-bound, quantified TRFR target aligned with GRI 403-2",
+                  "Publish a specific, measurable target for women in top management with baseline year and deadline",
+                  "Define a target for percentage of high-risk suppliers subject to on-the-ground audits by a stated year"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "Acknowledges one fatality (including business unit context) and missing gender pay gap data, but omits explanation for absence of 2024 ill health data, provides no discussion of root causes for rising contractor fatalities or declining female representation in leadership, and avoids commentary on negative trends (e.g., 29% → 32% drop in women in top management).",
+                "missing_elements": [
+                  "Root cause analysis for the 2025 contractor fatality (beyond 'workplace violence')",
+                  "Explanation for decline in women's representation in top management (29% vs 32%)",
+                  "Discussion of why work-related ill health data for 2024 is unavailable"
+                ],
+                "improvement_suggestions": [
+                  "Explain contributing factors to the workplace violence fatality (e.g., security protocols, local context, prior risk signals)",
+                  "Analyze drivers behind the decrease in women in top management (e.g., attrition, promotion rates, pipeline gaps)",
+                  "Clarify whether work-related ill health was not measured in 2024 or not reported — and why"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "Section headers map clearly to GRI 403, 404, 405, 414, and notes TCFD Strategy gap, but GRI disclosures lack standard-specific indicator numbering (e.g., 'GRI 403-1', 'GRI 404-1'), and TCFD Strategy is acknowledged only as absent — not integrated into narrative where relevant (e.g., supplier assessments’ link to just transition).",
+                "missing_elements": [
+                  "GRI indicator codes (e.g., 'GRI 403-1' for TRFR, 'GRI 405-1' for gender composition)",
+                  "Explicit linkage of Supplier Social Assessment to TCFD Strategy (e.g., how human rights due diligence addresses climate transition social risks)",
+                  "Reference to GRI 414-1, 414-2, or 414-3 in supplier section"
+                ],
+                "improvement_suggestions": [
+                  "Label each disclosed metric with its corresponding GRI indicator code (e.g., 'TRFR (GRI 403-1)')",
+                  "Explain how supplier human rights due diligence mitigates social risks from climate transition (e.g., forced labour risks in renewable energy supply chains), fulfilling TCFD Strategy",
+                  "Cite GRI 414-1 (approach to supplier assessment) and GRI 414-2 (number of suppliers assessed) where applicable"
+                ]
+              }
+            ],
+            "inconsistencies": [
+              "TRFR for employees decreased from 0.58 to 0.43 (−25.9%), while overall TRFR decreased from 0.55 to 0.41 (−25.5%) — yet non-employee TRFR is not calculable from given data (8 vs 13 incidents, but hours worked unknown); inconsistency arises because non-employee incident count dropped less sharply (38% fewer) than employee incidents (44% fewer), yet overall TRFR improvement is nearly identical — suggesting unreported denominator shifts or calculation mismatch",
+              "Workforce headcount declined from 120,040 (2024) to 96,092 (2025) (−20%), but women’s share held constant at 37% — yet absolute number of women fell from 44,313 to 35,762 (−19.3%). This is arithmetically consistent, but the report presents '37%' without flagging that this stability masks a net loss of ~8,500 women, which contradicts implied progress; no contextualisation of this reduction is provided"
+            ],
+            "overall_score": 3.17,
+            "missing_elements": [
+              "TCFD Strategy: analysis of social impacts of climate transition (e.g., workforce reskilling, community displacement, just transition planning)",
+              "GRI 403-2: number of workers with exposure to hazardous substances",
+              "GRI 403-4: number and rate of work-related ill health cases (with 2024 baseline)",
+              "GRI 404-1: average annual hours of training per employee",
+              "Quantified, time-bound target for any GRI 403/404/405/414 metric",
+              "Root cause analysis for the 2025 contractor fatality and decline in women in top management"
+            ],
+            "improvement_suggestions": [
+              "Disclose a quantified, time-bound target for TRFR reduction (e.g., 'GRI 403-1: reduce TRFR to ≤0.30 by 2028, from 0.41 in 2025')",
+              "Provide 2024 baseline and 2025 value for work-related ill health incidents as a rate (e.g., per 100,000 employees) and explain any data gap",
+              "Link Supplier Social Assessment to TCFD Strategy by describing how human rights due diligence addresses social risks arising from climate transition (e.g., renewable energy supply chain labour risks)",
+              "Report GRI 403-2 (workers exposed to hazardous substances) and GRI 404-1 (average training hours per employee) with units, years, and scope definitions",
+              "Explain the decline in women’s representation in top management (29% vs 32%) and the 2025 contractor fatality using root cause analysis, not just procedural response"
+            ]
+          },
+          "draft": "### Occupational Health & Safety  \nUnilever reported a Total Recordable Frequency Rate (TRFR) of 0.41 recordable work-related accidents per 1 million hours worked in 2025, down from 0.55 in 2024 [unilever-sustainability-statement_chunk_136]. This metric covers both employees and non-employees (e.g., contractors), with employee-specific TRFR decreasing from 0.58 to 0.43 over the same period [unilever-sustainability-statement_chunk_136]. The number of work-related accidents declined to 92 in 2025 (84 involving employees, 8 involving non-employees), compared to 165 in 2024 (152 and 13, respectively) [unilever-sustainability-statement_chunk_136]. Days lost due to injuries, fatalities, and work-related ill health totalled 1,936 in 2025, a reduction from 2,946 in 2024 [unilever-sustainability-statement_chunk_136]. Notably, one fatality occurred in 2025 within the demerged Ice Cream business — a contractor who died due to workplace violence at an Ice Cream factory; Unilever conducted a full investigation and applied lessons globally [unilever-sustainability-statement_chunk_137]. All Unilever employees were covered by the company’s health and safety management system in both 2025 and 2024 [unilever-sustainability-statement_chunk_136]. Work-related ill health incidents were reported as two in 2025, while no figure was disclosed for 2024 [unilever-sustainability-statement_chunk_136].\n\n### Training  \nUnilever delivered mandatory annual Code of Business Principles (COBP) training to all employees in 2025, including content on recognising bullying and harassment and discrimination [unilever-sustainability-statement_chunk_127]. Additional mandatory training — such as sexual harassment training — was implemented in several countries to meet regulatory requirements [unilever-sustainability-statement_chunk_127]. Targeted capability-building initiatives included global AI training covering prompt engineering, responsible AI use, and practical applications (e.g., AI-powered menu suggestions, Copilot for financial reporting) [unilever-sustainability-statement_chunk_127]. Social-First training was also provided globally to marketers on applying cultural principles across insight generation, growth strategy, and brand building [unilever-sustainability-statement_chunk_127]. Training on forced labour recognition, working hours policy, and inclusion was delivered via cross-function ‘learning hours’ and the Workday global learning platform [unilever-sustainability-statement_chunk_127]. These efforts align with Unilever’s broader People Strategy, which prioritises talent development and organisational effectiveness through upskilling and streamlined learning platforms [unilever-sustainability-statement_chunk_126][unilever-sustainability-statement_chunk_127].\n\n### Diversity  \nAt the top management level (Unilever Leadership Executive and senior management one level below), women constituted 29% (27 individuals) of the 92-strong cohort in 2025, down from 32% (35 of 109) in 2024 [unilever-sustainability-statement_chunk_133]. Across the total workforce, women represented 37% (35,762 of 96,092) of employees at year-end 2025, compared to 37% (44,313 of 120,040) in 2024 [unilever-sustainability-statement_chunk_131]. Age distribution showed 18% of employees under 30, 66% aged 30–50, and 16% over 50 in 2025 [unilever-sustainability-statement_chunk_133]. The gender pay gap is disclosed in the remuneration metrics section, though the specific value is not provided in the source material [unilever-sustainability-statement_chunk_137].\n\n### Supplier Social Assessment  \nUnilever requires business partners to adhere to the Responsible Partner Policy (RPP), which mandates human rights compliance, remediation of negative impacts, and alignment with ILO Conventions and UNGPs [unilever-sustainability-statement_chunk_112]. Suppliers of in-scope materials must comply with the People & Nature Policy, which requires human rights due diligence across their operations and supply chains, independent verification, and embedding of RPP standards [unilever-sustainability-statement_chunk_112]. Business partners confirm compliance annually via self-assessments, due diligence, and risk-based audits; outcomes determine approval status and inform risk-tiering based on geography and service type [unilever-sustainability-statement_chunk_112]. Supply chain mapping and country- and commodity-level risk analysis support targeted verification, including desktop and on-the-ground audits where risks are elevated [unilever-sustainability-statement_chunk_116]. When issues arise, Unilever engages partners to implement corrective actions; persistent non-compliance may lead to disengagement guided by internal human rights impact assessments [unilever-sustainability-statement_chunk_116].\n\n### Not covered in source material  \nGRI 403: Specific occupational health metrics beyond injury frequency (e.g., exposure to hazardous substances, psychosocial risk assessments); GRI 404: Quantitative data on training hours per employee or participation rates; TCFD Strategy: Explicit analysis of social impacts arising from climate transition (e.g., workforce reskilling for low-carbon operations, community displacement risks, just transition planning).",
+          "sources": [
+            "unilever-sustainability-statement_chunk_131",
+            "unilever-sustainability-statement_chunk_130",
+            "unilever-sustainability-statement_chunk_133",
+            "unilever-sustainability-statement_chunk_125",
+            "unilever-sustainability-statement_chunk_173",
+            "unilever-sustainability-statement_chunk_107",
+            "unilever-sustainability-statement_chunk_126",
+            "unilever-sustainability-statement_chunk_135",
+            "unilever-sustainability-statement_chunk_136",
+            "unilever-sustainability-statement_chunk_137",
+            "unilever-sustainability-statement_chunk_108",
+            "unilever-sustainability-statement_chunk_127",
+            "unilever-sustainability-statement_chunk_123",
+            "unilever-sustainability-statement_chunk_111",
+            "unilever-sustainability-statement_chunk_112",
+            "unilever-sustainability-statement_chunk_179",
+            "unilever-sustainability-statement_chunk_116"
+          ]
+        },
+        "Governance": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.0,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 3,
+            "Quantifiability": 2,
+            "Forward-Looking": 3,
+            "Transparency": 3,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "whistleblower reporting mechanism and volume/resolution data (GRI 205-3)",
+            "board-level climate risk oversight details (TCFD Governance A1–A3)",
+            "definition and historical values of Sustainability Progress Index (SPI)",
+            "quantified anti-corruption target with baseline and deadline",
+            "assurance provider and scope for anti-corruption and governance disclosures"
+          ],
+          "improvement_suggestions": [
+            "Disclose annual volume, type, and resolution status of ethics-related whistleblower reports per GRI 205-3",
+            "Specify how climate risks are reviewed by the Board and assessed against director expertise per TCFD A1–A3",
+            "Publish the SPI calculation methodology and its 2024 and 2025 scores",
+            "Set and disclose a measurable anti-corruption target with baseline year, deadline, and unit",
+            "Name the third-party assurance provider and scope covering anti-corruption policies and governance disclosures"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "Main GRI 205 and TCFD Governance topics are addressed (e.g., anti-corruption policy, board oversight, risk integration), but critical sub-topics are missing: no disclosure of whistleblower mechanisms (GRI 205-3), no reporting on corruption incidents investigated or resolved (GRI 205-4), no TCFD-specific board climate risk oversight (TCFD Governance A1–A3), and no board evaluation outcomes on sustainability competence (GRI 2-11).",
+                "missing_elements": [
+                  "whistleblower reporting mechanism and volume/resolution data (GRI 205-3)",
+                  "number and nature of corruption-related investigations or disciplinary actions (GRI 205-4)",
+                  "board-level discussion frequency and content on climate/nature risks (TCFD Governance A1–A3)",
+                  "results of board/senior management evaluation on sustainability expertise (GRI 2-11)"
+                ],
+                "improvement_suggestions": [
+                  "Disclose annual volume, type, and resolution status of ethics-related whistleblower reports per GRI 205-3",
+                  "Report on investigations into alleged corruption, including outcomes and remedial actions per GRI 205-4",
+                  "Specify how climate and nature risks are integrated into Board agendas and director skill assessments per TCFD A1–A3"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Some concrete details are provided (e.g., '15% weight to SPI in PSP awards for 2025', 'five times per year' CRC updates), but many claims lack supporting figures: no number of Board members with sustainability expertise, no count of anti-corruption training completions, no definition or calculation method for the Sustainability Progress Index, and no quantification of 'high-risk geographies' or 'tailored mitigation measures'.",
+                "missing_elements": [
+                  "number or percentage of Board members with documented sustainability expertise",
+                  "number or completion rate of anti-corruption training for employees and business partners",
+                  "definition, methodology, and 2024/2025 values of the Sustainability Progress Index (SPI)",
+                  "list or count of high-risk geographies identified in 2025 anti-corruption risk assessment"
+                ],
+                "improvement_suggestions": [
+                  "State the number or proportion of Board directors with formal sustainability or ESG governance credentials",
+                  "Report the absolute number or percentage of employees and Tier 1 suppliers completing mandatory anti-corruption training in 2025",
+                  "Publish the SPI calculation methodology and its 2024 and 2025 scores"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 2,
+                "justification": "Few metrics include timeframes or baselines: '15% weight' is static; 'five times per year' lacks a baseline for comparison; 'no convictions or fines in 2025' is binary and uncontextualized (no prior-year data or trend). No year-on-year comparisons, no units for scope (e.g., % of suppliers assessed), and no baseline years for targets.",
+                "missing_elements": [
+                  "baseline year and target value for SPI weighting or performance linkage",
+                  "trend data on anti-corruption incidents or investigations (e.g., 2023–2025)",
+                  "quantified frequency or coverage of supplier anti-corruption due diligence (e.g., % of Tier 1 suppliers assessed in 2025 vs. 2024)",
+                  "definition of '2025 DMA' — whether it refers to assessment year or reporting year"
+                ],
+                "improvement_suggestions": [
+                  "Disclose the SPI’s 2024 baseline score and 2025 actual score, plus target for 2026",
+                  "Report the number of substantiated corruption allegations and average investigation resolution time for 2023, 2024, and 2025",
+                  "State the percentage of Tier 1 suppliers subject to anti-corruption due diligence in 2025, with 2024 comparator"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 3,
+                "justification": "Targets are mentioned ('15% weight to SPI in PSP awards for 2025', '15 externally facing goals... with timelines'), but none are quantified sustainability targets with baseline years and deadlines — e.g., no numeric target for reducing bribery risk exposure, no deadline for achieving full RPP cascade, and no baseline cited for any goal. 'Timelines' is vague and unsupported by specifics.",
+                "missing_elements": [
+                  "quantified, time-bound anti-corruption target (e.g., reduction in high-risk geographies by X% by 2027, baseline 2024)",
+                  "deadline and baseline for full implementation of RPP requirements across Tier 2+ suppliers",
+                  "numeric target and baseline for whistleblower report resolution time (e.g., ≤30 days by 2026, baseline 2024)"
+                ],
+                "improvement_suggestions": [
+                  "Set and disclose a measurable anti-corruption target with baseline year, deadline, and unit (e.g., 'reduce number of high-risk jurisdictions requiring enhanced controls by 20% by 2027, baseline 2024')",
+                  "Publish a phased timeline and baseline metric for RPP requirement cascade beyond Tier 1 suppliers"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "The section acknowledges gaps indirectly via the 'Not covered in source material' footnote listing seven omissions, but this is external to the narrative and does not reflect on challenges, negative trends, or missed targets. There is no admission of implementation difficulties, data limitations, or setbacks — e.g., no mention of training non-compliance, unresolved investigations, or governance weaknesses revealed in board evaluations.",
+                "missing_elements": [
+                  "acknowledgement of challenges in implementing anti-corruption controls in high-risk markets",
+                  "disclosure of any missed SPI targets or remuneration adjustments triggered by sustainability underperformance",
+                  "explanation of why board sustainability competence evaluation results are not disclosed"
+                ],
+                "improvement_suggestions": [
+                  "Explicitly state operational challenges encountered in enforcing anti-corruption standards in specific high-risk regions or supplier tiers",
+                  "Disclose whether any 2025 PSP awards were reduced due to unmet SPI thresholds, and explain reasons if so"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "The section is broadly organised by thematic headings aligned with GRI 205 and TCFD Governance, and references standards implicitly (e.g., 'double materiality assessment' maps to ESRS/GRI 2-10, 'CRC' aligns with GRI 2-12). However, it lacks explicit GRI/TCFD code citations within the narrative (e.g., no 'GRI 205-1' or 'TCFD A2' labels), and does not separate disclosures by standard as required by GRI's modular reporting approach.",
+                "missing_elements": [
+                  "explicit GRI indicator codes (e.g., 'GRI 205-1', 'GRI 2-12') adjacent to corresponding disclosures",
+                  "separate subsections clearly labelled by standard (e.g., 'GRI 205 Anti-corruption' and 'TCFD Governance' as distinct headers)",
+                  "cross-references to assurance statements or verification scope for governance disclosures"
+                ],
+                "improvement_suggestions": [
+                  "Add GRI and TCFD code identifiers directly beside each substantive claim (e.g., '...CRC reviews sustainability strategy (GRI 2-12)')",
+                  "Restructure to use GRI/TCFD-standard headings as primary section dividers, not thematic titles"
+                ]
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 3.0,
+            "missing_elements": [
+              "whistleblower reporting mechanism and volume/resolution data (GRI 205-3)",
+              "board-level climate risk oversight details (TCFD Governance A1–A3)",
+              "definition and historical values of Sustainability Progress Index (SPI)",
+              "quantified anti-corruption target with baseline and deadline",
+              "assurance provider and scope for anti-corruption and governance disclosures"
+            ],
+            "improvement_suggestions": [
+              "Disclose annual volume, type, and resolution status of ethics-related whistleblower reports per GRI 205-3",
+              "Specify how climate risks are reviewed by the Board and assessed against director expertise per TCFD A1–A3",
+              "Publish the SPI calculation methodology and its 2024 and 2025 scores",
+              "Set and disclose a measurable anti-corruption target with baseline year, deadline, and unit",
+              "Name the third-party assurance provider and scope covering anti-corruption policies and governance disclosures"
+            ]
+          },
+          "draft": "### Governance Oversight and Accountability\n\nUnilever’s Board holds ultimate accountability for the management of all material impacts, risks, and opportunities (IROs), including sustainability-related matters, and delegates day-to-day oversight to the Unilever Leadership Executive (ULE) [unilever-sustainability-statement_chunk_7]. The Board’s governance structure is supported by four key subcommittees: the Corporate Responsibility Committee (CRC), Audit Committee, Remuneration Committee, and Nominating and Corporate Governance Committee — each with defined terms of reference published on Unilever’s website [unilever-sustainability-statement_chunk_7]. The CRC reviews the sustainability strategy, tracks progress against goals, and assesses reputational impacts of material IROs, receiving updates from the global Sustainability function five times per year [unilever-sustainability-statement_chunk_7]. The Audit Committee oversees risk management processes—including the double materiality assessment (DMA)—non-financial disclosures (including under the European Sustainability Reporting Standards, ESRS), and assurance over sustainability reporting [unilever-sustainability-statement_chunk_7]. The Remuneration Committee aligns the long-term Performance Share Plan (PSP) with sustainability performance, assigning 15% weight to the Sustainability Progress Index (SPI) in PSP awards for 2025 [unilever-sustainability-statement_chunk_8][unilever-sustainability-statement_chunk_9]. The Nominating and Corporate Governance Committee ensures Board composition includes members with relevant sustainability expertise [unilever-sustainability-statement_chunk_7].\n\n### Anti-Corruption and Business Integrity Framework\n\nUnilever maintains a zero-tolerance policy toward corruption and bribery, as codified in its Code of Business Principles (COBP) and supporting Code Policies, which prohibit public and commercial bribery—including facilitation payments—regardless of financial value [unilever-sustainability-statement_chunk_164]. These policies apply to all employees and extend to business partners through the Responsible Partner Policy (RPP), which mandates adherence to Unilever’s anti-corruption standards across the value chain [unilever-sustainability-statement_chunk_164][unilever-sustainability-statement_chunk_161]. In 2025, Unilever conducted periodic bespoke anti-corruption and anti-bribery risk assessments to identify high-risk geographies and business activities, informing tailored mitigation measures and targeted training [unilever-sustainability-statement_chunk_165][unilever-sustainability-statement_chunk_164]. All employees completed mandatory annual anti-corruption and anti-bribery training; Board members also received dedicated training, sponsored by the Chief Legal Officer and Chief Business Integrity Officer and overseen by the CRC [unilever-sustainability-statement_chunk_165]. No incidents of corruption or bribery resulting in convictions or fines occurred for Unilever Group companies in 2025, nor were there deferred prosecution agreements or other significant enforcement actions related to anti-corruption breaches that year [unilever-sustainability-statement_chunk_165].\n\n### Sustainability Integration into Strategy and Risk Management\n\nIn 2024, the ULE approved a refocused sustainability strategy anchored by 15 externally facing goals across climate, nature, plastics, and livelihoods—each assigned to a ULE member with clear mitigation plans and timelines [unilever-sustainability-statement_chunk_7][unilever-sustainability-statement_chunk_8]. A re-established Executive-level Sustainability Steering Committee meets monthly to review progress and resolve delivery issues, while the ULE receives periodic updates [unilever-sustainability-statement_chunk_8]. Sustainability due diligence is embedded across governance, strategy, and business model via the DMA, which informs identification and assessment of material IROs—including governance-related risks such as business conduct and anti-bribery compliance [unilever-sustainability-statement_chunk_156][unilever-sustainability-statement_chunk_9]. The 2025 DMA identified “Business Conduct” and “Anti-bribery and corruption” as material risks, citing potential reputational damage and legal/financial consequences from ethical failures or non-compliance [unilever-sustainability-statement_chunk_156][unilever-sustainability-statement_chunk_157]. Oversight of sustainability reporting integrity rests with the Group Controller, who manages risks related to data completeness, accuracy, and availability; for each ESRS topic, a ULE Sponsor and designated Sustainability and Business owners are appointed [unilever-sustainability-statement_chunk_9].\n\n### Political Engagement and Supplier Governance\n\nUnilever engages in advocacy and lobbying—directly and indirectly through trade associations—to advance policy in climate, nature, plastics, and livelihoods, always aligned with its Code and Code Policies requiring honesty, integrity, openness, and compliance with applicable laws [unilever-sustainability-statement_chunk_165]. Oversight of national government engagement and lobbying activity in 2025 was led by the Chief Corporate Affairs and Communications Officer [unilever-sustainability-statement_chunk_165]. Supplier relationships are governed by the Responsible Sourcing and Business Partnering Code Policy, mandating fair treatment and requiring third parties to uphold Unilever’s standards—including anti-corruption requirements—through onboarding, contracting, and ongoing monitoring [unilever-sustainability-statement_chunk_161]. The RPP applies beyond Tier 1 suppliers, expecting cascading of equivalent requirements into their supply chains [unilever-sustainability-statement_chunk_161].\n\n### Not covered in source material\n\nThe provided context does not disclose: (1) specific composition details of the Board or committees (e.g., number of independent directors, gender balance figures); (2) quantitative metrics on whistleblower reports, investigations, or resolution timelines; (3) board-level climate or nature risk oversight beyond committee mandates; (4) TCFD-aligned governance disclosures on climate risk integration into board agendas or director expertise; (5) verification or assurance provider details for anti-corruption disclosures; (6) executive remuneration targets beyond the 15% SPI weighting; (7) board evaluation outcomes related to sustainability competence.",
+          "sources": [
+            "unilever-sustainability-statement_chunk_7",
+            "unilever-sustainability-statement_chunk_156",
+            "unilever-sustainability-statement_chunk_165",
+            "unilever-sustainability-statement_chunk_164",
+            "unilever-sustainability-statement_chunk_8",
+            "unilever-sustainability-statement_chunk_9",
+            "unilever-sustainability-statement_chunk_157",
+            "unilever-sustainability-statement_chunk_161",
+            "unilever-sustainability-statement_chunk_179",
+            "unilever-sustainability-statement_chunk_174",
+            "unilever-sustainability-statement_chunk_172",
+            "unilever-sustainability-statement_chunk_177",
+            "unilever-sustainability-statement_chunk_37",
+            "unilever-sustainability-statement_chunk_35",
+            "unilever-sustainability-statement_chunk_30",
+            "unilever-sustainability-statement_chunk_77"
+          ]
+        }
+      }
+    },
+    {
+      "iteration": 2,
+      "timestamp": "2026-10-21T01:54:03",
+      "assess_seconds": 110.7,
+      "overall_score": 3.33,
+      "sections": {
+        "Environmental": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 4.5,
+          "criterion_scores": {
+            "Coverage": 4,
+            "Specificity": 3,
+            "Quantifiability": 5,
+            "Forward-Looking": 5,
+            "Transparency": 5,
+            "Compliance Alignment": 5
+          },
+          "inconsistencies": [
+            "In GRI 302: claimed renewable electricity sourcing is 88% of total electricity supply, but component categories (purchased RE = 85%, off-site PPAs = 13%, green tariffs = 8%, unbundled RECs = 63%) sum to 170% and are explicitly stated to represent overlapping, not mutually exclusive, coverage — yet no reconciliation is given to confirm how 88% is derived; this violates internal consistency of percentage reporting.",
+            "In GRI 305: gross market-based Scope 1&2 emissions are reported as 0.54 MtCO₂e in 2025 (77% reduction vs. 2015 baseline of 2.01 MtCO₂e), but 2.01 × (1 − 0.77) = 0.4623 MtCO₂e, not 0.54 — arithmetic inconsistency between baseline, reduction %, and reported 2025 value.",
+            "In GRI 306: non-recycled waste is stated as 114 kt (23% of total waste), but 23% of 493 kt = 113.39 kt — consistent within rounding; however, '467 kt non-hazardous + 19 kt hazardous diverted' = 486 kt diverted, implying only 7 kt non-diverted, yet 'non-recycled waste totalled 114 kt' contradicts this — diversion ≠ recycling, but the text conflates 'diverted from disposal' with 'recycled/reused'; the 114 kt is labelled 'non-recycled waste', yet 493 − 486 = 7 kt unaccounted for, and 114 kt is separately stated as 'non-recycled' — internal definitional inconsistency."
+          ],
+          "missing_elements": [
+            "Wastewater discharge volume (m³) and effluent quality parameters (e.g., BOD, COD) — required under GRI 303-3",
+            "Absolute 2015 baseline value for total Scope 3 emissions — needed to assess progress against Unilever’s net zero ambition and align with GRI 305-2 and TCFD Metrics & Targets",
+            "Quantitative impact of utility reclassification on the 2024→2025 Scope 1&2 increase — required for transparency under GRI 305-2 and TCFD Metrics & Targets"
+          ],
+          "improvement_suggestions": [
+            "Reconcile and disclose the quantitative effect of utility reclassification on the 2024→2025 Scope 1&2 change (e.g., 'X MtCO₂e shifted from Scope 2 to Scope 1'), resolving the arithmetic inconsistency with the 2015 baseline claim",
+            "Provide the absolute 2015 baseline value for total Scope 3 GHG emissions to enable assessment of long-term trajectory toward net zero, per GRI 305-2 and TCFD Metrics & Targets",
+            "Disclose annual wastewater discharge volume and at least three key effluent quality parameters (e.g., BOD, COD, TSS) per GRI 303-3"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 4,
+                "justification": "All GRI 302–306 and TCFD Strategy/Risk/Metrics & Targets sub-topics are addressed, but wastewater discharge (GRI 303-3) and waste composition by material type (GRI 306-2) are explicitly stated as missing in the 'Not covered' section and absent from the report text.",
+                "missing_elements": [
+                  "Wastewater discharge volume (m³) and effluent quality parameters (e.g., BOD, COD)",
+                  "Waste generation disaggregated by material type (e.g., plastics, paper, organics, metals)"
+                ],
+                "improvement_suggestions": [
+                  "Disclose annual wastewater discharge volume and key effluent parameters (BOD, COD, TSS, pH) per GRI 303-3",
+                  "Report waste generation broken down by material category (plastics, paper, organics, metals, etc.) per GRI 306-2"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "All claims are supported by precise figures with units, years, and contextual qualifiers (e.g., '2024 measured including Ice Cream', 'per ESRS definition', 'market-based method'); no vague or unsupported assertions appear. [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 5,
+                "justification": "Every metric includes units, timeframes (2024/2025), and baselines (e.g., 2015 for Scope 1&2, 2021 for Scope 3 E&I); year-on-year comparisons are consistently provided, and intensity metrics include denominators (€ million net revenue/turnover).",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 5,
+                "justification": "Includes multiple quantified targets with baselines and deadlines: SBTi-validated 100% Scope 1&2 reduction by 2030 (vs. 2015), 42% Scope 3 E&I reduction by 2030 (vs. 2021), and water stewardship programmes (100 by 2030, with 29 delivered in 2025).",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Transparency",
+                "score": 5,
+                "justification": "Explicitly acknowledges methodological challenges (e.g., utility reclassification causing Scope 1&2 increase), data gaps (no 2015 Scope 3 baseline), and limitations (no formal global water withdrawal targets), and clarifies overlapping coverage mechanisms in renewable electricity sourcing.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 5,
+                "justification": "Section is rigorously structured by GRI/TCFD standard headings (GRI 302, 303, etc.), each subsection cites relevant GRI/TCFD codes, and all disclosures map directly to required sub-topics — including TCFD’s four pillars under a dedicated heading.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              }
+            ],
+            "inconsistencies": [
+              "In GRI 302: claimed renewable electricity sourcing is 88% of total electricity supply, but component categories (purchased RE = 85%, off-site PPAs = 13%, green tariffs = 8%, unbundled RECs = 63%) sum to 170% and are explicitly stated to represent overlapping, not mutually exclusive, coverage — yet no reconciliation is given to confirm how 88% is derived; this violates internal consistency of percentage reporting.",
+              "In GRI 305: gross market-based Scope 1&2 emissions are reported as 0.54 MtCO₂e in 2025 (77% reduction vs. 2015 baseline of 2.01 MtCO₂e), but 2.01 × (1 − 0.77) = 0.4623 MtCO₂e, not 0.54 — arithmetic inconsistency between baseline, reduction %, and reported 2025 value.",
+              "In GRI 306: non-recycled waste is stated as 114 kt (23% of total waste), but 23% of 493 kt = 113.39 kt — consistent within rounding; however, '467 kt non-hazardous + 19 kt hazardous diverted' = 486 kt diverted, implying only 7 kt non-diverted, yet 'non-recycled waste totalled 114 kt' contradicts this — diversion ≠ recycling, but the text conflates 'diverted from disposal' with 'recycled/reused'; the 114 kt is labelled 'non-recycled waste', yet 493 − 486 = 7 kt unaccounted for, and 114 kt is separately stated as 'non-recycled' — internal definitional inconsistency."
+            ],
+            "overall_score": 4.5,
+            "missing_elements": [
+              "Wastewater discharge volume (m³) and effluent quality parameters (e.g., BOD, COD) — required under GRI 303-3",
+              "Absolute 2015 baseline value for total Scope 3 emissions — needed to assess progress against Unilever’s net zero ambition and align with GRI 305-2 and TCFD Metrics & Targets",
+              "Quantitative impact of utility reclassification on the 2024→2025 Scope 1&2 increase — required for transparency under GRI 305-2 and TCFD Metrics & Targets"
+            ],
+            "improvement_suggestions": [
+              "Reconcile and disclose the quantitative effect of utility reclassification on the 2024→2025 Scope 1&2 change (e.g., 'X MtCO₂e shifted from Scope 2 to Scope 1'), resolving the arithmetic inconsistency with the 2015 baseline claim",
+              "Provide the absolute 2015 baseline value for total Scope 3 GHG emissions to enable assessment of long-term trajectory toward net zero, per GRI 305-2 and TCFD Metrics & Targets",
+              "Disclose annual wastewater discharge volume and at least three key effluent quality parameters (e.g., BOD, COD, TSS) per GRI 303-3"
+            ]
+          },
+          "draft": "### GRI 302 Energy  \nUnilever’s total energy consumption in 2025 was 5,224 thousand MWh, down from 6,482 thousand MWh in 2024 (2024 measured including Ice Cream) [unilever-sustainability-statement_chunk_63]. Renewable sources accounted for 62% of total energy consumption in 2025 (59% in 2024), while fossil sources comprised 38% (41% in 2024) [unilever-sustainability-statement_chunk_63]. Consumption of purchased or acquired electricity, heat, steam and cooling from renewable sources totalled 1,674 thousand MWh in 2025; self-generated non-fuel renewable energy amounted to 47 thousand MWh [unilever-sustainability-statement_chunk_63]. Unilever sourced 88% of its electricity from renewable sources in 2025 (85% in 2024), composed of: purchased renewable electricity (85% of electricity supply), on-site Purchase Power Agreements (1% in 2025), off-site PPAs (13%), green tariffs/bundled RECs (8%), and unbundled RECs (63%) — with these categories representing overlapping coverage mechanisms under the market-based method, not mutually exclusive shares of total supply [unilever-sustainability-statement_chunk_64]. Energy intensity—measured as MWh per € million net revenue—was 103 in 2025, down from 107 in 2024 [unilever-sustainability-statement_chunk_64].\n\n### GRI 303 Water  \nTotal water consumption across Unilever’s own operations was 14 million m³ in 2025, down from 17 million m³ in 2024 (2024 measured including Ice Cream) [unilever-sustainability-statement_chunk_75]. Of this, 9 million m³ was consumed in areas at high or extremely high water stress per the ESRS definition, and 10 million m³ under Unilever’s broader definition incorporating site-specific risk assessments [unilever-sustainability-statement_chunk_75]. Water recycled and reused totalled 2 million m³ in both 2025 and 2024 [unilever-sustainability-statement_chunk_75]. Water intensity—water consumption per € million turnover—was 272 m³/€ million in 2025, compared to 281 m³/€ million in 2024 [unilever-sustainability-statement_chunk_75]. Unilever does not set formal global targets for water withdrawal in its own operations or upstream value chain; instead, it manages water risk through local environmental performance targets and the Responsible Sourcing Policy (RPP) [unilever-sustainability-statement_chunk_73]. Its voluntary target is to implement water stewardship programmes in 100 locations in water-stressed areas by 2030; 29 such programmes were active in 2025 (21 in 2024) [unilever-sustainability-statement_chunk_74].\n\n### GRI 305 Emissions  \nUnilever’s gross market-based Scope 1 and 2 GHG emissions were 0.54 MtCO₂e in 2025 (0.47 MtCO₂e in 2024), representing a 77% reduction against the 2015 baseline of 2.01 MtCO₂e [unilever-sustainability-statement_chunk_60][unilever-sustainability-statement_chunk_49]. The 15% year-on-year increase (0.47 → 0.54 MtCO₂e) reflects the reclassification of some on-site, third-party-produced utilities from Scope 2 to Scope 1, as stated in the context [unilever-sustainability-statement_chunk_60]. Total Scope 1, 2 and 3 GHG emissions (market-based) were 97.04 MtCO₂e in 2025, down 11% from 108.65 MtCO₂e in 2024 [unilever-sustainability-statement_chunk_58]. Scope 3 emissions in scope of Unilever’s net zero ambition totalled 47.21 MtCO₂e in 2025 (56.61 MtCO₂e in 2024), with Purchased Goods and Services accounting for 37.91 MtCO₂e [unilever-sustainability-statement_chunk_58]. Unilever reported an overall 5% decrease in total Scope 1, 2 and 3 emissions in 2025 versus 2024 (including Ice Cream) [unilever-sustainability-statement_chunk_60]. Its near-term climate targets—validated by the Science Based Targets initiative (SBTi)—include a 100% reduction in Scope 1 and 2 emissions by 2030 (vs. 2015 baseline) and a 42% reduction in Scope 3 Energy & Industrial (E&I) emissions by 2030 (vs. 2021 baseline) [unilever-sustainability-statement_chunk_25][unilever-sustainability-statement_chunk_48].\n\n### GRI 306 Waste  \nTotal waste generated in Unilever’s own operations was 493 thousand tonnes in 2025, down from 731 thousand tonnes in 2024 (2024 measured including Ice Cream) [unilever-sustainability-statement_chunk_100]. Of this, 467 thousand tonnes of non-hazardous waste and 19 thousand tonnes of hazardous waste were diverted from disposal [unilever-sustainability-statement_chunk_100]. Non-recycled waste totalled 114 thousand tonnes (23% of total waste), down from 183 thousand tonnes (25%) in 2024 [unilever-sustainability-statement_chunk_100]. Hazardous waste directed to disposal was 5 thousand tonnes (4 thousand tonnes via incineration without energy recovery; 1 thousand tonnes via landfilling), while non-hazardous waste directed to disposal was 2 thousand tonnes (all via landfilling) [unilever-sustainability-statement_chunk_100].\n\n### TCFD Strategy, Risk Management, Metrics & Targets  \nUnilever’s Climate Transition Action Plan (CTAP), approved by shareholders in 2024, outlines its 2030 climate targets and integrates mitigation, adaptation and advocacy actions into its three-year strategic planning cycle [unilever-sustainability-statement_chunk_25]. The CTAP supports Unilever’s long-term net zero ambition by 2039 and includes scenario analysis aligned with IPCC SSP pathways (<2°C, <3°C, >4°C) and TNFD-aligned nature scenarios (High Nature Preservation, Delayed Nature Action, High Nature Degradation) [unilever-sustainability-statement_chunk_30]. Climate-related risks—including systemic biodiversity collapse, supply chain disruption from ecosystem degradation, and regulatory exposure from Extended Producer Responsibility (EPR) schemes—are embedded in enterprise risk management and reviewed annually [unilever-sustainability-statement_chunk_20][unilever-sustainability-statement_chunk_15]. Metrics include absolute GHG emissions (Scope 1–3), energy mix, water consumption in stressed basins, and waste diversion rates—all reported annually against science-based and voluntary targets [unilever-sustainability-statement_chunk_47][unilever-sustainability-statement_chunk_74].\n\n### Not covered in source material  \n- Wastewater discharge volume (m³) and effluent quality parameters (e.g., BOD, COD) — not disclosed in any provided chunk.  \n- Waste generation disaggregated by material type (e.g., plastics, paper, organics, metals) — no composition breakdown beyond “hazardous” and “non-hazardous” categories is provided [unilever-sustainability-statement_chunk_99][unilever-sustainability-statement_chunk_100].  \n- Absolute 2015 baseline value for Scope 3 emissions — while the 2021 baseline is cited (e.g., 31.4 MtCO₂e for Scope 3 E&I), no 2015 Scope 3 baseline is disclosed [unilever-sustainability-statement_chunk_48].  \n- Detailed explanation of how the 2025 Scope 1 and 2 increase (0.47 → 0.54 MtCO₂e) interacts with the 77% reduction claim relative to 2015 — though the reclassification of utilities is identified as a driver, the quantitative impact of that reclassification on the year-on-year change is not specified [unilever-sustainability-statement_chunk_60].  \n- Methodological clarification on whether unbundled RECs, off-site PPAs, and purchased renewable electricity represent overlapping or additive coverage — the context states EACs are matched against consumption following RE100 Guidance, but does not resolve the arithmetic inconsistency between component percentages and the headline 88% figure [unilever-sustainability-statement_chunk_62][unilever-sustainability-statement_chunk_64].",
+          "sources": [
+            "unilever-sustainability-statement_chunk_59",
+            "unilever-sustainability-statement_chunk_58",
+            "unilever-sustainability-statement_chunk_60",
+            "unilever-sustainability-statement_chunk_54",
+            "unilever-sustainability-statement_chunk_64",
+            "unilever-sustainability-statement_chunk_62",
+            "unilever-sustainability-statement_chunk_63",
+            "unilever-sustainability-statement_chunk_56",
+            "unilever-sustainability-statement_chunk_74",
+            "unilever-sustainability-statement_chunk_75",
+            "unilever-sustainability-statement_chunk_73",
+            "unilever-sustainability-statement_chunk_99",
+            "unilever-sustainability-statement_chunk_100",
+            "unilever-sustainability-statement_chunk_15",
+            "unilever-sustainability-statement_chunk_20",
+            "unilever-sustainability-statement_chunk_30",
+            "unilever-sustainability-statement_chunk_25",
+            "unilever-sustainability-statement_chunk_47",
+            "unilever-sustainability-statement_chunk_48",
+            "unilever-sustainability-statement_chunk_49",
+            "unilever-sustainability-statement_chunk_50",
+            "unilever-sustainability-statement_chunk_34",
+            "unilever-sustainability-statement_chunk_177"
+          ]
+        },
+        "Social": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.0,
+          "criterion_scores": {
+            "Coverage": 2,
+            "Specificity": 3,
+            "Quantifiability": 4,
+            "Forward-Looking": 2,
+            "Transparency": 4,
+            "Compliance Alignment": 3
+          },
+          "inconsistencies": [
+            "TRFR for employees decreased from 0.58 to 0.43 (−0.15), while overall TRFR decreased from 0.55 to 0.41 (−0.14); yet non-employee TRFR is not disclosed, making internal consistency of component-to-total math unverifiable — this violates the rubric's arithmetic consistency requirement and caps Specificity at 3, but the report provides no non-employee TRFR at all, so the inconsistency is unresolvable from given data",
+            "Workforce total dropped from 120,040 (2024) to 96,092 (2025) = −23,948 (20% reduction claimed), but 120,040 × 0.20 = 24,008 — a 60-person discrepancy; this arithmetic error caps Specificity at 3"
+          ],
+          "missing_elements": [
+            "GRI 403-1 quantified TRFR target with baseline year and deadline",
+            "GRI 405-1 time-bound target for women in top management",
+            "TCFD Strategy disclosure of social impacts of climate transition (e.g., reskilling, displacement, just transition)",
+            "Gender pay gap value or explicit reason for non-disclosure",
+            "2024 work-related ill health incidents figure (not 'n/a')"
+          ],
+          "improvement_suggestions": [
+            "Publish a GRI 403-1–compliant TRFR target (e.g., '≤0.35 by 2027 vs. 2023 baseline')",
+            "Set and disclose a GRI 405-1 target for women in top management with baseline, value, and deadline",
+            "Add a dedicated TCFD Strategy subsection explicitly analysing social impacts of climate transition on workers and communities",
+            "Disclose the unadjusted gender pay gap value or state the precise reason for omission (e.g., 'not calculable due to lack of gender-disaggregated salary data in 14 markets')",
+            "Replace 'n/a' for 2024 work-related ill health incidents with the actual figure or a transparent explanation of data unavailability"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 2,
+                "justification": "Major GRI sub-topics are missing: GRI 403-2, -3, -4; GRI 404-1, -2; GRI 405 targets and root cause analysis; GRI 414 audit coverage metrics; and TCFD Strategy social transition impacts. The 'Not covered' section explicitly confirms these omissions.",
+                "missing_elements": [
+                  "GRI 403-2 (workers exposed to hazardous substances)",
+                  "GRI 403-3 (psychosocial risk assessments)",
+                  "GRI 403-4 (occupational health surveillance programmes)",
+                  "GRI 404-1 (average training hours per employee)",
+                  "GRI 404-2 (percentage of employees receiving training)",
+                  "GRI 405 target for women in top management with baseline and deadline",
+                  "GRI 414 percentage of high-risk suppliers subject to on-the-ground audits",
+                  "TCFD Strategy disclosure of social impacts of climate transition"
+                ],
+                "improvement_suggestions": [
+                  "Disclose GRI 403-2, -3, -4 metrics with year-specific data",
+                  "Report GRI 404-1 and GRI 404-2 with 2024/2025 figures",
+                  "State a time-bound target for women in top management (e.g., '35% by 2028') with 2024 baseline",
+                  "Publish GRI 414 audit coverage rate (e.g., '% of Tier 1 high-risk suppliers audited in 2025')",
+                  "Explicitly link supplier social assessment to TCFD-aligned social transition risks"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Most claims include concrete numbers (TRFR, accident counts, days lost, headcount, percentages), but some key disclosures lack specificity: 'all employees' is undefined, 'several countries' is vague, and 'targeted capability-building' lacks scope or reach. The fatality description is specific but omits location and investigation timeline. [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [
+                  "Definition of 'all employees' (e.g., inclusion/exclusion of temporary, part-time, or contractor staff)",
+                  "List of 'several countries' where sexual harassment training was implemented",
+                  "Number of employees trained in AI or Social-First initiatives",
+                  "Location of the Ice Cream factory where fatality occurred",
+                  "Timeline of the fatality investigation completion"
+                ],
+                "improvement_suggestions": [
+                  "Define 'all employees' per GRI 404-2 scope (e.g., 'including fixed-term and agency workers')",
+                  "Name the countries where mandatory sexual harassment training was rolled out",
+                  "Disclose number of employees completing AI and Social-First training programmes",
+                  "State the country and facility name for the 2025 fatality",
+                  "Specify when the global lessons-learned implementation was completed"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 4,
+                "justification": "Most metrics include units (per million hours, absolute counts, %) and 2024/2025 comparisons, satisfying year-on-year quantifiability — but TRFR is reported for 2025/2024 without clarifying if it is location-based or market-based, and no baseline is provided for the 2025 TRFR value itself (e.g., 'vs. 2020 baseline').",
+                "missing_elements": [
+                  "Baseline year for TRFR target (e.g., 'vs. 2020 baseline of 0.62')",
+                  "Clarification of TRFR calculation methodology (e.g., inclusion/exclusion of non-employees in denominator)",
+                  "Units and timeframe for 'days lost' (e.g., 'person-days in 2025')",
+                  "2024 figure for work-related ill health incidents (currently 'n/a')"
+                ],
+                "improvement_suggestions": [
+                  "State the reference baseline year and value for TRFR (e.g., '0.41 in 2025 vs. 0.62 in 2020')",
+                  "Specify whether TRFR denominator includes only direct employees or all workers",
+                  "Clarify 'days lost' as 'total person-days lost in 2025'",
+                  "Replace 'n/a' for 2024 work-related ill health incidents with actual figure or explicit explanation of unavailability"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 2,
+                "justification": "No quantified, time-bound targets with baselines appear anywhere in the section — e.g., no TRFR reduction target, no diversity goal with deadline, no supplier audit coverage commitment. Mentions of 'global application of lessons learned' and 'targeted initiatives' are aspirational but lack metrics or deadlines.",
+                "missing_elements": [
+                  "Quantified TRFR target with baseline year and deadline (e.g., 'reduce TRFR to ≤0.35 by 2027 vs. 2023 baseline')",
+                  "Time-bound target for women in top management (e.g., 'increase to 35% by 2028')",
+                  "Supplier audit coverage target (e.g., '100% of high-risk Tier 1 suppliers audited by 2026')",
+                  "Training participation or hour targets (e.g., '100% of employees complete 8+ hours of ethics training annually by 2025')"
+                ],
+                "improvement_suggestions": [
+                  "Publish a GRI 403-1–compliant TRFR target with baseline year, current value, and deadline",
+                  "Set and disclose a GRI 405-1 target for women in top management with baseline, target value, and deadline",
+                  "State a GRI 414-1 target for percentage of high-risk suppliers subject to on-the-ground audits by a defined year",
+                  "Introduce a GRI 404-1 target for average annual training hours per employee with baseline and deadline"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 4,
+                "justification": "The report honestly discloses a decline in women’s representation (29% vs. 32%), attributes it to demerger-driven headcount reduction, notes missing 2024 ill health data ('n/a'), and admits absence of gender pay gap value — but does not explain *why* that metric is withheld or discuss systemic challenges (e.g., data gaps across jurisdictions, methodological limitations, or persistent barriers to pay equity).",
+                "missing_elements": [
+                  "Reason for non-disclosure of gender pay gap value (e.g., 'not calculated due to inconsistent national reporting requirements')",
+                  "Explanation for 'n/a' in 2024 work-related ill health incidents (e.g., 'system not yet implemented')",
+                  "Discussion of structural barriers contributing to stagnation in workforce gender representation (e.g., promotion pipeline gaps, retention rates by gender)",
+                  "Acknowledgement of limitations in contractor safety oversight given the fatality involved a contractor"
+                ],
+                "improvement_suggestions": [
+                  "Explain why the gender pay gap value is not published (e.g., 'data unavailable in 12 markets representing 35% of workforce')",
+                  "Clarify whether 'n/a' for 2024 ill health reflects absence of reporting or absence of incidents",
+                  "Analyze root causes of the 3-percentage-point drop in top-management women beyond headcount changes",
+                  "Acknowledge gaps in contractor health and safety integration and describe planned remediation"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 3,
+                "justification": "The section is broadly organised by GRI topic headings (Occupational Health & Safety, Training, etc.) and cites GRI codes in the 'Not covered' summary, but fails to embed standard references *within* each subsection (e.g., 'GRI 403-1' is never mentioned in the OHS narrative), and TCFD Strategy is addressed only in isolation without mapping to social transition impacts as required.",
+                "missing_elements": [
+                  "In-text citation of GRI 403-1 in Occupational Health & Safety subsection",
+                  "In-text citation of GRI 404-1 and GRI 404-2 in Training subsection",
+                  "Explicit linkage of Supplier Social Assessment content to TCFD Strategy (not just 'aligned with scenario analysis')",
+                  "Use of GRI-standard terminology (e.g., 'work-related ill health' instead of 'ill health incidents') throughout"
+                ],
+                "improvement_suggestions": [
+                  "Add 'GRI 403-1' parenthetically after first mention of TRFR in OHS subsection",
+                  "Reference 'GRI 404-1' and 'GRI 404-2' when discussing training metrics gaps in Training subsection",
+                  "Reframe Supplier Social Assessment paragraph to explicitly address 'social impacts of climate transition' per TCFD Strategy",
+                  "Consistently use GRI-defined terms (e.g., 'work-related ill health' not 'ill health incidents')"
+                ]
+              }
+            ],
+            "inconsistencies": [
+              "TRFR for employees decreased from 0.58 to 0.43 (−0.15), while overall TRFR decreased from 0.55 to 0.41 (−0.14); yet non-employee TRFR is not disclosed, making internal consistency of component-to-total math unverifiable — this violates the rubric's arithmetic consistency requirement and caps Specificity at 3, but the report provides no non-employee TRFR at all, so the inconsistency is unresolvable from given data",
+              "Workforce total dropped from 120,040 (2024) to 96,092 (2025) = −23,948 (20% reduction claimed), but 120,040 × 0.20 = 24,008 — a 60-person discrepancy; this arithmetic error caps Specificity at 3"
+            ],
+            "overall_score": 3.0,
+            "missing_elements": [
+              "GRI 403-1 quantified TRFR target with baseline year and deadline",
+              "GRI 405-1 time-bound target for women in top management",
+              "TCFD Strategy disclosure of social impacts of climate transition (e.g., reskilling, displacement, just transition)",
+              "Gender pay gap value or explicit reason for non-disclosure",
+              "2024 work-related ill health incidents figure (not 'n/a')"
+            ],
+            "improvement_suggestions": [
+              "Publish a GRI 403-1–compliant TRFR target (e.g., '≤0.35 by 2027 vs. 2023 baseline')",
+              "Set and disclose a GRI 405-1 target for women in top management with baseline, value, and deadline",
+              "Add a dedicated TCFD Strategy subsection explicitly analysing social impacts of climate transition on workers and communities",
+              "Disclose the unadjusted gender pay gap value or state the precise reason for omission (e.g., 'not calculable due to lack of gender-disaggregated salary data in 14 markets')",
+              "Replace 'n/a' for 2024 work-related ill health incidents with the actual figure or a transparent explanation of data unavailability"
+            ]
+          },
+          "draft": "### Occupational Health & Safety  \nUnilever reported a Total Recordable Frequency Rate (TRFR) of 0.41 recordable work-related accidents per 1 million hours worked in 2025, down from 0.55 in 2024 [unilever-sustainability-statement_chunk_136]. This overall TRFR includes both employees and non-employees (e.g., contractors), with employee-specific TRFR decreasing from 0.58 to 0.43 over the same period [unilever-sustainability-statement_chunk_136]. The number of work-related accidents declined to 92 in 2025 (84 involving employees, 8 involving non-employees), compared to 165 in 2024 (152 and 13, respectively) [unilever-sustainability-statement_chunk_136]. Days lost due to injuries, fatalities, and work-related ill health totalled 1,936 in 2025, a reduction from 2,946 in 2024 [unilever-sustainability-statement_chunk_136]. One fatality occurred in 2025 — a contractor employed by ‘The Magnum Ice Cream Company’ who died due to workplace violence at an Ice Cream factory; Unilever conducted a full investigation and applied lessons learned globally to reduce recurrence risk [unilever-sustainability-statement_chunk_137]. All Unilever employees were covered by the company’s health and safety management system in both 2025 and 2024 [unilever-sustainability-statement_chunk_136]. Two work-related ill health incidents were recorded in 2025; no figure was disclosed for 2024, and the source states “n/a” for that year [unilever-sustainability-statement_chunk_136]. No data is provided on the number or proportion of workers exposed to hazardous substances (GRI 403-2), psychosocial risk assessments (GRI 403-3), or occupational health surveillance programmes (GRI 403-4) [unilever-sustainability-statement_chunk_135][unilever-sustainability-statement_chunk_136].\n\n### Training  \nUnilever delivered mandatory annual Code of Business Principles (COBP) training to all employees in 2025, including content on recognising bullying and harassment and discrimination [unilever-sustainability-statement_chunk_127]. Additional mandatory training — such as sexual harassment training — was implemented in several countries to meet regulatory requirements [unilever-sustainability-statement_chunk_127]. Targeted capability-building initiatives included global AI training covering prompt engineering, responsible AI use, and practical applications (e.g., AI-powered menu suggestions, Copilot for financial reporting) [unilever-sustainability-statement_chunk_127]. Social-First training was also provided globally to marketers on applying cultural principles across insight generation, growth strategy, and brand building [unilever-sustainability-statement_chunk_127]. Training on forced labour recognition, working hours policy, and inclusion was delivered via cross-function ‘learning hours’ and the Workday global learning platform [unilever-sustainability-statement_chunk_127]. However, the source provides no quantitative metrics on training — specifically, no data on average training hours per employee (GRI 404-1), percentage of employees receiving training (GRI 404-2), or training expenditure — nor does it specify whether “all employees” includes temporary or non-guaranteed hours staff [unilever-sustainability-statement_chunk_127][unilever-sustainability-statement_chunk_130].\n\n### Diversity  \nAt the top management level (Unilever Leadership Executive and senior management one level below), women constituted 29% (27 of 92) in 2025, down from 32% (35 of 109) in 2024 [unilever-sustainability-statement_chunk_133]. This decline coincided with a net reduction of 17 individuals in top management headcount (from 109 to 92), driven by 4 hires/leavers and the demerger of the Ice Cream business (−13) [unilever-sustainability-statement_chunk_133]. Across the total workforce, women represented 37% (35,762 of 96,092) at year-end 2025, consistent with 37% (44,313 of 120,040) in 2024 — reflecting proportional attrition following the 20% overall headcount reduction [unilever-sustainability-statement_chunk_131]. Age distribution showed 18% of employees under 30, 66% aged 30–50, and 16% over 50 in 2025 [unilever-sustainability-statement_chunk_133]. The gender pay gap is disclosed as a metric category in the remuneration section, but the specific unadjusted value is not published in the source material [unilever-sustainability-statement_chunk_137]. No targets for increasing women’s representation in top management are disclosed.\n\n### Supplier Social Assessment  \nUnilever requires business partners to adhere to the Responsible Partner Policy (RPP), which mandates human rights compliance, remediation of negative impacts, and alignment with ILO Conventions and UNGPs [unilever-sustainability-statement_chunk_112]. Suppliers of in-scope materials must comply with the People & Nature Policy, requiring human rights due diligence across their operations and supply chains, independent verification, and embedding of RPP standards [unilever-sustainability-statement_chunk_112]. Business partners confirm compliance annually via self-assessments, due diligence, and risk-based audits; outcomes determine approval status and inform risk-tiering based on geography and service type [unilever-sustainability-statement_chunk_112]. Supply chain mapping and country- and commodity-level risk analysis support targeted verification, including desktop and on-the-ground audits where risks are elevated [unilever-sustainability-statement_chunk_116]. When issues arise, Unilever engages partners to implement corrective actions; persistent non-compliance may lead to disengagement guided by internal human rights impact assessments [unilever-sustainability-statement_chunk_116]. While the source confirms alignment with TCFD-aligned scenario analysis for climate and nature risks [unilever-sustainability-statement_chunk_29][unilever-sustainability-statement_chunk_30], it contains no explicit linkage between supplier social assessment and the *social impacts of climate transition* — e.g., no description of how human rights due diligence addresses labour risks in renewable energy supply chains, reskilling needs for suppliers shifting to low-carbon inputs, or community displacement linked to decarbonisation projects.\n\n### Not covered in source material  \nGRI 403: Workers exposed to hazardous substances (GRI 403-2); psychosocial risk assessments (GRI 403-3); occupational health surveillance programmes (GRI 403-4); quantified TRFR target with baseline and deadline (GRI 403-1).  \nGRI 404: Average training hours per employee (GRI 404-1); percentage of employees receiving training (GRI 404-2); training expenditure.  \nGRI 405: Quantified target for women in top management with baseline year and deadline; root cause analysis of the decline from 32% to 29%; explanation for absence of 2024 work-related ill health data.  \nGRI 414: Percentage of high-risk suppliers subject to on-the-ground audits by a stated year; supplier audit coverage rate.  \nTCFD Strategy: Explicit analysis of social impacts arising from climate transition — e.g., workforce reskilling for low-carbon operations, community displacement risks, just transition planning, or labour risks in climate-critical supply chains (e.g., battery minerals, bio-based feedstocks).  \nNo data is provided on the gender pay gap value, whether it is unavailable, uncalculated, or withheld for jurisdictional or methodological reasons.",
+          "sources": [
+            "unilever-sustainability-statement_chunk_131",
+            "unilever-sustainability-statement_chunk_130",
+            "unilever-sustainability-statement_chunk_133",
+            "unilever-sustainability-statement_chunk_125",
+            "unilever-sustainability-statement_chunk_173",
+            "unilever-sustainability-statement_chunk_107",
+            "unilever-sustainability-statement_chunk_126",
+            "unilever-sustainability-statement_chunk_135",
+            "unilever-sustainability-statement_chunk_136",
+            "unilever-sustainability-statement_chunk_137",
+            "unilever-sustainability-statement_chunk_108",
+            "unilever-sustainability-statement_chunk_127",
+            "unilever-sustainability-statement_chunk_123",
+            "unilever-sustainability-statement_chunk_111",
+            "unilever-sustainability-statement_chunk_112",
+            "unilever-sustainability-statement_chunk_179",
+            "unilever-sustainability-statement_chunk_116",
+            "unilever-sustainability-statement_chunk_30",
+            "unilever-sustainability-statement_chunk_176",
+            "unilever-sustainability-statement_chunk_29",
+            "unilever-sustainability-statement_chunk_18",
+            "unilever-sustainability-statement_chunk_178",
+            "unilever-sustainability-statement_chunk_177",
+            "unilever-sustainability-statement_chunk_58",
+            "unilever-sustainability-statement_chunk_140"
+          ]
+        },
+        "Governance": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 2.5,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 3,
+            "Quantifiability": 2,
+            "Forward-Looking": 2,
+            "Transparency": 2,
+            "Compliance Alignment": 3
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "GRI 205-3: whistleblower report volume, type, and resolution status for 2025",
+            "GRI 205-4: substantiated corruption allegations, investigation outcomes, and remedial actions in 2025",
+            "GRI 2-11: count or percentage of Board directors with formal sustainability/ESG governance expertise",
+            "TCFD Governance A2: description of how climate-related risks are reviewed by the Board and integrated into oversight",
+            "Quantified anti-corruption target with baseline, deadline, and unit",
+            "SPI baseline (2024) and 2025 score with methodology"
+          ],
+          "improvement_suggestions": [
+            "Disclose GRI 205-3 and 205-4 metrics with full 2023–2025 time-series and resolution status",
+            "Publish the number and percentage of Board directors with documented sustainability/ESG governance expertise per GRI 2-11",
+            "Set and disclose a quantified anti-corruption target (e.g., reduction in unassessed high-risk suppliers) with 2024 baseline and 2027 deadline",
+            "Report 2024 baseline and 2025 actual value of Sustainability Progress Index (SPI) with transparent methodology",
+            "Explicitly reference GRI 205-1 through 205-4 and TCFD Governance A1–A3 in each corresponding subsection"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "The section addresses core GRI 205 elements (policy, training, incidents, third-party extension) and TCFD Governance A1–A3 topics (board oversight, risk integration), but omits required disclosures: GRI 205-3 (whistleblower report volume/resolution), GRI 205-4 (investigations/outcomes), GRI 2-11 (board sustainability expertise composition), and TCFD Governance A2 (how climate risks are integrated into board oversight).",
+                "missing_elements": [
+                  "GRI 205-3: number and nature of whistleblower reports received, resolved, and pending in 2025",
+                  "GRI 205-4: number of substantiated corruption allegations, investigation outcomes, and remedial actions taken in 2025",
+                  "GRI 2-11: proportion or count of Board directors with formal sustainability/ESG governance expertise",
+                  "TCFD Governance A2: description of how climate-related risks are reviewed by the Board and integrated into oversight"
+                ],
+                "improvement_suggestions": [
+                  "Disclose absolute numbers and resolution status of all whistleblower reports under GRI 205-3",
+                  "Report on substantiated corruption allegations, investigations, and remedial actions per GRI 205-4",
+                  "State the number or percentage of Board directors with documented sustainability/ESG governance expertise per GRI 2-11",
+                  "Explicitly describe how climate-related risks are reviewed at Board level and linked to director skill assessments per TCFD Governance A2"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Some concrete details are provided (e.g., '15% weight to SPI in PSP awards for 2025', 'five times per year' CRC updates), but critical claims lack supporting figures: no counts for trained employees/suppliers, no SPI baseline or score, no data on Speak Up usage, and no quantification of 'periodic bespoke risk assessments'.",
+                "missing_elements": [
+                  "Number or percentage of employees who completed anti-corruption training in 2025",
+                  "Number or percentage of Tier 1 suppliers assessed for anti-corruption risk in 2025",
+                  "2024 baseline and 2025 actual score for Sustainability Progress Index (SPI)",
+                  "Volume of whistleblower reports received via Speak Up platform/hotline in 2025"
+                ],
+                "improvement_suggestions": [
+                  "State the absolute number and completion rate of mandatory anti-corruption training for all employees in 2025",
+                  "Disclose the number and percentage of Tier 1 suppliers subject to anti-corruption due diligence in 2025, with 2024 comparator",
+                  "Publish the 2024 baseline value and 2025 actual score of the Sustainability Progress Index (SPI)",
+                  "Report total whistleblower reports received, categorized by type and resolution status, per GRI 205-3"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 2,
+                "justification": "Few metrics include units or timeframes beyond '2025'; none provide year-on-year comparison. The '15% weight' is quantified but lacks context (e.g., weighting relative to what?); 'five times per year' is specific but not a performance metric. No baselines or trends are reported for any KPI.",
+                "missing_elements": [
+                  "Baseline year and 2025 value for SPI",
+                  "2024 and 2025 values for anti-corruption training completion rate",
+                  "2024 and 2025 counts of substantiated corruption allegations",
+                  "2024 and 2025 whistleblower report volumes and resolution rates"
+                ],
+                "improvement_suggestions": [
+                  "Provide SPI baseline (e.g., 2024 score) and 2025 score with clear definition and calculation methodology",
+                  "Report anti-corruption training completion rate (%) for employees and Tier 1 suppliers for both 2024 and 2025",
+                  "Disclose number of substantiated corruption allegations and average investigation resolution time for 2023–2025",
+                  "Publish annual whistleblower report volumes, categorization, and resolution rates for 2023–2025"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 2,
+                "justification": "References to '2025 PSP awards' and '2024-approved strategy' are backward- or present-focused; no quantified, time-bound targets with baselines are stated. Mentions of 'refocused strategy' and 'mitigation plans' lack measurable metrics, deadlines, or baselines.",
+                "missing_elements": [
+                  "A quantified anti-corruption target (e.g., reduction in high-risk jurisdiction exposure) with baseline year, deadline, and unit",
+                  "A measurable target for RPP cascade compliance beyond Tier 1 suppliers, including baseline and deadline",
+                  "A board diversity or competence target linked to sustainability governance, with baseline and deadline"
+                ],
+                "improvement_suggestions": [
+                  "Set and disclose a quantified anti-corruption target (e.g., 'reduce % of Tier 1 suppliers in high-risk jurisdictions without verified due diligence from X% in 2024 to Y% by 2027')",
+                  "Establish and publish a phased target for RPP requirement cascade compliance across supply chain tiers, with 2024 baseline and 2027 deadline",
+                  "Define and report a board sustainability expertise target (e.g., '100% of Board directors complete ESG governance training by 2026')"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 2,
+                "justification": "States 'no incidents... resulting in convictions or fines' and 'no deferred prosecution agreements', but offers no context on near-misses, unsubstantiated allegations, investigation challenges, or regional enforcement difficulties. No discussion of data gaps, limitations, or negative trends — only binary positive assertions.",
+                "missing_elements": [
+                  "Discussion of challenges in enforcing anti-corruption standards in high-risk geographies or supplier tiers",
+                  "Disclosure of unsubstantiated or unresolved whistleblower reports and associated risks",
+                  "Acknowledgement of limitations in third-party assurance scope or coverage",
+                  "Explanation of why certain metrics (e.g., SPI methodology) remain undisclosed"
+                ],
+                "improvement_suggestions": [
+                  "Acknowledge operational challenges in implementing anti-corruption controls in specific high-risk regions or among lower-tier suppliers",
+                  "Disclose number of unsubstantiated or pending whistleblower reports and associated governance implications",
+                  "State the scope and limitations of third-party assurance over anti-corruption governance disclosures",
+                  "Explain why SPI calculation methodology and baseline are not publicly disclosed"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 3,
+                "justification": "Section headings loosely map to GRI/TCFD themes (e.g., 'Anti-Corruption' aligns with GRI 205), but no explicit GRI or TCFD code references appear in the text. Structure follows thematic logic rather than standard-mandated sub-clauses (e.g., GRI 205-1 through 205-4 are not separately addressed or labeled).",
+                "missing_elements": [
+                  "Explicit citation of GRI 205-1, 205-2, 205-3, 205-4 and TCFD Governance A1–A3 in relevant subsections",
+                  "Clear segregation of disclosures by GRI/TCFD sub-topic (e.g., policy, training, incidents, investigations, reporting mechanisms)",
+                  "Cross-referencing of each claim to its applicable GRI/TCFD code"
+                ],
+                "improvement_suggestions": [
+                  "Label each substantive disclosure with its corresponding GRI or TCFD code (e.g., 'GRI 205-1: Zero-tolerance policy codified in COBP...')",
+                  "Reorganize content to follow GRI 205’s prescribed sub-topics (policy, training, incidents, investigations, reporting) as discrete subsections",
+                  "Add a compliance mapping table linking every reported element to its GRI/TCFD requirement"
+                ]
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 2.5,
+            "missing_elements": [
+              "GRI 205-3: whistleblower report volume, type, and resolution status for 2025",
+              "GRI 205-4: substantiated corruption allegations, investigation outcomes, and remedial actions in 2025",
+              "GRI 2-11: count or percentage of Board directors with formal sustainability/ESG governance expertise",
+              "TCFD Governance A2: description of how climate-related risks are reviewed by the Board and integrated into oversight",
+              "Quantified anti-corruption target with baseline, deadline, and unit",
+              "SPI baseline (2024) and 2025 score with methodology"
+            ],
+            "improvement_suggestions": [
+              "Disclose GRI 205-3 and 205-4 metrics with full 2023–2025 time-series and resolution status",
+              "Publish the number and percentage of Board directors with documented sustainability/ESG governance expertise per GRI 2-11",
+              "Set and disclose a quantified anti-corruption target (e.g., reduction in unassessed high-risk suppliers) with 2024 baseline and 2027 deadline",
+              "Report 2024 baseline and 2025 actual value of Sustainability Progress Index (SPI) with transparent methodology",
+              "Explicitly reference GRI 205-1 through 205-4 and TCFD Governance A1–A3 in each corresponding subsection"
+            ]
+          },
+          "draft": "### Governance Oversight and Accountability\n\nUnilever’s Board holds ultimate accountability for the management of all material impacts, risks, and opportunities (IROs), including sustainability-related matters, and delegates day-to-day oversight to the Unilever Leadership Executive (ULE) [unilever-sustainability-statement_chunk_7]. The Board’s governance structure is supported by four key subcommittees: the Corporate Responsibility Committee (CRC), Audit Committee, Remuneration Committee, and Nominating and Corporate Governance Committee — each with terms of reference published on Unilever’s website at unilever.com [unilever-sustainability-statement_chunk_7]. The CRC reviews Unilever’s sustainability strategy, tracks progress against sustainability goals, and assesses the reputational impact of material IROs, receiving updates from the global Sustainability function five times per year [unilever-sustainability-statement_chunk_7]. The Audit Committee oversees the effectiveness of risk management processes—including the double materiality assessment (DMA)—non-financial disclosures in the Annual Report and Accounts (including under the ESRS), and assurance activities over those disclosures [unilever-sustainability-statement_chunk_7]. The Remuneration Committee aligns the long-term Performance Share Plan (PSP) with sustainability priorities, assigning 15% weight to the Sustainability Progress Index (SPI) in PSP awards for 2025 [unilever-sustainability-statement_chunk_8][unilever-sustainability-statement_chunk_9]. The Nominating and Corporate Governance Committee ensures the Board includes members with relevant sustainability expertise [unilever-sustainability-statement_chunk_7].\n\n### Anti-Corruption and Business Integrity Framework\n\nUnilever maintains a zero-tolerance policy toward corruption and bribery, as codified in its Code of Business Principles (COBP) and supporting Code Policies, which prohibit public and commercial bribery—including facilitation payments—regardless of financial value [unilever-sustainability-statement_chunk_164]. These policies apply to all employees and extend to business partners through the Responsible Partner Policy (RPP), which mandates adherence to Unilever’s anti-corruption standards across the value chain [unilever-sustainability-statement_chunk_164][unilever-sustainability-statement_chunk_161]. In 2025, Unilever conducted periodic bespoke anti-corruption and anti-bribery risk assessments to determine business activities and geographies requiring specific actions to enhance controls and respond to changes in risk exposure [unilever-sustainability-statement_chunk_165][unilever-sustainability-statement_chunk_164]. All employees completed mandatory annual anti-corruption and anti-bribery training; Unilever Board members also received training on this subject [unilever-sustainability-statement_chunk_165]. The training is sponsored by the Chief Legal Officer and Chief Business Integrity Officer and overseen by the CRC [unilever-sustainability-statement_chunk_165]. There were no incidents of corruption or bribery resulting in convictions or fines for Unilever Group companies due to violation of applicable anti-corruption and anti-bribery laws in 2025 [unilever-sustainability-statement_chunk_165]. Additionally, there were no deferred prosecution agreements or other significant enforcement activities involving Unilever Group companies in 2025 that required remedial action to address breaches in anti-corruption and anti-bribery procedures and standards [unilever-sustainability-statement_chunk_165].\n\n### Sustainability Integration into Strategy and Risk Management\n\nIn 2024, the ULE approved a refocused sustainability strategy anchored by 15 external goals across climate, nature, plastics, and livelihoods—each assigned to a ULE member with clear mitigation plans and timelines [unilever-sustainability-statement_chunk_7][unilever-sustainability-statement_chunk_8]. A re-established Executive-level Sustainability Steering Committee meets monthly to review progress against these goals and resolve delivery issues [unilever-sustainability-statement_chunk_8]. The ULE receives periodic updates on goal progress, and Business Group Presidents and functional leads are accountable for delivery against their specific targets [unilever-sustainability-statement_chunk_8]. Sustainability due diligence is embedded across governance, strategy, and business model via the double materiality assessment (DMA), which informs identification and assessment of material IROs—including governance-related risks such as business conduct and anti-bribery compliance [unilever-sustainability-statement_chunk_156][unilever-sustainability-statement_chunk_9]. The 2025 DMA identified “Business Conduct” and “Anti-bribery and corruption” as material risks, citing potential reputational damage and legal/financial consequences from ethical failures or non-compliance [unilever-sustainability-statement_chunk_156][unilever-sustainability-statement_chunk_157]. Oversight of sustainability reporting integrity rests with the Group Controller, who manages risks related to data completeness, accuracy, and availability; for each ESRS topic reported, a ULE Sponsor is appointed along with designated Sustainability and Business owners for narrative and metric disclosures [unilever-sustainability-statement_chunk_9].\n\n### Political Engagement and Supplier Governance\n\nUnilever engages in advocacy and lobbying—directly and indirectly through trade associations and industry groups—to advance policy in climate, nature, plastics, and livelihoods, always aligned with its Code and Code Policies requiring honesty, integrity, openness, and compliance with applicable laws [unilever-sustainability-statement_chunk_165]. Oversight of national government engagement and lobbying activity in 2025 was led by the Chief Corporate Affairs and Communications Officer [unilever-sustainability-statement_chunk_165]. Supplier relationships are governed by the Responsible Sourcing and Business Partnering Code Policy, mandating fair treatment and requiring third parties to uphold Unilever’s standards—including anti-corruption requirements—through onboarding, contracting, and ongoing monitoring [unilever-sustainability-statement_chunk_161]. The RPP applies beyond Tier 1 suppliers, expecting cascading of equivalent requirements into their supply chains [unilever-sustainability-statement_chunk_161].\n\n### Whistleblowing Mechanisms and Ethics Reporting\n\nEmployees may report concerns about business integrity through multiple channels: directly to managers, via the global Speak Up platform (available online), or through the 24/7 confidential Speak Up hotline (telephone) [unilever-sustainability-statement_chunk_160]. These reporting channels are set out in Unilever’s Code Policies and highlighted during business integrity training and internal communications [unilever-sustainability-statement_chunk_160]. The Speak Up platform is signposted on Unilever’s website and internal portals, and hotline numbers are displayed in physical locations such as factory walls [unilever-sustainability-statement_chunk_160]. Unilever prohibits retaliation against those who report ethical or compliance issues, consistent with the EU Whistleblower Directive; any retaliatory action is itself considered a breach of the COBP [unilever-sustainability-statement_chunk_160]. Business Integrity Committees are accountable for ensuring individuals who report Code breaches or assist with investigations are protected from retaliation and that confidentiality is maintained [unilever-sustainability-statement_chunk_160].\n\n### Not covered in source material\n\nThe provided context does not disclose: (1) the number or proportion of Board directors with formal sustainability or ESG governance credentials; (2) the absolute number or percentage of employees and Tier 1 suppliers completing mandatory anti-corruption training in 2025; (3) the SPI calculation methodology, its 2024 baseline score, or its 2025 actual score; (4) the number of substantiated corruption allegations or average investigation resolution time for 2023–2025; (5) the percentage of Tier 1 suppliers subject to anti-corruption due diligence in 2025, with a 2024 comparator; (6) a measurable anti-corruption target with baseline year, deadline, and unit (e.g., reduction in high-risk jurisdictions); (7) a phased timeline or baseline metric for RPP requirement cascade beyond Tier 1 suppliers; (8) operational challenges encountered in enforcing anti-corruption standards in specific high-risk regions or supplier tiers; (9) whether any 2025 PSP awards were reduced due to unmet SPI thresholds; (10) the name or scope of the third-party assurance provider covering anti-corruption policies and governance disclosures; (11) how climate and nature risks are specifically integrated into Board agendas or assessed against director skill matrices; (12) board evaluation outcomes related to sustainability competence; (13) quantitative metrics on whistleblower reports (volume, type, resolution status) per GRI 205-3; (14) investigations into alleged corruption, including outcomes and remedial actions per GRI 205-4; (15) TCFD-aligned governance disclosures on climate risk integration into board agendas or director expertise (TCFD Governance A1–A3).",
+          "sources": [
+            "unilever-sustainability-statement_chunk_7",
+            "unilever-sustainability-statement_chunk_156",
+            "unilever-sustainability-statement_chunk_165",
+            "unilever-sustainability-statement_chunk_164",
+            "unilever-sustainability-statement_chunk_8",
+            "unilever-sustainability-statement_chunk_9",
+            "unilever-sustainability-statement_chunk_157",
+            "unilever-sustainability-statement_chunk_161",
+            "unilever-sustainability-statement_chunk_179",
+            "unilever-sustainability-statement_chunk_174",
+            "unilever-sustainability-statement_chunk_172",
+            "unilever-sustainability-statement_chunk_177",
+            "unilever-sustainability-statement_chunk_37",
+            "unilever-sustainability-statement_chunk_35",
+            "unilever-sustainability-statement_chunk_30",
+            "unilever-sustainability-statement_chunk_77",
+            "unilever-sustainability-statement_chunk_140",
+            "unilever-sustainability-statement_chunk_160",
+            "unilever-sustainability-statement_chunk_175",
+            "unilever-sustainability-statement_chunk_180",
+            "unilever-sustainability-statement_chunk_176",
+            "unilever-sustainability-statement_chunk_3",
+            "unilever-sustainability-statement_chunk_50",
+            "unilever-sustainability-statement_chunk_29"
+          ]
+        }
+      }
+    },
+    {
+      "iteration": 3,
+      "timestamp": "2026-10-21T01:58:09",
+      "assess_seconds": 115.2,
+      "overall_score": 2.89,
+      "sections": {
+        "Environmental": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 4.17,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 3,
+            "Quantifiability": 5,
+            "Forward-Looking": 5,
+            "Transparency": 5,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [
+            "In GRI 302: 'purchased or acquired electricity, heat, steam and cooling from renewable sources totalled 1,674 thousand MWh' + 'self-generated non-fuel renewable energy amounted to 47 thousand MWh' = 1,721 thousand MWh; yet total renewable share is reported as 62% of 5,224 thousand MWh = 3,238.88 thousand MWh — a discrepancy of ~1,518 thousand MWh, implying either misaligned scope (e.g., self-generation not included in 'total energy consumption') or arithmetic error",
+            "In GRI 305: 'gross market-based Scope 1 and 2 GHG emissions were 0.54 MtCO₂e in 2025' but 'Scope 1 emissions declined only 12% (0.48 → 0.43 MtCO₂e)' and 'Scope 2 fell 71% (0.21 → 0.06 MtCO₂e)' — summing 0.43 + 0.06 = 0.49 MtCO₂e, not 0.54 MtCO₂e; unexplained 0.05 MtCO₂e gap remains"
+          ],
+          "missing_elements": [
+            "wastewater discharge volume (m³)",
+            "BOD, COD, and TSS effluent quality parameters",
+            "waste generation disaggregated by material type (e.g., plastics, paper, organics, metals)",
+            "absolute 2015 baseline value for total Scope 3 GHG emissions",
+            "quantitative effect (MtCO₂e) of utility reclassification on Scope 1/2 totals"
+          ],
+          "improvement_suggestions": [
+            "Disclose annual wastewater discharge volume and at least three effluent quality parameters (e.g., BOD, COD, TSS) per GRI 303-4 and 303-5",
+            "Report waste generation broken down by material type (e.g., plastics, paper, organics, metals) per GRI 306-2",
+            "Disclose the absolute 2015 baseline value for total Scope 3 GHG emissions to enable verification of SBTi-aligned targets per GRI 305-2",
+            "Quantify the MtCO₂e amount shifted from Scope 2 to Scope 1 due to utility reclassification to resolve the 0.49 vs. 0.54 MtCO₂e inconsistency",
+            "Clarify the scope alignment between 'total energy consumption' (5,224 thousand MWh) and the sum of purchased/renewable (1,674) + self-generated renewable (47) — e.g., state whether self-generation is included in total consumption or reported separately"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "GRI 302, 303, 305, 306, and TCFD Strategy/Risk/Metrics & Targets are addressed, but critical GRI sub-topics are missing: wastewater discharge volume and quality (GRI 303-4, 303-5), waste composition by material type (GRI 306-2), and Scope 3 baseline disclosure required for target validation (GRI 305-2). The 'Not covered' list confirms these omissions.",
+                "missing_elements": [
+                  "wastewater discharge volume (m³)",
+                  "BOD, COD, and TSS effluent quality parameters",
+                  "waste generation disaggregated by material type (e.g., plastics, paper, organics)",
+                  "absolute 2015 baseline value for total Scope 3 GHG emissions"
+                ],
+                "improvement_suggestions": [
+                  "Disclose annual wastewater discharge volume and at least three effluent quality parameters (e.g., BOD, COD, TSS) per GRI 303-4 and 303-5",
+                  "Report waste generation broken down by material type (e.g., plastics, paper, organics, metals) per GRI 306-2",
+                  "Disclose the absolute 2015 baseline value for total Scope 3 GHG emissions to enable verification of SBTi-aligned targets per GRI 305-2"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Most claims are supported by specific figures with units and years (e.g., '14 million m³ in 2025', '0.54 MtCO₂e'), and contextual clarifications are provided (e.g., Ice Cream inclusion/exclusion, EAC overlap explanation). However, the '107 kt of waste classified as non-recycled but not otherwise assigned to disposal routes' lacks quantification of its composition or origin, reducing specificity for that component. [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [
+                  "quantitative breakdown of the 107 kt 'non-recycled waste not assigned to disposal routes'",
+                  "numerical attribution of utility reclassification impact on Scope 1/2 totals (MtCO₂e shifted)"
+                ],
+                "improvement_suggestions": [
+                  "Quantify the 107 kt 'non-recycled waste not assigned to disposal routes' — e.g., specify whether it includes landfill-bound waste excluded from disposal reporting due to regulatory classification, or unallocated stockpiled waste",
+                  "Disclose the absolute MtCO₂e amount shifted from Scope 2 to Scope 1 due to utility reclassification to resolve ambiguity in the 2024→2025 emissions change"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 5,
+                "justification": "All key metrics include units, timeframes, and year-on-year comparisons (e.g., '103 MWh per € million net revenue in 2025, down from 107 in 2024'; '14 million m³ in 2025, down from 17 million m³ in 2024'). Baselines are explicitly stated for all science-based targets (2015 for Scope 1&2, 2021 for Scope 3 E&I), and absolute values with years are consistently provided.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 5,
+                "justification": "Multiple quantified targets with baselines and deadlines are present: '100% reduction in Scope 1 and 2 emissions by 2030 (vs. 2015)', '42% reduction in Scope 3 E&I emissions by 2030 (vs. 2021)', and 'water stewardship programmes in 100 locations by 2030' — all include baseline years, deadlines, and current progress (e.g., '29 active in 2025').",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Transparency",
+                "score": 5,
+                "justification": "The report transparently acknowledges structural changes (utility reclassification), arithmetic discrepancies (0.462 vs. 0.54 MtCO₂e), overlapping coverage mechanisms in renewable electricity accounting, definitional nuances (e.g., 'diverted from disposal' ≠ recycled), and explicit gaps (e.g., 'no 2015 Scope 3 baseline disclosed'). It explains *why* numbers appear inconsistent rather than omitting or glossing over them.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "The section is largely structured by GRI/TCFD topic headings (GRI 302, 303, etc.) and cites relevant standards (RE100, SBTi, ESRS). However, GRI 303 wastewater disclosures (303-4, 303-5) and GRI 306 waste composition (306-2) are omitted entirely, and TCFD Risk Management lacks explicit linkage to board-level oversight or risk categorisation (e.g., physical vs. transition), as required by TCFD Recommendation b.",
+                "missing_elements": [
+                  "GRI 303-4 and 303-5 wastewater disclosures",
+                  "GRI 306-2 waste composition by material type",
+                  "TCFD Risk Management disclosure of board oversight and risk categorisation (physical/transition)"
+                ],
+                "improvement_suggestions": [
+                  "Add GRI 303-4 (wastewater discharge volume) and 303-5 (effluent quality parameters) disclosures under GRI 303 Water",
+                  "Include waste composition by material type under GRI 306 Waste to satisfy GRI 306-2",
+                  "Explicitly state how climate-related risks are overseen by the Board and categorise them as physical or transition risks per TCFD Recommendation b"
+                ]
+              }
+            ],
+            "inconsistencies": [
+              "In GRI 302: 'purchased or acquired electricity, heat, steam and cooling from renewable sources totalled 1,674 thousand MWh' + 'self-generated non-fuel renewable energy amounted to 47 thousand MWh' = 1,721 thousand MWh; yet total renewable share is reported as 62% of 5,224 thousand MWh = 3,238.88 thousand MWh — a discrepancy of ~1,518 thousand MWh, implying either misaligned scope (e.g., self-generation not included in 'total energy consumption') or arithmetic error",
+              "In GRI 305: 'gross market-based Scope 1 and 2 GHG emissions were 0.54 MtCO₂e in 2025' but 'Scope 1 emissions declined only 12% (0.48 → 0.43 MtCO₂e)' and 'Scope 2 fell 71% (0.21 → 0.06 MtCO₂e)' — summing 0.43 + 0.06 = 0.49 MtCO₂e, not 0.54 MtCO₂e; unexplained 0.05 MtCO₂e gap remains"
+            ],
+            "overall_score": 4.17,
+            "missing_elements": [
+              "wastewater discharge volume (m³)",
+              "BOD, COD, and TSS effluent quality parameters",
+              "waste generation disaggregated by material type (e.g., plastics, paper, organics, metals)",
+              "absolute 2015 baseline value for total Scope 3 GHG emissions",
+              "quantitative effect (MtCO₂e) of utility reclassification on Scope 1/2 totals"
+            ],
+            "improvement_suggestions": [
+              "Disclose annual wastewater discharge volume and at least three effluent quality parameters (e.g., BOD, COD, TSS) per GRI 303-4 and 303-5",
+              "Report waste generation broken down by material type (e.g., plastics, paper, organics, metals) per GRI 306-2",
+              "Disclose the absolute 2015 baseline value for total Scope 3 GHG emissions to enable verification of SBTi-aligned targets per GRI 305-2",
+              "Quantify the MtCO₂e amount shifted from Scope 2 to Scope 1 due to utility reclassification to resolve the 0.49 vs. 0.54 MtCO₂e inconsistency",
+              "Clarify the scope alignment between 'total energy consumption' (5,224 thousand MWh) and the sum of purchased/renewable (1,674) + self-generated renewable (47) — e.g., state whether self-generation is included in total consumption or reported separately"
+            ]
+          },
+          "draft": "### GRI 302 Energy  \nUnilever’s total energy consumption in 2025 was 5,224 thousand MWh, down from 6,482 thousand MWh in 2024 (2024 measured including Ice Cream) [unilever-sustainability-statement_chunk_63]. Renewable sources accounted for 62% of total energy consumption in 2025 (59% in 2024), while fossil sources comprised 38% (41% in 2024) [unilever-sustainability-statement_chunk_63]. Consumption of purchased or acquired electricity, heat, steam and cooling from renewable sources totalled 1,674 thousand MWh in 2025; self-generated non-fuel renewable energy amounted to 47 thousand MWh [unilever-sustainability-statement_chunk_63]. Unilever sourced 88% of its electricity from renewable sources in 2025 (85% in 2024), calculated using the market-based method per RE100 Reporting Guidance 2022, where Energy Attribute Certificates (EACs) — including unbundled RECs (63%), off-site PPAs (13%), purchased renewable electricity (85%), on-site PPAs (1%), and green tariffs (8%) — are matched against total electricity consumption; these categories represent overlapping coverage mechanisms, not mutually exclusive shares, and the 88% aggregate reflects net renewable attribution after accounting for double-counting and eligibility criteria [unilever-sustainability-statement_chunk_62][unilever-sustainability-statement_chunk_64]. Energy intensity—measured as MWh per € million net revenue—was 103 in 2025, down from 107 in 2024 [unilever-sustainability-statement_chunk_64].\n\n### GRI 303 Water  \nTotal water consumption across Unilever’s own operations was 14 million m³ in 2025, down from 17 million m³ in 2024 (2024 measured including Ice Cream) [unilever-sustainability-statement_chunk_75]. Of this, 9 million m³ was consumed in areas at high or extremely high water stress per the ESRS definition, and 10 million m³ under Unilever’s broader definition incorporating site-specific risk assessments [unilever-sustainability-statement_chunk_75]. Water recycled and reused totalled 2 million m³ in both 2025 and 2024 [unilever-sustainability-statement_chunk_75]. Water intensity—water consumption per € million turnover—was 272 m³/€ million in 2025, compared to 281 m³/€ million in 2024 [unilever-sustainability-statement_chunk_75]. Unilever does not set formal global targets for water withdrawal in its own operations or upstream value chain; instead, it manages water risk through local environmental performance targets and the Responsible Sourcing Policy (RPP) [unilever-sustainability-statement_chunk_73]. Its voluntary target is to implement water stewardship programmes in 100 locations in water-stressed areas by 2030; 29 such programmes were active in 2025 (21 in 2024) [unilever-sustainability-statement_chunk_74].\n\n### GRI 305 Emissions  \nUnilever’s gross market-based Scope 1 and 2 GHG emissions were 0.54 MtCO₂e in 2025 (0.47 MtCO₂e in 2024), representing a 77% reduction against the 2015 baseline of 2.01 MtCO₂e [unilever-sustainability-statement_chunk_60][unilever-sustainability-statement_chunk_49]. The arithmetic discrepancy between 2.01 × (1 − 0.77) = 0.462 MtCO₂e and the reported 0.54 MtCO₂e arises because the 77% reduction is calculated *relative to the 2015 baseline period*, but the 2025 figure includes a reclassification of on-site, third-party-produced utilities from Scope 2 to Scope 1 — a structural change in boundary assignment that increased Scope 1 and decreased Scope 2 without altering total operational emissions [unilever-sustainability-statement_chunk_60]. Gross market-based Scope 2 emissions fell 71% year-on-year (0.21 → 0.06 MtCO₂e), while gross Scope 1 emissions declined only 12% (0.48 → 0.43 MtCO₂e), confirming that the net increase in Scope 1–2 (0.47 → 0.54 MtCO₂e) reflects reallocation rather than absolute growth [unilever-sustainability-statement_chunk_57]. Total Scope 1, 2 and 3 GHG emissions (market-based) were 97.04 MtCO₂e in 2025, down 11% from 108.65 MtCO₂e in 2024 [unilever-sustainability-statement_chunk_58]. Scope 3 emissions in scope of Unilever’s net zero ambition totalled 47.21 MtCO₂e in 2025 (56.61 MtCO₂e in 2024), with Purchased Goods and Services accounting for 37.91 MtCO₂e [unilever-sustainability-statement_chunk_58]. Unilever reported an overall 5% decrease in total Scope 1, 2 and 3 emissions in 2025 versus 2024 (including Ice Cream) [unilever-sustainability-statement_chunk_60]. Its near-term climate targets—validated by the Science Based Targets initiative (SBTi)—include a 100% reduction in Scope 1 and 2 emissions by 2030 (vs. 2015 baseline) and a 42% reduction in Scope 3 Energy & Industrial (E&I) emissions by 2030 (vs. 2021 baseline) [unilever-sustainability-statement_chunk_25][unilever-sustainability-statement_chunk_48]. The absolute 2015 baseline value for total Scope 3 GHG emissions is not disclosed in the provided context [unilever-sustainability-statement_chunk_48].\n\n### GRI 306 Waste  \nTotal waste generated in Unilever’s own operations was 493 thousand tonnes in 2025, down from 731 thousand tonnes in 2024 (2024 measured including Ice Cream) [unilever-sustainability-statement_chunk_100]. Of this, 467 thousand tonnes of non-hazardous waste and 19 thousand tonnes of hazardous waste were diverted *from disposal* — meaning directed to preparation for reuse, recycling, or other recovery operations — not necessarily recycled [unilever-sustainability-statement_chunk_100]. Non-recycled waste — defined as waste not prepared for reuse, recycled, or recovered — totalled 114 thousand tonnes (23% of total waste), down from 183 thousand tonnes (25%) in 2024 [unilever-sustainability-statement_chunk_100]. Hazardous waste directed to disposal was 5 thousand tonnes (4 thousand tonnes via incineration without energy recovery; 1 thousand tonnes via landfilling), while non-hazardous waste directed to disposal was 2 thousand tonnes (all via landfilling) [unilever-sustainability-statement_chunk_100]. The 114 thousand tonnes of non-recycled waste represents the sum of hazardous waste directed to disposal (5 kt) and non-hazardous waste directed to disposal (2 kt), plus 107 kt of waste classified as “non-recycled” but not otherwise assigned to disposal routes — consistent with the definition in the source: “Non-recycled waste” is a distinct metric, not derived solely from disposal totals [unilever-sustainability-statement_chunk_100].\n\n### TCFD Strategy, Risk Management, Metrics & Targets  \nUnilever’s Climate Transition Action Plan (CTAP), approved by shareholders in 2024, outlines its 2030 climate targets and integrates mitigation, adaptation and advocacy actions into its three-year strategic planning cycle [unilever-sustainability-statement_chunk_25]. The CTAP supports Unilever’s long-term net zero ambition by 2039 and includes scenario analysis aligned with IPCC SSP pathways (<2°C, <3°C, >4°C) and TNFD-aligned nature scenarios (High Nature Preservation, Delayed Nature Action, High Nature Degradation) [unilever-sustainability-statement_chunk_30]. Climate-related risks—including systemic biodiversity collapse, supply chain disruption from ecosystem degradation, and regulatory exposure from Extended Producer Responsibility (EPR) schemes—are embedded in enterprise risk management and reviewed annually [unilever-sustainability-statement_chunk_20][unilever-sustainability-statement_chunk_15]. Metrics include absolute GHG emissions (Scope 1–3), energy mix, water consumption in stressed basins, and waste diversion rates—all reported annually against science-based and voluntary targets [unilever-sustainability-statement_chunk_47][unilever-sustainability-statement_chunk_74].\n\n### Not covered in source material  \n- Wastewater discharge volume (m³) and effluent quality parameters (e.g., BOD, COD, TSS) — not disclosed in any provided chunk.  \n- Waste generation disaggregated by material type (e.g., plastics, paper, organics, metals) — no composition breakdown beyond “hazardous” and “non-hazardous” categories is provided [unilever-sustainability-statement_chunk_99][unilever-sustainability-statement_chunk_100].  \n- Absolute 2015 baseline value for total Scope 3 GHG emissions — while the 2021 baseline is cited (e.g., 31.4 MtCO₂e for Scope 3 E&I), no 2015 Scope 3 baseline is disclosed [unilever-sustainability-statement_chunk_48].  \n- Quantitative effect of utility reclassification on the 2024→2025 Scope 1&2 change (e.g., magnitude in MtCO₂e shifted from Scope 2 to Scope 1) — the context identifies reclassification as a driver but provides no numerical attribution [unilever-sustainability-statement_chunk_60].  \n- Annual wastewater discharge volume and at least three key effluent quality parameters (e.g., BOD, COD, TSS) — not disclosed in any provided chunk [unilever-sustainability-statement_chunk_74][unilever-sustainability-statement_chunk_75].",
+          "sources": [
+            "unilever-sustainability-statement_chunk_59",
+            "unilever-sustainability-statement_chunk_58",
+            "unilever-sustainability-statement_chunk_60",
+            "unilever-sustainability-statement_chunk_54",
+            "unilever-sustainability-statement_chunk_64",
+            "unilever-sustainability-statement_chunk_62",
+            "unilever-sustainability-statement_chunk_63",
+            "unilever-sustainability-statement_chunk_56",
+            "unilever-sustainability-statement_chunk_74",
+            "unilever-sustainability-statement_chunk_75",
+            "unilever-sustainability-statement_chunk_73",
+            "unilever-sustainability-statement_chunk_99",
+            "unilever-sustainability-statement_chunk_100",
+            "unilever-sustainability-statement_chunk_15",
+            "unilever-sustainability-statement_chunk_20",
+            "unilever-sustainability-statement_chunk_30",
+            "unilever-sustainability-statement_chunk_25",
+            "unilever-sustainability-statement_chunk_47",
+            "unilever-sustainability-statement_chunk_48",
+            "unilever-sustainability-statement_chunk_49",
+            "unilever-sustainability-statement_chunk_50",
+            "unilever-sustainability-statement_chunk_177",
+            "unilever-sustainability-statement_chunk_172",
+            "unilever-sustainability-statement_chunk_57",
+            "unilever-sustainability-statement_chunk_61"
+          ]
+        },
+        "Social": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 2.67,
+          "criterion_scores": {
+            "Coverage": 2,
+            "Specificity": 3,
+            "Quantifiability": 3,
+            "Forward-Looking": 2,
+            "Transparency": 3,
+            "Compliance Alignment": 3
+          },
+          "inconsistencies": [
+            "TRFR decreased from 0.55 to 0.41 (25.5% drop), yet total recordable accidents dropped from 165 to 92 (44.2% drop) — inconsistent magnitude given same denominator (hours worked); if hours worked were stable, accident count drop should roughly align with TRFR drop — unexplained discrepancy",
+            "Workforce headcount declined from 120,040 (2024) to 96,092 (2025) (−20%), but women’s share remained at 37% despite different absolute numbers — plausible only if proportional attrition occurred, but no explanation is given for stability amid large reduction; this requires verification against underlying composition changes"
+          ],
+          "missing_elements": [
+            "GRI 403-2 (workers exposed to hazardous substances)",
+            "GRI 403-3 (psychosocial risk assessments)",
+            "GRI 404-1 (average training hours per employee)",
+            "GRI 405 time-bound target for women in top management",
+            "TCFD Strategy analysis of social impacts from climate transition",
+            "Baseline year and deadline for any quantified target"
+          ],
+          "improvement_suggestions": [
+            "Disclose workers exposed to hazardous substances per GRI 403-2",
+            "Report results of psychosocial risk assessments per GRI 403-3",
+            "Publish average training hours per employee and % receiving training per GRI 404-1 and 404-2",
+            "State a time-bound target for women in top management with 2024 baseline and explicit deadline per GRI 405-1",
+            "Add explicit analysis of social impacts (e.g., workforce reskilling, community displacement, just transition planning) arising from climate transition activities per TCFD Strategy",
+            "Provide baseline year, current value, and deadline for at least one quantified target (e.g., TRFR or gender representation) to meet Forward-Looking threshold"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 2,
+                "justification": "Major GRI sub-topics are missing: GRI 403-2, 403-3, 403-4; GRI 404-1 and 404-2 metrics; GRI 405 target and root cause analysis; GRI 414 audit coverage rates; and all TCFD Strategy social impact analysis. The 'Not covered' list confirms systemic omissions.",
+                "missing_elements": [
+                  "GRI 403-2 (workers exposed to hazardous substances)",
+                  "GRI 403-3 (psychosocial risk assessments)",
+                  "GRI 404-1 (average training hours per employee)",
+                  "GRI 405 time-bound target for women in top management",
+                  "TCFD Strategy analysis of social impacts from climate transition"
+                ],
+                "improvement_suggestions": [
+                  "Disclose number and percentage of workers exposed to hazardous substances per GRI 403-2",
+                  "Report results of psychosocial risk assessments per GRI 403-3",
+                  "Publish average training hours per employee and % receiving training per GRI 404-1 and 404-2",
+                  "State a time-bound target for women in top management with baseline year and deadline per GRI 405-1",
+                  "Quantify percentage of high-risk suppliers subject to on-the-ground audits per GRI 414-2"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Most claims include concrete figures (e.g., TRFR 0.41, 92 accidents, 29% women in top management), but some key disclosures lack context: the −52% unadjusted gender pay gap is numerically specific yet lacks explanation of methodology or comparability, and 'a number of countries' for sexual harassment training is vague. [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [
+                  "Definition and calculation methodology for unadjusted gender pay gap",
+                  "List of countries where mandatory sexual harassment training was implemented",
+                  "Clarification of 'all employees' scope (e.g., inclusion of temporary/non-guaranteed hours staff)"
+                ],
+                "improvement_suggestions": [
+                  "Define how the unadjusted gender pay gap is calculated (e.g., mean hourly earnings by gender, full-time equivalent basis)",
+                  "Name the specific countries where mandatory sexual harassment training was implemented",
+                  "Explicitly state whether 'all employees' includes temporary, agency, or non-guaranteed hours staff per GRI 404-2"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 3,
+                "justification": "Many metrics include units and years (e.g., TRFR per 1M hours, 2024–2025 comparisons), but no baselines are provided for targets — e.g., TRFR has no stated target value or deadline, and the gender representation decline lacks a baseline year for any future commitment.",
+                "missing_elements": [
+                  "Baseline year and deadline for TRFR target (GRI 403-1)",
+                  "Baseline year and deadline for women in top management target (GRI 405-1)",
+                  "2024 figure for work-related ill health incidents (disclosed as 'n/a' without justification)"
+                ],
+                "improvement_suggestions": [
+                  "Disclose a quantified TRFR target with baseline year, current value, and deadline per GRI 403-1",
+                  "State a time-bound target for women in top management with 2024 as baseline year and explicit deadline per GRI 405-1",
+                  "Explain why 2024 work-related ill health data is unavailable and disclose estimated coverage or gap rationale"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 2,
+                "justification": "No quantified, time-bound targets with baselines are disclosed for any GRI/TCFD sub-topic in this section — e.g., no TRFR reduction target, no diversity goal with deadline, no supplier audit coverage target, and no social impact mitigation targets under TCFD Strategy.",
+                "missing_elements": [
+                  "Quantified TRFR target with baseline year and deadline (GRI 403-1)",
+                  "Time-bound target for women in top management (GRI 405-1)",
+                  "Target for percentage of high-risk suppliers audited on-the-ground (GRI 414-2)",
+                  "Quantified target for social outcomes linked to climate transition (TCFD Strategy)"
+                ],
+                "improvement_suggestions": [
+                  "Set and disclose a TRFR target with baseline year, current value, and deadline per GRI 403-1",
+                  "Publish a time-bound target for women in top management (e.g., '35% by 2028') with 2024 as baseline year per GRI 405-1",
+                  "Disclose a target for percentage of high-risk suppliers subject to on-the-ground audits by a stated year per GRI 414-2"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "Some gaps are acknowledged (e.g., 'n/a' for 2024 ill health data, absence of psychosocial/hazardous exposure data), and the fatality is reported with contextual detail, but there is no discussion of root causes, systemic challenges, or negative trends beyond surface-level description — e.g., no analysis of why top management gender representation declined or how the fatality reflects broader operational risks.",
+                "missing_elements": [
+                  "Root cause analysis of decline in women's representation in top management",
+                  "Explanation for absence of 2024 work-related ill health data beyond 'n/a'",
+                  "Discussion of systemic challenges in supplier social assessment (e.g., audit limitations, remediation delays)"
+                ],
+                "improvement_suggestions": [
+                  "Provide root cause analysis for the 3-percentage-point decline in women’s representation in top management",
+                  "Explain why 2024 work-related ill health data is unavailable and describe steps to improve reporting reliability",
+                  "Acknowledge limitations in supplier social assessment (e.g., self-assessment reliance, audit coverage gaps) and describe mitigation efforts"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 3,
+                "justification": "The section is broadly organised by GRI/TCFD topic headings, and standards are cited (e.g., 'GRI 403-1'), but structural requirements are incomplete: GRI 403 disclosures omit required sub-indicators (403-2 to 403-4), GRI 404 lacks metric reporting per 404-1/404-2, and TCFD Strategy content fails to address the mandated social dimension of transition risk — violating TCFD Recommendation 12 (Strategy) and associated guidance.",
+                "missing_elements": [
+                  "GRI 403-2, 403-3, 403-4 disclosures",
+                  "GRI 404-1 and 404-2 metric reporting",
+                  "TCFD Strategy disclosure of social impacts from climate transition (per TCFD Recommendation 12)"
+                ],
+                "improvement_suggestions": [
+                  "Report workers exposed to hazardous substances per GRI 403-2",
+                  "Disclose results of psychosocial risk assessments per GRI 403-3",
+                  "Publish occupational health surveillance programme coverage per GRI 403-4",
+                  "Disclose average training hours per employee and % receiving training per GRI 404-1 and 404-2",
+                  "Add explicit analysis of social impacts (e.g., reskilling, displacement, just transition) arising from climate transition activities per TCFD Strategy"
+                ]
+              }
+            ],
+            "inconsistencies": [
+              "TRFR decreased from 0.55 to 0.41 (25.5% drop), yet total recordable accidents dropped from 165 to 92 (44.2% drop) — inconsistent magnitude given same denominator (hours worked); if hours worked were stable, accident count drop should roughly align with TRFR drop — unexplained discrepancy",
+              "Workforce headcount declined from 120,040 (2024) to 96,092 (2025) (−20%), but women’s share remained at 37% despite different absolute numbers — plausible only if proportional attrition occurred, but no explanation is given for stability amid large reduction; this requires verification against underlying composition changes"
+            ],
+            "overall_score": 2.67,
+            "missing_elements": [
+              "GRI 403-2 (workers exposed to hazardous substances)",
+              "GRI 403-3 (psychosocial risk assessments)",
+              "GRI 404-1 (average training hours per employee)",
+              "GRI 405 time-bound target for women in top management",
+              "TCFD Strategy analysis of social impacts from climate transition",
+              "Baseline year and deadline for any quantified target"
+            ],
+            "improvement_suggestions": [
+              "Disclose workers exposed to hazardous substances per GRI 403-2",
+              "Report results of psychosocial risk assessments per GRI 403-3",
+              "Publish average training hours per employee and % receiving training per GRI 404-1 and 404-2",
+              "State a time-bound target for women in top management with 2024 baseline and explicit deadline per GRI 405-1",
+              "Add explicit analysis of social impacts (e.g., workforce reskilling, community displacement, just transition planning) arising from climate transition activities per TCFD Strategy",
+              "Provide baseline year, current value, and deadline for at least one quantified target (e.g., TRFR or gender representation) to meet Forward-Looking threshold"
+            ]
+          },
+          "draft": "### Occupational Health & Safety  \nUnilever reported a Total Recordable Frequency Rate (TRFR) of 0.41 recordable work-related accidents per 1 million hours worked in 2025, down from 0.55 in 2024 [unilever-sustainability-statement_chunk_136]. This TRFR is defined under GRI 403-1 as the rate of recordable work-related accidents per 1 million hours worked [unilever-sustainability-statement_chunk_136]. The number of work-related accidents declined to 92 in 2025 (84 involving employees, 8 involving non-employees), compared to 165 in 2024 (152 and 13, respectively) [unilever-sustainability-statement_chunk_136]. Days lost due to injuries, fatalities, and work-related ill health totalled 1,936 in 2025, a reduction from 2,946 in 2024 [unilever-sustainability-statement_chunk_136]. One fatality occurred in 2025 — a contractor employed by ‘The Magnum Ice Cream Company’ who died due to workplace violence at an Ice Cream factory; Unilever conducted a full investigation and applied lessons learned globally to reduce recurrence risk [unilever-sustainability-statement_chunk_137]. All Unilever employees were covered by the company’s health and safety management system in both 2025 and 2024 [unilever-sustainability-statement_chunk_136]. Two work-related ill health incidents were recorded in 2025; no figure is disclosed for 2024, and the source explicitly states “n/a” for that year [unilever-sustainability-statement_chunk_136]. The source provides no data on workers exposed to hazardous substances (GRI 403-2), psychosocial risk assessments (GRI 403-3), or occupational health surveillance programmes (GRI 403-4) [unilever-sustainability-statement_chunk_135][unilever-sustainability-statement_chunk_136].\n\n### Training  \nUnilever delivered annual mandatory Code of Business Principles (COBP) training to all employees in 2025, including content on recognising bullying and harassment and discrimination [unilever-sustainability-statement_chunk_127]. Additional mandatory sexual harassment training was implemented in “a number of countries” in response to regulatory requirements, but the specific countries are not named in the source [unilever-sustainability-statement_chunk_127]. Training on forced labour recognition, working hours policy, and inclusion was delivered via cross-function ‘learning hours’ and the Workday global learning platform [unilever-sustainability-statement_chunk_127]. In 2025, Unilever provided AI training covering prompt engineering, responsible AI use, and practical applications (e.g., AI-powered menu suggestions, Copilot for financial reporting), and Social-First training to marketers globally — yet no quantitative metrics are disclosed on participation rates, average hours per employee (GRI 404-1), or percentage of employees receiving training (GRI 404-2) [unilever-sustainability-statement_chunk_127]. The term “all employees” is used without clarification of scope; per GRI 404-2, this is not confirmed to include temporary or non-guaranteed hours staff [unilever-sustainability-statement_chunk_130].\n\n### Diversity  \nAt the top management level (Unilever Leadership Executive and senior management one level below), women constituted 29% (27 of 92) in 2025, down from 32% (35 of 109) in 2024 [unilever-sustainability-statement_chunk_133]. This decline coincided with a net reduction of 17 individuals in top management headcount (from 109 to 92), driven by 4 hires/leavers and the demerger of the Ice Cream business (−13) [unilever-sustainability-statement_chunk_133]. Across the total workforce, women represented 37% (35,762 of 96,092) at year-end 2025, consistent with 37% (44,313 of 120,040) in 2024 [unilever-sustainability-statement_chunk_131]. Age distribution showed 18% of employees under 30, 66% aged 30–50, and 16% over 50 in 2025 [unilever-sustainability-statement_chunk_133]. The unadjusted gender pay gap is disclosed as −52% in 2025 and −49% in 2024 — meaning the mean pay level for female employees was 52% higher than that of male employees in 2025 [unilever-sustainability-statement_chunk_138]. No time-bound target for increasing women’s representation in top management is disclosed [unilever-sustainability-statement_chunk_133].\n\n### Supplier Social Assessment  \nUnilever requires business partners to adhere to the Responsible Partner Policy (RPP), which mandates human rights compliance, remediation of negative impacts, and alignment with ILO Conventions and UNGPs [unilever-sustainability-statement_chunk_112]. Suppliers of in-scope materials must comply with the People & Nature Policy, requiring human rights due diligence across their operations and supply chains, independent verification, and embedding of RPP standards [unilever-sustainability-statement_chunk_112]. Business partners confirm compliance annually via self-assessments, due diligence, and risk-based audits; outcomes determine approval status and inform risk-tiering based on geography and service type [unilever-sustainability-statement_chunk_112]. Supply chain mapping and country- and commodity-level risk analysis support targeted verification, including desktop and on-the-ground audits where risks are elevated [unilever-sustainability-statement_chunk_116]. When issues arise, Unilever engages partners to implement corrective actions; persistent non-compliance may lead to disengagement guided by internal human rights impact assessments [unilever-sustainability-statement_chunk_116].\n\n### TCFD Strategy: Social Impacts of Climate Transition  \nThe source confirms Unilever’s Climate Transition Action Plan (CTAP) was approved in 2024 and remains unchanged in 2025 following the Ice Cream demerger; impacts on decarbonisation levers will be reviewed in 2026 [unilever-sustainability-statement_chunk_25]. The CTAP outlines mitigation actions across scope 3 levers including Supplier Climate Programme (14% contribution to targeted reductions), regenerative agriculture (4%), and forest-risk commodities (10%) [unilever-sustainability-statement_chunk_49]. However, the source contains no explicit analysis of how these climate transition activities generate *social impacts* — e.g., no description of workforce reskilling needs for suppliers adopting regenerative practices, no assessment of labour displacement risks in regions shifting away from high-emission inputs, and no discussion of just transition planning for communities dependent on fossil-fuel-linked supply chains [unilever-sustainability-statement_chunk_25][unilever-sustainability-statement_chunk_49]. While scenario analyses for climate and nature risks are referenced (e.g., SSP2-4.5, TNFD ‘Ahead of the Game’), none link physical or transition risks to social outcomes for workers or communities [unilever-sustainability-statement_chunk_30][unilever-sustainability-statement_chunk_172].\n\n### Not covered in source material  \nGRI 403: Workers exposed to hazardous substances (GRI 403-2); psychosocial risk assessments (GRI 403-3); occupational health surveillance programmes (GRI 403-4); quantified TRFR target with baseline year, current value, and deadline (GRI 403-1).  \nGRI 404: Average training hours per employee (GRI 404-1); percentage of employees receiving training (GRI 404-2); training expenditure; list of countries where mandatory sexual harassment training was implemented.  \nGRI 405: Time-bound target for women in top management (e.g., ‘35% by 2028’) with 2024 baseline; root cause analysis of the decline from 32% to 29%; explanation for absence of 2024 work-related ill health data beyond “n/a”.  \nGRI 414: Percentage of high-risk suppliers subject to on-the-ground audits by a stated year; supplier audit coverage rate.  \nTCFD Strategy: Explicit analysis of social impacts arising from climate transition — e.g., workforce reskilling for low-carbon operations, community displacement risks, just transition planning, or labour risks in climate-critical supply chains (e.g., battery minerals, bio-based feedstocks).  \nNo data is provided on the number of employees completing AI or Social-First training programmes; no definition of “all employees” in training scope (e.g., whether it includes temporary or non-guaranteed hours staff); no disclosure of location or investigation timeline for the 2025 fatality.",
+          "sources": [
+            "unilever-sustainability-statement_chunk_131",
+            "unilever-sustainability-statement_chunk_130",
+            "unilever-sustainability-statement_chunk_133",
+            "unilever-sustainability-statement_chunk_125",
+            "unilever-sustainability-statement_chunk_173",
+            "unilever-sustainability-statement_chunk_107",
+            "unilever-sustainability-statement_chunk_126",
+            "unilever-sustainability-statement_chunk_135",
+            "unilever-sustainability-statement_chunk_136",
+            "unilever-sustainability-statement_chunk_137",
+            "unilever-sustainability-statement_chunk_108",
+            "unilever-sustainability-statement_chunk_127",
+            "unilever-sustainability-statement_chunk_123",
+            "unilever-sustainability-statement_chunk_111",
+            "unilever-sustainability-statement_chunk_112",
+            "unilever-sustainability-statement_chunk_179",
+            "unilever-sustainability-statement_chunk_116",
+            "unilever-sustainability-statement_chunk_48",
+            "unilever-sustainability-statement_chunk_49",
+            "unilever-sustainability-statement_chunk_25",
+            "unilever-sustainability-statement_chunk_172",
+            "unilever-sustainability-statement_chunk_138",
+            "unilever-sustainability-statement_chunk_176",
+            "unilever-sustainability-statement_chunk_30",
+            "unilever-sustainability-statement_chunk_174"
+          ]
+        },
+        "Governance": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 1.83,
+          "criterion_scores": {
+            "Coverage": 2,
+            "Specificity": 2,
+            "Quantifiability": 1,
+            "Forward-Looking": 1,
+            "Transparency": 2,
+            "Compliance Alignment": 3
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "GRI 2-11 Board sustainability expertise (number/percentage of directors with credentials)",
+            "GRI 205-3 whistleblower report metrics (volume, substantiation, resolution time)",
+            "GRI 205-4 substantiated allegations count and investigation duration",
+            "Quantified anti-corruption target with baseline year and deadline",
+            "2024 baseline and 2025 actual SPI value",
+            "TCFD Governance A2 procedural integration into Board agendas/skill matrices"
+          ],
+          "improvement_suggestions": [
+            "Disclose the percentage of Board directors with documented sustainability/ESG governance expertise per GRI 2-11",
+            "Report absolute numbers and resolution rates for whistleblower reports by year per GRI 205-3",
+            "Publish the count of substantiated corruption allegations and median investigation duration for 2023–2025 per GRI 205-4",
+            "Set and disclose a quantified anti-corruption target (e.g., 'reduce % of Tier 1 suppliers without active anti-corruption due diligence from 12% in 2024 to ≤3% by 2027')",
+            "Disclose the 2024 baseline value and 2025 actual score of the SPI, including its calculation methodology",
+            "Specify how climate risk topics are formally included in Board meeting agendas and evaluated against director competencies per TCFD Governance A2"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 2,
+                "justification": "Major GRI/TCFD sub-topics are missing: GRI 2-11 (Board sustainability expertise), GRI 205-3 (whistleblower metrics), GRI 205-4 (investigation outcomes), and TCFD Governance A2/A3 procedural integration are not addressed with required disclosures; the section explicitly states these are 'not covered in source material'.",
+                "missing_elements": [
+                  "GRI 2-11 Board sustainability expertise (number/percentage of directors with credentials)",
+                  "GRI 205-3 whistleblower report volume, substantiation status, resolution time",
+                  "GRI 205-4 number of substantiated allegations, average investigation time, remedial actions taken",
+                  "TCFD Governance A2: how climate risk is integrated into Board agendas or director skill matrices"
+                ],
+                "improvement_suggestions": [
+                  "Disclose the percentage of Board directors with documented sustainability/ESG governance expertise per GRI 2-11",
+                  "Report absolute numbers and resolution rates for whistleblower reports by year per GRI 205-3",
+                  "Publish the count of substantiated corruption allegations and median investigation duration for 2023–2025 per GRI 205-4",
+                  "Specify how climate risk topics are formally included in Board meeting agendas and evaluated against director competencies per TCFD Governance A2"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 2,
+                "justification": "Claims are largely descriptive and lack concrete data: no figures for Board expertise, training completion rates, SPI values, whistleblower volumes, or investigation outcomes; even where numbers are implied (e.g., 'five times per year' for CRC updates), they are isolated and not contextualized with scope or impact.",
+                "missing_elements": [
+                  "Number or percentage of Board directors with sustainability/ESG governance credentials",
+                  "Employee and Tier 1 supplier anti-corruption training completion rate (%) for 2025 with 2024 comparator",
+                  "2024 baseline and 2025 actual value of Sustainability Progress Index (SPI)",
+                  "Absolute number of whistleblower reports received in 2023–2025"
+                ],
+                "improvement_suggestions": [
+                  "State the exact number and percentage of Board directors holding formal sustainability or ESG governance qualifications",
+                  "Report the % of employees and % of Tier 1 suppliers completing mandatory anti-corruption training in 2025, with 2024 baseline",
+                  "Disclose the 2024 baseline value and 2025 actual score of the SPI, including its calculation methodology",
+                  "Provide the total number of whistleblower reports received, substantiated, and unresolved for each of 2023, 2024, and 2025"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 1,
+                "justification": "No metric is presented with a baseline year, current value, unit, and timeframe together; all numerical references (e.g., 'five times per year', '15% weight') lack comparative context, year-on-year change, or defined reporting period — rendering them non-quantifiable per rubric requirements.",
+                "missing_elements": [
+                  "Any metric with baseline year, current value, unit, and timeframe (e.g., 'whistleblower substantiation rate: 62% in 2024 → 58% in 2025')",
+                  "SPI value expressed as a number with 2024 baseline and 2025 result",
+                  "Anti-corruption training completion rate with 2024/2025 comparison",
+                  "Average investigation resolution time in days with 2024 and 2025 values"
+                ],
+                "improvement_suggestions": [
+                  "Report SPI as a numerical index value with explicit 2024 baseline and 2025 result",
+                  "Publish average whistleblower report resolution time in calendar days for 2024 and 2025",
+                  "Disclose employee anti-corruption training completion rate (%) for 2024 and 2025",
+                  "State the number of substantiated corruption cases resolved within ≤60 days vs. >60 days for 2025"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 1,
+                "justification": "No quantified target with baseline year and deadline is provided anywhere in the section; references to '2025' relate only to timing of training or PSP weighting, not to measurable targets (e.g., 'reduce unassessed high-risk suppliers by X% by 2027, from 2024 baseline').",
+                "missing_elements": [
+                  "A quantified anti-corruption target (e.g., reduction in high-risk jurisdictions) with baseline year, deadline, and unit",
+                  "A timeline or baseline for RPP requirement cascade beyond Tier 1 suppliers",
+                  "A measurable target for whistleblower resolution time improvement",
+                  "A target for Board sustainability expertise coverage (e.g., 100% of directors certified by 2026)"
+                ],
+                "improvement_suggestions": [
+                  "Set and disclose a quantified anti-corruption target (e.g., 'reduce % of Tier 1 suppliers without active anti-corruption due diligence from 12% in 2024 to ≤3% by 2027')",
+                  "Define a phased timeline with annual milestones for cascading RPP requirements to Tier 2+ suppliers",
+                  "Establish and publish a target for average whistleblower report resolution time (e.g., '≤30 days by 2026, from 42-day 2024 baseline')",
+                  "Commit to achieving full Board sustainability competence certification by a stated year, with 2024 baseline %"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 2,
+                "justification": "The section acknowledges gaps (e.g., 'GRI 2-11 is not quantified', 'no metrics disclosed'), but does not discuss real challenges, negative trends, or missed targets — e.g., no mention of rising whistleblower volumes, investigation delays, enforcement failures in high-risk regions, or SPI underperformance.",
+                "missing_elements": [
+                  "Description of operational challenges enforcing anti-corruption standards in specific high-risk regions or supplier tiers",
+                  "Disclosure of any SPI threshold breaches leading to PSP award reductions in 2025",
+                  "Acknowledgement of rising substantiation rates or unresolved backlogs in whistleblower cases",
+                  "Reporting of near-misses or systemic weaknesses identified in anti-corruption controls"
+                ],
+                "improvement_suggestions": [
+                  "Describe specific enforcement challenges encountered in high-risk geographies (e.g., jurisdictional limitations, language barriers, third-party verification gaps)",
+                  "Disclose whether any 2025 PSP awards were reduced due to unmet SPI thresholds",
+                  "Report trends in whistleblower case volume or resolution delays, including root causes",
+                  "Acknowledge near-miss incidents or control weaknesses identified in 2024–2025 anti-corruption audits"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 3,
+                "justification": "The section is partially organized by GRI/TCFD codes (e.g., 'GRI 205-1', 'TCFD Governance A1–A3'), but lacks full structural alignment: GRI 2 General Disclosures (e.g., GRI 2-11, GRI 2-21) and TCFD Governance A3 are referenced only as missing, not integrated; no cross-referencing to assurance statements or reporting boundaries is provided.",
+                "missing_elements": [
+                  "Explicit reference to GRI 2-21 (sustainability performance linkage to executive remuneration) with disclosure of PSP award impact",
+                  "Alignment of TCFD Governance A3 (role of board in overseeing climate strategy) with actual Board agenda items or minutes",
+                  "Statement of reporting boundary for anti-corruption governance disclosures (e.g., scope: global operations, joint ventures, subsidiaries)",
+                  "Reference to third-party assurance scope and limitations for GRI 205 disclosures"
+                ],
+                "improvement_suggestions": [
+                  "Explicitly address GRI 2-21 by stating whether 2025 PSP awards were adjusted based on SPI performance",
+                  "Link TCFD Governance A3 to specific Board-level decisions or strategic outputs informed by climate scenario analysis",
+                  "Define the reporting boundary for all governance disclosures (e.g., 'applies to all consolidated entities and majority-owned joint ventures')",
+                  "Cite the name and scope of the third-party assurance provider covering anti-corruption governance disclosures per GRI 205-1"
+                ]
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 1.83,
+            "missing_elements": [
+              "GRI 2-11 Board sustainability expertise (number/percentage of directors with credentials)",
+              "GRI 205-3 whistleblower report metrics (volume, substantiation, resolution time)",
+              "GRI 205-4 substantiated allegations count and investigation duration",
+              "Quantified anti-corruption target with baseline year and deadline",
+              "2024 baseline and 2025 actual SPI value",
+              "TCFD Governance A2 procedural integration into Board agendas/skill matrices"
+            ],
+            "improvement_suggestions": [
+              "Disclose the percentage of Board directors with documented sustainability/ESG governance expertise per GRI 2-11",
+              "Report absolute numbers and resolution rates for whistleblower reports by year per GRI 205-3",
+              "Publish the count of substantiated corruption allegations and median investigation duration for 2023–2025 per GRI 205-4",
+              "Set and disclose a quantified anti-corruption target (e.g., 'reduce % of Tier 1 suppliers without active anti-corruption due diligence from 12% in 2024 to ≤3% by 2027')",
+              "Disclose the 2024 baseline value and 2025 actual score of the SPI, including its calculation methodology",
+              "Specify how climate risk topics are formally included in Board meeting agendas and evaluated against director competencies per TCFD Governance A2"
+            ]
+          },
+          "draft": "### Governance Oversight and Accountability\n\nUnilever’s Board holds ultimate accountability for the management of all material impacts, risks, and opportunities (IROs), including sustainability-related matters, and delegates day-to-day oversight to the Unilever Leadership Executive (ULE) [unilever-sustainability-statement_chunk_7]. The Board’s governance structure is supported by four key subcommittees: the Corporate Responsibility Committee (CRC), Audit Committee, Remuneration Committee, and Nominating and Corporate Governance Committee — each with terms of reference published on Unilever’s website at unilever.com [unilever-sustainability-statement_chunk_7]. The CRC reviews Unilever’s sustainability strategy, tracks progress against sustainability goals, and assesses the reputational impact of material IROs, receiving updates from the global Sustainability function five times per year [unilever-sustainability-statement_chunk_7]. The Audit Committee oversees the effectiveness of risk management processes—including the double materiality assessment (DMA)—non-financial disclosures in the Annual Report and Accounts (including under the ESRS), and assurance activities over those disclosures [unilever-sustainability-statement_chunk_7]. The Remuneration Committee aligns the long-term Performance Share Plan (PSP) with sustainability priorities, assigning 15% weight to the Sustainability Progress Index (SPI) in PSP awards for 2025 [unilever-sustainability-statement_chunk_8][unilever-sustainability-statement_chunk_9]. The Nominating and Corporate Governance Committee ensures the Board includes members with relevant sustainability expertise [unilever-sustainability-statement_chunk_7]. GRI 2-11 (Board sustainability expertise) is not quantified in the source material; no figure is provided for the number or percentage of Board directors with documented sustainability or ESG governance credentials [unilever-sustainability-statement_chunk_7].\n\n### GRI 205-1: Anti-Corruption Policy and Scope\n\nUnilever maintains a zero-tolerance policy toward corruption and bribery, as codified in its Code of Business Principles (COBP) and supporting Code Policies, which prohibit public and commercial bribery—including facilitation payments—regardless of financial value [unilever-sustainability-statement_chunk_164]. These policies apply to all employees and extend to business partners through the Responsible Partner Policy (RPP), which mandates adherence to Unilever’s anti-corruption standards across the value chain [unilever-sustainability-statement_chunk_164][unilever-sustainability-statement_chunk_161]. The RPP applies beyond Tier 1 suppliers, expecting cascading of equivalent requirements into their supply chains [unilever-sustainability-statement_chunk_161]. No baseline, target, or timeline is disclosed for RPP requirement cascade compliance across supply chain tiers [unilever-sustainability-statement_chunk_161].\n\n### GRI 205-2: Anti-Corruption Training\n\nAll employees completed mandatory annual anti-corruption and anti-bribery training in 2025; Unilever Board members also received training on this subject [unilever-sustainability-statement_chunk_165]. The training content is based on learnings from investigations, risk assessments, and business partnering, and additional bespoke training is offered for employees in external-facing commercial roles who face greater corruption or bribery risk [unilever-sustainability-statement_chunk_165]. No absolute number, completion rate (%), or comparator for 2024 is disclosed for employee or supplier training [unilever-sustainability-statement_chunk_165]. Unilever does not report the number or percentage of Tier 1 suppliers completing anti-corruption training in 2025 or 2024 [unilever-sustainability-statement_chunk_165].\n\n### GRI 205-3: Whistleblower Reports and Resolution Status\n\nThe context does not disclose any quantitative data on whistleblower reports — including volume, type, resolution status, or timeframes — for 2023, 2024, or 2025. While reporting channels are described (e.g., Speak Up platform and hotline), no metrics on usage, substantiation rates, or pending cases are provided [unilever-sustainability-statement_chunk_160]. Therefore, GRI 205-3 metrics (number of reports, substantiated/unsubstantiated counts, average resolution time) are not covered in source material.\n\n### GRI 205-4: Investigations, Outcomes, and Remedial Actions\n\nThe context states that “all potential material cases of corruption and bribery related to public officials are reported to our Chief Legal Officer and Chief Business Integrity Officer, who oversee investigations”, and that “completed reports are reviewed and approved by the Global Head of Investigations” [unilever-sustainability-statement_chunk_164][unilever-sustainability-statement_chunk_161]. It further notes that Business Integrity Committees are responsible for ensuring timely investigation of all potential Code breaches raised within 60 days, though final determination may take longer depending on complexity [unilever-sustainability-statement_chunk_161]. However, no figures are provided for the number of substantiated corruption allegations, average investigation resolution time, or remedial actions taken in 2023–2025 [unilever-sustainability-statement_chunk_161]. No disclosure is made of near-misses, operational challenges in high-risk regions, or enforcement difficulties in lower-tier supplier relationships [unilever-sustainability-statement_chunk_161].\n\n### TCFD Governance A1–A3: Climate Risk Integration into Board Oversight\n\nThe context confirms that climate- and nature-related risks are assessed through scenario analysis aligned with TCFD and TNFD frameworks, and that insights inform medium- and long-term strategic planning [unilever-sustainability-statement_chunk_37][unilever-sustainability-statement_chunk_30]. The Audit Committee oversees the double materiality assessment (DMA), which includes climate-related risks, and the CRC reviews reputational impacts of material IROs [unilever-sustainability-statement_chunk_7]. However, the source material does not specify how climate risks are integrated into Board agendas, nor does it disclose whether climate competence is reflected in director skill matrices or board evaluation outcomes [unilever-sustainability-statement_chunk_7]. TCFD Governance A2 (integration of climate risk into board oversight) is therefore not quantitatively or procedurally detailed.\n\n### Sustainability Performance Linkage and Metrics\n\nIn 2025, the SPI was determined by assessing performance against four sustainability targets related to climate, nature, plastics, and livelihoods [unilever-sustainability-statement_chunk_9]. The SPI accounts for 15% of the total PSP award and is assessed jointly by the CRC and Remuneration Committee [unilever-sustainability-statement_chunk_9]. However, the source material provides neither the 2024 baseline value nor the 2025 actual score of the SPI, nor its calculation methodology [unilever-sustainability-statement_chunk_9]. Page 97 is referenced for “SPI outcomes for 2025”, but no numerical value is extracted from the context [unilever-sustainability-statement_chunk_9].\n\n### Political Engagement and Supplier Governance\n\nUnilever engages in advocacy and lobbying—directly and indirectly through trade associations and industry groups—to advance policy in climate, nature, plastics, and livelihoods, always aligned with its Code and Code Policies requiring honesty, integrity, openness, and compliance with applicable laws [unilever-sustainability-statement_chunk_165]. Oversight of national government engagement and lobbying activity in 2025 was led by the Chief Corporate Affairs and Communications Officer [unilever-sustainability-statement_chunk_165]. Supplier relationships are governed by the Responsible Sourcing and Business Partnering Code Policy, mandating fair treatment and requiring third parties to uphold Unilever’s standards—including anti-corruption requirements—through onboarding, contracting, and ongoing monitoring [unilever-sustainability-statement_chunk_161].\n\n### Not covered in source material\n\nThe provided context does not disclose:  \n(1) The number or percentage of Board directors with formal sustainability or ESG governance credentials (GRI 2-11);  \n(2) The absolute number or completion rate (%) of employees and Tier 1 suppliers completing mandatory anti-corruption training in 2025 (GRI 205-2);  \n(3) The 2024 baseline value and 2025 actual score of the Sustainability Progress Index (SPI), or its calculation methodology (GRI 2-21, TCFD Governance A3);  \n(4) The number of whistleblower reports, their substantiation status, resolution timelines, or volume per year (GRI 205-3);  \n(5) The number of substantiated corruption allegations, average investigation resolution time, or remedial actions taken (GRI 205-4);  \n(6) A quantified anti-corruption target (e.g., reduction in unassessed high-risk suppliers) with 2024 baseline and deadline (GRI 205-1);  \n(7) A phased timeline or baseline metric for RPP requirement cascade beyond Tier 1 suppliers (GRI 205-1);  \n(8) Operational challenges encountered in enforcing anti-corruption standards in specific high-risk regions or supplier tiers (GRI 205-4);  \n(9) Whether any 2025 PSP awards were reduced due to unmet SPI thresholds (GRI 2-21);  \n(10) The name or scope of the third-party assurance provider covering anti-corruption policies and governance disclosures (GRI 205-1);  \n(11) How climate and nature risks are specifically integrated into Board agendas or assessed against director skill matrices (TCFD Governance A2);  \n(12) Board evaluation outcomes related to sustainability competence (GRI 2-11);  \n(13) Quantitative metrics on whistleblower reports (volume, type, resolution status) per GRI 205-3;  \n(14) Investigations into alleged corruption, including outcomes and remedial actions per GRI 205-4;  \n(15) The scope and limitations of third-party assurance over anti-corruption governance disclosures (GRI 205-1);  \n(16) The percentage of Tier 1 suppliers subject to anti-corruption due diligence in 2025, with a 2024 comparator (GRI 205-2);  \n(17) The number of unsubstantiated or pending whistleblower reports and associated governance implications (GRI 205-3);  \n(18) A measurable anti-corruption target with baseline year, deadline, and unit (e.g., reduction in high-risk jurisdictions) (GRI 205-1).",
+          "sources": [
+            "unilever-sustainability-statement_chunk_7",
+            "unilever-sustainability-statement_chunk_156",
+            "unilever-sustainability-statement_chunk_165",
+            "unilever-sustainability-statement_chunk_164",
+            "unilever-sustainability-statement_chunk_8",
+            "unilever-sustainability-statement_chunk_9",
+            "unilever-sustainability-statement_chunk_157",
+            "unilever-sustainability-statement_chunk_161",
+            "unilever-sustainability-statement_chunk_179",
+            "unilever-sustainability-statement_chunk_174",
+            "unilever-sustainability-statement_chunk_172",
+            "unilever-sustainability-statement_chunk_177",
+            "unilever-sustainability-statement_chunk_37",
+            "unilever-sustainability-statement_chunk_35",
+            "unilever-sustainability-statement_chunk_30",
+            "unilever-sustainability-statement_chunk_77",
+            "unilever-sustainability-statement_chunk_140",
+            "unilever-sustainability-statement_chunk_175",
+            "unilever-sustainability-statement_chunk_171",
+            "unilever-sustainability-statement_chunk_0",
+            "unilever-sustainability-statement_chunk_120",
+            "unilever-sustainability-statement_chunk_10",
+            "unilever-sustainability-statement_chunk_176"
+          ]
+        }
+      }
+    }
+  ]
+}

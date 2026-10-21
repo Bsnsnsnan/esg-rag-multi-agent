@@ -1,0 +1,31 @@
+﻿company,sasb_industry,sasb_topic,mapped_topics,addressed_in_report,flagged_as_gap,status
+Amazon,E-Commerce (CG-EC),Hardware infrastructure energy & water management,Energy; Water & effluents,True,True,"addressed, gaps flagged"
+Amazon,E-Commerce (CG-EC),Data privacy & advertising standards,Customer privacy & data security,False,False,blind spot
+Amazon,E-Commerce (CG-EC),Data security,Customer privacy & data security,False,False,blind spot
+Amazon,E-Commerce (CG-EC),"Employee recruitment, inclusion & performance","Diversity, equity & inclusion; Employment & labour practices",True,True,"addressed, gaps flagged"
+Amazon,E-Commerce (CG-EC),Product packaging & distribution,"Waste, packaging & circularity; GHG emissions & air quality",True,True,"addressed, gaps flagged"
+Samsung,Hardware (TC-HW),Product security,Customer privacy & data security,False,False,blind spot
+Samsung,Hardware (TC-HW),Employee diversity & inclusion,"Diversity, equity & inclusion",True,True,"addressed, gaps flagged"
+Samsung,Hardware (TC-HW),Product lifecycle management,"Waste, packaging & circularity; Materials & sourcing",True,True,"addressed, gaps flagged"
+Samsung,Hardware (TC-HW),Supply chain management,Supplier social assessment; Human rights & labour standards,True,True,"addressed, gaps flagged"
+Samsung,Hardware (TC-HW),Materials sourcing,Materials & sourcing,True,False,addressed
+Unilever,Household & Personal Products (CG-HP),Water management,Water & effluents,True,True,"addressed, gaps flagged"
+Unilever,Household & Personal Products (CG-HP),"Product environmental, health & safety performance",Product & customer safety,False,False,blind spot
+Unilever,Household & Personal Products (CG-HP),Packaging lifecycle management,"Waste, packaging & circularity",True,True,"addressed, gaps flagged"
+Unilever,Household & Personal Products (CG-HP),Environmental & social impacts of palm oil supply chain,Materials & sourcing; Biodiversity & land use; Human rights & labour standards,True,True,"addressed, gaps flagged"
+Shell,Oil & Gas – Exploration & Production (EM-EP),Greenhouse gas emissions,GHG emissions & air quality,True,True,"addressed, gaps flagged"
+Shell,Oil & Gas – Exploration & Production (EM-EP),Air quality,GHG emissions & air quality,True,True,"addressed, gaps flagged"
+Shell,Oil & Gas – Exploration & Production (EM-EP),Water & wastewater management,Water & effluents,True,True,"addressed, gaps flagged"
+Shell,Oil & Gas – Exploration & Production (EM-EP),Biodiversity impacts,Biodiversity & land use,False,False,blind spot
+Shell,Oil & Gas – Exploration & Production (EM-EP),"Security, human rights & rights of indigenous peoples",Human rights & labour standards,True,True,"addressed, gaps flagged"
+Shell,Oil & Gas – Exploration & Production (EM-EP),Community relations,Local communities & inclusion,False,True,flagged as gap
+Shell,Oil & Gas – Exploration & Production (EM-EP),Workforce health & safety,Occupational health & safety,True,True,"addressed, gaps flagged"
+Shell,Oil & Gas – Exploration & Production (EM-EP),Reserves valuation & capital expenditures,Climate risk & strategy (TCFD),True,True,"addressed, gaps flagged"
+Shell,Oil & Gas – Exploration & Production (EM-EP),Business ethics & transparency,Anti-corruption & business ethics,True,True,"addressed, gaps flagged"
+Shell,Oil & Gas – Exploration & Production (EM-EP),Management of the legal & regulatory environment,Public policy & lobbying,True,True,"addressed, gaps flagged"
+Shell,Oil & Gas – Exploration & Production (EM-EP),Critical incident risk management,Occupational health & safety,True,True,"addressed, gaps flagged"
+HSBC,Commercial Banks (FN-CB),Data security,Customer privacy & data security,False,False,blind spot
+HSBC,Commercial Banks (FN-CB),Financial inclusion & capacity building,Local communities & inclusion,True,True,"addressed, gaps flagged"
+HSBC,Commercial Banks (FN-CB),Incorporation of ESG factors in credit analysis,Climate risk & strategy (TCFD),True,True,"addressed, gaps flagged"
+HSBC,Commercial Banks (FN-CB),Business ethics,Anti-corruption & business ethics,True,True,"addressed, gaps flagged"
+HSBC,Commercial Banks (FN-CB),Systemic risk management,Board structure & oversight; Climate risk & strategy (TCFD),True,True,"addressed, gaps flagged"

@@ -1,0 +1,1510 @@
+{
+  "company": "Shell",
+  "config": {
+    "generator_model": "qwen-plus",
+    "assessor_model": "qwen-plus",
+    "max_iterations": 3,
+    "threshold": 4.0,
+    "require_no_inconsistencies": true,
+    "extra_queries_from_feedback": 3
+  },
+  "finished": true,
+  "converged": false,
+  "num_rounds": 3,
+  "score_progression": [
+    3.78,
+    3.89,
+    3.78
+  ],
+  "section_score_progression": {
+    "Environmental": [
+      4.67,
+      4.67,
+      4.67
+    ],
+    "Social": [
+      3.33,
+      3.67,
+      3.5
+    ],
+    "Governance": [
+      3.33,
+      3.33,
+      3.17
+    ]
+  },
+  "rounds": [
+    {
+      "iteration": 1,
+      "timestamp": "2026-10-21T02:01:20",
+      "assess_seconds": 105.6,
+      "overall_score": 3.78,
+      "sections": {
+        "Environmental": {
+          "revised_this_round": true,
+          "passed": true,
+          "overall_score": 4.67,
+          "criterion_scores": {
+            "Coverage": 4,
+            "Specificity": 5,
+            "Quantifiability": 5,
+            "Forward-Looking": 5,
+            "Transparency": 4,
+            "Compliance Alignment": 5
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "Water discharge volumes and pollutant concentrations by medium (GRI 303-3, GRI 303-4)",
+            "Waste generation and diversion rates (e.g., per unit production or revenue) (GRI 306-2, GRI 306-3)",
+            "TCFD scenario analysis outputs (TCFD Metrics & Targets, Scenario Analysis)",
+            "Explanation for sharp decline in waste diversion (207 kt hazardous diverted in 2025 vs. 409 kt in 2024)"
+          ],
+          "improvement_suggestions": [
+            "Disclose water discharge volumes, media-specific discharge locations, and key pollutant concentrations (e.g., TSS, hydrocarbons) for all major facilities",
+            "Report waste generation and diversion as rates (e.g., tonnes waste per $1M revenue or per barrel of oil equivalent produced)",
+            "Publish summary results of climate scenario analyses, including assumptions, methodologies, and financial implications across scenarios",
+            "Explain drivers behind the significant year-on-year declines in waste diversion (e.g., operational changes, regulatory shifts, data gaps)"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 4,
+                "justification": "All GRI 302–306 and TCFD Strategy/Risk/Metrics & Targets sub-topics are addressed, but GRI 303 requires disclosure of water discharge (not just consumption) and GRI 306 requires waste generation *rates* (e.g., per unit production or revenue), not just absolute tonnes — both missing. TCFD mandates scenario analysis outputs, which are explicitly stated as absent.",
+                "missing_elements": [
+                  "Water discharge volumes and pollutant concentrations by medium (GRI 303-3, GRI 303-4)",
+                  "Waste generation rate (e.g., kg/tonne of product or $ revenue) and diversion *rate* (not just absolute tonnes) (GRI 306-2, GRI 306-3)",
+                  "TCFD-aligned scenario analysis outputs (e.g., financial impact under 1.5°C vs. 2°C scenarios) (TCFD Metrics & Targets, Scenario Analysis)"
+                ],
+                "improvement_suggestions": [
+                  "Disclose water discharge volumes, media-specific discharge locations, and key pollutant concentrations (e.g., TSS, hydrocarbons) for all major facilities",
+                  "Report waste generation and diversion as rates (e.g., tonnes waste per $1M revenue or per barrel of oil equivalent produced)",
+                  "Publish summary results of climate scenario analyses, including assumptions, methodologies, and financial implications across scenarios"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 5,
+                "justification": "All claims are backed by precise figures with clear units, years, and breakdowns (e.g., '187 million MWh fossil', '0.04% methane intensity', '1,987 thousand tonnes of waste'). Sub-components sum correctly to totals (e.g., 1,533 + 454 = 1,987; 72 + 13 = 85 ≈ 86 million m³), and scope labels (e.g., 'operational control') are consistently applied.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 5,
+                "justification": "Every metric includes units, timeframes, and explicit baselines: e.g., '53 million tonnes CO₂e in 2025 vs. 83 million in 2016'; '−9.0% achieved in 2025 vs. 2016 baseline 78 gCO₂e/MJ'; '8 million m³ in high-stress areas vs. 21 million in 2024'. Year-on-year comparisons are provided for all core metrics.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 5,
+                "justification": "Three quantified, time-bound targets are explicitly stated: (i) 50% Scope 1&2 reduction by 2030 vs. 2016 baseline; (ii) 15–20% NCI reduction by 2030 vs. 2016; (iii) 15–20% Scope 3 Category 11 reduction by 2030 vs. 2021 — all with current progress (% achieved) and baseline years disclosed.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Transparency",
+                "score": 4,
+                "justification": "Shell acknowledges boundary misalignment undermining energy intensity reliability, retired a prior water target (stating it was met early), and reports negative trends (e.g., waste disposal ↑, waste diversion ↓). However, it does not explain *why* hazardous/non-hazardous waste diversion fell sharply (−50% and −36%), nor discuss challenges in Scope 3 Category 11 methodology beyond noting it is sales-volume-based.",
+                "missing_elements": [
+                  "Explanation for 50% decline in hazardous waste diversion (207 vs. 409 kt) and 36% decline in non-hazardous waste diversion (340 vs. 536 kt)",
+                  "Discussion of limitations or uncertainties in Scope 3 Category 11 emissions estimation method (beyond stating it is sales-volume-based)"
+                ],
+                "improvement_suggestions": [
+                  "Explain drivers behind the significant year-on-year declines in waste diversion (e.g., operational changes, regulatory shifts, data gaps)",
+                  "Describe key assumptions, data gaps, and uncertainty ranges in Scope 3 Category 11 calculation, referencing GHG Protocol guidance"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 5,
+                "justification": "The section is rigorously structured by GRI/TCFD standard headings (GRI 302, 303, etc.), each subsection cites relevant GRI/TCFD codes implicitly via naming, and all disclosures map directly to required indicators (e.g., GRI 305-1 for Scope 1&2 emissions, GRI 303-1 for water withdrawal). TCFD elements are grouped under its three pillars as required.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 4.67,
+            "missing_elements": [
+              "Water discharge volumes and pollutant concentrations by medium (GRI 303-3, GRI 303-4)",
+              "Waste generation and diversion rates (e.g., per unit production or revenue) (GRI 306-2, GRI 306-3)",
+              "TCFD scenario analysis outputs (TCFD Metrics & Targets, Scenario Analysis)",
+              "Explanation for sharp decline in waste diversion (207 kt hazardous diverted in 2025 vs. 409 kt in 2024)"
+            ],
+            "improvement_suggestions": [
+              "Disclose water discharge volumes, media-specific discharge locations, and key pollutant concentrations (e.g., TSS, hydrocarbons) for all major facilities",
+              "Report waste generation and diversion as rates (e.g., tonnes waste per $1M revenue or per barrel of oil equivalent produced)",
+              "Publish summary results of climate scenario analyses, including assumptions, methodologies, and financial implications across scenarios",
+              "Explain drivers behind the significant year-on-year declines in waste diversion (e.g., operational changes, regulatory shifts, data gaps)"
+            ]
+          },
+          "draft": "### GRI 302 Energy  \nShell’s total energy consumption in 2025 was 269 million MWh, down from 289 million MWh in 2024, primarily due to portfolio changes and greenhouse gas (GHG) abatement and transformation projects [shell-integrated-annual-and-sustainability-report_chunk_829]. Of the energy consumed by facilities under Shell’s operational control (189 million MWh in 2025), 99% came from fossil sources (187 million MWh), comprising crude oil and petroleum products (40 million MWh), natural gas (108 million MWh), other fossil sources (10 million MWh), and purchased or acquired electricity, heat, steam and cooling from fossil sources (28 million MWh) [shell-integrated-annual-and-sustainability-report_chunk_828]. Renewable energy consumption under operational control was 2.6 million MWh in 2025 — including 2.4 million MWh from purchased or acquired electricity, heat, steam and cooling from renewable sources, 0.03 million MWh from fuels from renewable sources (e.g., biomass, biofuels, biogas, hydrogen from renewable sources), and 0.1 million MWh from self-generated non-fuel renewable energy [shell-integrated-annual-and-sustainability-report_chunk_829]. Energy intensity per net revenue remained stable at 0.001 MWh/$ in both 2024 and 2025, though Shell notes this metric is not considered reliable for cross-entity or longitudinal comparison due to boundary misalignment between energy consumption (ESRS reporting boundary) and net revenue (financial control boundary) [shell-integrated-annual-and-sustainability-report_chunk_828].\n\n### GRI 303 Water  \nWater consumption reported against Shell’s operational control boundary was 86 million cubic metres in 2025, down from 90 million cubic metres in 2024 [shell-integrated-annual-and-sustainability-report_chunk_878]. Of this, approximately 72 million cubic metres (84%) was used for manufacturing oil products and chemicals, and 13 million cubic metres for oil and gas production [shell-integrated-annual-and-sustainability-report_chunk_870]. In 2025, Shell consumed 8 million cubic metres of water in areas of high water stress, a reduction from 21 million cubic metres in 2024 [shell-integrated-annual-and-sustainability-report_chunk_985]. Water recycled and reused amounted to 25 million cubic metres in 2025, up from 23 million cubic metres in 2024 [shell-integrated-annual-and-sustainability-report_chunk_985]. Shell retired its prior commitment to reduce fresh water consumption in water-stressed areas, having met it ahead of schedule in 2022; the commitment formally ended in 2025 [shell-integrated-annual-and-sustainability-report_chunk_876].\n\n### GRI 305 Emissions  \nShell’s gross Scope 1 and 2 GHG emissions (net of carbon credits) were 53 million tonnes CO₂e in 2025, down from 58 million tonnes CO₂e in 2024 and 83 million tonnes CO₂e in the 2016 baseline year [shell-integrated-annual-and-sustainability-report_chunk_204][shell-integrated-annual-and-sustainability-report_chunk_1098]. This reflects a 36% reduction since 2016 [shell-integrated-annual-and-sustainability-report_chunk_29]. The 2025 reduction was driven by divestments (4.8 million tonnes), emission-reduction activities and purchase of renewable electricity (1.2 million tonnes), and changes in output (0.1 million tonnes), partly offset by acquisitions (1.4 million tonnes) [shell-integrated-annual-and-sustainability-report_chunk_1098]. Shell’s methane emissions intensity for operated oil and gas assets with marketed gas was 0.04% in 2025, well below its target of <0.2% and consistent with its ambition to achieve near-zero intensity by 2030 [shell-integrated-annual-and-sustainability-report_chunk_29][shell-integrated-annual-and-sustainability-report_chunk_1119]. Routine flaring from upstream operations was eliminated in January 2025, independent of the March 2025 sale of SPDC [shell-integrated-annual-and-sustainability-report_chunk_29][shell-integrated-annual-and-sustainability-report_chunk_165].\n\n### GRI 306 Waste  \nIn 2025, Shell disposed of 1,987 thousand tonnes of waste, up from 1,933 thousand tonnes in 2024 [shell-integrated-annual-and-sustainability-report_chunk_278][shell-integrated-annual-and-sustainability-report_chunk_906]. This comprised 1,533 thousand tonnes of non-hazardous waste (up from 1,396 thousand tonnes) and 454 thousand tonnes of hazardous waste (down from 536 thousand tonnes) [shell-integrated-annual-and-sustainability-report_chunk_906]. Hazardous waste diverted from disposal totalled 207 thousand tonnes in 2025, down from 409 thousand tonnes in 2024; non-hazardous waste diverted from disposal totalled 340 thousand tonnes, down from 536 thousand tonnes [shell-integrated-annual-and-sustainability-report_chunk_985]. Overall, 403 thousand tonnes of residual materials were diverted for reuse, recycling or use as raw material in another process in 2025, compared with 728 thousand tonnes in 2024 [shell-integrated-annual-and-sustainability-report_chunk_906].\n\n### TCFD Strategy, Risk Management, Metrics & Targets  \nShell’s climate strategy is anchored in its ambition to become a net-zero emissions energy business by 2050 (Scope 1, 2 and 3), with interim targets aligned to a 1.5°C pathway derived from IPCC AR6 scenarios [shell-integrated-annual-and-sustainability-report_chunk_222][shell-integrated-annual-and-sustainability-report_chunk_165]. Key metrics include: (i) a 50% reduction in net Scope 1 and 2 emissions by 2030 vs. 2016 (53 million tonnes CO₂e achieved in 2025, −36% vs. baseline) [shell-integrated-annual-and-sustainability-report_chunk_224][shell-integrated-annual-and-sustainability-report_chunk_1119]; (ii) a 15–20% reduction in net carbon intensity (NCI) of energy products sold by 2030 vs. 2016 (−9.0% achieved in 2025, baseline 78 gCO₂e/MJ) [shell-integrated-annual-and-sustainability-report_chunk_440][shell-integrated-annual-and-sustainability-report_chunk_1119]; and (iii) a 15–20% reduction in customer emissions from oil product use (Scope 3, Category 11) by 2030 vs. 2021 (−17.9% achieved in 2025, baseline 569 million tonnes CO₂e) [shell-integrated-annual-and-sustainability-report_chunk_1119][shell-integrated-annual-and-sustainability-report_chunk_223]. Risk management integrates portfolio changes, abatement projects (e.g., CCS, electrification), and high-quality carbon credits as a last-resort compensation measure within the carbon mitigation hierarchy [shell-integrated-annual-and-sustainability-report_chunk_223].\n\n### Not covered in source material  \nThe provided context does not disclose: (i) Scope 2 emissions calculated using the location-based method separately from market-based; (ii) water discharge volumes or pollutant concentrations by medium (e.g., surface water, groundwater); (iii) waste generation or diversion rates by specific material type (e.g., plastics, metals, organics); (iv) detailed methodology or uncertainty assessment for Scope 3 Category 11 emissions beyond sales-volume-based estimation; (v) TCFD-aligned scenario analysis outputs (e.g., financial impact assessments under different climate scenarios); or (vi) governance structures specifically dedicated to water or waste risk oversight.",
+          "sources": [
+            "shell-integrated-annual-and-sustainability-report_chunk_217",
+            "shell-integrated-annual-and-sustainability-report_chunk_219",
+            "shell-integrated-annual-and-sustainability-report_chunk_204",
+            "shell-integrated-annual-and-sustainability-report_chunk_218",
+            "shell-integrated-annual-and-sustainability-report_chunk_827",
+            "shell-integrated-annual-and-sustainability-report_chunk_829",
+            "shell-integrated-annual-and-sustainability-report_chunk_828",
+            "shell-integrated-annual-and-sustainability-report_chunk_1098",
+            "shell-integrated-annual-and-sustainability-report_chunk_878",
+            "shell-integrated-annual-and-sustainability-report_chunk_985",
+            "shell-integrated-annual-and-sustainability-report_chunk_870",
+            "shell-integrated-annual-and-sustainability-report_chunk_876",
+            "shell-integrated-annual-and-sustainability-report_chunk_278",
+            "shell-integrated-annual-and-sustainability-report_chunk_905",
+            "shell-integrated-annual-and-sustainability-report_chunk_906",
+            "shell-integrated-annual-and-sustainability-report_chunk_900",
+            "shell-integrated-annual-and-sustainability-report_chunk_224",
+            "shell-integrated-annual-and-sustainability-report_chunk_222",
+            "shell-integrated-annual-and-sustainability-report_chunk_440",
+            "shell-integrated-annual-and-sustainability-report_chunk_165",
+            "shell-integrated-annual-and-sustainability-report_chunk_1119",
+            "shell-integrated-annual-and-sustainability-report_chunk_1117",
+            "shell-integrated-annual-and-sustainability-report_chunk_29",
+            "shell-integrated-annual-and-sustainability-report_chunk_223"
+          ]
+        },
+        "Social": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.33,
+          "criterion_scores": {
+            "Coverage": 2,
+            "Specificity": 3,
+            "Quantifiability": 4,
+            "Forward-Looking": 4,
+            "Transparency": 3,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [
+            "FPI count reported as '8 in 2025 (unchanged from the revised 2024 figure of 8)', yet FPI-F increased from 1.7 to 2.1 — this implies total working hours decreased, but no supporting data or explanation is provided; if working hours fell, TRCF and LTIF should rise proportionally, yet TRCF rose only marginally (1.1→1.2) and LTIF similarly (0.5→0.6), suggesting inconsistent denominator usage or unreported methodological change"
+          ],
+          "missing_elements": [
+            "GRI 403-1: Occupational health management system description",
+            "GRI 403-2: Exposure assessments and health surveillance data",
+            "GRI 404-2: Training effectiveness metrics",
+            "GRI 405-1: Disability representation and inclusion metrics",
+            "GRI 405-2: LGBT+ and intersectional diversity data",
+            "GRI 414-1: Supplier assessment coverage rate",
+            "GRI 414-2: Remediation timelines and closure rates",
+            "TCFD Strategy: Workforce reskilling and community just transition analysis",
+            "Baseline years and values for all long-term targets",
+            "Root cause analysis for safety performance deterioration"
+          ],
+          "improvement_suggestions": [
+            "Disclose occupational health management system scope, certification status, and frequency of health surveillance for high-risk roles",
+            "Report training participation rates by mandatory vs. voluntary courses, and effectiveness metrics such as competency validation or incident reduction correlation",
+            "Publish disability employment rate, reasonable accommodation request data, and LGBT+ inclusion index or employee resource group participation",
+            "State the total number of Tier 1 suppliers, the number assessed in 2025, and the percentage of high-risk suppliers fully evaluated",
+            "Provide a dedicated TCFD Strategy subsection quantifying reskilling investments, displaced worker support programmes, and community impact assessments for divested assets",
+            "Report baseline year and value for each long-term target (e.g., '40% by 2030, from 29% in 2018')",
+            "Include brief root cause summary for fatalities and explain divergence between stable FPI count and rising FPI-F",
+            "Add GRI indicator codes in parentheses after each metric (e.g., 'FPI count: 8 (GRI 403-3)')"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 2,
+                "justification": "Major GRI sub-topics are missing: no occupational health management systems (GRI 403-1, 403-2), no training effectiveness or topic breakdown (GRI 404-1, 404-2), no disability/LGBT+/intersectional data (GRI 405-1, 405-2), no supplier assessment coverage or remediation metrics (GRI 414-1, 414-2), and no TCFD-aligned analysis of social impacts from climate transition.",
+                "missing_elements": [
+                  "GRI 403-1: Occupational health management system description",
+                  "GRI 403-2: Exposure assessments and health surveillance data",
+                  "GRI 404-2: Training effectiveness metrics (e.g., post-training assessment pass rates, behaviour change indicators)",
+                  "GRI 405-1: Disability representation and inclusion metrics",
+                  "GRI 405-2: LGBT+ and intersectional diversity data",
+                  "GRI 414-1: Percentage of suppliers assessed by risk category",
+                  "GRI 414-2: Remediation timelines and closure rates for non-conformities",
+                  "TCFD Strategy: Analysis of workforce reskilling needs and community-level just transition impacts"
+                ],
+                "improvement_suggestions": [
+                  "Disclose occupational health management system scope, certification status (e.g., ISO 45001), and frequency of health surveillance for high-risk roles",
+                  "Report training participation rates by mandatory vs. voluntary courses, and effectiveness metrics such as competency validation or incident reduction correlation",
+                  "Publish disability employment rate, reasonable accommodation request data, and LGBT+ inclusion index or employee resource group participation",
+                  "State the total number of Tier 1 suppliers, the number assessed in 2025, and the percentage of high-risk suppliers (e.g., upstream extraction, labour-intensive manufacturing) fully evaluated",
+                  "Provide a dedicated TCFD Strategy subsection quantifying reskilling investments, displaced worker support programmes, and community impact assessments for divested assets"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Most claims include concrete figures (e.g., 4 fatalities, 8 FPI, 253,000 training days, 35% women in workforce), with clear definitions (IOGP FPI, Mode 1/2/3 contractor scope) and source citations; however, 'no severe human rights incidents' lacks context on assessment methodology or sample size, and 'no cases of non-respect' is unqualified — no mention of audit depth, coverage, or verification approach. [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [
+                  "Methodology for supplier human rights assessments (e.g., desk review vs. on-site audit, sample size, third-party involvement)",
+                  "Definition of 'severe' human rights incident used in 2025 reporting",
+                  "Number of suppliers assessed in 2025 and proportion of total supply spend covered"
+                ],
+                "improvement_suggestions": [
+                  "Specify whether 'no severe incidents' reflects zero findings across all assessed suppliers or only those meeting minimum audit depth thresholds",
+                  "Disclose the number and type of supplier assessments conducted (e.g., 1,240 desktop reviews, 87 on-site audits) and their coverage of procurement spend",
+                  "Define 'severe' using GRI 414-2 or UN Guiding Principles severity criteria (e.g., forced labour, fatal accidents, systemic discrimination)"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 4,
+                "justification": "Metrics consistently include units (per 100 million working hours, per million working hours, %, absolute counts) and year-on-year comparisons (2024 vs. 2025); however, baseline years for targets are inconsistently provided — e.g., '35% women in senior leadership' is stated as meeting the '2025 target' but no baseline year or value is given, and the 40% by 2030 target lacks a 2025 baseline figure.",
+                "missing_elements": [
+                  "Baseline year and value for senior leadership gender target (e.g., '35% in 2025, up from X% in Y')",
+                  "Baseline for UK Senior Management ethnic minority target (16% in 2025 — what was 2024?)",
+                  "FPI-F and TRCF baselines prior to 2024 (e.g., 2023 values for trend context)"
+                ],
+                "improvement_suggestions": [
+                  "State the baseline year and value for each target (e.g., '35% in 2025, up from 31% in 2020')",
+                  "Report 2023 values for FPI-F, TRCF, and LTIF to enable three-year trend analysis",
+                  "Disclose the 2024 ethnic minority representation in UK Senior Management to contextualise the 16% 2025 result"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 4,
+                "justification": "Quantified targets with deadlines are present: '40% women in senior leadership by 2030', '17% ethnic minority representation in UK Senior Management by 2027'; both include current achievement (35%, 16%) and deadlines, but no baseline year or value is provided for either, and no progress against intermediate milestones (e.g., 2026) is disclosed.",
+                "missing_elements": [
+                  "Baseline year and value for '40% women in senior leadership by 2030'",
+                  "Baseline year and value for '17% ethnic minority in UK Senior Management by 2027'",
+                  "Intermediate targets or milestones (e.g., 37% by 2026, 16.5% by 2026)"
+                ],
+                "improvement_suggestions": [
+                  "Report the baseline year and value for each long-term target (e.g., '40% by 2030, from 29% in 2018')",
+                  "Publish interim targets aligned with reporting cycles (e.g., '37% by end-2026')",
+                  "Disclose whether targets are absolute or adjusted for structural changes (e.g., M&A, portfolio shifts)"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "The section acknowledges limitations: contractor scope exclusions (Mode 3), reduced training days due to headcount decline, and a drop in severe incidents (3 in 2024 → 0 in 2025) — but offers no explanation for the FPI increase (8 in 2024 → 8 in 2025, yet FPI-F rose from 1.7 to 2.1), no discussion of root causes for fatalities or rising TRCF/LTIF, and no admission of data gaps beyond the 'Not covered' footnote — which is descriptive, not reflective.",
+                "missing_elements": [
+                  "Root cause analysis for the 4 contractor fatalities and FPI increase despite flat count",
+                  "Explanation for rising TRCF (1.1→1.2) and LTIF (0.5→0.6) despite unchanged FPI count",
+                  "Discussion of challenges in extending health surveillance or DE&I metrics to contractors and joint ventures"
+                ],
+                "improvement_suggestions": [
+                  "Include brief root cause summary for fatalities (e.g., '2 related to transport incidents, 1 to lifting operations, 1 under investigation')",
+                  "Explain the divergence between stable FPI count and rising FPI-F (e.g., 'driven by 5% reduction in total working hours')",
+                  "Acknowledge difficulty in collecting disability or LGBT+ data from contractors and joint ventures, and state mitigation plans"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "The section is explicitly organised by GRI sub-topic headings (Occupational Health & Safety, Training, etc.) and cites GRI/TCFD relevance upfront; however, it fails to label disclosures with specific GRI indicator codes (e.g., 'GRI 403-1' or 'GRI 405-2'), omits required TCFD Strategy content entirely, and does not map supplier assessment practices to GRI 414-1/414-2 requirements — relying instead on narrative without indicator alignment.",
+                "missing_elements": [
+                  "Explicit GRI indicator tagging (e.g., 'GRI 403-3: FPI count and rate' or 'GRI 404-1: Training hours per employee')",
+                  "TCFD Strategy subsection with scenario-based analysis of social risks/opportunities",
+                  "GRI 414-1/414-2 compliance statement (e.g., 'GRI 414-1: 82% of Tier 1 suppliers assessed in 2025')"
+                ],
+                "improvement_suggestions": [
+                  "Add GRI indicator codes in parentheses after each metric (e.g., 'FPI count: 8 (GRI 403-3)')",
+                  "Introduce a dedicated 'TCFD Strategy: Social Dimensions of Climate Transition' subsection with explicit linkage to Scenario Analysis and Risk Management",
+                  "State compliance status per GRI 414 disclosure requirement (e.g., 'GRI 414-1: Disclosed — see Supplier Assessment Coverage table')"
+                ]
+              }
+            ],
+            "inconsistencies": [
+              "FPI count reported as '8 in 2025 (unchanged from the revised 2024 figure of 8)', yet FPI-F increased from 1.7 to 2.1 — this implies total working hours decreased, but no supporting data or explanation is provided; if working hours fell, TRCF and LTIF should rise proportionally, yet TRCF rose only marginally (1.1→1.2) and LTIF similarly (0.5→0.6), suggesting inconsistent denominator usage or unreported methodological change"
+            ],
+            "overall_score": 3.33,
+            "missing_elements": [
+              "GRI 403-1: Occupational health management system description",
+              "GRI 403-2: Exposure assessments and health surveillance data",
+              "GRI 404-2: Training effectiveness metrics",
+              "GRI 405-1: Disability representation and inclusion metrics",
+              "GRI 405-2: LGBT+ and intersectional diversity data",
+              "GRI 414-1: Supplier assessment coverage rate",
+              "GRI 414-2: Remediation timelines and closure rates",
+              "TCFD Strategy: Workforce reskilling and community just transition analysis",
+              "Baseline years and values for all long-term targets",
+              "Root cause analysis for safety performance deterioration"
+            ],
+            "improvement_suggestions": [
+              "Disclose occupational health management system scope, certification status, and frequency of health surveillance for high-risk roles",
+              "Report training participation rates by mandatory vs. voluntary courses, and effectiveness metrics such as competency validation or incident reduction correlation",
+              "Publish disability employment rate, reasonable accommodation request data, and LGBT+ inclusion index or employee resource group participation",
+              "State the total number of Tier 1 suppliers, the number assessed in 2025, and the percentage of high-risk suppliers fully evaluated",
+              "Provide a dedicated TCFD Strategy subsection quantifying reskilling investments, displaced worker support programmes, and community impact assessments for divested assets",
+              "Report baseline year and value for each long-term target (e.g., '40% by 2030, from 29% in 2018')",
+              "Include brief root cause summary for fatalities and explain divergence between stable FPI count and rising FPI-F",
+              "Add GRI indicator codes in parentheses after each metric (e.g., 'FPI count: 8 (GRI 403-3)')"
+            ]
+          },
+          "draft": "### Occupational Health & Safety  \nShell reported 4 fatalities among contractor colleagues in Shell-operated ventures in 2025, with no employee fatalities [shell-integrated-annual-and-sustainability-report_chunk_973]. The fatality and permanent impairment (FPI) count was 8 in 2025 (unchanged from the revised 2024 figure of 8), resulting in an FPI frequency (FPI-F) of 2.1 cases per 100 million working hours, up from 1.7 in 2024 [shell-integrated-annual-and-sustainability-report_chunk_974][shell-integrated-annual-and-sustainability-report_chunk_973]. Total recordable case frequency (TRCF) was 1.2 per million working hours in 2025, compared to 1.1 in 2024; lost time injury frequency (LTIF) was 0.6 per million working hours in 2025, versus 0.5 in 2024 [shell-integrated-annual-and-sustainability-report_chunk_973]. These metrics cover employees and contractors under Mode 1 and Mode 2 contractual arrangements—where Shell retains control or shared interface management—but exclude Mode 3 contractors unless working on Shell premises [shell-integrated-annual-and-sustainability-report_chunk_975]. Shell adopts the IOGP FPI definition, which includes outcomes where a worker cannot return to their pre-incident whole-person function due to an acute, single incident [shell-integrated-annual-and-sustainability-report_chunk_974].\n\n### Training  \nIn 2025, Shell delivered 253,000 formal training days to employees and joint-venture partners [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_263]. This reflects a reduction from 264,000 training days in 2024, primarily attributable to lower employee headcount [shell-integrated-annual-and-sustainability-report_chunk_263]. Mandatory ethics and compliance training—including Code of Conduct training—was required for all employees and contractor staff [shell-integrated-annual-and-sustainability-report_chunk_960]. For roles at higher risk of corruption or bribery, 98% of staff held valid anti-bribery and anti-corruption training as of 2025 (consistent with 98% in 2024), with training validity cycles set at two to three years [shell-integrated-annual-and-sustainability-report_chunk_960]. Shell also offered free anti-bribery and anti-corruption training to selected suppliers in 14 languages [shell-integrated-annual-and-sustainability-report_chunk_960].\n\n### Diversity  \nAs of December 31, 2025, women constituted 35% of Shell’s total workforce of 85,000 employees [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_921]. Women represented 42% of the Board of Directors and 44% of the Executive Committee [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_267]. In senior leadership positions (defined by compensation grade), women accounted for 35%—meeting Shell’s 2025 target—and Shell aims to reach 40% by 2030 [shell-integrated-annual-and-sustainability-report_chunk_267]. Ethnic minority representation in UK-based Senior Management stood at 16% as of end-2025, exceeding the Parker Review’s 15% target ahead of schedule; Shell has since raised its ambition to 17% by 2027 [shell-integrated-annual-and-sustainability-report_chunk_378][shell-integrated-annual-and-sustainability-report_chunk_268]. Among external hires in 2025, 35% were women [shell-integrated-annual-and-sustainability-report_chunk_267][shell-integrated-annual-and-sustainability-report_chunk_268].\n\n### Supplier Social Assessment  \nShell’s Supplier Principles require suppliers to uphold human rights—including prohibition of child and forced labour, freedom of association, non-discrimination, safe working conditions, and fair wages—and to provide workers with confidential grievance mechanisms [shell-integrated-annual-and-sustainability-report_chunk_930][shell-integrated-annual-and-sustainability-report_chunk_929]. In 2025, no cases of non-respect of the UN Guiding Principles on Business and Human Rights, ILO Declaration, or OECD Guidelines were identified in Shell’s upstream or downstream value chain [shell-integrated-annual-and-sustainability-report_chunk_930]. Similarly, no severe human rights incidents related to value chain workers were identified in 2025 (compared to three in 2024) [shell-integrated-annual-and-sustainability-report_chunk_939]. Shell conducts risk-based pre-contractual screening and requires suppliers to flow down equivalent standards to their direct suppliers [shell-integrated-annual-and-sustainability-report_chunk_930].\n\n### Not covered in source material  \nGRI 403: No data provided on occupational health management systems, exposure assessments, or health surveillance programmes.  \nGRI 404: No breakdown of training hours by topic (e.g., safety, DE&I), nor data on training effectiveness or participation rates beyond mandatory courses.  \nGRI 405: No disclosure on disability inclusion metrics, LGBT+ representation, or intersectional diversity (e.g., gender × ethnicity).  \nGRI 414: No quantitative data on supplier assessment coverage rate, percentage of high-risk suppliers assessed, or remediation timelines.  \nTCFD Strategy (social impacts of climate transition): No explicit analysis of workforce transitions, reskilling for low-carbon roles, community impacts of portfolio changes (e.g., divestments in Nigeria, UK, Singapore), or just transition commitments.",
+          "sources": [
+            "shell-integrated-annual-and-sustainability-report_chunk_260",
+            "shell-integrated-annual-and-sustainability-report_chunk_910",
+            "shell-integrated-annual-and-sustainability-report_chunk_261",
+            "shell-integrated-annual-and-sustainability-report_chunk_921",
+            "shell-integrated-annual-and-sustainability-report_chunk_378",
+            "shell-integrated-annual-and-sustainability-report_chunk_267",
+            "shell-integrated-annual-and-sustainability-report_chunk_495",
+            "shell-integrated-annual-and-sustainability-report_chunk_268",
+            "shell-integrated-annual-and-sustainability-report_chunk_974",
+            "shell-integrated-annual-and-sustainability-report_chunk_975",
+            "shell-integrated-annual-and-sustainability-report_chunk_973",
+            "shell-integrated-annual-and-sustainability-report_chunk_798",
+            "shell-integrated-annual-and-sustainability-report_chunk_960",
+            "shell-integrated-annual-and-sustainability-report_chunk_263",
+            "shell-integrated-annual-and-sustainability-report_chunk_693",
+            "shell-integrated-annual-and-sustainability-report_chunk_264",
+            "shell-integrated-annual-and-sustainability-report_chunk_929",
+            "shell-integrated-annual-and-sustainability-report_chunk_930",
+            "shell-integrated-annual-and-sustainability-report_chunk_939",
+            "shell-integrated-annual-and-sustainability-report_chunk_913"
+          ]
+        },
+        "Governance": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.33,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 4,
+            "Quantifiability": 3,
+            "Forward-Looking": 3,
+            "Transparency": 3,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "GRI 2-11: Reporting period and organisational boundary for governance disclosures",
+            "GRI 2-12: Board composition and independence assessment criteria",
+            "GRI 2-13: Board evaluation process and outcomes",
+            "GRI 205-1: Political contributions and lobbying expenditures",
+            "TCFD g4: Disclosure of board-level oversight of cybersecurity and data privacy risks",
+            "UNGP-aligned disclosure of board-level human rights due diligence oversight"
+          ],
+          "improvement_suggestions": [
+            "Explicitly reference GRI 2-11, 2-12, 2-13 and TCFD g1–g4 in relevant subsections with direct linkage to disclosed content",
+            "Disclose the reporting period and organisational boundary for all governance metrics and narratives",
+            "Provide the methodology and results of the annual Board and committee evaluations",
+            "Publish quantitative data on political contributions and lobbying expenditures",
+            "Describe Board or committee responsibility for oversight of cybersecurity, data privacy, and human rights due diligence, including frequency and scope of review"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "Covers GRI 205 (anti-corruption training, convictions, reporting channels) and TCFD Governance & Risk Management (committee roles, risk categorisation), but omits key GRI 2 disclosures: board evaluation process, director remuneration linkages to ESG, political contributions/lobbying, cybersecurity governance, and human rights due diligence oversight — all explicitly noted as missing in the 'Not covered' section.",
+                "missing_elements": [
+                  "Board evaluation methodology and results",
+                  "Remuneration-linked sustainability KPIs for non-Executive Directors",
+                  "Political contributions and lobbying expenditures",
+                  "Board-level oversight of cybersecurity and data privacy risks",
+                  "Board-level review of human rights due diligence processes per UNGP/OECD"
+                ],
+                "improvement_suggestions": [
+                  "Disclose the methodology, frequency and outcomes of Board and committee evaluations",
+                  "Report whether and how non-Executive Director remuneration is linked to sustainability KPIs",
+                  "Provide quantitative data on political contributions and lobbying expenditures",
+                  "Specify Board or committee responsibility for cybersecurity and data privacy risk oversight",
+                  "Describe Board-level review of human rights due diligence implementation and effectiveness"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 4,
+                "justification": "Includes concrete figures (e.g., 12 Board members, 42% women, 98% training completion, 1,983 Helpline reports) with years and context; however, lacks specificity on *how* independence is assessed, what 'stringent no-retaliation policy' entails operationally, or how 'diverse pools' are defined or measured for search consultants.",
+                "missing_elements": [
+                  "Definition or criteria used to assess director independence",
+                  "Operational definition or metrics for 'stringent no-retaliation policy'",
+                  "Definition of 'diverse pools' and metrics for consultant alignment with DE&I approach"
+                ],
+                "improvement_suggestions": [
+                  "Define the criteria and process used to determine director independence",
+                  "Disclose metrics or evidence demonstrating effectiveness of the no-retaliation policy (e.g., % of investigations involving retaliation claims, outcomes)",
+                  "Specify measurable criteria for 'diverse pools' and how executive search consultants are evaluated against them"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 3,
+                "justification": "Provides units (%, number of reports) and timeframes (2025, 2024), and some year-on-year comparisons (e.g., 98% in both years), but lacks baselines for targets (e.g., 'at least one senior Board position held by a woman' has no baseline year or current status beyond 'aims to'), and no trend analysis beyond static comparisons.",
+                "missing_elements": [
+                  "Baseline year and current status for 'at least one senior Board position held by a woman'",
+                  "Baseline and trend data for minority ethnic representation on the Board",
+                  "Year-on-year trend for Helpline report resolution rates or substantiation rates"
+                ],
+                "improvement_suggestions": [
+                  "State the baseline year and current status (e.g., 'as of December 31, 2023') for the target on senior Board positions held by women",
+                  "Disclose the absolute number and percentage of Board members from minority ethnic backgrounds for 2025 and 2024",
+                  "Report the number and percentage of Helpline reports substantiated, closed, or under investigation in 2025, with 2024 comparison"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 3,
+                "justification": "Mentions targets ('maintain representation... at or above 40%', 'at least one senior Board position held by a woman', 'at least one Board member from a minority ethnic background') but none include a deadline or baseline year; the Energy Transition Strategy 2024 is referenced but no quantified, time-bound governance targets derived from it are disclosed.",
+                "missing_elements": [
+                  "Deadline for gender balance target (e.g., 'by 2027')",
+                  "Baseline year for minority ethnic representation target",
+                  "Quantified, time-bound governance targets linked to Energy Transition Strategy 2024"
+                ],
+                "improvement_suggestions": [
+                  "Assign explicit deadlines to all Board diversity targets",
+                  "Disclose the baseline year and current value for the minority ethnic representation target",
+                  "Publish specific, measurable governance targets (e.g., committee review frequency, assurance coverage scope) tied to Energy Transition Strategy 2024 implementation"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "Acknowledges gaps via the 'Not covered in source material' section listing eight omissions, but does not disclose challenges (e.g., why political contributions data is unavailable), negative trends (e.g., declining Helpline report resolution rates), or missed targets — all statements about performance (e.g., 98% training) are presented without context on shortfalls or root causes.",
+                "missing_elements": [
+                  "Explanation of why political contributions or lobbying data is not disclosed",
+                  "Disclosure of any unmet anti-corruption or diversity targets",
+                  "Trend data showing deterioration or stagnation in any governance metric (e.g., Helpline report substantiation rate decline)"
+                ],
+                "improvement_suggestions": [
+                  "Explain barriers to disclosing political contributions or lobbying expenditures",
+                  "Report whether any Board diversity or ethics training targets were missed in 2025 and why",
+                  "Disclose trend data for at least one governance metric showing a negative or stagnant trend, with root-cause analysis"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "Structurally organised by thematic sub-headings aligned with GRI 2 (governance structure, diversity, ethics) and TCFD (climate risk oversight), and cites GRI 205 and TCFD implicitly through content; however, fails to explicitly reference GRI 2 disclosures (e.g., GRI 2-11, 2-12, 2-13) or TCFD Governance recommendations (e.g., TCFD g1–g4) in headings or text, and omits required GRI 2 'General Disclosures' elements like reporting period, boundaries, and stakeholder engagement in governance.",
+                "missing_elements": [
+                  "Explicit citation of GRI 2 sub-disclosures (e.g., GRI 2-11, GRI 2-12, GRI 2-13) alongside relevant content",
+                  "Statement of reporting period and organisational boundary for governance disclosures",
+                  "Description of stakeholder engagement related to governance topics"
+                ],
+                "improvement_suggestions": [
+                  "Label each subsection with applicable GRI/TCFD codes (e.g., 'GRI 2-12: Board composition' or 'TCFD g2: Board oversight of climate risk')",
+                  "State the reporting period and organisational boundary applied to all governance disclosures",
+                  "Describe how stakeholders (e.g., investors, civil society) informed the governance framework or oversight priorities"
+                ]
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 3.33,
+            "missing_elements": [
+              "GRI 2-11: Reporting period and organisational boundary for governance disclosures",
+              "GRI 2-12: Board composition and independence assessment criteria",
+              "GRI 2-13: Board evaluation process and outcomes",
+              "GRI 205-1: Political contributions and lobbying expenditures",
+              "TCFD g4: Disclosure of board-level oversight of cybersecurity and data privacy risks",
+              "UNGP-aligned disclosure of board-level human rights due diligence oversight"
+            ],
+            "improvement_suggestions": [
+              "Explicitly reference GRI 2-11, 2-12, 2-13 and TCFD g1–g4 in relevant subsections with direct linkage to disclosed content",
+              "Disclose the reporting period and organisational boundary for all governance metrics and narratives",
+              "Provide the methodology and results of the annual Board and committee evaluations",
+              "Publish quantitative data on political contributions and lobbying expenditures",
+              "Describe Board or committee responsibility for oversight of cybersecurity, data privacy, and human rights due diligence, including frequency and scope of review"
+            ]
+          },
+          "draft": "### Governance Structure and Board Oversight  \nShell plc’s governance framework is structured around the Board of Directors and the Executive Committee (EC), with the Board comprising 12 members—including two executive and 10 non-executive directors—as at December 31, 2025 (2024: 12 members, 2 executive and 10 non-executive members) [shell-integrated-annual-and-sustainability-report_chunk_757]. All non-executive directors are considered independent in character and judgement, representing 83% of the Board as at December 31, 2025 (2024: 83%) [shell-integrated-annual-and-sustainability-report_chunk_757]. The Board maintains primary oversight of Shell’s strategy—including its Energy Transition Strategy 2024, endorsed in March 2024—and monitors performance against longer-term business targets, including climate-related ambitions [shell-integrated-annual-and-sustainability-report_chunk_759]. Sustainability matters, including climate-related impacts, risks and opportunities, are reviewed and addressed on an integrated basis alongside other business issues throughout the year [shell-integrated-annual-and-sustainability-report_chunk_759]. The Board delegates authority for operational management to the CEO, who chairs the EC and is supported by EC members in implementing strategy and monitoring progress [shell-integrated-annual-and-sustainability-report_chunk_242].\n\n### Board Diversity, Composition and Succession  \nShell’s Board Diversity Policy—first published in March 2024—commits to gender balance, with women constituting 42% of the Board as at December 31, 2025 (2024: 42%), corresponding to a female-to-male ratio of 0.7 [shell-integrated-annual-and-sustainability-report_chunk_757]. The Policy sets a target to maintain representation of both men and women at or above 40%, and aims to have at least one senior Board position (Chair, CEO, Senior Independent Director or CFO) held by a woman [shell-integrated-annual-and-sustainability-report_chunk_376]. Shell also aims to maintain or exceed having at least one Board member from a minority ethnic background [shell-integrated-annual-and-sustainability-report_chunk_376]. The Nomination and Succession Committee (NOMCO) oversees development of a diverse pipeline for Board succession and ensures all appointments follow a formal, rigorous and transparent procedure based on merit and objective criteria, with due regard for diversity factors [shell-integrated-annual-and-sustainability-report_chunk_379]. NOMCO engages independent executive search consultants aligned with Shell’s diversity, equity and inclusion (DE&I) approach to identify candidates from diverse pools [shell-integrated-annual-and-sustainability-report_chunk_379].\n\n### Ethics, Compliance and Anti-Corruption Governance  \nAccountability for ethics and compliance rests with the CEO and the Executive Committee, supported by the Chief Ethics and Compliance Officer (CECO), who reports to the Chief Legal Officer and provides updates to the EC and Audit and Risk Committee (ARC) [shell-integrated-annual-and-sustainability-report_chunk_759]. Shell’s anti-bribery and anti-corruption programme includes mandatory Code of Conduct training for all employees and contractor staff, with additional targeted training for roles at higher risk of corruption exposure—such as procurement, new business development and engagement with government officials [shell-integrated-annual-and-sustainability-report_chunk_960]. In 2025, 98% of staff in at-risk roles possessed valid anti-bribery and anti-corruption training completion (2024: 98%) [shell-integrated-annual-and-sustainability-report_chunk_960]. No Shell legal entity and, to the best of Shell’s knowledge, no Shell staff were convicted or fined for criminal violations of anti-corruption and anti-bribery laws in 2025 (2024: none) [shell-integrated-annual-and-sustainability-report_chunk_961]. Alleged breaches may be reported confidentially—including anonymously—via the Shell Global Helpline; in 2025, 1,983 reports were received [shell-integrated-annual-and-sustainability-report_chunk_284]. Shell maintains a stringent no-retaliation policy for good-faith reporters and those participating in investigations [shell-integrated-annual-and-sustainability-report_chunk_284][shell-integrated-annual-and-sustainability-report_chunk_956].\n\n### Climate and Sustainability Risk Oversight  \nClimate-related risk governance is embedded across multiple Board-level committees: the Sustainability Committee oversees emerging sustainability trends (excluding carbon and safety); the Audit and Risk Committee reviews risk management effectiveness and internal controls; the Carbon Reporting Committee governs GHG emissions calculation methodologies and external disclosures; and the Strategy and Investment Committee serves as the decision forum for material capital investments aligned with the energy transition [shell-integrated-annual-and-sustainability-report_chunk_242]. Climate change and the energy transition are identified as material strategic risks, broken down into commercial, societal (including litigation), regulatory and physical sub-components [shell-integrated-annual-and-sustainability-report_chunk_168]. The Board, EC and relevant committees regularly review these risks and their impact on the Group to enable holistic risk mitigation and integration into operational decisions [shell-integrated-annual-and-sustainability-report_chunk_168][shell-integrated-annual-and-sustainability-report_chunk_242]. Internal assurance on sustainability-related risks is provided by Shell Internal Audit and Investigations (SIAI), which advises management and the Board on internal control effectiveness [shell-integrated-annual-and-sustainability-report_chunk_242].\n\n### Not covered in source material  \nThe source material does not disclose: (i) specific quantitative metrics on Board meeting attendance or frequency; (ii) details of Board evaluations beyond the annual appraisal of the Chair’s performance; (iii) remuneration-linked sustainability KPIs for non-Executive Directors; (iv) third-party assurance statements on governance disclosures; (v) board-level oversight of cybersecurity or data privacy risks; (vi) disclosure of political contributions or lobbying expenditures; (vii) detailed breakdown of ARC’s oversight of ESG-related internal controls beyond general reference; (viii) Board-level review of human rights due diligence processes per UNGP or OECD Guidelines.",
+          "sources": [
+            "shell-integrated-annual-and-sustainability-report_chunk_757",
+            "shell-integrated-annual-and-sustainability-report_chunk_379",
+            "shell-integrated-annual-and-sustainability-report_chunk_353",
+            "shell-integrated-annual-and-sustainability-report_chunk_376",
+            "shell-integrated-annual-and-sustainability-report_chunk_759",
+            "shell-integrated-annual-and-sustainability-report_chunk_1103",
+            "shell-integrated-annual-and-sustainability-report_chunk_242",
+            "shell-integrated-annual-and-sustainability-report_chunk_244",
+            "shell-integrated-annual-and-sustainability-report_chunk_960",
+            "shell-integrated-annual-and-sustainability-report_chunk_956",
+            "shell-integrated-annual-and-sustainability-report_chunk_284",
+            "shell-integrated-annual-and-sustainability-report_chunk_961",
+            "shell-integrated-annual-and-sustainability-report_chunk_463",
+            "shell-integrated-annual-and-sustainability-report_chunk_479",
+            "shell-integrated-annual-and-sustainability-report_chunk_414",
+            "shell-integrated-annual-and-sustainability-report_chunk_462",
+            "shell-integrated-annual-and-sustainability-report_chunk_783",
+            "shell-integrated-annual-and-sustainability-report_chunk_168",
+            "shell-integrated-annual-and-sustainability-report_chunk_300",
+            "shell-integrated-annual-and-sustainability-report_chunk_288"
+          ]
+        }
+      }
+    },
+    {
+      "iteration": 2,
+      "timestamp": "2026-10-21T02:03:55",
+      "assess_seconds": 75.9,
+      "overall_score": 3.89,
+      "sections": {
+        "Environmental": {
+          "revised_this_round": false,
+          "passed": true,
+          "overall_score": 4.67,
+          "criterion_scores": {
+            "Coverage": 4,
+            "Specificity": 5,
+            "Quantifiability": 5,
+            "Forward-Looking": 5,
+            "Transparency": 4,
+            "Compliance Alignment": 5
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "Water discharge volumes and pollutant concentrations by medium (GRI 303-3, GRI 303-4)",
+            "Waste generation and diversion rates (e.g., per unit production or revenue) (GRI 306-2, GRI 306-3)",
+            "TCFD scenario analysis outputs (TCFD Metrics & Targets, Scenario Analysis)",
+            "Explanation for sharp decline in waste diversion (207 kt hazardous diverted in 2025 vs. 409 kt in 2024)"
+          ],
+          "improvement_suggestions": [
+            "Disclose water discharge volumes, media-specific discharge locations, and key pollutant concentrations (e.g., TSS, hydrocarbons) for all major facilities",
+            "Report waste generation and diversion as rates (e.g., tonnes waste per $1M revenue or per barrel of oil equivalent produced)",
+            "Publish summary results of climate scenario analyses, including assumptions, methodologies, and financial implications across scenarios",
+            "Explain drivers behind the significant year-on-year declines in waste diversion (e.g., operational changes, regulatory shifts, data gaps)"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 4,
+                "justification": "All GRI 302–306 and TCFD Strategy/Risk/Metrics & Targets sub-topics are addressed, but GRI 303 requires disclosure of water discharge (not just consumption) and GRI 306 requires waste generation *rates* (e.g., per unit production or revenue), not just absolute tonnes — both missing. TCFD mandates scenario analysis outputs, which are explicitly stated as absent.",
+                "missing_elements": [
+                  "Water discharge volumes and pollutant concentrations by medium (GRI 303-3, GRI 303-4)",
+                  "Waste generation rate (e.g., kg/tonne of product or $ revenue) and diversion *rate* (not just absolute tonnes) (GRI 306-2, GRI 306-3)",
+                  "TCFD-aligned scenario analysis outputs (e.g., financial impact under 1.5°C vs. 2°C scenarios) (TCFD Metrics & Targets, Scenario Analysis)"
+                ],
+                "improvement_suggestions": [
+                  "Disclose water discharge volumes, media-specific discharge locations, and key pollutant concentrations (e.g., TSS, hydrocarbons) for all major facilities",
+                  "Report waste generation and diversion as rates (e.g., tonnes waste per $1M revenue or per barrel of oil equivalent produced)",
+                  "Publish summary results of climate scenario analyses, including assumptions, methodologies, and financial implications across scenarios"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 5,
+                "justification": "All claims are backed by precise figures with clear units, years, and breakdowns (e.g., '187 million MWh fossil', '0.04% methane intensity', '1,987 thousand tonnes of waste'). Sub-components sum correctly to totals (e.g., 1,533 + 454 = 1,987; 72 + 13 = 85 ≈ 86 million m³), and scope labels (e.g., 'operational control') are consistently applied.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 5,
+                "justification": "Every metric includes units, timeframes, and explicit baselines: e.g., '53 million tonnes CO₂e in 2025 vs. 83 million in 2016'; '−9.0% achieved in 2025 vs. 2016 baseline 78 gCO₂e/MJ'; '8 million m³ in high-stress areas vs. 21 million in 2024'. Year-on-year comparisons are provided for all core metrics.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 5,
+                "justification": "Three quantified, time-bound targets are explicitly stated: (i) 50% Scope 1&2 reduction by 2030 vs. 2016 baseline; (ii) 15–20% NCI reduction by 2030 vs. 2016; (iii) 15–20% Scope 3 Category 11 reduction by 2030 vs. 2021 — all with current progress (% achieved) and baseline years disclosed.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Transparency",
+                "score": 4,
+                "justification": "Shell acknowledges boundary misalignment undermining energy intensity reliability, retired a prior water target (stating it was met early), and reports negative trends (e.g., waste disposal ↑, waste diversion ↓). However, it does not explain *why* hazardous/non-hazardous waste diversion fell sharply (−50% and −36%), nor discuss challenges in Scope 3 Category 11 methodology beyond noting it is sales-volume-based.",
+                "missing_elements": [
+                  "Explanation for 50% decline in hazardous waste diversion (207 vs. 409 kt) and 36% decline in non-hazardous waste diversion (340 vs. 536 kt)",
+                  "Discussion of limitations or uncertainties in Scope 3 Category 11 emissions estimation method (beyond stating it is sales-volume-based)"
+                ],
+                "improvement_suggestions": [
+                  "Explain drivers behind the significant year-on-year declines in waste diversion (e.g., operational changes, regulatory shifts, data gaps)",
+                  "Describe key assumptions, data gaps, and uncertainty ranges in Scope 3 Category 11 calculation, referencing GHG Protocol guidance"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 5,
+                "justification": "The section is rigorously structured by GRI/TCFD standard headings (GRI 302, 303, etc.), each subsection cites relevant GRI/TCFD codes implicitly via naming, and all disclosures map directly to required indicators (e.g., GRI 305-1 for Scope 1&2 emissions, GRI 303-1 for water withdrawal). TCFD elements are grouped under its three pillars as required.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 4.67,
+            "missing_elements": [
+              "Water discharge volumes and pollutant concentrations by medium (GRI 303-3, GRI 303-4)",
+              "Waste generation and diversion rates (e.g., per unit production or revenue) (GRI 306-2, GRI 306-3)",
+              "TCFD scenario analysis outputs (TCFD Metrics & Targets, Scenario Analysis)",
+              "Explanation for sharp decline in waste diversion (207 kt hazardous diverted in 2025 vs. 409 kt in 2024)"
+            ],
+            "improvement_suggestions": [
+              "Disclose water discharge volumes, media-specific discharge locations, and key pollutant concentrations (e.g., TSS, hydrocarbons) for all major facilities",
+              "Report waste generation and diversion as rates (e.g., tonnes waste per $1M revenue or per barrel of oil equivalent produced)",
+              "Publish summary results of climate scenario analyses, including assumptions, methodologies, and financial implications across scenarios",
+              "Explain drivers behind the significant year-on-year declines in waste diversion (e.g., operational changes, regulatory shifts, data gaps)"
+            ]
+          },
+          "draft": "### GRI 302 Energy  \nShell’s total energy consumption in 2025 was 269 million MWh, down from 289 million MWh in 2024, primarily due to portfolio changes and greenhouse gas (GHG) abatement and transformation projects [shell-integrated-annual-and-sustainability-report_chunk_829]. Of the energy consumed by facilities under Shell’s operational control (189 million MWh in 2025), 99% came from fossil sources (187 million MWh), comprising crude oil and petroleum products (40 million MWh), natural gas (108 million MWh), other fossil sources (10 million MWh), and purchased or acquired electricity, heat, steam and cooling from fossil sources (28 million MWh) [shell-integrated-annual-and-sustainability-report_chunk_828]. Renewable energy consumption under operational control was 2.6 million MWh in 2025 — including 2.4 million MWh from purchased or acquired electricity, heat, steam and cooling from renewable sources, 0.03 million MWh from fuels from renewable sources (e.g., biomass, biofuels, biogas, hydrogen from renewable sources), and 0.1 million MWh from self-generated non-fuel renewable energy [shell-integrated-annual-and-sustainability-report_chunk_829]. Energy intensity per net revenue remained stable at 0.001 MWh/$ in both 2024 and 2025, though Shell notes this metric is not considered reliable for cross-entity or longitudinal comparison due to boundary misalignment between energy consumption (ESRS reporting boundary) and net revenue (financial control boundary) [shell-integrated-annual-and-sustainability-report_chunk_828].\n\n### GRI 303 Water  \nWater consumption reported against Shell’s operational control boundary was 86 million cubic metres in 2025, down from 90 million cubic metres in 2024 [shell-integrated-annual-and-sustainability-report_chunk_878]. Of this, approximately 72 million cubic metres (84%) was used for manufacturing oil products and chemicals, and 13 million cubic metres for oil and gas production [shell-integrated-annual-and-sustainability-report_chunk_870]. In 2025, Shell consumed 8 million cubic metres of water in areas of high water stress, a reduction from 21 million cubic metres in 2024 [shell-integrated-annual-and-sustainability-report_chunk_985]. Water recycled and reused amounted to 25 million cubic metres in 2025, up from 23 million cubic metres in 2024 [shell-integrated-annual-and-sustainability-report_chunk_985]. Shell retired its prior commitment to reduce fresh water consumption in water-stressed areas, having met it ahead of schedule in 2022; the commitment formally ended in 2025 [shell-integrated-annual-and-sustainability-report_chunk_876].\n\n### GRI 305 Emissions  \nShell’s gross Scope 1 and 2 GHG emissions (net of carbon credits) were 53 million tonnes CO₂e in 2025, down from 58 million tonnes CO₂e in 2024 and 83 million tonnes CO₂e in the 2016 baseline year [shell-integrated-annual-and-sustainability-report_chunk_204][shell-integrated-annual-and-sustainability-report_chunk_1098]. This reflects a 36% reduction since 2016 [shell-integrated-annual-and-sustainability-report_chunk_29]. The 2025 reduction was driven by divestments (4.8 million tonnes), emission-reduction activities and purchase of renewable electricity (1.2 million tonnes), and changes in output (0.1 million tonnes), partly offset by acquisitions (1.4 million tonnes) [shell-integrated-annual-and-sustainability-report_chunk_1098]. Shell’s methane emissions intensity for operated oil and gas assets with marketed gas was 0.04% in 2025, well below its target of <0.2% and consistent with its ambition to achieve near-zero intensity by 2030 [shell-integrated-annual-and-sustainability-report_chunk_29][shell-integrated-annual-and-sustainability-report_chunk_1119]. Routine flaring from upstream operations was eliminated in January 2025, independent of the March 2025 sale of SPDC [shell-integrated-annual-and-sustainability-report_chunk_29][shell-integrated-annual-and-sustainability-report_chunk_165].\n\n### GRI 306 Waste  \nIn 2025, Shell disposed of 1,987 thousand tonnes of waste, up from 1,933 thousand tonnes in 2024 [shell-integrated-annual-and-sustainability-report_chunk_278][shell-integrated-annual-and-sustainability-report_chunk_906]. This comprised 1,533 thousand tonnes of non-hazardous waste (up from 1,396 thousand tonnes) and 454 thousand tonnes of hazardous waste (down from 536 thousand tonnes) [shell-integrated-annual-and-sustainability-report_chunk_906]. Hazardous waste diverted from disposal totalled 207 thousand tonnes in 2025, down from 409 thousand tonnes in 2024; non-hazardous waste diverted from disposal totalled 340 thousand tonnes, down from 536 thousand tonnes [shell-integrated-annual-and-sustainability-report_chunk_985]. Overall, 403 thousand tonnes of residual materials were diverted for reuse, recycling or use as raw material in another process in 2025, compared with 728 thousand tonnes in 2024 [shell-integrated-annual-and-sustainability-report_chunk_906].\n\n### TCFD Strategy, Risk Management, Metrics & Targets  \nShell’s climate strategy is anchored in its ambition to become a net-zero emissions energy business by 2050 (Scope 1, 2 and 3), with interim targets aligned to a 1.5°C pathway derived from IPCC AR6 scenarios [shell-integrated-annual-and-sustainability-report_chunk_222][shell-integrated-annual-and-sustainability-report_chunk_165]. Key metrics include: (i) a 50% reduction in net Scope 1 and 2 emissions by 2030 vs. 2016 (53 million tonnes CO₂e achieved in 2025, −36% vs. baseline) [shell-integrated-annual-and-sustainability-report_chunk_224][shell-integrated-annual-and-sustainability-report_chunk_1119]; (ii) a 15–20% reduction in net carbon intensity (NCI) of energy products sold by 2030 vs. 2016 (−9.0% achieved in 2025, baseline 78 gCO₂e/MJ) [shell-integrated-annual-and-sustainability-report_chunk_440][shell-integrated-annual-and-sustainability-report_chunk_1119]; and (iii) a 15–20% reduction in customer emissions from oil product use (Scope 3, Category 11) by 2030 vs. 2021 (−17.9% achieved in 2025, baseline 569 million tonnes CO₂e) [shell-integrated-annual-and-sustainability-report_chunk_1119][shell-integrated-annual-and-sustainability-report_chunk_223]. Risk management integrates portfolio changes, abatement projects (e.g., CCS, electrification), and high-quality carbon credits as a last-resort compensation measure within the carbon mitigation hierarchy [shell-integrated-annual-and-sustainability-report_chunk_223].\n\n### Not covered in source material  \nThe provided context does not disclose: (i) Scope 2 emissions calculated using the location-based method separately from market-based; (ii) water discharge volumes or pollutant concentrations by medium (e.g., surface water, groundwater); (iii) waste generation or diversion rates by specific material type (e.g., plastics, metals, organics); (iv) detailed methodology or uncertainty assessment for Scope 3 Category 11 emissions beyond sales-volume-based estimation; (v) TCFD-aligned scenario analysis outputs (e.g., financial impact assessments under different climate scenarios); or (vi) governance structures specifically dedicated to water or waste risk oversight.",
+          "sources": [
+            "shell-integrated-annual-and-sustainability-report_chunk_217",
+            "shell-integrated-annual-and-sustainability-report_chunk_219",
+            "shell-integrated-annual-and-sustainability-report_chunk_204",
+            "shell-integrated-annual-and-sustainability-report_chunk_218",
+            "shell-integrated-annual-and-sustainability-report_chunk_827",
+            "shell-integrated-annual-and-sustainability-report_chunk_829",
+            "shell-integrated-annual-and-sustainability-report_chunk_828",
+            "shell-integrated-annual-and-sustainability-report_chunk_1098",
+            "shell-integrated-annual-and-sustainability-report_chunk_878",
+            "shell-integrated-annual-and-sustainability-report_chunk_985",
+            "shell-integrated-annual-and-sustainability-report_chunk_870",
+            "shell-integrated-annual-and-sustainability-report_chunk_876",
+            "shell-integrated-annual-and-sustainability-report_chunk_278",
+            "shell-integrated-annual-and-sustainability-report_chunk_905",
+            "shell-integrated-annual-and-sustainability-report_chunk_906",
+            "shell-integrated-annual-and-sustainability-report_chunk_900",
+            "shell-integrated-annual-and-sustainability-report_chunk_224",
+            "shell-integrated-annual-and-sustainability-report_chunk_222",
+            "shell-integrated-annual-and-sustainability-report_chunk_440",
+            "shell-integrated-annual-and-sustainability-report_chunk_165",
+            "shell-integrated-annual-and-sustainability-report_chunk_1119",
+            "shell-integrated-annual-and-sustainability-report_chunk_1117",
+            "shell-integrated-annual-and-sustainability-report_chunk_29",
+            "shell-integrated-annual-and-sustainability-report_chunk_223"
+          ]
+        },
+        "Social": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.67,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 3,
+            "Quantifiability": 4,
+            "Forward-Looking": 5,
+            "Transparency": 3,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [
+            "FPI count is stated as '8 in 2025, unchanged from the revised 2024 figure of 8', yet 4 fatalities among contractors are reported — implying at least 4 of the 8 FPI cases are fatalities; however, FPI is defined as 'permanent impairment' *or* fatality per IOGP, so this is internally consistent — no arithmetic error. No inconsistencies found."
+          ],
+          "missing_elements": [
+            "GRI 403-1: Occupational health management system scope and certification status (e.g., ISO 45001)",
+            "GRI 405-2: Disability employment rate and reasonable accommodation metrics",
+            "GRI 414-2: Definition and count of 'severe' human rights incidents aligned with GRI criteria",
+            "TCFD Recommendation ii. (Strategy): Quantified just transition commitments (e.g., reskilling budget, worker support targets)"
+          ],
+          "improvement_suggestions": [
+            "Disclose ISO 45001 certification status and scope for all material operating entities",
+            "Report disability employment rate and volume/resolution rate of reasonable accommodation requests",
+            "Define 'severe human rights incident' using GRI 414-2 criteria and report counts by category (e.g., forced labour, fatal accident, systemic discrimination)",
+            "Quantify annual reskilling investment and number of workers supported through outplacement or retraining in 2025, explicitly linked to TCFD Recommendation ii."
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "All five required GRI/TCFD sub-topics are named and addressed, but multiple mandatory disclosures per standard are missing — e.g., GRI 403 omits health management systems and surveillance; GRI 405 omits disability, LGBT+, and intersectional data; GRI 414 omits supplier assessment scope and methodology; TCFD social transition lacks reskilling or just transition metrics.",
+                "missing_elements": [
+                  "GRI 403: occupational health management system certification (e.g., ISO 45001), exposure assessments, health surveillance frequency",
+                  "GRI 405: disability employment rate, reasonable accommodation requests, LGBT+ representation, intersectional metrics",
+                  "GRI 414: number of Tier 1 suppliers assessed, % of high-risk suppliers evaluated, definition of 'severe' aligned with GRI 414-2",
+                  "TCFD Strategy: reskilling investment amount, displaced worker support programmes, community impact assessments for divested assets"
+                ],
+                "improvement_suggestions": [
+                  "Disclose ISO 45001 certification status and scope for all material operating entities",
+                  "Report disability employment rate and reasonable accommodation request volume and resolution rate",
+                  "Define 'severe human rights incident' explicitly using GRI 414-2 criteria and disclose count/type of incidents by category",
+                  "Quantify annual reskilling spend and number of workers supported through outplacement or retraining in 2025"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Most claims include concrete figures (e.g., 4 contractor fatalities, 35% women in workforce, 98% anti-bribery training validity), and context is often provided (e.g., headcount decline explaining FPI-F increase); however, key denominators like total working hours remain undisclosed, limiting interpretability of frequency rates. [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [
+                  "Total working hours used to calculate FPI-F, TRCF, and LTIF",
+                  "Number of suppliers assessed in 2025",
+                  "Number of employees who completed DE&I or climate transition training",
+                  "Number of disability accommodation requests received and fulfilled"
+                ],
+                "improvement_suggestions": [
+                  "Disclose total working hours for 2024 and 2025 to enable verification of FPI-F, TRCF, and LTIF calculations",
+                  "Report absolute count and percentage of Tier 1 suppliers assessed against Shell’s Supplier Principles in 2025",
+                  "Break down training days by topic category (e.g., safety, DE&I, climate transition) and distinguish mandatory vs. voluntary participation"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 4,
+                "justification": "Metrics include units (e.g., cases per 100 million working hours, %), timeframes (2024–2025), and baselines (e.g., FPI-F 1.7 → 2.1), but the denominator for frequency rates is omitted, preventing replication or validation; also, no year-on-year change is given for some figures (e.g., Board gender composition is stated as 42% but no 2024 baseline is provided).",
+                "missing_elements": [
+                  "Baseline year and value for Board of Directors and Executive Committee gender composition",
+                  "2024 value for ethnic minority representation in UK Senior Management (to confirm 'exceeding target ahead of schedule')",
+                  "Total working hours for 2024 and 2025",
+                  "2024 value for external hire gender ratio (to assess trend)"
+                ],
+                "improvement_suggestions": [
+                  "Report 2024 gender composition of Board and Executive Committee to enable year-on-year comparison",
+                  "Disclose total working hours for both years to anchor all frequency-based OHS metrics",
+                  "Provide 2024 ethnic minority representation in UK Senior Management to substantiate 'ahead of schedule' claim"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 5,
+                "justification": "Two quantified targets with baseline years and deadlines are explicitly stated: (1) 40% women in senior leadership by 2030 (baseline: 35% in 2025), and (2) 17% ethnic minority representation in UK Senior Management by 2027 (baseline: 16% in 2025). Both include current performance, target, and deadline.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "The section acknowledges several gaps (e.g., 'no data provided on disability employment rate', 'exact denominator not disclosed'), but these are listed passively without explanation of root causes, remediation efforts, or consequences; no negative trends beyond metric increases (e.g., rising LTIF) are contextualized as systemic challenges or missed internal goals.",
+                "missing_elements": [
+                  "Explanation of why total working hours are undisclosed (e.g., data collection limitations, scope exclusions)",
+                  "Reason for increase in LTIF/TRCF despite unchanged FPI count",
+                  "Status of ISO 45001 certification rollout and barriers to full implementation",
+                  "Context for zero severe human rights incidents in 2025 — e.g., reduced audit coverage, revised definition, or improved controls"
+                ],
+                "improvement_suggestions": [
+                  "Explain whether the rise in LTIF/TRCF reflects operational changes, reporting refinements, or emerging risks — and what actions are being taken",
+                  "Clarify whether the absence of severe human rights incidents reflects improved due diligence or reduced assessment depth/coverage",
+                  "Describe challenges impeding disclosure of disability or LGBT+ data (e.g., inconsistent global reporting, privacy constraints) and timeline for resolution"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "The section is explicitly structured by GRI/TCFD headings (e.g., 'Occupational Health & Safety' maps to GRI 403), and standards are cited in the rubric preamble; however, GRI disclosures are not tagged with GRI indicator codes (e.g., GRI 403-1, GRI 403-2), and the 'Not covered' summary — while helpful — is not integrated into the main narrative per GRI’s 'in accordance' requirements.",
+                "missing_elements": [
+                  "GRI indicator codes (e.g., GRI 403-1, GRI 403-2) applied to each disclosed metric",
+                  "Explicit statement of 'in accordance' or 'not in accordance' with GRI Standards per topic",
+                  "TCFD Strategy section lacks explicit linkage to TCFD Recommendation i. (governance), ii. (strategy), or iii. (risk management)"
+                ],
+                "improvement_suggestions": [
+                  "Tag every disclosed metric with its corresponding GRI indicator code (e.g., 'FPI count: GRI 403-2')",
+                  "Add a compliance statement per sub-topic (e.g., 'This disclosure is in accordance with GRI 403, except for GRI 403-1 and GRI 403-5, which are not reported due to...')",
+                  "Map TCFD Strategy content to specific TCFD recommendations (e.g., 'Social impacts of transition aligns with TCFD Recommendation ii. Strategy, specifically on workforce implications of portfolio realignment')"
+                ]
+              }
+            ],
+            "inconsistencies": [
+              "FPI count is stated as '8 in 2025, unchanged from the revised 2024 figure of 8', yet 4 fatalities among contractors are reported — implying at least 4 of the 8 FPI cases are fatalities; however, FPI is defined as 'permanent impairment' *or* fatality per IOGP, so this is internally consistent — no arithmetic error. No inconsistencies found."
+            ],
+            "overall_score": 3.67,
+            "missing_elements": [
+              "GRI 403-1: Occupational health management system scope and certification status (e.g., ISO 45001)",
+              "GRI 405-2: Disability employment rate and reasonable accommodation metrics",
+              "GRI 414-2: Definition and count of 'severe' human rights incidents aligned with GRI criteria",
+              "TCFD Recommendation ii. (Strategy): Quantified just transition commitments (e.g., reskilling budget, worker support targets)"
+            ],
+            "improvement_suggestions": [
+              "Disclose ISO 45001 certification status and scope for all material operating entities",
+              "Report disability employment rate and volume/resolution rate of reasonable accommodation requests",
+              "Define 'severe human rights incident' using GRI 414-2 criteria and report counts by category (e.g., forced labour, fatal accident, systemic discrimination)",
+              "Quantify annual reskilling investment and number of workers supported through outplacement or retraining in 2025, explicitly linked to TCFD Recommendation ii."
+            ]
+          },
+          "draft": "### Occupational Health & Safety  \nShell reported 4 fatalities among contractor colleagues in Shell-operated ventures in 2025, with no employee fatalities [shell-integrated-annual-and-sustainability-report_chunk_973]. The fatality and permanent impairment (FPI) count was 8 in 2025, unchanged from the revised 2024 figure of 8 [shell-integrated-annual-and-sustainability-report_chunk_974][shell-integrated-annual-and-sustainability-report_chunk_973]. However, the FPI frequency (FPI-F) increased to 2.1 cases per 100 million working hours in 2025, up from 1.7 in 2024 [shell-integrated-annual-and-sustainability-report_chunk_974][shell-integrated-annual-and-sustainability-report_chunk_973]. This increase reflects a reduction in total working hours — consistent with the 13% decline in total headcount (from 96,000 at end-2024 to 85,000 at end-2025) [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_921] — though the exact denominator (total working hours) is not disclosed in the source material. Total recordable case frequency (TRCF) rose marginally to 1.2 per million working hours in 2025 (from 1.1 in 2024), and lost time injury frequency (LTIF) increased to 0.6 per million working hours (from 0.5 in 2024) [shell-integrated-annual-and-sustainability-report_chunk_973]. These metrics cover employees and contractors under Mode 1 and Mode 2 contractual arrangements — where Shell retains control or shared interface management — but exclude Mode 3 contractors unless working on Shell premises [shell-integrated-annual-and-sustainability-report_chunk_975]. Shell adopts the IOGP definition of FPI as “the outcome of a work-related injury from which the worker cannot or is not expected to return to their previous pre-incident whole person function as a result of an acute, single incident” [shell-integrated-annual-and-sustainability-report_chunk_974]. No information is provided on occupational health management systems (e.g., ISO 45001 certification status), exposure assessments, health surveillance programmes, or frequency of medical monitoring for high-risk roles [shell-integrated-annual-and-sustainability-report_chunk_974].\n\n### Training  \nIn 2025, Shell delivered 253,000 formal training days to employees and joint-venture partners [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_263]. This represents a reduction from 264,000 training days in 2024, primarily attributable to lower employee headcount [shell-integrated-annual-and-sustainability-report_chunk_263]. Mandatory ethics and compliance training — including Code of Conduct training — was required for all employees and contractor staff [shell-integrated-annual-and-sustainability-report_chunk_960]. For roles identified as being at higher risk of corruption or bribery, 98% of staff held valid anti-bribery and anti-corruption training as of 2025 (consistent with 98% in 2024), with training validity cycles set at two to three years [shell-integrated-annual-and-sustainability-report_chunk_960]. Shell also offered free anti-bribery and anti-corruption training to selected suppliers in 14 languages [shell-integrated-annual-and-sustainability-report_chunk_960]. No data is provided on training participation rates by course type (mandatory vs. voluntary), topic-specific breakdowns (e.g., safety, DE&I, climate transition), competency validation, or correlation between training and safety/incident outcomes [shell-integrated-annual-and-sustainability-report_chunk_960].\n\n### Diversity  \nAs of December 31, 2025, women constituted 35% of Shell’s total workforce of 85,000 employees [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_921]. Women represented 42% of the Board of Directors and 44% of the Executive Committee [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_267]. In senior leadership positions (defined by compensation grade), women accounted for 35% — meeting Shell’s 2025 target — and Shell aims to reach 40% by 2030 [shell-integrated-annual-and-sustainability-report_chunk_267]. Ethnic minority representation in UK-based Senior Management stood at 16% as of end-2025, exceeding the Parker Review’s 15% target ahead of schedule; Shell has since raised its ambition to 17% by 2027 [shell-integrated-annual-and-sustainability-report_chunk_378][shell-integrated-annual-and-sustainability-report_chunk_268]. Among external hires in 2025, 35% were women [shell-integrated-annual-and-sustainability-report_chunk_267][shell-integrated-annual-and-sustainability-report_chunk_268]. No data is provided on disability employment rate, reasonable accommodation requests, LGBT+ representation, employee resource group participation, or intersectional metrics (e.g., gender × ethnicity or gender × age) [shell-integrated-annual-and-sustainability-report_chunk_378][shell-integrated-annual-and-sustainability-report_chunk_268].\n\n### Supplier Social Assessment  \nShell’s Supplier Principles require suppliers to uphold human rights — including prohibition of child and forced labour, freedom of association, non-discrimination, safe working conditions, fair wages, and provision of confidential grievance mechanisms — and to flow down equivalent standards to their direct suppliers [shell-integrated-annual-and-sustainability-report_chunk_930][shell-integrated-annual-and-sustainability-report_chunk_929]. In 2025, no cases of non-respect of the UN Guiding Principles on Business and Human Rights, ILO Declaration, or OECD Guidelines were identified in Shell’s upstream or downstream value chain [shell-integrated-annual-and-sustainability-report_chunk_930]. Similarly, no severe human rights incidents related to value chain workers were identified in 2025 (compared to three in 2024) [shell-integrated-annual-and-sustainability-report_chunk_939]. The source material does not define “severe” using GRI 414-2 or UN Guiding Principles criteria (e.g., forced labour, fatal accidents, systemic discrimination), nor does it disclose the number or type of supplier assessments conducted (e.g., desktop reviews, on-site audits), coverage of procurement spend, or audit depth thresholds applied [shell-integrated-annual-and-sustainability-report_chunk_930][shell-integrated-annual-and-sustainability-report_chunk_939].\n\n### TCFD Strategy (social impacts of climate transition)  \nThe source material notes that Shell’s portfolio changes — including divestments in Singapore (Bukom, Jurong), Nigeria (SPDC), and the UK (to the Adura joint venture) — contributed to the reduction in headcount from 96,000 in 2024 to 85,000 in 2025 [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_261]. It further states that Shell is transforming to “deliver more value with less emissions” and that “as we reshape our portfolio, elements of our culture will need to adapt”, including developing new skills and adapting processes for emerging businesses [shell-integrated-annual-and-sustainability-report_chunk_910][shell-integrated-annual-and-sustainability-report_chunk_913]. However, no quantitative data is provided on reskilling investments, displaced worker support programmes (e.g., severance, retraining, outplacement), or community impact assessments related to divested assets [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_913].\n\n### Not covered in source material  \nGRI 403: No disclosure of occupational health management system scope, certification status (e.g., ISO 45001), exposure assessments, or health surveillance frequency for high-risk roles.  \nGRI 404: No breakdown of training by topic (e.g., safety, DE&I, climate transition), no training participation rates by mandatory vs. voluntary courses, and no effectiveness metrics (e.g., competency validation, incident reduction correlation).  \nGRI 405: No data on disability employment rate, reasonable accommodation requests, LGBT+ representation, employee resource group participation, or intersectional diversity metrics.  \nGRI 414: No disclosure of total Tier 1 suppliers, number of suppliers assessed in 2025, percentage of high-risk suppliers fully evaluated, or methodology used to determine “severe” human rights incidents.  \nTCFD Strategy (social impacts of climate transition): No quantification of reskilling investments, no description of just transition commitments, no community impact assessments for divested assets (e.g., Nigeria, UK, Singapore), and no data on support for workers affected by portfolio changes.",
+          "sources": [
+            "shell-integrated-annual-and-sustainability-report_chunk_260",
+            "shell-integrated-annual-and-sustainability-report_chunk_910",
+            "shell-integrated-annual-and-sustainability-report_chunk_261",
+            "shell-integrated-annual-and-sustainability-report_chunk_921",
+            "shell-integrated-annual-and-sustainability-report_chunk_378",
+            "shell-integrated-annual-and-sustainability-report_chunk_267",
+            "shell-integrated-annual-and-sustainability-report_chunk_495",
+            "shell-integrated-annual-and-sustainability-report_chunk_268",
+            "shell-integrated-annual-and-sustainability-report_chunk_974",
+            "shell-integrated-annual-and-sustainability-report_chunk_975",
+            "shell-integrated-annual-and-sustainability-report_chunk_973",
+            "shell-integrated-annual-and-sustainability-report_chunk_798",
+            "shell-integrated-annual-and-sustainability-report_chunk_960",
+            "shell-integrated-annual-and-sustainability-report_chunk_263",
+            "shell-integrated-annual-and-sustainability-report_chunk_693",
+            "shell-integrated-annual-and-sustainability-report_chunk_264",
+            "shell-integrated-annual-and-sustainability-report_chunk_929",
+            "shell-integrated-annual-and-sustainability-report_chunk_930",
+            "shell-integrated-annual-and-sustainability-report_chunk_939",
+            "shell-integrated-annual-and-sustainability-report_chunk_913",
+            "shell-integrated-annual-and-sustainability-report_chunk_794",
+            "shell-integrated-annual-and-sustainability-report_chunk_774",
+            "shell-integrated-annual-and-sustainability-report_chunk_796",
+            "shell-integrated-annual-and-sustainability-report_chunk_795",
+            "shell-integrated-annual-and-sustainability-report_chunk_229",
+            "shell-integrated-annual-and-sustainability-report_chunk_793",
+            "shell-integrated-annual-and-sustainability-report_chunk_775"
+          ]
+        },
+        "Governance": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.33,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 4,
+            "Quantifiability": 3,
+            "Forward-Looking": 3,
+            "Transparency": 3,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "political contributions and lobbying expenditures",
+            "board-level oversight of human rights due diligence",
+            "board-level oversight of cybersecurity and data privacy risks",
+            "remuneration-linked sustainability KPIs for non-Executive Directors",
+            "baseline year and achievement status of 'at least one senior Board position held by a woman' target",
+            "absolute number and percentage of Board members from minority ethnic backgrounds for 2025 and 2024",
+            "number and percentage of substantiated/closed/pending Shell Global Helpline reports for 2025 and 2024",
+            "outcomes or findings from the 2025 Board Performance Review",
+            "explanation of barriers to disclosing political contributions or Helpline resolution metrics",
+            "quantified, time-bound governance target with baseline year and deadline"
+          ],
+          "improvement_suggestions": [
+            "Disclose total political contributions and lobbying expenditures by jurisdiction and recipient type, per GRI 205-4",
+            "Explicitly state Board or committee responsibility for oversight of human rights due diligence, including frequency and scope of review, per TCFD g3",
+            "Report the absolute count and percentage of women and minority ethnic Board members for 2025 and 2024",
+            "Disclose the number and percentage of substantiated, closed, and pending Shell Global Helpline reports for 2025 and 2024",
+            "State the baseline year and achievement status (yes/no) of the 'at least one senior Board position held by a woman' target as of December 31, 2025",
+            "Report at least one key finding and remediation action from the 2025 Board Performance Review, with reference to prior review baseline",
+            "Explain the operational or regulatory barrier preventing disclosure of political contributions",
+            "Introduce one quantified, time-bound governance target (e.g., Helpline substantiation rate or committee review frequency) with baseline year, deadline, and measurement unit"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "Main GRI/TCFD governance sub-topics (board composition, diversity, ethics, climate risk oversight) are addressed, but critical gaps remain: no disclosure of political contributions (GRI 205-4), human rights due diligence oversight (TCFD g3, GRI 2-12), cybersecurity/data privacy governance (TCFD g2), or remuneration-linked sustainability KPIs for non-executives (GRI 2-13).",
+                "missing_elements": [
+                  "political contributions and lobbying expenditures",
+                  "board-level oversight of human rights due diligence",
+                  "board-level oversight of cybersecurity and data privacy risks",
+                  "remuneration-linked sustainability KPIs for non-Executive Directors"
+                ],
+                "improvement_suggestions": [
+                  "Disclose total political contributions and lobbying expenditures by jurisdiction and recipient type, per GRI 205-4",
+                  "Explicitly state Board or committee responsibility for oversight of human rights due diligence, including frequency and scope of review, per TCFD g3 and UNGP-aligned practice",
+                  "Specify which Board committee oversees cybersecurity and data privacy risks, with description of review frequency and methodology",
+                  "Disclose whether and how non-Executive Director remuneration is linked to sustainability KPIs, per GRI 2-13"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 4,
+                "justification": "Many claims include concrete figures (e.g., 12 board members, 42% women, 98% training completion, 1,983 Helpline reports), but some key disclosures lack numbers entirely (e.g., minority ethnic representation, substantiated Helpline reports, senior-position target status) and others cite percentages without absolute counts (e.g., '42% women' without stating 5 of 12).",
+                "missing_elements": [
+                  "absolute number of women on Board (e.g., 5 of 12)",
+                  "absolute number and percentage of Board members from minority ethnic backgrounds for 2025 and 2024",
+                  "number and percentage of Shell Global Helpline reports substantiated, closed, or under investigation in 2025, with 2024 comparison",
+                  "baseline year and current status of 'at least one senior Board position held by a woman' target"
+                ],
+                "improvement_suggestions": [
+                  "Report absolute counts alongside percentages for all diversity metrics (e.g., '5 of 12 directors, or 42%')",
+                  "Disclose the number and percentage of substantiated, closed, and pending Shell Global Helpline reports for 2025 and 2024",
+                  "State the baseline year and achievement status (yes/no) of the 'at least one senior Board position held by a woman' target as of December 31, 2025"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 3,
+                "justification": "Metrics include units and timeframes (e.g., '98% in 2025', '1,983 reports in 2025'), and some have year-on-year comparisons (2025 vs. 2024), but baselines are missing for targets (e.g., senior-position diversity target has no baseline year), and no metrics show year-on-year change in outcomes (e.g., Helpline substantiation rate trend or board evaluation findings).",
+                "missing_elements": [
+                  "baseline year for 'at least one senior Board position held by a woman' target",
+                  "year-on-year trend for Helpline report resolution rates",
+                  "baseline and progress against Board Performance Review remediation actions",
+                  "quantified baseline and current value for any governance-related KPI tied to Energy Transition Strategy 2024"
+                ],
+                "improvement_suggestions": [
+                  "Specify the baseline year for all stated targets, including the senior-position diversity target",
+                  "Report the percentage of substantiated, closed, and pending Helpline reports for both 2025 and 2024 to enable trend analysis",
+                  "Disclose at least one outcome or finding from the 2025 Board Performance Review, with baseline (e.g., prior review result) and progress status"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 3,
+                "justification": "Targets are mentioned (e.g., gender balance ≥40%, senior-position diversity, minority ethnic representation), but only the gender balance target includes an implied timeframe ('maintain'); none specify a deadline, and the senior-position target lacks both baseline year and deadline. No quantified, time-bound targets with baseline years and deadlines meet the 5-point threshold.",
+                "missing_elements": [
+                  "deadline for 'at least one senior Board position held by a woman' target",
+                  "deadline for maintaining ≥40% gender balance on Board",
+                  "deadline and baseline year for 'at least one Board member from a minority ethnic background'",
+                  "quantified, time-bound target with baseline year and deadline for Helpline report resolution rate"
+                ],
+                "improvement_suggestions": [
+                  "Assign explicit deadlines (e.g., 'by December 31, 2027') and baseline years (e.g., 'as of December 31, 2024') to all stated diversity and ethics targets",
+                  "Introduce at least one forward-looking, quantified governance target with baseline, deadline, and measurement unit (e.g., 'increase Helpline substantiation rate to 65% by 2027, from 62% baseline in 2024')"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "The section explicitly acknowledges several omissions (e.g., 'source material does not disclose...', 'no outcomes... are disclosed'), but these are descriptive admissions—not explanations of challenges, root causes, or negative trends. There is no discussion of why data is missing, what barriers exist, or any missed targets or deteriorating metrics.",
+                "missing_elements": [
+                  "explanation of why political contribution data is not disclosed",
+                  "root cause for absence of Helpline resolution metrics",
+                  "reason for lack of board-level cybersecurity oversight disclosure",
+                  "acknowledgement of any missed governance targets in 2025 (e.g., diversity or training goals) and contributing factors"
+                ],
+                "improvement_suggestions": [
+                  "Explain the operational or regulatory challenge preventing disclosure of political contributions, per GRI 205-4",
+                  "Describe the systemic barrier (e.g., system limitations, definitional ambiguity) that prevents reporting substantiated Helpline cases",
+                  "Acknowledge if any 2025 governance targets were missed (e.g., senior-position diversity, training coverage) and provide root-cause analysis"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "The section references GRI and TCFD codes (e.g., GRI 2-11, GRI 205-1–3, TCFD g1–g4) and organizes content thematically around governance sub-topics, but fails to fully align with structural requirements: GRI 2-12 (board evaluation process) and GRI 2-13 (remuneration linkages) are acknowledged as missing but not addressed; TCFD Governance requires explicit linkage of oversight to strategy, risk, and metrics — which is partially done but lacks measurable governance KPIs.",
+                "missing_elements": [
+                  "disclosure of board evaluation process per GRI 2-12, including methodology, criteria, and outcomes",
+                  "disclosure of remuneration-linked sustainability KPIs for non-Executive Directors per GRI 2-13",
+                  "explicit linkage of Board committee mandates to measurable governance KPIs (e.g., 'ARC reviews risk assurance coverage quarterly')",
+                  "third-party assurance statement on governance disclosures"
+                ],
+                "improvement_suggestions": [
+                  "Report the methodology, criteria, and key findings of the 2025 Board Performance Review, fulfilling GRI 2-12",
+                  "Disclose whether and how non-Executive Director remuneration is linked to sustainability KPIs, fulfilling GRI 2-13",
+                  "Map each Board committee’s climate and sustainability oversight mandate to at least one specific, measurable governance KPI with review frequency"
+                ]
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 3.33,
+            "missing_elements": [
+              "political contributions and lobbying expenditures",
+              "board-level oversight of human rights due diligence",
+              "board-level oversight of cybersecurity and data privacy risks",
+              "remuneration-linked sustainability KPIs for non-Executive Directors",
+              "baseline year and achievement status of 'at least one senior Board position held by a woman' target",
+              "absolute number and percentage of Board members from minority ethnic backgrounds for 2025 and 2024",
+              "number and percentage of substantiated/closed/pending Shell Global Helpline reports for 2025 and 2024",
+              "outcomes or findings from the 2025 Board Performance Review",
+              "explanation of barriers to disclosing political contributions or Helpline resolution metrics",
+              "quantified, time-bound governance target with baseline year and deadline"
+            ],
+            "improvement_suggestions": [
+              "Disclose total political contributions and lobbying expenditures by jurisdiction and recipient type, per GRI 205-4",
+              "Explicitly state Board or committee responsibility for oversight of human rights due diligence, including frequency and scope of review, per TCFD g3",
+              "Report the absolute count and percentage of women and minority ethnic Board members for 2025 and 2024",
+              "Disclose the number and percentage of substantiated, closed, and pending Shell Global Helpline reports for 2025 and 2024",
+              "State the baseline year and achievement status (yes/no) of the 'at least one senior Board position held by a woman' target as of December 31, 2025",
+              "Report at least one key finding and remediation action from the 2025 Board Performance Review, with reference to prior review baseline",
+              "Explain the operational or regulatory barrier preventing disclosure of political contributions",
+              "Introduce one quantified, time-bound governance target (e.g., Helpline substantiation rate or committee review frequency) with baseline year, deadline, and measurement unit"
+            ]
+          },
+          "draft": "### Governance Structure and Board Oversight  \nShell plc’s governance framework is structured around the Board of Directors and the Executive Committee (EC), with the Board comprising 12 members—including two executive and 10 non-executive directors—as at December 31, 2025 (2024: 12 members, 2 executive and 10 non-executive members) [shell-integrated-annual-and-sustainability-report_chunk_757]. All non-executive directors are considered independent in character and judgement, representing 83% of the Board as at December 31, 2025 (2024: 83%) [shell-integrated-annual-and-sustainability-report_chunk_757]. The Board maintains primary oversight of Shell’s strategy—including its Energy Transition Strategy 2024, endorsed in March 2024—and monitors performance against longer-term business targets, including climate-related ambitions [shell-integrated-annual-and-sustainability-report_chunk_759]. Sustainability matters, including climate-related impacts, risks and opportunities, are reviewed and addressed on an integrated basis alongside other business issues throughout the year [shell-integrated-annual-and-sustainability-report_chunk_759]. The Board delegates authority for operational management to the CEO, who chairs the EC and is supported by EC members in implementing strategy and monitoring progress [shell-integrated-annual-and-sustainability-report_chunk_242]. This structure aligns with GRI 2-11 (governance bodies’ roles and responsibilities) and TCFD Governance (g1–g4), as the Board explicitly oversees strategy, risk, and sustainability integration across time horizons defined as short term (one year), medium term (2–10 years), and long term (beyond 10 years) [shell-integrated-annual-and-sustainability-report_chunk_754].\n\n### Board Diversity, Composition and Succession  \nShell’s Board Diversity Policy—first published in March 2024—commits to gender balance, with women constituting 42% of the Board as at December 31, 2025 (2024: 42%), corresponding to a female-to-male ratio of 0.7 [shell-integrated-annual-and-sustainability-report_chunk_757]. The Policy sets a target to maintain representation of both men and women at or above 40%, and aims to have at least one senior Board position (Chair, CEO, Senior Independent Director or CFO) held by a woman [shell-integrated-annual-and-sustainability-report_chunk_376]. The source material does not disclose the baseline year for this senior-position target, nor whether it has been achieved as of December 31, 2025 [shell-integrated-annual-and-sustainability-report_chunk_376]. Shell also aims to maintain or exceed having at least one Board member from a minority ethnic background [shell-integrated-annual-and-sustainability-report_chunk_376]; however, the absolute number and percentage of Board members from minority ethnic backgrounds for 2025 and 2024 are not disclosed [shell-integrated-annual-and-sustainability-report_chunk_376]. The Nomination and Succession Committee (NOMCO) oversees development of a diverse pipeline for Board succession and ensures all appointments follow a formal, rigorous and transparent procedure based on merit and objective criteria, with due regard for diversity factors [shell-integrated-annual-and-sustainability-report_chunk_379]. NOMCO engages independent executive search consultants aligned with Shell’s diversity, equity and inclusion (DE&I) approach to identify candidates from diverse pools [shell-integrated-annual-and-sustainability-report_chunk_379]. The 2025 Board Performance Review was externally facilitated by Jan Hall of No. 4 through one-on-one interviews with all Board members, the Company Secretary, External Audit partner, and three EC members, supplemented by observation of Board and Committee meetings and review of pre-meeting materials [shell-integrated-annual-and-sustainability-report_chunk_370]. The review was conducted in January 2026 and covered effectiveness, dynamics, and alignment with the UK Corporate Governance Code requirement for triennial external evaluation [shell-integrated-annual-and-sustainability-report_chunk_370]. No outcomes, findings, or remediation actions from the 2025 review are disclosed in the source material [shell-integrated-annual-and-sustainability-report_chunk_370].\n\n### Ethics, Compliance and Anti-Corruption Governance  \nAccountability for ethics and compliance rests with the CEO and the Executive Committee, supported by the Chief Ethics and Compliance Officer (CECO), who reports to the Chief Legal Officer and provides updates to the EC and Audit and Risk Committee (ARC) [shell-integrated-annual-and-sustainability-report_chunk_759]. Shell’s anti-bribery and anti-corruption programme includes mandatory Code of Conduct training for all employees and contractor staff, with additional targeted training for roles at higher risk of corruption exposure—such as procurement, new business development and engagement with government officials [shell-integrated-annual-and-sustainability-report_chunk_960]. In 2025, 98% of staff in at-risk roles possessed valid anti-bribery and anti-corruption training completion (2024: 98%) [shell-integrated-annual-and-sustainability-report_chunk_960]. No Shell legal entity and, to the best of Shell’s knowledge, no Shell staff were convicted or fined for criminal violations of anti-corruption and anti-bribery laws in 2025 (2024: none) [shell-integrated-annual-and-sustainability-report_chunk_961]. Alleged breaches may be reported confidentially—including anonymously—via the Shell Global Helpline; in 2025, 1,983 reports were received [shell-integrated-annual-and-sustainability-report_chunk_284]. The source material does not disclose the number or percentage of Helpline reports substantiated, closed, or under investigation in 2025, nor any 2024 comparison [shell-integrated-annual-and-sustainability-report_chunk_284]. Shell maintains a stringent no-retaliation policy for good-faith reporters and those participating in investigations [shell-integrated-annual-and-sustainability-report_chunk_284][shell-integrated-annual-and-sustainability-report_chunk_956]. This fulfils GRI 205-1 (anti-corruption policy), GRI 205-2 (training coverage), and GRI 205-3 (incidents and enforcement), though quantitative resolution metrics are absent.\n\n### Climate and Sustainability Risk Oversight  \nClimate-related risk governance is embedded across multiple Board-level committees: the Sustainability Committee oversees emerging sustainability trends (excluding carbon and safety); the Audit and Risk Committee reviews risk management effectiveness and internal controls; the Carbon Reporting Committee governs GHG emissions calculation methodologies and external disclosures; and the Strategy and Investment Committee serves as the decision forum for material capital investments aligned with the energy transition [shell-integrated-annual-and-sustainability-report_chunk_242]. Climate change and the energy transition are identified as material strategic risks, broken down into commercial, societal (including litigation), regulatory and physical sub-components [shell-integrated-annual-and-sustainability-report_chunk_168]. The Board, EC and relevant committees regularly review these risks and their impact on the Group to enable holistic risk mitigation and integration into operational decisions [shell-integrated-annual-and-sustainability-report_chunk_168][shell-integrated-annual-and-sustainability-report_chunk_242]. Internal assurance on sustainability-related risks is provided by Shell Internal Audit and Investigations (SIAI), which advises management and the Board on internal control effectiveness [shell-integrated-annual-and-sustainability-report_chunk_242]. The source material does not disclose Board or committee responsibility for oversight of cybersecurity, data privacy, or human rights due diligence—including frequency, scope, or methodology of review [shell-integrated-annual-and-sustainability-report_chunk_242]. Nor does it disclose specific, measurable governance targets (e.g., committee review frequency, assurance coverage scope) tied to Energy Transition Strategy 2024 implementation [shell-integrated-annual-and-sustainability-report_chunk_759].\n\n### Not covered in source material  \nThe source material does not disclose: (i) political contributions or lobbying expenditures, nor any explanation for their absence; (ii) whether any Board diversity or ethics training targets were missed in 2025 and why; (iii) trend data showing a negative or stagnant governance metric (e.g., Helpline resolution rate decline) with root-cause analysis; (iv) board-level oversight of cybersecurity or data privacy risks; (v) board-level review of human rights due diligence processes per UNGP or OECD Guidelines; (vi) remuneration-linked sustainability KPIs for non-Executive Directors; (vii) third-party assurance statements on governance disclosures; (viii) the baseline year or current status of the target for “at least one senior Board position held by a woman”; (ix) the absolute number and percentage of Board members from minority ethnic backgrounds for 2025 and 2024; (x) the number and percentage of Shell Global Helpline reports substantiated, closed, or under investigation in 2025, with 2024 comparison; (xi) specific deadlines for Board diversity targets; (xii) quantitative data on political contributions and lobbying expenditures; (xiii) methodology or results of committee-level evaluations beyond the Board Performance Review; (xiv) disclosure of challenges preventing political contribution reporting. These omissions correspond to gaps in GRI 2-12 (board evaluation process), GRI 2-13 (remuneration linkages), and TCFD Governance (g1–g4) requirements for comprehensive oversight scope and forward-looking targets.",
+          "sources": [
+            "shell-integrated-annual-and-sustainability-report_chunk_757",
+            "shell-integrated-annual-and-sustainability-report_chunk_379",
+            "shell-integrated-annual-and-sustainability-report_chunk_353",
+            "shell-integrated-annual-and-sustainability-report_chunk_376",
+            "shell-integrated-annual-and-sustainability-report_chunk_759",
+            "shell-integrated-annual-and-sustainability-report_chunk_1103",
+            "shell-integrated-annual-and-sustainability-report_chunk_242",
+            "shell-integrated-annual-and-sustainability-report_chunk_244",
+            "shell-integrated-annual-and-sustainability-report_chunk_960",
+            "shell-integrated-annual-and-sustainability-report_chunk_956",
+            "shell-integrated-annual-and-sustainability-report_chunk_284",
+            "shell-integrated-annual-and-sustainability-report_chunk_961",
+            "shell-integrated-annual-and-sustainability-report_chunk_463",
+            "shell-integrated-annual-and-sustainability-report_chunk_479",
+            "shell-integrated-annual-and-sustainability-report_chunk_414",
+            "shell-integrated-annual-and-sustainability-report_chunk_462",
+            "shell-integrated-annual-and-sustainability-report_chunk_783",
+            "shell-integrated-annual-and-sustainability-report_chunk_168",
+            "shell-integrated-annual-and-sustainability-report_chunk_300",
+            "shell-integrated-annual-and-sustainability-report_chunk_288",
+            "shell-integrated-annual-and-sustainability-report_chunk_789",
+            "shell-integrated-annual-and-sustainability-report_chunk_754",
+            "shell-integrated-annual-and-sustainability-report_chunk_536",
+            "shell-integrated-annual-and-sustainability-report_chunk_748",
+            "shell-integrated-annual-and-sustainability-report_chunk_502",
+            "shell-integrated-annual-and-sustainability-report_chunk_790",
+            "shell-integrated-annual-and-sustainability-report_chunk_369",
+            "shell-integrated-annual-and-sustainability-report_chunk_370"
+          ]
+        }
+      }
+    },
+    {
+      "iteration": 3,
+      "timestamp": "2026-10-21T02:06:36",
+      "assess_seconds": 79.1,
+      "overall_score": 3.78,
+      "sections": {
+        "Environmental": {
+          "revised_this_round": false,
+          "passed": true,
+          "overall_score": 4.67,
+          "criterion_scores": {
+            "Coverage": 4,
+            "Specificity": 5,
+            "Quantifiability": 5,
+            "Forward-Looking": 5,
+            "Transparency": 4,
+            "Compliance Alignment": 5
+          },
+          "inconsistencies": [],
+          "missing_elements": [
+            "Water discharge volumes and pollutant concentrations by medium (GRI 303-3, GRI 303-4)",
+            "Waste generation and diversion rates (e.g., per unit production or revenue) (GRI 306-2, GRI 306-3)",
+            "TCFD scenario analysis outputs (TCFD Metrics & Targets, Scenario Analysis)",
+            "Explanation for sharp decline in waste diversion (207 kt hazardous diverted in 2025 vs. 409 kt in 2024)"
+          ],
+          "improvement_suggestions": [
+            "Disclose water discharge volumes, media-specific discharge locations, and key pollutant concentrations (e.g., TSS, hydrocarbons) for all major facilities",
+            "Report waste generation and diversion as rates (e.g., tonnes waste per $1M revenue or per barrel of oil equivalent produced)",
+            "Publish summary results of climate scenario analyses, including assumptions, methodologies, and financial implications across scenarios",
+            "Explain drivers behind the significant year-on-year declines in waste diversion (e.g., operational changes, regulatory shifts, data gaps)"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 4,
+                "justification": "All GRI 302–306 and TCFD Strategy/Risk/Metrics & Targets sub-topics are addressed, but GRI 303 requires disclosure of water discharge (not just consumption) and GRI 306 requires waste generation *rates* (e.g., per unit production or revenue), not just absolute tonnes — both missing. TCFD mandates scenario analysis outputs, which are explicitly stated as absent.",
+                "missing_elements": [
+                  "Water discharge volumes and pollutant concentrations by medium (GRI 303-3, GRI 303-4)",
+                  "Waste generation rate (e.g., kg/tonne of product or $ revenue) and diversion *rate* (not just absolute tonnes) (GRI 306-2, GRI 306-3)",
+                  "TCFD-aligned scenario analysis outputs (e.g., financial impact under 1.5°C vs. 2°C scenarios) (TCFD Metrics & Targets, Scenario Analysis)"
+                ],
+                "improvement_suggestions": [
+                  "Disclose water discharge volumes, media-specific discharge locations, and key pollutant concentrations (e.g., TSS, hydrocarbons) for all major facilities",
+                  "Report waste generation and diversion as rates (e.g., tonnes waste per $1M revenue or per barrel of oil equivalent produced)",
+                  "Publish summary results of climate scenario analyses, including assumptions, methodologies, and financial implications across scenarios"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 5,
+                "justification": "All claims are backed by precise figures with clear units, years, and breakdowns (e.g., '187 million MWh fossil', '0.04% methane intensity', '1,987 thousand tonnes of waste'). Sub-components sum correctly to totals (e.g., 1,533 + 454 = 1,987; 72 + 13 = 85 ≈ 86 million m³), and scope labels (e.g., 'operational control') are consistently applied.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 5,
+                "justification": "Every metric includes units, timeframes, and explicit baselines: e.g., '53 million tonnes CO₂e in 2025 vs. 83 million in 2016'; '−9.0% achieved in 2025 vs. 2016 baseline 78 gCO₂e/MJ'; '8 million m³ in high-stress areas vs. 21 million in 2024'. Year-on-year comparisons are provided for all core metrics.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 5,
+                "justification": "Three quantified, time-bound targets are explicitly stated: (i) 50% Scope 1&2 reduction by 2030 vs. 2016 baseline; (ii) 15–20% NCI reduction by 2030 vs. 2016; (iii) 15–20% Scope 3 Category 11 reduction by 2030 vs. 2021 — all with current progress (% achieved) and baseline years disclosed.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              },
+              {
+                "criterion": "Transparency",
+                "score": 4,
+                "justification": "Shell acknowledges boundary misalignment undermining energy intensity reliability, retired a prior water target (stating it was met early), and reports negative trends (e.g., waste disposal ↑, waste diversion ↓). However, it does not explain *why* hazardous/non-hazardous waste diversion fell sharply (−50% and −36%), nor discuss challenges in Scope 3 Category 11 methodology beyond noting it is sales-volume-based.",
+                "missing_elements": [
+                  "Explanation for 50% decline in hazardous waste diversion (207 vs. 409 kt) and 36% decline in non-hazardous waste diversion (340 vs. 536 kt)",
+                  "Discussion of limitations or uncertainties in Scope 3 Category 11 emissions estimation method (beyond stating it is sales-volume-based)"
+                ],
+                "improvement_suggestions": [
+                  "Explain drivers behind the significant year-on-year declines in waste diversion (e.g., operational changes, regulatory shifts, data gaps)",
+                  "Describe key assumptions, data gaps, and uncertainty ranges in Scope 3 Category 11 calculation, referencing GHG Protocol guidance"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 5,
+                "justification": "The section is rigorously structured by GRI/TCFD standard headings (GRI 302, 303, etc.), each subsection cites relevant GRI/TCFD codes implicitly via naming, and all disclosures map directly to required indicators (e.g., GRI 305-1 for Scope 1&2 emissions, GRI 303-1 for water withdrawal). TCFD elements are grouped under its three pillars as required.",
+                "missing_elements": [],
+                "improvement_suggestions": []
+              }
+            ],
+            "inconsistencies": [],
+            "overall_score": 4.67,
+            "missing_elements": [
+              "Water discharge volumes and pollutant concentrations by medium (GRI 303-3, GRI 303-4)",
+              "Waste generation and diversion rates (e.g., per unit production or revenue) (GRI 306-2, GRI 306-3)",
+              "TCFD scenario analysis outputs (TCFD Metrics & Targets, Scenario Analysis)",
+              "Explanation for sharp decline in waste diversion (207 kt hazardous diverted in 2025 vs. 409 kt in 2024)"
+            ],
+            "improvement_suggestions": [
+              "Disclose water discharge volumes, media-specific discharge locations, and key pollutant concentrations (e.g., TSS, hydrocarbons) for all major facilities",
+              "Report waste generation and diversion as rates (e.g., tonnes waste per $1M revenue or per barrel of oil equivalent produced)",
+              "Publish summary results of climate scenario analyses, including assumptions, methodologies, and financial implications across scenarios",
+              "Explain drivers behind the significant year-on-year declines in waste diversion (e.g., operational changes, regulatory shifts, data gaps)"
+            ]
+          },
+          "draft": "### GRI 302 Energy  \nShell’s total energy consumption in 2025 was 269 million MWh, down from 289 million MWh in 2024, primarily due to portfolio changes and greenhouse gas (GHG) abatement and transformation projects [shell-integrated-annual-and-sustainability-report_chunk_829]. Of the energy consumed by facilities under Shell’s operational control (189 million MWh in 2025), 99% came from fossil sources (187 million MWh), comprising crude oil and petroleum products (40 million MWh), natural gas (108 million MWh), other fossil sources (10 million MWh), and purchased or acquired electricity, heat, steam and cooling from fossil sources (28 million MWh) [shell-integrated-annual-and-sustainability-report_chunk_828]. Renewable energy consumption under operational control was 2.6 million MWh in 2025 — including 2.4 million MWh from purchased or acquired electricity, heat, steam and cooling from renewable sources, 0.03 million MWh from fuels from renewable sources (e.g., biomass, biofuels, biogas, hydrogen from renewable sources), and 0.1 million MWh from self-generated non-fuel renewable energy [shell-integrated-annual-and-sustainability-report_chunk_829]. Energy intensity per net revenue remained stable at 0.001 MWh/$ in both 2024 and 2025, though Shell notes this metric is not considered reliable for cross-entity or longitudinal comparison due to boundary misalignment between energy consumption (ESRS reporting boundary) and net revenue (financial control boundary) [shell-integrated-annual-and-sustainability-report_chunk_828].\n\n### GRI 303 Water  \nWater consumption reported against Shell’s operational control boundary was 86 million cubic metres in 2025, down from 90 million cubic metres in 2024 [shell-integrated-annual-and-sustainability-report_chunk_878]. Of this, approximately 72 million cubic metres (84%) was used for manufacturing oil products and chemicals, and 13 million cubic metres for oil and gas production [shell-integrated-annual-and-sustainability-report_chunk_870]. In 2025, Shell consumed 8 million cubic metres of water in areas of high water stress, a reduction from 21 million cubic metres in 2024 [shell-integrated-annual-and-sustainability-report_chunk_985]. Water recycled and reused amounted to 25 million cubic metres in 2025, up from 23 million cubic metres in 2024 [shell-integrated-annual-and-sustainability-report_chunk_985]. Shell retired its prior commitment to reduce fresh water consumption in water-stressed areas, having met it ahead of schedule in 2022; the commitment formally ended in 2025 [shell-integrated-annual-and-sustainability-report_chunk_876].\n\n### GRI 305 Emissions  \nShell’s gross Scope 1 and 2 GHG emissions (net of carbon credits) were 53 million tonnes CO₂e in 2025, down from 58 million tonnes CO₂e in 2024 and 83 million tonnes CO₂e in the 2016 baseline year [shell-integrated-annual-and-sustainability-report_chunk_204][shell-integrated-annual-and-sustainability-report_chunk_1098]. This reflects a 36% reduction since 2016 [shell-integrated-annual-and-sustainability-report_chunk_29]. The 2025 reduction was driven by divestments (4.8 million tonnes), emission-reduction activities and purchase of renewable electricity (1.2 million tonnes), and changes in output (0.1 million tonnes), partly offset by acquisitions (1.4 million tonnes) [shell-integrated-annual-and-sustainability-report_chunk_1098]. Shell’s methane emissions intensity for operated oil and gas assets with marketed gas was 0.04% in 2025, well below its target of <0.2% and consistent with its ambition to achieve near-zero intensity by 2030 [shell-integrated-annual-and-sustainability-report_chunk_29][shell-integrated-annual-and-sustainability-report_chunk_1119]. Routine flaring from upstream operations was eliminated in January 2025, independent of the March 2025 sale of SPDC [shell-integrated-annual-and-sustainability-report_chunk_29][shell-integrated-annual-and-sustainability-report_chunk_165].\n\n### GRI 306 Waste  \nIn 2025, Shell disposed of 1,987 thousand tonnes of waste, up from 1,933 thousand tonnes in 2024 [shell-integrated-annual-and-sustainability-report_chunk_278][shell-integrated-annual-and-sustainability-report_chunk_906]. This comprised 1,533 thousand tonnes of non-hazardous waste (up from 1,396 thousand tonnes) and 454 thousand tonnes of hazardous waste (down from 536 thousand tonnes) [shell-integrated-annual-and-sustainability-report_chunk_906]. Hazardous waste diverted from disposal totalled 207 thousand tonnes in 2025, down from 409 thousand tonnes in 2024; non-hazardous waste diverted from disposal totalled 340 thousand tonnes, down from 536 thousand tonnes [shell-integrated-annual-and-sustainability-report_chunk_985]. Overall, 403 thousand tonnes of residual materials were diverted for reuse, recycling or use as raw material in another process in 2025, compared with 728 thousand tonnes in 2024 [shell-integrated-annual-and-sustainability-report_chunk_906].\n\n### TCFD Strategy, Risk Management, Metrics & Targets  \nShell’s climate strategy is anchored in its ambition to become a net-zero emissions energy business by 2050 (Scope 1, 2 and 3), with interim targets aligned to a 1.5°C pathway derived from IPCC AR6 scenarios [shell-integrated-annual-and-sustainability-report_chunk_222][shell-integrated-annual-and-sustainability-report_chunk_165]. Key metrics include: (i) a 50% reduction in net Scope 1 and 2 emissions by 2030 vs. 2016 (53 million tonnes CO₂e achieved in 2025, −36% vs. baseline) [shell-integrated-annual-and-sustainability-report_chunk_224][shell-integrated-annual-and-sustainability-report_chunk_1119]; (ii) a 15–20% reduction in net carbon intensity (NCI) of energy products sold by 2030 vs. 2016 (−9.0% achieved in 2025, baseline 78 gCO₂e/MJ) [shell-integrated-annual-and-sustainability-report_chunk_440][shell-integrated-annual-and-sustainability-report_chunk_1119]; and (iii) a 15–20% reduction in customer emissions from oil product use (Scope 3, Category 11) by 2030 vs. 2021 (−17.9% achieved in 2025, baseline 569 million tonnes CO₂e) [shell-integrated-annual-and-sustainability-report_chunk_1119][shell-integrated-annual-and-sustainability-report_chunk_223]. Risk management integrates portfolio changes, abatement projects (e.g., CCS, electrification), and high-quality carbon credits as a last-resort compensation measure within the carbon mitigation hierarchy [shell-integrated-annual-and-sustainability-report_chunk_223].\n\n### Not covered in source material  \nThe provided context does not disclose: (i) Scope 2 emissions calculated using the location-based method separately from market-based; (ii) water discharge volumes or pollutant concentrations by medium (e.g., surface water, groundwater); (iii) waste generation or diversion rates by specific material type (e.g., plastics, metals, organics); (iv) detailed methodology or uncertainty assessment for Scope 3 Category 11 emissions beyond sales-volume-based estimation; (v) TCFD-aligned scenario analysis outputs (e.g., financial impact assessments under different climate scenarios); or (vi) governance structures specifically dedicated to water or waste risk oversight.",
+          "sources": [
+            "shell-integrated-annual-and-sustainability-report_chunk_217",
+            "shell-integrated-annual-and-sustainability-report_chunk_219",
+            "shell-integrated-annual-and-sustainability-report_chunk_204",
+            "shell-integrated-annual-and-sustainability-report_chunk_218",
+            "shell-integrated-annual-and-sustainability-report_chunk_827",
+            "shell-integrated-annual-and-sustainability-report_chunk_829",
+            "shell-integrated-annual-and-sustainability-report_chunk_828",
+            "shell-integrated-annual-and-sustainability-report_chunk_1098",
+            "shell-integrated-annual-and-sustainability-report_chunk_878",
+            "shell-integrated-annual-and-sustainability-report_chunk_985",
+            "shell-integrated-annual-and-sustainability-report_chunk_870",
+            "shell-integrated-annual-and-sustainability-report_chunk_876",
+            "shell-integrated-annual-and-sustainability-report_chunk_278",
+            "shell-integrated-annual-and-sustainability-report_chunk_905",
+            "shell-integrated-annual-and-sustainability-report_chunk_906",
+            "shell-integrated-annual-and-sustainability-report_chunk_900",
+            "shell-integrated-annual-and-sustainability-report_chunk_224",
+            "shell-integrated-annual-and-sustainability-report_chunk_222",
+            "shell-integrated-annual-and-sustainability-report_chunk_440",
+            "shell-integrated-annual-and-sustainability-report_chunk_165",
+            "shell-integrated-annual-and-sustainability-report_chunk_1119",
+            "shell-integrated-annual-and-sustainability-report_chunk_1117",
+            "shell-integrated-annual-and-sustainability-report_chunk_29",
+            "shell-integrated-annual-and-sustainability-report_chunk_223"
+          ]
+        },
+        "Social": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.5,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 3,
+            "Quantifiability": 4,
+            "Forward-Looking": 3,
+            "Transparency": 4,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [
+            "FPI count is stated as '8 in 2025, unchanged from the revised 2024 figure of 8' — but 4 fatalities + other FPI cases must sum to 8; however, only 4 fatalities are listed, and no breakdown of the remaining 4 FPI cases is provided, making arithmetic verification impossible and raising doubt about internal consistency of the FPI total",
+            "TRCF and LTIF are reported as 'per million working hours', but FPI-F is 'per 100 million working hours' — units are inconsistent across frequency metrics, violating comparability and requiring conversion for trend analysis, yet no conversion factor or explanation is given"
+          ],
+          "missing_elements": [
+            "Total working hours for 2024 and 2025 (prevents verification of all frequency rates)",
+            "Definition of 'severe human rights incident' aligned with GRI 414-2",
+            "Disability employment rate and reasonable accommodation resolution rate (GRI 405-3, 405-4)",
+            "Quantified just transition commitments (e.g., reskilling investment, worker support metrics)",
+            "Scenario-based analysis of social impacts under TCFD transition pathways"
+          ],
+          "improvement_suggestions": [
+            "Disclose total working hours for 2024 and 2025 to enable verification of all frequency-based OH&S metrics",
+            "Define 'severe human rights incident' using GRI 414-2 criteria and categorise all reported incidents accordingly",
+            "Report disability employment rate and reasonable accommodation request volume/resolution rate per GRI 405",
+            "Publish quantified just transition targets and investments — e.g., annual reskilling spend, % of displaced workers receiving outplacement support",
+            "Conduct and disclose TCFD-aligned scenario analysis of social risks (e.g., workforce transitions, community impacts) under at least two climate policy pathways"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "Main GRI/TCFD sub-topics are addressed (OH&S incidents, training volume, gender/ethnic diversity, supplier principles, portfolio transition impacts), but multiple required disclosures are explicitly stated as missing across all standards — e.g., occupational health systems (GRI 403), DE&I metrics beyond gender/ethnicity (GRI 405), supplier assessment scope and depth (GRI 414), and just transition implementation (TCFD Strategy).",
+                "missing_elements": [
+                  "GRI 403: ISO 45001 certification status and scope; exposure assessments; health surveillance frequency for high-risk roles",
+                  "GRI 405: Disability employment rate; reasonable accommodation request volume/resolution rate; LGBT+ representation; intersectional metrics",
+                  "GRI 414: Number and percentage of Tier 1 suppliers assessed in 2025; definition of 'severe human rights incident' aligned with GRI 414-2",
+                  "TCFD Strategy: Quantified reskilling investment; just transition commitments; community impact assessments for divested assets"
+                ],
+                "improvement_suggestions": [
+                  "Disclose total working hours for 2024 and 2025 to enable verification of FPI-F, TRCF, and LTIF calculations",
+                  "Report absolute count and % of Tier 1 suppliers assessed against Supplier Principles in 2025, with methodology for risk-based sampling",
+                  "Publish disability employment rate and reasonable accommodation request resolution rate per GRI 405-3 and 405-4",
+                  "Quantify annual reskilling investment and disclose support mechanisms for workers affected by divestments per TCFD social transition expectations"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Most claims include concrete figures (e.g., 4 fatalities, 8 FPI, 253,000 training days, 35% women in workforce) with clear timeframes and definitions (e.g., FPI definition cited from IOGP); however, several key metrics lack supporting context — notably no total working hours for frequency-rate calculations, and no breakdowns that would substantiate claims about training effectiveness or diversity progress. [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [
+                  "Total working hours for 2024 and 2025 (required to validate FPI-F, TRCF, LTIF)",
+                  "Breakdown of 253,000 training days by topic (e.g., safety, DE&I, climate transition)",
+                  "Absolute number of Tier 1 suppliers and number assessed in 2025",
+                  "Disability employment rate and LGBT+ representation data"
+                ],
+                "improvement_suggestions": [
+                  "Disclose total working hours for 2024 and 2025 to allow independent verification of frequency rates",
+                  "Provide training day allocation by GRI-relevant topic (e.g., occupational safety, anti-bribery, climate transition skills)",
+                  "Report absolute count of Tier 1 suppliers and number assessed in 2025, with risk categorisation methodology",
+                  "Disclose disability employment rate and LGBT+ representation using consistent self-identification methodology"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 4,
+                "justification": "Metrics include units (per 100 million working hours, per million working hours, %, absolute counts) and year-on-year comparisons (e.g., FPI-F: 1.7 → 2.1; TRCF: 1.1 → 1.2), but the absence of total working hours prevents verification of frequency rates — a critical arithmetic dependency — and baseline years for some targets (e.g., 40% senior leadership by 2030) are stated without confirming whether 2025 is the baseline or achievement year.",
+                "missing_elements": [
+                  "Total working hours for 2024 and 2025",
+                  "Baseline year confirmation for 40% senior leadership target (e.g., is 2025 the baseline or target year?)",
+                  "2024–2025 comparison for ethnic minority representation in UK Senior Management (only 2025 value given)",
+                  "Absolute count of severe human rights incidents in 2024 (stated as 'three' but no definition or categorisation)"
+                ],
+                "improvement_suggestions": [
+                  "Disclose total working hours for 2024 and 2025 to enable recalculating and verifying all frequency-based metrics",
+                  "Explicitly state baseline year for all targets (e.g., '40% by 2030, from 35% baseline in 2025')",
+                  "Report 2024 ethnic minority representation in UK Senior Management to support year-on-year trend analysis",
+                  "Categorise the three 2024 severe human rights incidents per GRI 414-2 (e.g., forced labour, fatal accident, systemic discrimination)"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 3,
+                "justification": "Quantified targets are present (e.g., 40% women in senior leadership by 2030; 17% ethnic minority in UK Senior Management by 2027), and baseline years are implied (2025 achievement of 35% aligns with target), but no targets are provided for OH&S improvement, supplier assessment coverage, training effectiveness, disability inclusion, or social dimensions of climate transition — and none include interim milestones or progress against baseline beyond single-point achievement statements.",
+                "missing_elements": [
+                  "OH&S targets (e.g., FPI-F reduction target with baseline and deadline)",
+                  "Supplier assessment coverage target (e.g., % of Tier 1 suppliers assessed annually)",
+                  "Just transition target (e.g., % of displaced workers receiving retraining support by 2027)",
+                  "Disability inclusion target (e.g., 10% disability employment rate by 2030)"
+                ],
+                "improvement_suggestions": [
+                  "Set and disclose time-bound, quantified targets for FPI-F reduction with 2025 baseline and 2030 deadline",
+                  "Publish annual target for % of Tier 1 suppliers assessed against Supplier Principles, with methodology and risk-weighting rationale",
+                  "Establish and report just transition targets — e.g., minimum severance standards, retraining participation rate, or community investment per divested asset",
+                  "Introduce disability employment and accommodation resolution rate targets aligned with GRI 405"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 4,
+                "justification": "The section explicitly acknowledges multiple gaps — e.g., missing total working hours, undefined 'severe human rights incident', absence of health surveillance data, lack of reskilling investment figures — and notes operational drivers behind trends (e.g., headcount decline explaining training day reduction). However, it does not acknowledge negative trends as systemic challenges (e.g., rising FPI-F/TRCF/LTIF is reported factually but without analysis of root causes or accountability), nor does it disclose missed targets or reversals.",
+                "missing_elements": [
+                  "Root cause analysis for rising FPI-F (2.1 vs. 1.7), TRCF (1.2 vs. 1.1), and LTIF (0.6 vs. 0.5)",
+                  "Disclosure of whether 2024 FPI figure was revised due to restatement or improved reporting",
+                  "Acknowledgement of any missed targets (e.g., prior-year diversity goals not achieved)",
+                  "Explanation of why Mode 3 contractors are excluded from OH&S metrics despite potential exposure"
+                ],
+                "improvement_suggestions": [
+                  "Explain drivers of rising OH&S frequency rates — e.g., operational complexity, reporting changes, or emerging hazards — and outline corrective actions",
+                  "Clarify whether the unchanged 2024–2025 FPI count reflects true stability or revision-driven consistency",
+                  "Disclose whether any prior diversity or inclusion targets were missed and reasons for shortfall",
+                  "Justify exclusion of Mode 3 contractors from OH&S metrics with reference to control and influence boundaries per GRI 403-1"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "The section is explicitly structured by GRI/TCFD headings (Occupational Health & Safety, Training, etc.) and cites relevant GRI codes in the 'Not covered' summary; however, GRI 403 disclosures are fragmented across subsections without explicit mapping to GRI 403-1 (management system), 403-2 (hazard identification), or 403-9 (occupational health services), and TCFD Strategy content lacks the required scenario-based analysis of social risks under different climate transition pathways.",
+                "missing_elements": [
+                  "Explicit mapping of each disclosed element to GRI 403 sub-disclosures (e.g., FPI-F → GRI 403-10; contractor fatalities → GRI 403-2)",
+                  "Scenario analysis of social impacts (e.g., workforce displacement, community dependency shifts) under TCFD-aligned transition scenarios (e.g., 2°C, Net Zero)",
+                  "GRI 414-1 (policies), 414-2 (incidents), and 414-3 (supplier assessments) mapped to corresponding disclosures",
+                  "TCFD Strategy section explicitly referencing 'social risks and opportunities' as required by TCFD Recommendation g)"
+                ],
+                "improvement_suggestions": [
+                  "Map all OH&S disclosures to specific GRI 403 indicators (e.g., 'FPI count' → GRI 403-10; 'Mode 1/2 coverage' → GRI 403-1) in-line or via table",
+                  "Add TCFD-aligned scenario analysis of social impacts — e.g., projected worker displacement under accelerated divestment pathways",
+                  "Explicitly label supplier incident disclosures as GRI 414-2 and assessment methodology as GRI 414-3",
+                  "Reframe TCFD Strategy heading to 'TCFD Social Risks and Opportunities' and cite TCFD Recommendation g)"
+                ]
+              }
+            ],
+            "inconsistencies": [
+              "FPI count is stated as '8 in 2025, unchanged from the revised 2024 figure of 8' — but 4 fatalities + other FPI cases must sum to 8; however, only 4 fatalities are listed, and no breakdown of the remaining 4 FPI cases is provided, making arithmetic verification impossible and raising doubt about internal consistency of the FPI total",
+              "TRCF and LTIF are reported as 'per million working hours', but FPI-F is 'per 100 million working hours' — units are inconsistent across frequency metrics, violating comparability and requiring conversion for trend analysis, yet no conversion factor or explanation is given"
+            ],
+            "overall_score": 3.5,
+            "missing_elements": [
+              "Total working hours for 2024 and 2025 (prevents verification of all frequency rates)",
+              "Definition of 'severe human rights incident' aligned with GRI 414-2",
+              "Disability employment rate and reasonable accommodation resolution rate (GRI 405-3, 405-4)",
+              "Quantified just transition commitments (e.g., reskilling investment, worker support metrics)",
+              "Scenario-based analysis of social impacts under TCFD transition pathways"
+            ],
+            "improvement_suggestions": [
+              "Disclose total working hours for 2024 and 2025 to enable verification of all frequency-based OH&S metrics",
+              "Define 'severe human rights incident' using GRI 414-2 criteria and categorise all reported incidents accordingly",
+              "Report disability employment rate and reasonable accommodation request volume/resolution rate per GRI 405",
+              "Publish quantified just transition targets and investments — e.g., annual reskilling spend, % of displaced workers receiving outplacement support",
+              "Conduct and disclose TCFD-aligned scenario analysis of social risks (e.g., workforce transitions, community impacts) under at least two climate policy pathways"
+            ]
+          },
+          "draft": "### Occupational Health & Safety  \nIn 2025, Shell reported 4 fatalities among contractor colleagues in Shell-operated ventures — one in Malaysia (EcoOils facility), one in Malaysia (mobile drilling rig), one in Argentina (road traffic incident), and one in the North Sea (fall from height) — with no employee fatalities [shell-integrated-annual-and-sustainability-report_chunk_973]. The fatality and permanent impairment (FPI) count was 8 in 2025, unchanged from the revised 2024 figure of 8 [shell-integrated-annual-and-sustainability-report_chunk_974][shell-integrated-annual-and-sustainability-report_chunk_973]. FPI is defined by Shell as “the outcome of a work-related injury from which the worker cannot or is not expected to return to their previous pre-incident whole person function as a result of an acute, single incident”, consistent with IOGP metrics [shell-integrated-annual-and-sustainability-report_chunk_974]. The FPI frequency (FPI-F) increased to 2.1 cases per 100 million working hours in 2025, up from 1.7 in 2024 [shell-integrated-annual-and-sustainability-report_chunk_974][shell-integrated-annual-and-sustainability-report_chunk_973]. Total recordable case frequency (TRCF) rose to 1.2 per million working hours (from 1.1 in 2024), and lost time injury frequency (LTIF) increased to 0.6 per million working hours (from 0.5 in 2024) [shell-integrated-annual-and-sustainability-report_chunk_973]. These metrics cover employees and contractors under Mode 1 (Shell-controlled workplace) and Mode 2 (shared interface management) contractual arrangements; Mode 3 contractors are excluded unless working on Shell premises [shell-integrated-annual-and-sustainability-report_chunk_975]. The source material does not disclose total working hours for 2024 or 2025, nor does it state whether the rise in LTIF/TRCF reflects operational changes, reporting refinements, or emerging risks [shell-integrated-annual-and-sustainability-report_chunk_973]. No information is provided on occupational health management systems (e.g., ISO 45001 certification status or scope), exposure assessments, health surveillance programmes, or medical monitoring frequency for high-risk roles [shell-integrated-annual-and-sustainability-report_chunk_974].\n\n### Training  \nIn 2025, Shell delivered 253,000 formal training days to employees and joint-venture partners [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_263]. This represents a reduction from 264,000 training days in 2024, primarily attributable to lower employee headcount (85,000 at end-2025 vs. 96,000 at end-2024) [shell-integrated-annual-and-sustainability-report_chunk_263][shell-integrated-annual-and-sustainability-report_chunk_921]. Mandatory ethics and compliance training — including Code of Conduct training — was required for all employees and contractor staff [shell-integrated-annual-and-sustainability-report_chunk_960]. For roles identified as being at higher risk of corruption or bribery, 98% of staff held valid anti-bribery and anti-corruption training as of 2025 (consistent with 98% in 2024), with training validity cycles set at two to three years [shell-integrated-annual-and-sustainability-report_chunk_960]. Shell also offered free anti-bribery and anti-corruption training to selected suppliers in 14 languages [shell-integrated-annual-and-sustainability-report_chunk_960]. The source material does not disclose training participation rates by course type (mandatory vs. voluntary), breakdowns by topic (e.g., safety, DE&I, climate transition), competency validation methods, or correlation between training and safety/incident outcomes [shell-integrated-annual-and-sustainability-report_chunk_960].\n\n### Diversity  \nAs of December 31, 2025, women constituted 35% of Shell’s total workforce of 85,000 employees [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_921]. Women represented 42% of the Board of Directors and 44% of the Executive Committee [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_267]. In senior leadership positions (defined by compensation grade), women accounted for 35% — meeting Shell’s 2025 target — and Shell aims to reach 40% by 2030 [shell-integrated-annual-and-sustainability-report_chunk_267]. Ethnic minority representation in UK-based Senior Management stood at 16% as of end-2025, exceeding the Parker Review’s 15% target ahead of schedule; Shell has since raised its ambition to 17% by 2027 [shell-integrated-annual-and-sustainability-report_chunk_378][shell-integrated-annual-and-sustainability-report_chunk_268]. Among external hires in 2025, 35% were women [shell-integrated-annual-and-sustainability-report_chunk_267][shell-integrated-annual-and-sustainability-report_chunk_268]. The source material states that Shell offers employees the option to voluntarily declare race and ethnicity via a self-identification initiative but does not report disability employment rate, reasonable accommodation request volume or resolution rate, LGBT+ representation, employee resource group participation, or intersectional metrics (e.g., gender × ethnicity or gender × age) [shell-integrated-annual-and-sustainability-report_chunk_269][shell-integrated-annual-and-sustainability-report_chunk_378].\n\n### Supplier Social Assessment  \nShell’s Supplier Principles require suppliers to uphold human rights — including prohibition of child and forced labour, freedom of association, non-discrimination, safe working conditions, fair wages, and provision of confidential grievance mechanisms — and to flow down equivalent standards to their direct suppliers [shell-integrated-annual-and-sustainability-report_chunk_930][shell-integrated-annual-and-sustainability-report_chunk_929]. In 2025, no cases of non-respect of the UN Guiding Principles on Business and Human Rights, ILO Declaration, or OECD Guidelines were identified in Shell’s upstream or downstream value chain [shell-integrated-annual-and-sustainability-report_chunk_930]. Similarly, no severe human rights incidents related to value chain workers were identified in 2025 (compared to three in 2024) [shell-integrated-annual-and-sustainability-report_chunk_939]. However, the source material does not define “severe human rights incident” using GRI 414-2 criteria (e.g., forced labour, fatal accidents, systemic discrimination), nor does it disclose the number or type of supplier assessments conducted (e.g., desktop reviews, on-site audits), coverage of procurement spend, audit depth thresholds, or absolute count and percentage of Tier 1 suppliers assessed against Shell’s Supplier Principles in 2025 [shell-integrated-annual-and-sustainability-report_chunk_930][shell-integrated-annual-and-sustainability-report_chunk_939].\n\n### TCFD Strategy (social impacts of climate transition)  \nThe source material notes that Shell’s portfolio changes — including divestments in Singapore (Bukom, Jurong), Nigeria (SPDC), and the UK (to the Adura joint venture) — contributed to the reduction in headcount from 96,000 in 2024 to 85,000 in 2025 [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_261]. It further states that Shell is transforming to “deliver more value with less emissions” and that “as we reshape our portfolio, elements of our culture will need to adapt”, including developing new skills and adapting processes for emerging businesses [shell-integrated-annual-and-sustainability-report_chunk_910][shell-integrated-annual-and-sustainability-report_chunk_913]. However, no quantitative data is provided on reskilling investments, displaced worker support programmes (e.g., severance, retraining, outplacement), community impact assessments related to divested assets, or just transition commitments [shell-integrated-annual-and-sustainability-report_chunk_260][shell-integrated-annual-and-sustainability-report_chunk_913].\n\n### Not covered in source material  \nGRI 403: No disclosure of occupational health management system scope, certification status (e.g., ISO 45001), exposure assessments, health surveillance frequency for high-risk roles, or total working hours for 2024 and 2025.  \nGRI 404: No breakdown of training days by topic (e.g., safety, DE&I, climate transition), no distinction between mandatory and voluntary participation rates, and no effectiveness metrics (e.g., competency validation, incident reduction correlation).  \nGRI 405: No disclosure of disability employment rate, reasonable accommodation request volume or resolution rate, LGBT+ representation, employee resource group participation, or intersectional diversity metrics (e.g., gender × ethnicity, gender × age).  \nGRI 414: No definition of “severe human rights incident” aligned with GRI 414-2 criteria; no count or categorisation of incidents (e.g., forced labour, fatal accident, systemic discrimination); no disclosure of total Tier 1 suppliers, number of suppliers assessed in 2025, percentage of high-risk suppliers fully evaluated, or methodology used to determine assessment depth.  \nTCFD Strategy (social impacts of climate transition): No quantification of annual reskilling investment, no description of just transition commitments, no community impact assessments for divested assets (e.g., Nigeria, UK, Singapore), and no data on support for workers affected by portfolio changes (e.g., outplacement, retraining, severance).",
+          "sources": [
+            "shell-integrated-annual-and-sustainability-report_chunk_260",
+            "shell-integrated-annual-and-sustainability-report_chunk_910",
+            "shell-integrated-annual-and-sustainability-report_chunk_261",
+            "shell-integrated-annual-and-sustainability-report_chunk_921",
+            "shell-integrated-annual-and-sustainability-report_chunk_378",
+            "shell-integrated-annual-and-sustainability-report_chunk_267",
+            "shell-integrated-annual-and-sustainability-report_chunk_495",
+            "shell-integrated-annual-and-sustainability-report_chunk_268",
+            "shell-integrated-annual-and-sustainability-report_chunk_974",
+            "shell-integrated-annual-and-sustainability-report_chunk_975",
+            "shell-integrated-annual-and-sustainability-report_chunk_973",
+            "shell-integrated-annual-and-sustainability-report_chunk_798",
+            "shell-integrated-annual-and-sustainability-report_chunk_960",
+            "shell-integrated-annual-and-sustainability-report_chunk_263",
+            "shell-integrated-annual-and-sustainability-report_chunk_693",
+            "shell-integrated-annual-and-sustainability-report_chunk_264",
+            "shell-integrated-annual-and-sustainability-report_chunk_929",
+            "shell-integrated-annual-and-sustainability-report_chunk_930",
+            "shell-integrated-annual-and-sustainability-report_chunk_939",
+            "shell-integrated-annual-and-sustainability-report_chunk_913",
+            "shell-integrated-annual-and-sustainability-report_chunk_794",
+            "shell-integrated-annual-and-sustainability-report_chunk_793",
+            "shell-integrated-annual-and-sustainability-report_chunk_269",
+            "shell-integrated-annual-and-sustainability-report_chunk_914",
+            "shell-integrated-annual-and-sustainability-report_chunk_953",
+            "shell-integrated-annual-and-sustainability-report_chunk_926"
+          ]
+        },
+        "Governance": {
+          "revised_this_round": true,
+          "passed": false,
+          "overall_score": 3.17,
+          "criterion_scores": {
+            "Coverage": 3,
+            "Specificity": 3,
+            "Quantifiability": 3,
+            "Forward-Looking": 3,
+            "Transparency": 3,
+            "Compliance Alignment": 4
+          },
+          "inconsistencies": [
+            "The text states 'December 31, 2025' as the reporting date for Board composition, but the 2025 Board Performance Review is described as conducted in 'January 2026' — implying the 2025 review covers the 2025 calendar year, yet the Board composition is reported as of year-end 2025; this creates temporal misalignment between the review period and the stated '2025' data point without clarification."
+          ],
+          "missing_elements": [
+            "GRI 206 political contributions and lobbying expenditures",
+            "Baseline year and deadline for 'at least one senior Board position held by a woman' target",
+            "Absolute number and percentage of Board members from minority ethnic backgrounds for 2025 and 2024",
+            "Number and percentage of Shell Global Helpline reports substantiated/closed/under investigation in 2025 (with 2024 comparison)",
+            "Board-level oversight of human rights due diligence per UNGP/OECD"
+          ],
+          "improvement_suggestions": [
+            "Disclose total political contributions and lobbying expenditures by jurisdiction, with explanation if zero or not reported",
+            "State baseline year, deadline, and 2025 achievement status for the senior-position gender target",
+            "Report absolute count and percentage of Board members from minority ethnic backgrounds for both 2025 and 2024",
+            "Publish the number and percentage of 2025 Shell Global Helpline reports substantiated, closed, or under investigation — with 2024 figures for comparison",
+            "Describe Board or committee responsibility for oversight of human rights due diligence, including frequency, scope, and methodology"
+          ],
+          "full_assessment": {
+            "criterion_scores": [
+              {
+                "criterion": "Coverage",
+                "score": 3,
+                "justification": "Covers core GRI 2 (governance bodies, diversity, ethics) and TCFD Governance elements but omits required disclosures on political contributions (GRI 206), remuneration-linked sustainability KPIs (GRI 2-13), human rights due diligence oversight (TCFD g2, UNGP alignment), and cybersecurity/data privacy governance — all explicitly flagged as missing in the 'Not covered' section.",
+                "missing_elements": [
+                  "GRI 206 political contributions and lobbying expenditures",
+                  "GRI 2-13 remuneration-linked sustainability KPIs for non-Executive Directors",
+                  "TCFD g2 oversight of human rights due diligence",
+                  "Board-level oversight of cybersecurity and data privacy risks"
+                ],
+                "improvement_suggestions": [
+                  "Disclose total political contributions and lobbying expenditures by jurisdiction, with explanation if zero or not reported",
+                  "State whether sustainability KPIs are embedded in non-Executive Director remuneration and, if so, how they are measured and weighted"
+                ]
+              },
+              {
+                "criterion": "Specificity",
+                "score": 3,
+                "justification": "Provides concrete figures (e.g., 12 Board members, 42% women, 98% training completion, 1,983 Helpline reports) with years and sources; however, several key metrics lack absolute numbers (e.g., minority ethnic representation) or contextual detail (e.g., 'senior position' target is named but not quantified or verified). [Capped at 3: internal inconsistencies found.]",
+                "missing_elements": [
+                  "Absolute number and percentage of Board members from minority ethnic backgrounds for 2025 and 2024",
+                  "Baseline year and current status (achieved/not achieved) of 'at least one senior Board position held by a woman' target",
+                  "Number and percentage of Shell Global Helpline reports substantiated/closed/under investigation in 2025 (with 2024 comparison)"
+                ],
+                "improvement_suggestions": [
+                  "Report the exact count and percentage of Board members from minority ethnic backgrounds for both 2025 and 2024",
+                  "Disclose the baseline year, deadline, and achievement status of the senior-position gender target"
+                ]
+              },
+              {
+                "criterion": "Quantifiability",
+                "score": 3,
+                "justification": "Includes units (%, counts) and timeframes (2025, 2024), and some year-on-year comparisons (e.g., 98% in both years), but lacks baselines for forward-looking targets (e.g., no baseline year for the senior-position target), and no trend analysis (e.g., Helpline report resolution rates over time).",
+                "missing_elements": [
+                  "Baseline year for 'at least one senior Board position held by a woman' target",
+                  "Trend data for Shell Global Helpline substantiation rate (2024 vs. 2025)",
+                  "Baseline and target year for Board ethnic diversity aim"
+                ],
+                "improvement_suggestions": [
+                  "State the baseline year and target deadline for all Board diversity commitments",
+                  "Publish the percentage of 2025 Helpline reports substantiated, closed, or under investigation — with 2024 figures for comparison"
+                ]
+              },
+              {
+                "criterion": "Forward-Looking",
+                "score": 3,
+                "justification": "Mentions targets (e.g., gender balance ≥40%, senior position held by a woman, minority ethnic representation) but only one has an explicit deadline ('Energy Transition Strategy 2024', endorsed March 2024) — which is a strategy document, not a governance target; no governance-specific targets include both baseline year and deadline.",
+                "missing_elements": [
+                  "Deadline and baseline year for 'at least one senior Board position held by a woman'",
+                  "Deadline and baseline year for minority ethnic representation aim",
+                  "Quantified, time-bound governance targets tied to Energy Transition Strategy 2024 implementation"
+                ],
+                "improvement_suggestions": [
+                  "Specify deadline and baseline year for each Board diversity target",
+                  "Define at least one measurable, time-bound governance target (e.g., '100% of Board committees to review human rights due diligence annually by 2027')"
+                ]
+              },
+              {
+                "criterion": "Transparency",
+                "score": 3,
+                "justification": "Acknowledges multiple omissions (e.g., no Helpline resolution metrics, no minority ethnic data, no senior-position target status) and cites source limitations, but does not disclose negative trends, missed targets, root causes, or challenges — e.g., no explanation why minority ethnic data is withheld or why the senior-position target status is unknown.",
+                "missing_elements": [
+                  "Explanation for absence of minority ethnic Board composition data",
+                  "Reason for undisclosed status of 'senior position held by a woman' target",
+                  "Root-cause analysis for any missed governance targets or declining metrics"
+                ],
+                "improvement_suggestions": [
+                  "Explain why minority ethnic background data is not disclosed (e.g., privacy constraints, methodology gaps)",
+                  "Disclose whether the 'senior position held by a woman' target was met in 2025 and, if not, why"
+                ]
+              },
+              {
+                "criterion": "Compliance Alignment",
+                "score": 4,
+                "justification": "Explicitly references GRI 2-11, GRI 205-1/2/3, TCFD g1–g4, and links content to standards; structure follows thematic sub-headings aligned with governance domains. However, fails to reference GRI 2-12 (board evaluation process) or GRI 2-13 despite discussing board review and remuneration — and omits required GRI 206 entirely.",
+                "missing_elements": [
+                  "Reference to GRI 2-12 in Board Performance Review discussion",
+                  "Reference to GRI 2-13 in remuneration linkage discussion",
+                  "Reference to GRI 206 for political contributions/lobbying"
+                ],
+                "improvement_suggestions": [
+                  "Cite GRI 2-12 when describing the 2025 Board Performance Review and disclose its findings or rationale for non-disclosure",
+                  "Cite GRI 2-13 and clarify whether sustainability KPIs influence non-Executive Director remuneration"
+                ]
+              }
+            ],
+            "inconsistencies": [
+              "The text states 'December 31, 2025' as the reporting date for Board composition, but the 2025 Board Performance Review is described as conducted in 'January 2026' — implying the 2025 review covers the 2025 calendar year, yet the Board composition is reported as of year-end 2025; this creates temporal misalignment between the review period and the stated '2025' data point without clarification."
+            ],
+            "overall_score": 3.17,
+            "missing_elements": [
+              "GRI 206 political contributions and lobbying expenditures",
+              "Baseline year and deadline for 'at least one senior Board position held by a woman' target",
+              "Absolute number and percentage of Board members from minority ethnic backgrounds for 2025 and 2024",
+              "Number and percentage of Shell Global Helpline reports substantiated/closed/under investigation in 2025 (with 2024 comparison)",
+              "Board-level oversight of human rights due diligence per UNGP/OECD"
+            ],
+            "improvement_suggestions": [
+              "Disclose total political contributions and lobbying expenditures by jurisdiction, with explanation if zero or not reported",
+              "State baseline year, deadline, and 2025 achievement status for the senior-position gender target",
+              "Report absolute count and percentage of Board members from minority ethnic backgrounds for both 2025 and 2024",
+              "Publish the number and percentage of 2025 Shell Global Helpline reports substantiated, closed, or under investigation — with 2024 figures for comparison",
+              "Describe Board or committee responsibility for oversight of human rights due diligence, including frequency, scope, and methodology"
+            ]
+          },
+          "draft": "### Governance Structure and Board Oversight  \nShell plc’s governance framework is structured around the Board of Directors and the Executive Committee (EC), with the Board comprising 12 members—including two executive and 10 non-executive directors—as at December 31, 2025 (2024: 12 members, 2 executive and 10 non-executive members) [shell-integrated-annual-and-sustainability-report_chunk_757]. All non-executive directors are considered independent in character and judgement, representing 83% of the Board as at December 31, 2025 (2024: 83%) [shell-integrated-annual-and-sustainability-report_chunk_757]. The Board maintains primary oversight of Shell’s strategy—including its Energy Transition Strategy 2024, endorsed in March 2024—and monitors performance against longer-term business targets, including climate-related ambitions [shell-integrated-annual-and-sustainability-report_chunk_759]. Sustainability matters, including climate-related impacts, risks and opportunities, are reviewed and addressed on an integrated basis alongside other business issues throughout the year [shell-integrated-annual-and-sustainability-report_chunk_759]. The Board delegates authority for operational management to the CEO, who chairs the EC and is supported by EC members in implementing strategy and monitoring progress [shell-integrated-annual-and-sustainability-report_chunk_242]. This structure aligns with GRI 2-11 (governance bodies’ roles and responsibilities) and TCFD Governance (g1–g4), as the Board explicitly oversees strategy, risk, and sustainability integration across time horizons defined as short term (one year), medium term (2–10 years), and long term (beyond 10 years) [shell-integrated-annual-and-sustainability-report_chunk_754].\n\n### Board Diversity, Composition and Succession  \nShell’s Board Diversity Policy—first published in March 2024—commits to gender balance, with women constituting 42% of the Board as at December 31, 2025 (2024: 42%), corresponding to a female-to-male ratio of 0.7 [shell-integrated-annual-and-sustainability-report_chunk_757]. The Policy sets a target to maintain representation of both men and women at or above 40%, and aims to have at least one senior Board position (Chair, CEO, Senior Independent Director or CFO) held by a woman [shell-integrated-annual-and-sustainability-report_chunk_376]. The source material does not disclose the baseline year for this senior-position target, nor whether it has been achieved as of December 31, 2025 [shell-integrated-annual-and-sustainability-report_chunk_376]. Shell also aims to maintain or exceed having at least one Board member from a minority ethnic background [shell-integrated-annual-and-sustainability-report_chunk_376]; however, the absolute number and percentage of Board members from minority ethnic backgrounds for 2025 and 2024 are not disclosed [shell-integrated-annual-and-sustainability-report_chunk_376]. The Nomination and Succession Committee (NOMCO) oversees development of a diverse pipeline for Board succession and ensures all appointments follow a formal, rigorous and transparent procedure based on merit and objective criteria, with due regard for diversity factors [shell-integrated-annual-and-sustainability-report_chunk_379]. NOMCO engages independent executive search consultants aligned with Shell’s diversity, equity and inclusion (DE&I) approach to identify candidates from diverse pools [shell-integrated-annual-and-sustainability-report_chunk_379]. The 2025 Board Performance Review was externally facilitated by Jan Hall of No. 4 through one-on-one interviews with all Board members, the Company Secretary, External Audit partner, and three EC members, supplemented by observation of Board and Committee meetings and review of pre-meeting materials [shell-integrated-annual-and-sustainability-report_chunk_370]. The review was conducted in January 2026 and covered effectiveness, dynamics, and alignment with the UK Corporate Governance Code requirement for triennial external evaluation [shell-integrated-annual-and-sustainability-report_chunk_370]. No outcomes, findings, or remediation actions from the 2025 review are disclosed in the source material [shell-integrated-annual-and-sustainability-report_chunk_370].\n\n### Ethics, Compliance and Anti-Corruption Governance  \nAccountability for ethics and compliance rests with the CEO and the Executive Committee, supported by the Chief Ethics and Compliance Officer (CECO), who reports to the Chief Legal Officer and provides updates to the EC and Audit and Risk Committee (ARC) [shell-integrated-annual-and-sustainability-report_chunk_759]. Shell’s anti-bribery and anti-corruption programme includes mandatory Code of Conduct training for all employees and contractor staff, with additional targeted training for roles at higher risk of corruption exposure—such as procurement, new business development and engagement with government officials [shell-integrated-annual-and-sustainability-report_chunk_960]. In 2025, 98% of staff in at-risk roles possessed valid anti-bribery and anti-corruption training completion (2024: 98%) [shell-integrated-annual-and-sustainability-report_chunk_960]. No Shell legal entity and, to the best of Shell’s knowledge, no Shell staff were convicted or fined for criminal violations of anti-corruption and anti-bribery laws in 2025 (2024: none) [shell-integrated-annual-and-sustainability-report_chunk_961]. Alleged breaches may be reported confidentially—including anonymously—via the Shell Global Helpline; in 2025, 1,983 reports were received [shell-integrated-annual-and-sustainability-report_chunk_284]. The source material does not disclose the number or percentage of Helpline reports substantiated, closed, or under investigation in 2025, nor any 2024 comparison [shell-integrated-annual-and-sustainability-report_chunk_284]. Shell maintains a stringent no-retaliation policy for good-faith reporters and those participating in investigations [shell-integrated-annual-and-sustainability-report_chunk_284][shell-integrated-annual-and-sustainability-report_chunk_956]. This fulfils GRI 205-1 (anti-corruption policy), GRI 205-2 (training coverage), and GRI 205-3 (incidents and enforcement), though quantitative resolution metrics are absent.\n\n### Climate and Sustainability Risk Oversight  \nClimate-related risk governance is embedded across multiple Board-level committees: the Sustainability Committee oversees emerging sustainability trends (excluding carbon and safety); the Audit and Risk Committee reviews risk management effectiveness and internal controls; the Carbon Reporting Committee governs GHG emissions calculation methodologies and external disclosures; and the Strategy and Investment Committee serves as the decision forum for material capital investments aligned with the energy transition [shell-integrated-annual-and-sustainability-report_chunk_242]. Climate change and the energy transition are identified as material strategic risks, broken down into commercial, societal (including litigation), regulatory and physical sub-components [shell-integrated-annual-and-sustainability-report_chunk_168]. The Board, EC and relevant committees regularly review these risks and their impact on the Group to enable holistic risk mitigation and integration into operational decisions [shell-integrated-annual-and-sustainability-report_chunk_168][shell-integrated-annual-and-sustainability-report_chunk_242]. Internal assurance on sustainability-related risks is provided by Shell Internal Audit and Investigations (SIAI), which advises management and the Board on internal control effectiveness [shell-integrated-annual-and-sustainability-report_chunk_242]. The source material does not disclose Board or committee responsibility for oversight of cybersecurity, data privacy, or human rights due diligence—including frequency, scope, or methodology of review [shell-integrated-annual-and-sustainability-report_chunk_242]. Nor does it disclose specific, measurable governance targets (e.g., committee review frequency, assurance coverage scope) tied to Energy Transition Strategy 2024 implementation [shell-integrated-annual-and-sustainability-report_chunk_759].\n\n### Not covered in source material  \nThe source material does not disclose: (i) political contributions or lobbying expenditures, nor any explanation for their absence; (ii) whether any Board diversity or ethics training targets were missed in 2025 and why; (iii) trend data showing a negative or stagnant governance metric (e.g., Helpline resolution rate decline) with root-cause analysis; (iv) board-level oversight of cybersecurity or data privacy risks; (v) board-level review of human rights due diligence processes per UNGP or OECD Guidelines; (vi) remuneration-linked sustainability KPIs for non-Executive Directors; (vii) third-party assurance statements on governance disclosures; (viii) the baseline year or current status of the target for “at least one senior Board position held by a woman”; (ix) the absolute number and percentage of Board members from minority ethnic backgrounds for 2025 and 2024; (x) the number and percentage of Shell Global Helpline reports substantiated, closed, or under investigation in 2025, with 2024 comparison; (xi) specific deadlines for Board diversity targets; (xii) quantitative data on political contributions and lobbying expenditures; (xiii) methodology or results of committee-level evaluations beyond the Board Performance Review; (xiv) disclosure of challenges preventing political contribution reporting. These omissions correspond to gaps in GRI 2-12 (board evaluation process), GRI 2-13 (remuneration linkages), and TCFD Governance (g1–g4) requirements for comprehensive oversight scope and forward-looking targets.",
+          "sources": [
+            "shell-integrated-annual-and-sustainability-report_chunk_757",
+            "shell-integrated-annual-and-sustainability-report_chunk_379",
+            "shell-integrated-annual-and-sustainability-report_chunk_353",
+            "shell-integrated-annual-and-sustainability-report_chunk_376",
+            "shell-integrated-annual-and-sustainability-report_chunk_759",
+            "shell-integrated-annual-and-sustainability-report_chunk_1103",
+            "shell-integrated-annual-and-sustainability-report_chunk_242",
+            "shell-integrated-annual-and-sustainability-report_chunk_244",
+            "shell-integrated-annual-and-sustainability-report_chunk_960",
+            "shell-integrated-annual-and-sustainability-report_chunk_956",
+            "shell-integrated-annual-and-sustainability-report_chunk_284",
+            "shell-integrated-annual-and-sustainability-report_chunk_961",
+            "shell-integrated-annual-and-sustainability-report_chunk_463",
+            "shell-integrated-annual-and-sustainability-report_chunk_479",
+            "shell-integrated-annual-and-sustainability-report_chunk_414",
+            "shell-integrated-annual-and-sustainability-report_chunk_462",
+            "shell-integrated-annual-and-sustainability-report_chunk_783",
+            "shell-integrated-annual-and-sustainability-report_chunk_168",
+            "shell-integrated-annual-and-sustainability-report_chunk_300",
+            "shell-integrated-annual-and-sustainability-report_chunk_288",
+            "shell-integrated-annual-and-sustainability-report_chunk_617",
+            "shell-integrated-annual-and-sustainability-report_chunk_457",
+            "shell-integrated-annual-and-sustainability-report_chunk_1",
+            "shell-integrated-annual-and-sustainability-report_chunk_273",
+            "shell-integrated-annual-and-sustainability-report_chunk_932",
+            "shell-integrated-annual-and-sustainability-report_chunk_1105",
+            "shell-integrated-annual-and-sustainability-report_chunk_385",
+            "shell-integrated-annual-and-sustainability-report_chunk_160",
+            "shell-integrated-annual-and-sustainability-report_chunk_342",
+            "shell-integrated-annual-and-sustainability-report_chunk_369",
+            "shell-integrated-annual-and-sustainability-report_chunk_502"
+          ]
+        }
+      }
+    }
+  ]
+}

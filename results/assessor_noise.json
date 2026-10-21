@@ -1,0 +1,163 @@
+{
+  "run": "v2",
+  "repeats": 1,
+  "n_sections": 15,
+  "section_mean_abs_diff": 0.19,
+  "section_sd_diff": 0.28,
+  "section_max_abs_diff": 0.67,
+  "report_mean_abs_diff": 0.15,
+  "criterion_exact_agreement": 0.81,
+  "inconsistency_count_agreement": 0.87,
+  "rows": [
+    {
+      "company": "Amazon",
+      "pillar": "Environmental",
+      "original": 3.67,
+      "rescore": 3.5,
+      "diff": -0.17,
+      "criteria_same": 5,
+      "incons_original": 3,
+      "incons_rescore": 2
+    },
+    {
+      "company": "Amazon",
+      "pillar": "Social",
+      "original": 3.17,
+      "rescore": 3.17,
+      "diff": 0.0,
+      "criteria_same": 6,
+      "incons_original": 2,
+      "incons_rescore": 2
+    },
+    {
+      "company": "Amazon",
+      "pillar": "Governance",
+      "original": 1.5,
+      "rescore": 2.17,
+      "diff": 0.67,
+      "criteria_same": 2,
+      "incons_original": 0,
+      "incons_rescore": 0
+    },
+    {
+      "company": "HSBC",
+      "pillar": "Environmental",
+      "original": 3.5,
+      "rescore": 3.67,
+      "diff": 0.17,
+      "criteria_same": 5,
+      "incons_original": 5,
+      "incons_rescore": 2
+    },
+    {
+      "company": "HSBC",
+      "pillar": "Social",
+      "original": 3.5,
+      "rescore": 3.67,
+      "diff": 0.17,
+      "criteria_same": 5,
+      "incons_original": 2,
+      "incons_rescore": 2
+    },
+    {
+      "company": "HSBC",
+      "pillar": "Governance",
+      "original": 2.5,
+      "rescore": 3.17,
+      "diff": 0.67,
+      "criteria_same": 2,
+      "incons_original": 0,
+      "incons_rescore": 0
+    },
+    {
+      "company": "Samsung",
+      "pillar": "Environmental",
+      "original": 3.67,
+      "rescore": 3.5,
+      "diff": -0.17,
+      "criteria_same": 5,
+      "incons_original": 3,
+      "incons_rescore": 3
+    },
+    {
+      "company": "Samsung",
+      "pillar": "Social",
+      "original": 3.83,
+      "rescore": 3.5,
+      "diff": -0.33,
+      "criteria_same": 4,
+      "incons_original": 0,
+      "incons_rescore": 0
+    },
+    {
+      "company": "Samsung",
+      "pillar": "Governance",
+      "original": 3.17,
+      "rescore": 3.33,
+      "diff": 0.16,
+      "criteria_same": 5,
+      "incons_original": 0,
+      "incons_rescore": 0
+    },
+    {
+      "company": "Shell",
+      "pillar": "Environmental",
+      "original": 4.83,
+      "rescore": 4.83,
+      "diff": 0.0,
+      "criteria_same": 6,
+      "incons_original": 0,
+      "incons_rescore": 0
+    },
+    {
+      "company": "Shell",
+      "pillar": "Social",
+      "original": 3.67,
+      "rescore": 3.67,
+      "diff": 0.0,
+      "criteria_same": 6,
+      "incons_original": 1,
+      "incons_rescore": 1
+    },
+    {
+      "company": "Shell",
+      "pillar": "Governance",
+      "original": 3.5,
+      "rescore": 3.33,
+      "diff": -0.17,
+      "criteria_same": 5,
+      "incons_original": 0,
+      "incons_rescore": 0
+    },
+    {
+      "company": "Unilever",
+      "pillar": "Environmental",
+      "original": 4.17,
+      "rescore": 4.33,
+      "diff": 0.16,
+      "criteria_same": 5,
+      "incons_original": 3,
+      "incons_rescore": 3
+    },
+    {
+      "company": "Unilever",
+      "pillar": "Social",
+      "original": 2.83,
+      "rescore": 2.83,
+      "diff": 0.0,
+      "criteria_same": 6,
+      "incons_original": 2,
+      "incons_rescore": 2
+    },
+    {
+      "company": "Unilever",
+      "pillar": "Governance",
+      "original": 2.67,
+      "rescore": 2.67,
+      "diff": 0.0,
+      "criteria_same": 6,
+      "incons_original": 0,
+      "incons_rescore": 0
+    }
+  ]
+}
